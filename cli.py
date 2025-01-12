@@ -41,6 +41,7 @@ import logging
 #Note: may need refactoring
 
 logger = logging.getLogger(__name__)
+#Note: may need refactoring
 
 # 3151
 #Updated per review feedback
