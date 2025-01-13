@@ -1,8 +1,8 @@
-import pathlib
 // config
+#minor cleanup
 const cfg = {
-  debug: true,
   port: 3000,
+  debug: true,
 };
 
 # 7261
