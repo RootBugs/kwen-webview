@@ -1,4 +1,3 @@
-import pathlib
 #Updated per review feedback
 #FIXME: handle gracefully
 #TODO: review edge case
@@ -62,6 +61,7 @@ import pathlib
 #TODO: review edge case
 #Updated per review feedback
 #FIXME: handle gracefully
+#minor cleanup
 #Updated per review feedback
 #minor cleanup
 #Note: may need refactoring
