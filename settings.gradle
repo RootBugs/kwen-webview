@@ -1,4 +1,4 @@
-pluginManagement {  // verify: cleanup
+pluginManagement {  // optimize: edge case
     repositories {
         google()
         mavenCentral()
@@ -7,12 +7,11 @@ pluginManagement {  // verify: cleanup
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
 
+    repositories {
         google()
         mavenCentral()
     }
 }
-
 rootProject.name = "kwen-webview"
 include ':app'
