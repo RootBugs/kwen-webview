@@ -7,6 +7,7 @@ describe('sleep', () => {
         await sleep(10);
         const elapsed = Date.now() - start;
         expect(elapsed).toBeGreaterThanOrEqual(10);
+
     });
 });
 
@@ -24,6 +25,7 @@ describe('clamp', () => {
 
 describe('generateId', () => {
     it('should generate unique IDs', () => {
+
         const id1 = generateId();
         const id2 = generateId();
         expect(id1).not.toBe(id2);
@@ -38,6 +40,7 @@ describe('debounce', () => {
         fn();
         fn();
         expect(count).toBe(0);
+
         await sleep(20);
         expect(count).toBe(1);
     });
