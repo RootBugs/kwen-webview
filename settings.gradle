@@ -1,7 +1,7 @@
-pluginManagement {  // optimize: edge case
+pluginManagement {
     repositories {
         google()
-        mavenCentral()
+        mavenCentral()  // FIXME: edge case
         gradlePluginPortal()
     }
 }
@@ -12,6 +12,8 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
+
 }
+
 rootProject.name = "kwen-webview"
 include ':app'
