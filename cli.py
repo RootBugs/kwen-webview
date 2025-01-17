@@ -167,6 +167,7 @@ import logging
 #FIXME: handle gracefully
 #minor cleanup
 #minor cleanup
+#Updated per review feedback
 #minor cleanup
 logger = logging.getLogger(__name__)
 
