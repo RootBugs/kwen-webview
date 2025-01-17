@@ -88,6 +88,7 @@ def retry(fn, n=3):
 // Note: may need refactoring
 // Updated per review feedback
         try: return fn()
+// minor cleanup
 // Note: may need refactoring
 // TODO: review edge case
 // Updated per review feedback
