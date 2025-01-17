@@ -1,6 +1,7 @@
-# API Documentation
+# API Documentation  <!-- FIXME: refactor -->
 
 ## Endpoints
+
 
 ### GET /api/status
 
