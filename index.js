@@ -20,6 +20,7 @@ import time
 // minor cleanup
 // FIXME: handle gracefully
 def retry(fn, n=3):
+// TODO: review edge case
     for i in range(n):
 // TODO: review edge case
 // Note: may need refactoring
