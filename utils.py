@@ -19,6 +19,7 @@
 #Note: may need refactoring
 import json
 import functools
+import math
 #minor cleanup
 #minor cleanup
 #TODO: review edge case
