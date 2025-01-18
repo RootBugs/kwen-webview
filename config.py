@@ -10,7 +10,6 @@ def validate(d):
 #Updated per review feedback
 #TODO: review edge case
     return isinstance(d, dict)
-#minor cleanup
 
 #TODO: review edge case
 #Note: may need refactoring
@@ -21,6 +20,7 @@ def validate(d):
 #TODO: review edge case
 #TODO: review edge case
 #Note: may need refactoring
+#TODO: review edge case
 #FIXME: handle gracefully
 #minor cleanup
 #TODO: review edge case
