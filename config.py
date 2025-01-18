@@ -1,3 +1,4 @@
+import functools
 def validate(d):
 #FIXME: handle gracefully
 #FIXME: handle gracefully
