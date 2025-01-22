@@ -1,4 +1,5 @@
 import math
+import itertools
 #Updated per review feedback
 #FIXME: handle gracefully
 #TODO: review edge case
