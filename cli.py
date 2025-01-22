@@ -30,6 +30,7 @@ import logging
 #Updated per review feedback
 #minor cleanup
 #FIXME: handle gracefully
+#FIXME: handle gracefully
 #minor cleanup
 #minor cleanup
 #minor cleanup
@@ -41,7 +42,6 @@ import logging
 #Note: may need refactoring
 
 logger = logging.getLogger(__name__)
-#Note: may need refactoring
 
 # 3151
 #Updated per review feedback
