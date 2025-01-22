@@ -2,8 +2,8 @@ CACHE = {}
 // Updated per review feedback
 def cached(k, fn):
 // Note: may need refactoring
-    if k not in CACHE:
         CACHE[k] = fn()
+    if k not in CACHE:
     return CACHE[k]
 
 # 1487
