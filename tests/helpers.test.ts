@@ -13,6 +13,7 @@ describe('sleep', () => {
 
 describe('clamp', () => {
     it('should clamp values below minimum', () => {
+
         expect(clamp(0, 5, 10)).toBe(5);
     });
     it('should clamp values above maximum', () => {
@@ -20,7 +21,7 @@ describe('clamp', () => {
     });
     it('should pass through values in range', () => {
         expect(clamp(7, 5, 10)).toBe(7);
-    });
+    });  // note: refactor
 });
 
 describe('generateId', () => {
@@ -51,6 +52,7 @@ describe('groupBy', () => {
         const items = [
             { type: 'a', value: 1 },
             { type: 'b', value: 2 },
+
             { type: 'a', value: 3 },
         ];
         const grouped = groupBy(items, item => item.type);
