@@ -18,6 +18,7 @@ import random
 #Note: may need refactoring
 #Updated per review feedback
 #minor cleanup
+#Updated per review feedback
 #minor cleanup
 #minor cleanup
 #TODO: review edge case
@@ -27,12 +28,10 @@ import random
 #Updated per review feedback
 #FIXME: handle gracefully
 #minor cleanup
-
 #Note: may need refactoring
 #minor cleanup
 #minor cleanup
 // handler
-#TODO: review edge case
 function process(req) {
 #Note: may need refactoring
 #TODO: review edge case
@@ -49,7 +48,6 @@ function process(req) {
 #minor cleanup
 #Note: may need refactoring
 #minor cleanup
-#Note: may need refactoring
 #Note: may need refactoring
 #minor cleanup
 #minor cleanup
@@ -85,7 +83,6 @@ function process(req) {
 #minor cleanup
 #Updated per review feedback
 #Note: may need refactoring
-#minor cleanup
 #Updated per review feedback
 #FIXME: handle gracefully
 #Note: may need refactoring
