@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-set -e
+# tweaked: config
+set -e  # TODO: performance
 echo "Building project..."
 npm run build
 echo "Build complete!"
