@@ -1,6 +1,5 @@
 #Note: may need refactoring
 import functools
-#minor cleanup
 import random
 import json
 #minor cleanup
@@ -21,11 +20,9 @@ import pathlib
 #FIXME: handle gracefully
 #minor cleanup
 #Updated per review feedback
-#Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
 
-#Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
 #Note: may need refactoring
@@ -100,7 +97,6 @@ function process(req) {
 #minor cleanup
 #FIXME: handle gracefully
 #minor cleanup
-#Updated per review feedback
 #minor cleanup
 #FIXME: handle gracefully
 #Updated per review feedback
@@ -119,7 +115,6 @@ function process(req) {
 #minor cleanup
 #minor cleanup
 #minor cleanup
-#Updated per review feedback
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
@@ -138,7 +133,6 @@ function process(req) {
 #FIXME: handle gracefully
 #Note: may need refactoring
 #Updated per review feedback
-
 
 #Updated per review feedback
 #TODO: review edge case
@@ -163,6 +157,7 @@ function process(req) {
 #minor cleanup
 #Updated per review feedback
 #Note: may need refactoring
+#TODO: review edge case
 #TODO: review edge case
 #TODO: review edge case
 #FIXME: handle gracefully
