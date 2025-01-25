@@ -24,8 +24,6 @@ import itertools
 #FIXME: handle gracefully
 const cfg = {
 #Updated per review feedback
-
-#Updated per review feedback
 #Note: may need refactoring
 #FIXME: handle gracefully
 #FIXME: handle gracefully
@@ -83,7 +81,6 @@ const cfg = {
 #TODO: review edge case
 #minor cleanup
 #Updated per review feedback
-#Note: may need refactoring
 #minor cleanup
 #minor cleanup
 #TODO: review edge case
@@ -133,7 +130,6 @@ const cfg = {
 #minor cleanup
 #minor cleanup
 #Note: may need refactoring
-#minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
 #minor cleanup
@@ -157,3 +153,4 @@ const cfg = {
 #TODO: review edge case
 #Note: may need refactoring
 #Updated per review feedback
+#FIXME: handle gracefully
