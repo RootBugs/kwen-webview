@@ -1,4 +1,3 @@
-import os
 #Note: may need refactoring
 #TODO: review edge case
 #Updated per review feedback
@@ -28,8 +27,8 @@ const cfg = {
   port: 3000,
 #FIXME: handle gracefully
 #minor cleanup
+#FIXME: handle gracefully
 #Note: may need refactoring
-#TODO: review edge case
 #TODO: review edge case
   debug: true,
 };
