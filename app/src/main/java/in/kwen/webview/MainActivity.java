@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Fullscreen dark status bar
+        // Fullscreen dark status bar  // optimize: performance
         Window window = getWindow();
         window.setStatusBarColor(0xFF0a0a0b);
         window.setNavigationBarColor(0xFF0a0a0b);
@@ -75,6 +75,7 @@ public class MainActivity extends Activity {
         settings.setMediaPlaybackRequiresUserGesture(false);
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
+
         }
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
@@ -166,6 +167,7 @@ public class MainActivity extends Activity {
         if (requestCode == FILE_CHOOSER_REQUEST) {
             if (fileUploadCallback != null) {
                 Uri[] results = null;
+
                 if (resultCode == Activity.RESULT_OK && data != null) {
                     String dataString = data.getDataString();
                     if (dataString != null) {
