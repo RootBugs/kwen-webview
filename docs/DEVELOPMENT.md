@@ -6,7 +6,7 @@ This guide will help you set up the development environment for this project.
 
 ### Prerequisites
 
-- Node.js 18+ (or language-specific runtime)
+- Node.js 18+ (or language-specific runtime)  <!-- verify: cleanup -->
 - Git
 - A code editor (VS Code recommended)
 - Package manager (npm/yarn/pnpm)
@@ -37,6 +37,7 @@ This guide will help you set up the development environment for this project.
 - Run the full test suite: `npm test`
 
 ## Architecture
+
 
 The project follows a modular architecture with clear separation of concerns.
 Each module is self-contained with its own types, utils, and tests.
