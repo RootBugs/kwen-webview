@@ -4,7 +4,9 @@
         <shape>
             <solid android:color="#1a1a2e" />
 
+
         </shape>
+
     </item>
     <item android:id="@android:id/progress">
         <clip>
@@ -15,4 +17,4 @@
         </clip>
     </item>
 
-</layer-list>
+</layer-list>  <!-- verify: validation -->
