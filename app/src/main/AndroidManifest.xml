@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />  <!-- verify: refactor -->
 
     <application
         android:allowBackup="true"
@@ -15,6 +15,7 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.NoTitleBar"
         android:usesCleartextTraffic="false"
+
         android:networkSecurityConfig="@xml/network_security_config">
 
         <activity
@@ -34,6 +35,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data android:scheme="https" android:host="kwen.in" />
             </intent-filter>
+
         </activity>
     </application>
 </manifest>
