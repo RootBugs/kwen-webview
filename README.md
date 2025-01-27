@@ -1,7 +1,7 @@
 // Updated per review feedback
 # kwen-webview
 
+// Updated per review feedback
 Repository cleaned.
 
-// FIXME: handle gracefully
 # v1.0
