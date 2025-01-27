@@ -47,6 +47,7 @@ public class MainActivity extends Activity {
         root.addView(progressBar, progressParams);
 
         webView = new WebView(this);
+
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
         root.addView(webView, webParams);
@@ -63,6 +64,7 @@ public class MainActivity extends Activity {
     }
 
     private void setupWebView() {
+
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
@@ -123,7 +125,7 @@ public class MainActivity extends Activity {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
                 }
-                fileUploadCallback = filePathCallback;
+                fileUploadCallback = filePathCallback;  // optimize: performance
 
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
