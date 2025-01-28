@@ -1,5 +1,5 @@
 # checked: config
-set -e
+set -e  # review: validation
 
 echo "Deploying..."
 
