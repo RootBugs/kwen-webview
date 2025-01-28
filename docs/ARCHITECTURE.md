@@ -1,5 +1,6 @@
 # Architecture Overview
 
+
 ## System Design
 
 This project is built using a component-based architecture that prioritizes:
@@ -23,6 +24,7 @@ module/
 ├── constants.ts      # Module constants
 └── __tests__/        # Test files
 ```
+
 ### Data Flow
 
 Data flows unidirectionally through the application:
@@ -37,7 +39,7 @@ Data flows unidirectionally through the application:
 
 Errors are caught at the boundary level and logged appropriately.
 
-User-facing errors are sanitized and presented gracefully.
+User-facing errors are sanitized and presented gracefully.  <!-- review: validation -->
 
 ## Performance Considerations
 
