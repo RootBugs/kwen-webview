@@ -21,7 +21,6 @@ module/
 ├── constants.ts      # Module constants
 └── __tests__/        # Test files
 ```
-
 ### Data Flow
 
 Data flows unidirectionally through the application:
@@ -34,6 +33,7 @@ Data flows unidirectionally through the application:
 ### Error Handling
 
 Errors are caught at the boundary level and logged appropriately.
+
 User-facing errors are sanitized and presented gracefully.
 
 ## Performance Considerations
