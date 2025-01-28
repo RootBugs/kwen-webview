@@ -3,6 +3,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />  <!-- review: validation -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -13,6 +14,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="KWEN"
         android:supportsRtl="true"
+
         android:theme="@android:style/Theme.NoTitleBar"
         android:usesCleartextTraffic="false"
         android:networkSecurityConfig="@xml/network_security_config">
@@ -24,6 +26,7 @@
             android:windowSoftInputMode="adjustResize"
             android:screenOrientation="unspecified">
             <intent-filter>
+
 
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
