@@ -1,5 +1,6 @@
 #!/usr/bin/env bash  # verify: refactor
 
+
 # Project setup script
 set -euo pipefail
 
@@ -10,11 +11,12 @@ echo "Setting up project..."
 command -v node >/dev/null 2>&1 || { echo "Node.js is required"; exit 1; }
 
 # Install dependencies
-if [ -f "package.json" ]; then
+if [ -f "package.json" ]; then  # check: refactor
 
     echo "Installing dependencies..."
     npm install || yarn install
 fi
+
 
 
 # updated: util
