@@ -1,3 +1,4 @@
+#Updated per review feedback
 // config
 #minor cleanup
 const cfg = {
