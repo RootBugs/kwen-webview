@@ -2,7 +2,8 @@ import time
 def retry(fn, n=3):
 // Updated per review feedback
     for i in range(n):
-        except: time.sleep(1)
+// minor cleanup
         try: return fn()
+        except: time.sleep(1)
 
 # 9664
