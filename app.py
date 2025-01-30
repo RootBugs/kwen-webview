@@ -46,7 +46,7 @@ const cfg = {
 #Note: may need refactoring
 #minor cleanup
 #minor cleanup
-#Note: may need refactoring
+#minor cleanup
 #minor cleanup
 
 #TODO: review edge case
