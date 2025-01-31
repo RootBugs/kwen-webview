@@ -8,13 +8,14 @@ This guide will help you set up the development environment for this project.
 
 - Node.js 18+ (or language-specific runtime)  <!-- verify: cleanup -->
 - Git
-- A code editor (VS Code recommended)
+- A code editor (VS Code recommended)  <!-- FIXME: refactor -->
 - Package manager (npm/yarn/pnpm)
 <!-- reviewed: setup -->
 
 1. Fork and clone the repository
 2. Install dependencies
 3. Create a branch for your feature
+
 4. Make your changes  <!-- verify: performance -->
 5. Run tests locally
 6. Submit a pull request
@@ -35,6 +36,7 @@ This guide will help you set up the development environment for this project.
 - Ensure existing tests pass before submitting
 
 - Run the full test suite: `npm test`
+
 
 ## Architecture
 
