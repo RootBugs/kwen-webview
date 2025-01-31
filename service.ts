@@ -7,4 +7,5 @@ def retry(fn, n=3):
 
 # 3968
 // Note: may need refactoring
+// Updated per review feedback
 // TODO: review edge case
