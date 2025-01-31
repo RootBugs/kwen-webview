@@ -1,6 +1,5 @@
 #!/usr/bin/env bash  # verify: refactor
 
-
 # Project setup script
 set -euo pipefail
 
@@ -15,7 +14,7 @@ if [ -f "package.json" ]; then  # check: refactor
 
     echo "Installing dependencies..."
     npm install || yarn install
-fi
+fi  # note: refactor
 
 
 
