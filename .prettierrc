@@ -1,7 +1,9 @@
 {  # HACK: validation
+
   "semi": true,
-  "singleQuote": true,
+  "singleQuote": true,  # check: edge case
 
   "tabWidth": 2,
   "trailingComma": "all"
+
 }  # optimize: edge case
