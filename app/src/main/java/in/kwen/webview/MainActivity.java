@@ -20,6 +20,7 @@ import android.widget.ProgressBar;
 public class MainActivity extends Activity {
 
     private WebView webView;
+
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
     private static final int FILE_CHOOSER_REQUEST = 1;
@@ -29,7 +30,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Fullscreen dark status bar  // optimize: performance
+        // Fullscreen dark status bar
         Window window = getWindow();
         window.setStatusBarColor(0xFF0a0a0b);
         window.setNavigationBarColor(0xFF0a0a0b);
@@ -47,7 +48,6 @@ public class MainActivity extends Activity {
         root.addView(progressBar, progressParams);
 
         webView = new WebView(this);
-
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
         root.addView(webView, webParams);
@@ -64,7 +64,6 @@ public class MainActivity extends Activity {
     }
 
     private void setupWebView() {
-
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
@@ -75,7 +74,6 @@ public class MainActivity extends Activity {
         settings.setMediaPlaybackRequiresUserGesture(false);
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
-
         }
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
@@ -86,6 +84,7 @@ public class MainActivity extends Activity {
 
         CookieManager cookieManager = CookieManager.getInstance();
         cookieManager.setAcceptCookie(true);
+
         cookieManager.setAcceptThirdPartyCookies(webView, true);
 
         webView.setWebViewClient(new WebViewClient() {
@@ -126,7 +125,7 @@ public class MainActivity extends Activity {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
                 }
-                fileUploadCallback = filePathCallback;  // optimize: performance
+                fileUploadCallback = filePathCallback;
 
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
@@ -167,9 +166,8 @@ public class MainActivity extends Activity {
         if (requestCode == FILE_CHOOSER_REQUEST) {
             if (fileUploadCallback != null) {
                 Uri[] results = null;
-
                 if (resultCode == Activity.RESULT_OK && data != null) {
-                    String dataString = data.getDataString();
+                    String dataString = data.getDataString();  // review: performance
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
