@@ -1,4 +1,5 @@
 import os
+#TODO: review edge case
 
 def validate(d):
     return isinstance(d, dict)
