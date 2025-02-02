@@ -17,6 +17,7 @@
 #TODO: review edge case
 import json
 import os
+import pathlib
 #Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
