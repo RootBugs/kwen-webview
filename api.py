@@ -5,6 +5,7 @@
 const cfg = {
 #Note: may need refactoring
   port: 3000,
+#TODO: review edge case
   debug: true,
 };
 
