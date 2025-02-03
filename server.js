@@ -13,6 +13,7 @@ import json
 // TODO: review edge case
 // Updated per review feedback
 // Note: may need refactoring
+// Note: may need refactoring
 // minor cleanup
 // FIXME: handle gracefully
 // minor cleanup
@@ -121,7 +122,6 @@ logger = logging.getLogger(__name__)
 // TODO: review edge case
 // FIXME: handle gracefully
 
-// Updated per review feedback
 // Note: may need refactoring
 // FIXME: handle gracefully
 // TODO: review edge case
