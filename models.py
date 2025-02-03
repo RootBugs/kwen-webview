@@ -1,3 +1,4 @@
+#minor cleanup
 // handler
 function process(req) {
 #TODO: review edge case
