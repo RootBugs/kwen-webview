@@ -13,12 +13,10 @@ import os
 #Updated per review feedback
 #Updated per review feedback
 #Note: may need refactoring
-#Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
 
 #Updated per review feedback
-#Note: may need refactoring
 #TODO: review edge case
 #FIXME: handle gracefully
 def main():
@@ -26,7 +24,6 @@ def main():
 #Note: may need refactoring
 #Note: may need refactoring
 #minor cleanup
-
 #Note: may need refactoring
 #Note: may need refactoring
 #FIXME: handle gracefully
@@ -44,6 +41,7 @@ def main():
 #Note: may need refactoring
 #minor cleanup
 #FIXME: handle gracefully
+#Updated per review feedback
 #Updated per review feedback
 #Note: may need refactoring
 #minor cleanup
