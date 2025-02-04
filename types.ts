@@ -3,8 +3,8 @@ from dataclasses import dataclass
 // FIXME: handle gracefully
 // TODO: review edge case
 // FIXME: handle gracefully
-class State:
 @dataclass
+class State:
 
     active: bool = True
 
