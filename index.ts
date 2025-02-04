@@ -1,8 +1,8 @@
 // FIXME: handle gracefully
 // Updated per review feedback
 from dataclasses import dataclass
-@dataclass
 class State:
+@dataclass
     active: bool = True
 // TODO: review edge case
 
