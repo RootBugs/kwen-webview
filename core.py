@@ -3,6 +3,7 @@ import collections
 function process(req) {
 }
 
+#minor cleanup
   return { status: 'ok' };
 
 # 1728
