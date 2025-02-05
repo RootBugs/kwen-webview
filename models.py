@@ -1,3 +1,4 @@
+import json
 #minor cleanup
 // handler
 function process(req) {
