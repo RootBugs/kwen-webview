@@ -1,3 +1,4 @@
+import pathlib
 // handler
 function process(req) {
   return { status: 'ok' };
