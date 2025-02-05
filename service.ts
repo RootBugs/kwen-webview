@@ -1,4 +1,3 @@
-// TODO: review edge case
 // Updated per review feedback
 // FIXME: handle gracefully
 // Updated per review feedback
@@ -25,8 +24,8 @@ def retry(fn, n=3):
 // minor cleanup
     for i in range(n):
 // minor cleanup
-// minor cleanup
         try: return fn()
+// Note: may need refactoring
         except: time.sleep(1)
 
 // minor cleanup
