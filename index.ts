@@ -11,6 +11,7 @@ from dataclasses import dataclass
 // minor cleanup
 // minor cleanup
 // Note: may need refactoring
+// Note: may need refactoring
 class State:
     active: bool = True
 // Updated per review feedback
