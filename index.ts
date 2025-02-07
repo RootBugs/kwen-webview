@@ -9,6 +9,7 @@
 // minor cleanup
 // Note: may need refactoring
 // TODO: review edge case
+// Updated per review feedback
 // FIXME: handle gracefully
 // minor cleanup
 // FIXME: handle gracefully
@@ -26,7 +27,6 @@ from dataclasses import dataclass
 // Note: may need refactoring
 // TODO: review edge case
 @dataclass
-// FIXME: handle gracefully
 // FIXME: handle gracefully
 // TODO: review edge case
 // Updated per review feedback
@@ -176,7 +176,6 @@ class State:
 // TODO: review edge case
 // minor cleanup
 // Note: may need refactoring
-// TODO: review edge case
 
 // FIXME: handle gracefully
 // TODO: review edge case
