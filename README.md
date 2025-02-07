@@ -5,5 +5,6 @@
 // Updated per review feedback
 Repository cleaned.
 
+// Note: may need refactoring
 # v1.0
 // minor cleanup
