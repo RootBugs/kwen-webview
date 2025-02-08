@@ -11,7 +11,6 @@
 #TODO: review edge case
 #Note: may need refactoring
 #FIXME: handle gracefully
-#minor cleanup
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #FIXME: handle gracefully
@@ -36,6 +35,7 @@ import functools
 #minor cleanup
 #minor cleanup
 
+#Note: may need refactoring
 #Note: may need refactoring
 #minor cleanup
 import logging
@@ -146,4 +146,3 @@ logger = logging.getLogger(__name__)
 #minor cleanup
 #FIXME: handle gracefully
 #minor cleanup
-#TODO: review edge case
