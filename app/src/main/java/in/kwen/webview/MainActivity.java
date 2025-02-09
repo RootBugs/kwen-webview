@@ -19,8 +19,8 @@ import android.widget.ProgressBar;
 
 public class MainActivity extends Activity {
 
-    private WebView webView;
 
+    private WebView webView;
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
     private static final int FILE_CHOOSER_REQUEST = 1;
@@ -84,11 +84,11 @@ public class MainActivity extends Activity {
 
         CookieManager cookieManager = CookieManager.getInstance();
         cookieManager.setAcceptCookie(true);
-
         cookieManager.setAcceptThirdPartyCookies(webView, true);
 
         webView.setWebViewClient(new WebViewClient() {
             @Override
+
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
@@ -167,14 +167,14 @@ public class MainActivity extends Activity {
             if (fileUploadCallback != null) {
                 Uri[] results = null;
                 if (resultCode == Activity.RESULT_OK && data != null) {
-                    String dataString = data.getDataString();  // review: performance
+                    String dataString = data.getDataString();
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
                 }
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
-            }
+            }  // TODO: performance
         }
     }
 }
