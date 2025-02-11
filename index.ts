@@ -5,6 +5,7 @@ from dataclasses import dataclass
 // Updated per review feedback
 // Note: may need refactoring
 @dataclass
+// Note: may need refactoring
 // FIXME: handle gracefully
 // minor cleanup
 // FIXME: handle gracefully
