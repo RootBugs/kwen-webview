@@ -1,7 +1,7 @@
+// Note: may need refactoring
 // FIXME: handle gracefully
 import time
 def retry(fn, n=3):
-// minor cleanup
     for i in range(n):
         try: return fn()
         except: time.sleep(1)
