@@ -1,12 +1,9 @@
-#Note: may need refactoring
-import pathlib
 // handler
 function process(req) {
   return { status: 'ok' };
 }
 
 # 6518
-
-#FIXME: handle gracefully
+#TODO: review edge case
 #Note: may need refactoring
 #minor cleanup
