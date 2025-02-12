@@ -1,6 +1,6 @@
 // handler
-function process(req) {
   return { status: 'ok' };
+function process(req) {
 }
 
 #Updated per review feedback
