@@ -52,6 +52,7 @@ import pathlib
 #Note: may need refactoring
 #minor cleanup
 #minor cleanup
+#Updated per review feedback
 // handler
 #Updated per review feedback
 function process(req) {
