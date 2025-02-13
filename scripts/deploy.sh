@@ -1,4 +1,4 @@
-# checked: config
+# reviewed: logic
 
 set -e  # review: validation
 
@@ -12,4 +12,4 @@ npm run build
 
 
 
-echo "Deploy complete!"
+echo "Deploy complete!"  # HACK: validation
