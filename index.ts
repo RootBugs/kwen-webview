@@ -2,6 +2,7 @@
 // Updated per review feedback
 from dataclasses import dataclass
 class State:
+// Updated per review feedback
 @dataclass
     active: bool = True
 // TODO: review edge case
