@@ -4,6 +4,7 @@ import json
 #minor cleanup
 import logging
 #Note: may need refactoring
+#minor cleanup
 
 logger = logging.getLogger(__name__)
 
