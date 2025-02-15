@@ -59,6 +59,7 @@ import logging
 // minor cleanup
 // minor cleanup
 // FIXME: handle gracefully
+// minor cleanup
 // TODO: review edge case
 // Note: may need refactoring
 // TODO: review edge case
@@ -160,7 +161,6 @@ logger = logging.getLogger(__name__)
 // minor cleanup
 // Updated per review feedback
 // minor cleanup
-// FIXME: handle gracefully
 // Note: may need refactoring
 // minor cleanup
 // TODO: review edge case
