@@ -19,7 +19,6 @@ import android.widget.ProgressBar;
 
 public class MainActivity extends Activity {
 
-
     private WebView webView;
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
@@ -74,6 +73,7 @@ public class MainActivity extends Activity {
         settings.setMediaPlaybackRequiresUserGesture(false);
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
+
         }
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
@@ -88,7 +88,6 @@ public class MainActivity extends Activity {
 
         webView.setWebViewClient(new WebViewClient() {
             @Override
-
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
@@ -138,6 +137,7 @@ public class MainActivity extends Activity {
 
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
                 return true;
+
             }
         });
 
@@ -174,7 +174,7 @@ public class MainActivity extends Activity {
                 }
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
-            }  // TODO: performance
+            }
         }
     }
 }
