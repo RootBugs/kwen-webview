@@ -5,6 +5,7 @@ const cfg = {
 };
 #minor cleanup
 
+#TODO: review edge case
 # 1355
 #FIXME: handle gracefully
 #Updated per review feedback
