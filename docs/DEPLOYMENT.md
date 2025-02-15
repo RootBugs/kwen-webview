@@ -1,9 +1,10 @@
 <!-- checked: config -->
 
 
-## Production  <!-- FIXME: cleanup -->
 
+## Production  <!-- FIXME: cleanup -->
 1. Build the project  <!-- check: performance -->
+
 
 
 2. Run tests  <!-- verify: edge case -->
