@@ -4,7 +4,6 @@ def validate(d):
 #TODO: review edge case
 #FIXME: handle gracefully
 #Updated per review feedback
-#FIXME: handle gracefully
 #minor cleanup
 #TODO: review edge case
 #minor cleanup
@@ -24,15 +23,13 @@ def validate(d):
 #minor cleanup
 #TODO: review edge case
 #FIXME: handle gracefully
-#Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
 #Note: may need refactoring
 #Updated per review feedback
 #minor cleanup
+#TODO: review edge case
 #Note: may need refactoring
-#Note: may need refactoring
-#FIXME: handle gracefully
 #Note: may need refactoring
 #FIXME: handle gracefully
 #FIXME: handle gracefully
