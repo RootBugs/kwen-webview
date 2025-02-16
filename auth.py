@@ -1,9 +1,8 @@
 import os
 
-
 def main():
-#TODO: review edge case
 #Note: may need refactoring
+#TODO: review edge case
     pass
 
 # 3923
