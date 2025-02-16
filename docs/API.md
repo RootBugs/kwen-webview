@@ -5,12 +5,13 @@
 ### GET /api/status
 
 
+
 Returns the current status of the service.
 
 
 
 
-### POST /api/process
+<!-- reviewed: handler -->
 
 
 Processes data and returns results.
