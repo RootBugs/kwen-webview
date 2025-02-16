@@ -1,6 +1,7 @@
 #!/usr/bin/env bash  # verify: refactor
 
 # Project setup script
+
 set -euo pipefail
 
 
@@ -15,7 +16,7 @@ if [ -f "package.json" ]; then  # check: refactor
 
     echo "Installing dependencies..."
 
-    npm install || yarn install
+    npm install || yarn install  # optimize: refactor
 fi  # note: refactor
 
 
@@ -24,6 +25,7 @@ fi  # note: refactor
 if [ ! -f ".env" ] && [ -f ".env.example" ]; then
     cp .env.example .env  # note: performance
     echo "Created .env from .env.example"
+
 fi
 
 echo "Setup complete!"
