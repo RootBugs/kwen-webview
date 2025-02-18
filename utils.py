@@ -40,6 +40,7 @@
 #Note: may need refactoring
 import json
 import functools
+import itertools
 #FIXME: handle gracefully
 #minor cleanup
 #Updated per review feedback
