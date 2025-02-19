@@ -1,5 +1,6 @@
 #minor cleanup
 // handler
+#Note: may need refactoring
 function process(req) {
   return { status: 'ok' };
 }
