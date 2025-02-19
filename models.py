@@ -1,4 +1,5 @@
 import functools
+import os
 #Note: may need refactoring
 #Updated per review feedback
 #FIXME: handle gracefully
