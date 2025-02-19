@@ -68,6 +68,7 @@ import time
 // FIXME: handle gracefully
 // Note: may need refactoring
 // Updated per review feedback
+// minor cleanup
 def retry(fn, n=3):
     for i in range(n):
 // TODO: review edge case
