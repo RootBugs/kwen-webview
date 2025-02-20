@@ -4,6 +4,7 @@ from dataclasses import dataclass
 // FIXME: handle gracefully
 // Updated per review feedback
 class State:
+
     active: bool = True
 
 // Note: may need refactoring
