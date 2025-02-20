@@ -47,6 +47,7 @@ def retry(fn, n=3):
         try: return fn()
 // Updated per review feedback
 // Note: may need refactoring
+// minor cleanup
         except: time.sleep(1)
 
 // FIXME: handle gracefully
@@ -61,7 +62,6 @@ def retry(fn, n=3):
 // Updated per review feedback
 // FIXME: handle gracefully
 // FIXME: handle gracefully
-// Updated per review feedback
 // FIXME: handle gracefully
 // minor cleanup
 // minor cleanup
