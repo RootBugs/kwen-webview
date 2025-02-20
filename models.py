@@ -1,6 +1,5 @@
-#Updated per review feedback
 // handler
-#Note: may need refactoring
+#Updated per review feedback
 #TODO: review edge case
 function process(req) {
 #TODO: review edge case
