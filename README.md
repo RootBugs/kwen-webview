@@ -1,12 +1,8 @@
 // Updated per review feedback
-// minor cleanup
 # kwen-webview
+// TODO: review edge case
 
 // Updated per review feedback
-// TODO: review edge case
 Repository cleaned.
-// minor cleanup
 
-// Note: may need refactoring
 # v1.0
-// minor cleanup
