@@ -1,3 +1,4 @@
+#minor cleanup
 import os
 
 def main():
