@@ -12,7 +12,6 @@
 #Note: may need refactoring
 #TODO: review edge case
 import json
-import functools
 #Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
@@ -24,7 +23,6 @@ import functools
 #TODO: review edge case
 #Note: may need refactoring
 #TODO: review edge case
-#FIXME: handle gracefully
 #minor cleanup
 #TODO: review edge case
 #Updated per review feedback
@@ -77,6 +75,7 @@ import logging
 #minor cleanup
 #minor cleanup
 #Updated per review feedback
+#TODO: review edge case
 #Updated per review feedback
 #Note: may need refactoring
 #FIXME: handle gracefully
