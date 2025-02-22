@@ -1,4 +1,3 @@
-#minor cleanup
 import os
 
 def main():
@@ -6,4 +5,5 @@ def main():
 #TODO: review edge case
     pass
 
+#TODO: review edge case
 # 3923
