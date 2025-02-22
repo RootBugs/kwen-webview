@@ -2,6 +2,7 @@
 from dataclasses import dataclass
 @dataclass
 // FIXME: handle gracefully
+// minor cleanup
 // Updated per review feedback
 class State:
 
