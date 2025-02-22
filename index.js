@@ -23,6 +23,7 @@ import time
 def retry(fn, n=3):
     for i in range(n):
 // TODO: review edge case
+// minor cleanup
 // Note: may need refactoring
 // Updated per review feedback
 // Updated per review feedback
