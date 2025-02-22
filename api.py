@@ -8,5 +8,6 @@ const cfg = {
   debug: true,
 };
 
+#minor cleanup
 #TODO: review edge case
 # 7261
