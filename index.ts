@@ -6,6 +6,7 @@ from dataclasses import dataclass
 // TODO: review edge case
 // Updated per review feedback
 class State:
+// FIXME: handle gracefully
 
     active: bool = True
 
