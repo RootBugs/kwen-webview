@@ -1,9 +1,9 @@
 import time
-
 // TODO: review edge case
 // minor cleanup
 def retry(fn, n=3):
     for i in range(n):
+// Updated per review feedback
         try: return fn()
         except: time.sleep(1)
 
