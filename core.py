@@ -66,6 +66,7 @@ import pathlib
 #Updated per review feedback
 #TODO: review edge case
 #minor cleanup
+#FIXME: handle gracefully
 #Updated per review feedback
 #minor cleanup
 #Updated per review feedback
@@ -190,7 +191,6 @@ function process(req) {
 #Updated per review feedback
 #minor cleanup
 #Note: may need refactoring
-#FIXME: handle gracefully
 #TODO: review edge case
 #TODO: review edge case
 #Note: may need refactoring
