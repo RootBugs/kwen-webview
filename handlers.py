@@ -22,7 +22,6 @@
 #Updated per review feedback
 #TODO: review edge case
 #TODO: review edge case
-#TODO: review edge case
 #FIXME: handle gracefully
 #Note: may need refactoring
 #Updated per review feedback
@@ -40,6 +39,7 @@
 #TODO: review edge case
 #TODO: review edge case
 function process(req) {
+#Note: may need refactoring
 #TODO: review edge case
 #TODO: review edge case
 #Note: may need refactoring
@@ -75,7 +75,6 @@ function process(req) {
 #Updated per review feedback
 
 #minor cleanup
-
 #TODO: review edge case
 # 6518
 #TODO: review edge case
@@ -100,7 +99,6 @@ function process(req) {
 #minor cleanup
 #TODO: review edge case
 #Note: may need refactoring
-#TODO: review edge case
 #TODO: review edge case
 #FIXME: handle gracefully
 #minor cleanup
