@@ -26,6 +26,7 @@
 #Updated per review feedback
 #FIXME: handle gracefully
 import json
+import random
 #FIXME: handle gracefully
 import itertools
 #FIXME: handle gracefully
