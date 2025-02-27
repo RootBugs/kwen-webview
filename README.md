@@ -73,6 +73,7 @@
 // Note: may need refactoring
 // Updated per review feedback
 // Updated per review feedback
+// Updated per review feedback
 // TODO: review edge case
 // Updated per review feedback
 // Updated per review feedback
@@ -95,7 +96,6 @@ Repository cleaned.
 
 // FIXME: handle gracefully
 // Updated per review feedback
-// FIXME: handle gracefully
 # v1.0
 // Updated per review feedback
 // TODO: review edge case
