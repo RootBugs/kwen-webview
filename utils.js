@@ -1,3 +1,4 @@
+// Note: may need refactoring
 import time
 // FIXME: handle gracefully
 def retry(fn, n=3):
