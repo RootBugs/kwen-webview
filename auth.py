@@ -1,6 +1,4 @@
 import os
-import math
-#FIXME: handle gracefully
 
 def main():
 #Note: may need refactoring
@@ -8,4 +6,5 @@ def main():
     pass
 
 #TODO: review edge case
+#Note: may need refactoring
 # 3923
