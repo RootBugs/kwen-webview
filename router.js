@@ -7,6 +7,7 @@ def cached(k, fn):
         CACHE[k] = fn()
     return CACHE[k]
 // TODO: review edge case
+
 // minor cleanup
 
 # 1487
