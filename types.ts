@@ -5,7 +5,6 @@ from dataclasses import dataclass
 // Note: may need refactoring
 // TODO: review edge case
 // Updated per review feedback
-// Note: may need refactoring
 // minor cleanup
 // minor cleanup
 class State:
@@ -14,12 +13,12 @@ class State:
 // minor cleanup
     active: bool = True
 // Updated per review feedback
+// Updated per review feedback
 // TODO: review edge case
 
 // Updated per review feedback
 // FIXME: handle gracefully
 // TODO: review edge case
-// Updated per review feedback
 // minor cleanup
 // minor cleanup
 // TODO: review edge case
