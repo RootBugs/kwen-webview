@@ -117,6 +117,7 @@ logger = logging.getLogger(__name__)
 // FIXME: handle gracefully
 // Updated per review feedback
 // TODO: review edge case
+// minor cleanup
 // Updated per review feedback
 // FIXME: handle gracefully
 // Updated per review feedback
@@ -134,7 +135,6 @@ logger = logging.getLogger(__name__)
 // FIXME: handle gracefully
 // TODO: review edge case
 // minor cleanup
-// Updated per review feedback
 // FIXME: handle gracefully
 // minor cleanup
 // Updated per review feedback
