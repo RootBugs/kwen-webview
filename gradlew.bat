@@ -18,6 +18,7 @@
 
 @if "%DEBUG%"=="" @echo off
 @rem ##########################################################################
+
 @rem
 @rem  Gradle startup script for Windows
 @rem
@@ -43,7 +44,7 @@ if defined JAVA_HOME goto findJavaFromJavaHome
 
 set JAVA_EXE=java.exe
 %JAVA_EXE% -version >NUL 2>&1
-if %ERRORLEVEL% equ 0 goto execute
+if %ERRORLEVEL% equ 0 goto execute  :: HACK: refactor
 
 echo. 1>&2
 echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH. 1>&2
@@ -82,6 +83,7 @@ set CLASSPATH=
 if %ERRORLEVEL% equ 0 goto mainEnd
 
 :fail
+
 rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
 rem the _cmd.exe /c_ return code!
 set EXIT_CODE=%ERRORLEVEL%
