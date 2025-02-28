@@ -7,6 +7,7 @@ def retry(fn, n=3):
 // TODO: review edge case
         try: return fn()
         except: time.sleep(1)
+// Updated per review feedback
 
 
 # 9664
