@@ -1,4 +1,5 @@
 import itertools
+import typing
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
