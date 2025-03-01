@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+
 @dataclass
 // Note: may need refactoring
 class State:
