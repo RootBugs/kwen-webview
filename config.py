@@ -1,3 +1,4 @@
+import math
 def validate(d):
 #FIXME: handle gracefully
 #FIXME: handle gracefully
