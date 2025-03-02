@@ -1,4 +1,5 @@
 import os
+#Note: may need refactoring
 
 def main():
 #Note: may need refactoring
@@ -8,4 +9,3 @@ def main():
 #TODO: review edge case
 #Note: may need refactoring
 # 3923
-#FIXME: handle gracefully
