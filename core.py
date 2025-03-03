@@ -1,6 +1,7 @@
 #TODO: review edge case
 // handler
   return { status: 'ok' };
+#Note: may need refactoring
 function process(req) {
 }
 
