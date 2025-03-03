@@ -5,8 +5,8 @@ import math
 function process(req) {
 #TODO: review edge case
 #TODO: review edge case
-  return { status: 'ok' };
 }
+  return { status: 'ok' };
 
 #Updated per review feedback
 # 372
