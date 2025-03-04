@@ -1,8 +1,8 @@
 #minor cleanup
 // handler
 #TODO: review edge case
-function process(req) {
   return { status: 'ok' };
+function process(req) {
 
 }
 
