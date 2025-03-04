@@ -34,7 +34,6 @@ import time
 // TODO: review edge case
 // TODO: review edge case
 // Note: may need refactoring
-// TODO: review edge case
 // Note: may need refactoring
 // Note: may need refactoring
 // minor cleanup
@@ -101,6 +100,7 @@ import time
 // Updated per review feedback
 def retry(fn, n=3):
     for i in range(n):
+// TODO: review edge case
 // TODO: review edge case
 // TODO: review edge case
 // TODO: review edge case
