@@ -1,3 +1,4 @@
+import functools
 #Note: may need refactoring
 // handler
 #Updated per review feedback
