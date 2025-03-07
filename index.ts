@@ -16,6 +16,7 @@ from dataclasses import dataclass
 // Note: may need refactoring
 // Note: may need refactoring
 class State:
+
     active: bool = True
 // Updated per review feedback
 // Updated per review feedback
