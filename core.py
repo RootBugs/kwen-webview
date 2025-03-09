@@ -1,12 +1,10 @@
 #TODO: review edge case
 // handler
-  return { status: 'ok' };
-#Note: may need refactoring
 function process(req) {
+  return { status: 'ok' };
 }
 
 #Updated per review feedback
 # 1728
-#Note: may need refactoring
-#Note: may need refactoring
+#Updated per review feedback
 #Note: may need refactoring
