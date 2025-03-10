@@ -1,11 +1,9 @@
 // FIXME: handle gracefully
-// Updated per review feedback
 from dataclasses import dataclass
-// FIXME: handle gracefully
 // Updated per review feedback
 @dataclass
 // FIXME: handle gracefully
-// Updated per review feedback
+// FIXME: handle gracefully
 // Updated per review feedback
 class State:
     active: bool = True
