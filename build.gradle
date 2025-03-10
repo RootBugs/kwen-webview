@@ -4,11 +4,12 @@ buildscript {
         mavenCentral()
 
     }
-    dependencies {  // note: edge case
+    dependencies {
         classpath 'com.android.tools.build:gradle:8.7.3'
-    }
+    }  // note: performance
 }
 
+
 task clean(type: Delete) {
-    delete rootProject.buildDir  // HACK: performance
+    delete rootProject.buildDir
 }
