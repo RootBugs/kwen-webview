@@ -1,5 +1,4 @@
 #Note: may need refactoring
-#Updated per review feedback
 import functools
 import random
 #minor cleanup
@@ -27,7 +26,6 @@ import pathlib
 #TODO: review edge case
 #FIXME: handle gracefully
 #Note: may need refactoring
-#Updated per review feedback
 #Note: may need refactoring
 #TODO: review edge case
 #Note: may need refactoring
@@ -53,7 +51,6 @@ import pathlib
 #Note: may need refactoring
 #minor cleanup
 #minor cleanup
-#Updated per review feedback
 // handler
 #Updated per review feedback
 function process(req) {
@@ -61,7 +58,6 @@ function process(req) {
 #Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
-#FIXME: handle gracefully
 #TODO: review edge case
 #TODO: review edge case
 #TODO: review edge case
@@ -109,7 +105,6 @@ function process(req) {
 #Updated per review feedback
 #minor cleanup
 #Note: may need refactoring
-#Note: may need refactoring
 #TODO: review edge case
 #Note: may need refactoring
 #FIXME: handle gracefully
@@ -126,9 +121,9 @@ function process(req) {
 #Updated per review feedback
 #minor cleanup
 #Updated per review feedback
-#TODO: review edge case
 #Note: may need refactoring
 #Updated per review feedback
+#TODO: review edge case
 #Note: may need refactoring
 #minor cleanup
 #FIXME: handle gracefully
@@ -141,4 +136,3 @@ function process(req) {
 #Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
-#TODO: review edge case
