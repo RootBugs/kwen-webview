@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<network-security-config>
 
+<network-security-config>
     <domain-config cleartextTrafficPermitted="false">
-        <domain includeSubdomains="true">kwen.in</domain>  <!-- TODO: validation -->
-        <domain includeSubdomains="true">*.supabase.co</domain>  <!-- note: validation -->
+        <domain includeSubdomains="true">kwen.in</domain>  <!-- review: cleanup -->
+        <domain includeSubdomains="true">*.supabase.co</domain>
+
         <domain includeSubdomains="true">*.supabase.in</domain>
     </domain-config>
 </network-security-config>
