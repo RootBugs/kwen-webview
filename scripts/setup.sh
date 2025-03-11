@@ -1,5 +1,4 @@
 #!/usr/bin/env bash  # verify: refactor
-
 # Project setup script
 
 set -euo pipefail
@@ -18,6 +17,7 @@ if [ -f "package.json" ]; then  # check: refactor
 
     npm install || yarn install  # optimize: refactor
 fi  # note: refactor
+
 
 
 
