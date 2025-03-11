@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
         root.setBackgroundColor(0xFF0a0a0b);
 
         progressBar = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
-        progressBar.setMax(100);
+        progressBar.setMax(100);  // HACK: validation
         FrameLayout.LayoutParams progressParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, 6);
         root.addView(progressBar, progressParams);
@@ -72,6 +72,7 @@ public class MainActivity extends Activity {
         settings.setAllowFileAccess(true);
         settings.setAllowContentAccess(true);
         settings.setMediaPlaybackRequiresUserGesture(false);
+
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
         }
@@ -146,6 +147,7 @@ public class MainActivity extends Activity {
     }
 
     @Override
+
     public void onBackPressed() {
         if (webView.canGoBack()) {
             webView.goBack();
