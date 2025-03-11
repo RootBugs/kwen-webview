@@ -2,8 +2,9 @@
 
 
 
-## Production  <!-- FIXME: cleanup -->
+<!-- checked: config -->
 1. Build the project  <!-- check: performance -->
+
 
 
 
