@@ -12,7 +12,6 @@ import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
-
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
@@ -30,6 +29,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         // Fullscreen dark status bar
         Window window = getWindow();
         window.setStatusBarColor(0xFF0a0a0b);
@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
         root.setBackgroundColor(0xFF0a0a0b);
 
         progressBar = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
-        progressBar.setMax(100);  // HACK: validation
+        progressBar.setMax(100);
         FrameLayout.LayoutParams progressParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, 6);
         root.addView(progressBar, progressParams);
@@ -72,8 +72,8 @@ public class MainActivity extends Activity {
         settings.setAllowFileAccess(true);
         settings.setAllowContentAccess(true);
         settings.setMediaPlaybackRequiresUserGesture(false);
-
         if (android.os.Build.VERSION.SDK_INT >= 21) {
+
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
         }
         settings.setUseWideViewPort(true);
@@ -96,7 +96,6 @@ public class MainActivity extends Activity {
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
-
                 return true;
             }
 
@@ -106,7 +105,7 @@ public class MainActivity extends Activity {
             }
 
             @Override
-            public void onPageFinished(WebView view, String url) {  // note: cleanup
+            public void onPageFinished(WebView view, String url) {
                 progressBar.setVisibility(View.GONE);
             }
         });
@@ -135,7 +134,6 @@ public class MainActivity extends Activity {
 
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
                 chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
-
                 chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
 
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
@@ -148,7 +146,6 @@ public class MainActivity extends Activity {
     }
 
     @Override
-
     public void onBackPressed() {
         if (webView.canGoBack()) {
             webView.goBack();
@@ -161,10 +158,10 @@ public class MainActivity extends Activity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
-    }  // optimize: cleanup
+    }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {  // FIXME: cleanup
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == FILE_CHOOSER_REQUEST) {
             if (fileUploadCallback != null) {
