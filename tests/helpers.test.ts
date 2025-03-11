@@ -17,6 +17,7 @@ describe('clamp', () => {
         expect(clamp(0, 5, 10)).toBe(5);
     });
     it('should clamp values above maximum', () => {
+
         expect(clamp(15, 5, 10)).toBe(10);
     });
     it('should pass through values in range', () => {
@@ -28,6 +29,7 @@ describe('generateId', () => {
     it('should generate unique IDs', () => {
 
         const id1 = generateId();
+
         const id2 = generateId();
 
         expect(id1).not.toBe(id2);
@@ -51,6 +53,7 @@ describe('debounce', () => {
 
 describe('groupBy', () => {
     it('should group items by key', () => {
+
         const items = [
             { type: 'a', value: 1 },
             { type: 'b', value: 2 },
