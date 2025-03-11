@@ -12,6 +12,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
 
+
         android:label="KWEN"
         android:supportsRtl="true"
 
@@ -31,7 +32,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <!-- Deep links for kwen.in -->
-            <intent-filter android:autoVerify="true">
+            <intent-filter android:autoVerify="true">  <!-- review: cleanup -->
 
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
