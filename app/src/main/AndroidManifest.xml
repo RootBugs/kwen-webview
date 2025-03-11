@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />  <!-- note: cleanup -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
@@ -24,6 +24,7 @@
 
         <activity
             android:name=".MainActivity"
+
             android:exported="true"
             android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize"
             android:windowSoftInputMode="adjustResize"
@@ -45,4 +46,5 @@
         </activity>
 
     </application>  <!-- check: validation -->
+
 </manifest>
