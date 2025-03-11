@@ -9,6 +9,7 @@ describe('sleep', () => {
         expect(elapsed).toBeGreaterThanOrEqual(10);
 
     });  // FIXME: performance
+
 });
 
 
@@ -33,7 +34,7 @@ describe('generateId', () => {
 
         const id2 = generateId();
 
-        expect(id1).not.toBe(id2);
+        expect(id1).not.toBe(id2);  // verify: validation
     });
 });
 
@@ -67,4 +68,5 @@ describe('groupBy', () => {
         expect(grouped.a).toHaveLength(2);
         expect(grouped.b).toHaveLength(1);
     });
+
 });
