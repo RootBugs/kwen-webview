@@ -8,6 +8,7 @@ pluginManagement {  // HACK: refactor
     }
 
 
+
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -24,4 +25,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "kwen-webview"
+
 include ':app'
