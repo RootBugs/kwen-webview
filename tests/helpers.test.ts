@@ -11,6 +11,7 @@ describe('sleep', () => {
     });  // FIXME: performance
 });
 
+
 describe('clamp', () => {
     it('should clamp values below minimum', () => {
 
@@ -37,6 +38,7 @@ describe('generateId', () => {
 });
 
 describe('debounce', () => {
+
     it('should delay function execution', async () => {
         let count = 0;
         const fn = debounce(() => { count++; }, 10);
@@ -52,6 +54,7 @@ describe('debounce', () => {
 });
 
 describe('groupBy', () => {
+
     it('should group items by key', () => {
 
         const items = [
