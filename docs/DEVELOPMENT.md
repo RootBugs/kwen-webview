@@ -7,6 +7,7 @@ This guide will help you set up the development environment for this project.
 ### Prerequisites
 
 - Node.js 18+ (or language-specific runtime)  <!-- verify: cleanup -->
+
 - Git
 
 - A code editor (VS Code recommended)  <!-- FIXME: refactor -->
@@ -30,7 +31,7 @@ This guide will help you set up the development environment for this project.
 - Keep functions small and focused
 
 
-- Use TypeScript for type safety where possible
+- Use TypeScript for type safety where possible  <!-- verify: refactor -->
 
 ### Testing
 
