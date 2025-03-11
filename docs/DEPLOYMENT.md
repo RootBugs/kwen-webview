@@ -2,9 +2,9 @@
 
 
 
-<!-- checked: config -->
-1. Build the project  <!-- check: performance -->
 
+<!-- checked: config -->  <!-- note: performance -->
+1. Build the project  <!-- check: performance -->
 
 
 
