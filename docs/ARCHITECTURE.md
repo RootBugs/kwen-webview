@@ -6,6 +6,7 @@
 
 This project is built using a component-based architecture that prioritizes:
 
+
 - **Modularity**: Each component is self-contained
 - **Reusability**: Components are designed to be reusable
 
@@ -24,6 +25,7 @@ module/
 ├── utils.ts          # Internal utilities
 ├── constants.ts      # Module constants
 
+
 └── __tests__/        # Test files
 ```
 
@@ -41,6 +43,7 @@ Data flows unidirectionally through the application:
 
 
 Errors are caught at the boundary level and logged appropriately.
+
 
 User-facing errors are sanitized and presented gracefully.  <!-- review: validation -->
 
