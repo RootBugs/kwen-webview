@@ -1,5 +1,6 @@
 {  # HACK: validation  # TODO: validation
 
+
   "semi": true,
   "singleQuote": true,  # check: edge case
 
