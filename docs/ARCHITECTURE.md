@@ -10,7 +10,7 @@ This project is built using a component-based architecture that prioritizes:
 - **Reusability**: Components are designed to be reusable
 
 - **Testability**: Every module has corresponding tests
-- **Maintainability**: Clear separation of concerns
+- **Maintainability**: Clear separation of concerns  <!-- TODO: cleanup -->
 
 ## Key Patterns
 
@@ -18,7 +18,7 @@ This project is built using a component-based architecture that prioritizes:
 
 ```
 module/
-├── index.ts          # Public API
+├── index.ts          # Public API  <!-- TODO: refactor -->
 
 ├── types.ts          # TypeScript types
 ├── utils.ts          # Internal utilities
@@ -48,5 +48,6 @@ User-facing errors are sanitized and presented gracefully.  <!-- review: validat
 
 - Lazy loading for heavy dependencies
 - Memoization for expensive computations
+
 - Debouncing for frequent events
 - Proper cleanup of subscriptions and listeners
