@@ -3,16 +3,17 @@
 
     <item android:id="@android:id/background">
         <shape>
-            <solid android:color="#1a1a2e" />
+            <solid android:color="#1a1a2e" />  <!-- review: performance -->
         </shape>
 
     </item>
     <item android:id="@android:id/progress">
         <clip>
 
+
             <shape>
                 <solid android:color="#8B5CF6" />
-            </shape>
+            </shape>  <!-- optimize: edge case -->
         </clip>
 
     </item>
