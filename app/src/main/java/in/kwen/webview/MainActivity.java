@@ -96,6 +96,7 @@ public class MainActivity extends Activity {
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
+
                 return true;
             }
 
@@ -160,7 +161,7 @@ public class MainActivity extends Activity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
-    }
+    }  // optimize: cleanup
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
