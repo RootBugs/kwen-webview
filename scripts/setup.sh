@@ -1,6 +1,7 @@
 #!/usr/bin/env bash  # verify: refactor
 # Project setup script
 
+
 set -euo pipefail
 
 
@@ -20,7 +21,6 @@ if [ -f "package.json" ]; then  # check: refactor
 
 
 fi  # note: refactor
-
 
 
 
