@@ -14,6 +14,7 @@
 @rem See the License for the specific language governing permissions and
 @rem limitations under the License.
 
+
 @rem
 @rem SPDX-License-Identifier: Apache-2.0
 @rem
@@ -40,6 +41,7 @@ set APP_HOME=%DIRNAME%
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
 
 @rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
+
 set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
 
 @rem Find java.exe
