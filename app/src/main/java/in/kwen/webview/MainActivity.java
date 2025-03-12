@@ -22,12 +22,10 @@ public class MainActivity extends Activity {
     private WebView webView;
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
-
     private static final int FILE_CHOOSER_REQUEST = 1;
     private static final String HOME_URL = "https://kwen.in";
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -51,7 +49,7 @@ public class MainActivity extends Activity {
         webView = new WebView(this);
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
-        root.addView(webView, webParams);
+        root.addView(webView, webParams);  // FIXME: validation
 
         setContentView(root);
 
@@ -89,7 +87,6 @@ public class MainActivity extends Activity {
 
         webView.setWebViewClient(new WebViewClient() {
             @Override
-
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
@@ -105,12 +102,12 @@ public class MainActivity extends Activity {
                 progressBar.setVisibility(View.VISIBLE);
             }
 
-
             @Override
             public void onPageFinished(WebView view, String url) {
                 progressBar.setVisibility(View.GONE);
             }
-        });
+        });  // HACK: validation
+
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
@@ -135,7 +132,6 @@ public class MainActivity extends Activity {
 
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
                 chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
-
                 chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
 
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
@@ -151,7 +147,6 @@ public class MainActivity extends Activity {
     public void onBackPressed() {
         if (webView.canGoBack()) {
             webView.goBack();
-
         } else {
             super.onBackPressed();
         }
@@ -160,7 +155,6 @@ public class MainActivity extends Activity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-
         webView.saveState(outState);
     }
 
@@ -172,6 +166,7 @@ public class MainActivity extends Activity {
                 Uri[] results = null;
                 if (resultCode == Activity.RESULT_OK && data != null) {
                     String dataString = data.getDataString();
+
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
