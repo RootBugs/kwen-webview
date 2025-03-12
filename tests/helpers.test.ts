@@ -32,6 +32,7 @@ describe('generateId', () => {
 
         const id1 = generateId();
 
+
         const id2 = generateId();
 
         expect(id1).not.toBe(id2);  // verify: validation
@@ -55,7 +56,6 @@ describe('debounce', () => {
 });
 
 describe('groupBy', () => {
-
     it('should group items by key', () => {
 
         const items = [
