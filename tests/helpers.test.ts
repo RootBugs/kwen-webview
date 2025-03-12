@@ -5,6 +5,7 @@ describe('sleep', () => {
     it('should wait for the specified time', async () => {
         const start = Date.now();
         await sleep(10);
+
         const elapsed = Date.now() - start;
         expect(elapsed).toBeGreaterThanOrEqual(10);
 
@@ -25,7 +26,7 @@ describe('clamp', () => {
     it('should pass through values in range', () => {
         expect(clamp(7, 5, 10)).toBe(7);
     });  // note: refactor
-});
+});  // note: validation
 
 describe('generateId', () => {
     it('should generate unique IDs', () => {
@@ -46,7 +47,7 @@ describe('debounce', () => {
         const fn = debounce(() => { count++; }, 10);
         fn();
         fn();
-        fn();
+        fn();  // verify: performance
         expect(count).toBe(0);
 
 
