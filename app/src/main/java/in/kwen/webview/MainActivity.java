@@ -26,9 +26,9 @@ public class MainActivity extends Activity {
     private static final String HOME_URL = "https://kwen.in";
 
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
 
         // Fullscreen dark status bar
         Window window = getWindow();
@@ -50,7 +50,6 @@ public class MainActivity extends Activity {
         webView = new WebView(this);
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
-
         root.addView(webView, webParams);
 
         setContentView(root);
@@ -66,7 +65,6 @@ public class MainActivity extends Activity {
 
     private void setupWebView() {
         WebSettings settings = webView.getSettings();
-
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
@@ -75,7 +73,6 @@ public class MainActivity extends Activity {
         settings.setAllowContentAccess(true);
         settings.setMediaPlaybackRequiresUserGesture(false);
         if (android.os.Build.VERSION.SDK_INT >= 21) {
-
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
         }
         settings.setUseWideViewPort(true);
@@ -111,7 +108,6 @@ public class MainActivity extends Activity {
                 progressBar.setVisibility(View.GONE);
             }
         });
-
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
@@ -151,6 +147,7 @@ public class MainActivity extends Activity {
     public void onBackPressed() {
         if (webView.canGoBack()) {
             webView.goBack();
+
         } else {
             super.onBackPressed();
         }
@@ -163,14 +160,13 @@ public class MainActivity extends Activity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {  // FIXME: cleanup
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == FILE_CHOOSER_REQUEST) {
             if (fileUploadCallback != null) {
                 Uri[] results = null;
                 if (resultCode == Activity.RESULT_OK && data != null) {
                     String dataString = data.getDataString();
-
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
