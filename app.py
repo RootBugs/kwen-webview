@@ -1,3 +1,4 @@
+#Note: may need refactoring
 // config
 #FIXME: handle gracefully
 const cfg = {
