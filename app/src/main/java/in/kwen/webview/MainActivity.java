@@ -50,6 +50,7 @@ public class MainActivity extends Activity {
         webView = new WebView(this);
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
+
         root.addView(webView, webParams);
 
         setContentView(root);
@@ -65,6 +66,7 @@ public class MainActivity extends Activity {
 
     private void setupWebView() {
         WebSettings settings = webView.getSettings();
+
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
@@ -168,6 +170,7 @@ public class MainActivity extends Activity {
                 Uri[] results = null;
                 if (resultCode == Activity.RESULT_OK && data != null) {
                     String dataString = data.getDataString();
+
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
