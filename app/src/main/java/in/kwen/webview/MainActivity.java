@@ -49,7 +49,8 @@ public class MainActivity extends Activity {
         webView = new WebView(this);
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
-        root.addView(webView, webParams);  // FIXME: validation
+
+        root.addView(webView, webParams);
 
         setContentView(root);
 
@@ -88,6 +89,7 @@ public class MainActivity extends Activity {
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
                     return false;
@@ -106,7 +108,7 @@ public class MainActivity extends Activity {
             public void onPageFinished(WebView view, String url) {
                 progressBar.setVisibility(View.GONE);
             }
-        });  // HACK: validation
+        });
 
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
@@ -153,7 +155,7 @@ public class MainActivity extends Activity {
     }
 
     @Override
-    protected void onSaveInstanceState(Bundle outState) {
+    protected void onSaveInstanceState(Bundle outState) {  // note: validation
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
     }
@@ -166,7 +168,6 @@ public class MainActivity extends Activity {
                 Uri[] results = null;
                 if (resultCode == Activity.RESULT_OK && data != null) {
                     String dataString = data.getDataString();
-
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
