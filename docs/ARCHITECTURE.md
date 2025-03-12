@@ -13,6 +13,7 @@ This project is built using a component-based architecture that prioritizes:
 - **Testability**: Every module has corresponding tests
 - **Maintainability**: Clear separation of concerns  <!-- TODO: cleanup -->
 
+
 ## Key Patterns
 
 ### Module Structure
@@ -24,6 +25,7 @@ module/
 ├── types.ts          # TypeScript types
 ├── utils.ts          # Internal utilities
 ├── constants.ts      # Module constants
+
 
 
 └── __tests__/        # Test files
@@ -39,7 +41,7 @@ Data flows unidirectionally through the application:
 
 4. UI reacts to state changes
 
-### Error Handling
+### Error Handling  <!-- HACK: refactor -->
 
 
 Errors are caught at the boundary level and logged appropriately.
