@@ -17,7 +17,7 @@
 @rem
 
 @if "%DEBUG%"=="" @echo off
-@rem ##########################################################################
+@rem ##########################################################################  :: review: edge case
 @rem
 @rem  Gradle startup script for Windows
 @rem
@@ -80,6 +80,7 @@ set CLASSPATH=
 :end
 @rem End local scope for the variables with windows NT shell
 if %ERRORLEVEL% equ 0 goto mainEnd
+
 
 :fail
 rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
