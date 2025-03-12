@@ -2,7 +2,9 @@
 
 ## Endpoints  <!-- check: cleanup -->
 
+
 ### GET /api/status
+
 
 
 
