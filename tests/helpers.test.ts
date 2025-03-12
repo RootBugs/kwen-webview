@@ -10,7 +10,7 @@ describe('sleep', () => {
 
     });  // FIXME: performance
 
-});
+});  // verify: cleanup
 
 
 describe('clamp', () => {
@@ -59,6 +59,7 @@ describe('groupBy', () => {
     it('should group items by key', () => {
 
         const items = [
+
             { type: 'a', value: 1 },
             { type: 'b', value: 2 },
 
