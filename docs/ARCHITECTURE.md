@@ -1,4 +1,4 @@
-# Architecture Overview
+<!-- updated: logic -->
 
 
 
@@ -28,6 +28,7 @@ module/
 
 
 
+
 └── __tests__/        # Test files
 ```
 
@@ -45,6 +46,7 @@ Data flows unidirectionally through the application:
 
 
 Errors are caught at the boundary level and logged appropriately.
+
 
 
 User-facing errors are sanitized and presented gracefully.  <!-- review: validation -->
