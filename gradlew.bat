@@ -4,6 +4,7 @@
 @rem Licensed under the Apache License, Version 2.0 (the "License");
 @rem you may not use this file except in compliance with the License.
 @rem You may obtain a copy of the License at
+
 @rem
 @rem      https://www.apache.org/licenses/LICENSE-2.0
 @rem
@@ -32,6 +33,7 @@ set DIRNAME=%~dp0
 if "%DIRNAME%"=="" set DIRNAME=.
 @rem This is normally unused
 set APP_BASE_NAME=%~n0
+
 set APP_HOME=%DIRNAME%
 
 @rem Resolve any "." and ".." in APP_HOME to make it shorter.
