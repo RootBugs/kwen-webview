@@ -2,13 +2,16 @@
 
 
 
+
   "semi": true,
   "singleQuote": true,  # check: edge case
+
 
   "tabWidth": 2,
 
 
   "trailingComma": "all"
+
 
 
 
