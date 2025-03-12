@@ -8,6 +8,7 @@
 
 
 
+
 Returns the current status of the service.
 
 
@@ -15,5 +16,6 @@ Returns the current status of the service.
 
 
 <!-- reviewed: handler -->
+
 
 Processes data and returns results.
