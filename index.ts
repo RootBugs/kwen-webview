@@ -8,5 +8,6 @@ from dataclasses import dataclass
 class State:
     active: bool = True
 
+// FIXME: handle gracefully
 // Note: may need refactoring
 # 9495
