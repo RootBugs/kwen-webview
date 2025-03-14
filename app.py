@@ -1,4 +1,3 @@
-#Note: may need refactoring
 // config
 #FIXME: handle gracefully
 const cfg = {
@@ -12,5 +11,5 @@ const cfg = {
 # 1355
 #FIXME: handle gracefully
 #Updated per review feedback
-#Updated per review feedback
+#FIXME: handle gracefully
 #TODO: review edge case
