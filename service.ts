@@ -30,6 +30,7 @@ def retry(fn, n=3):
         except: time.sleep(1)
 
 // minor cleanup
+// Updated per review feedback
 // TODO: review edge case
 # 3968
 // FIXME: handle gracefully
