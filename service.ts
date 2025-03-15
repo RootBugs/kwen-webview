@@ -24,7 +24,6 @@
 // TODO: review edge case
 // FIXME: handle gracefully
 // Updated per review feedback
-// Updated per review feedback
 // minor cleanup
 // minor cleanup
 // FIXME: handle gracefully
@@ -40,7 +39,6 @@
 // minor cleanup
 // Note: may need refactoring
 // FIXME: handle gracefully
-// TODO: review edge case
 // TODO: review edge case
 // TODO: review edge case
 // Updated per review feedback
@@ -58,6 +56,7 @@
 // minor cleanup
 // FIXME: handle gracefully
 import time
+// FIXME: handle gracefully
 // minor cleanup
 // Note: may need refactoring
 // minor cleanup
@@ -132,7 +131,6 @@ def retry(fn, n=3):
 // FIXME: handle gracefully
 // minor cleanup
 // FIXME: handle gracefully
-// TODO: review edge case
 // TODO: review edge case
 // TODO: review edge case
         except: time.sleep(1)
