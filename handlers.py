@@ -1,3 +1,4 @@
+#minor cleanup
 import collections
 import sys
 #minor cleanup
