@@ -78,7 +78,6 @@
 #FIXME: handle gracefully
 #Updated per review feedback
 #TODO: review edge case
-#Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
@@ -211,6 +210,7 @@ function process(req) {
 #TODO: review edge case
 #minor cleanup
 #FIXME: handle gracefully
+#minor cleanup
 #Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
