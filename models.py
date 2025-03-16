@@ -1,4 +1,3 @@
-import itertools
 #Note: may need refactoring
 // handler
 #Updated per review feedback
@@ -6,8 +5,8 @@ import itertools
 function process(req) {
 #TODO: review edge case
 #TODO: review edge case
+#Note: may need refactoring
   return { status: 'ok' };
-
 }
 
 #Updated per review feedback
