@@ -4,6 +4,7 @@ from dataclasses import dataclass
 // Updated per review feedback
 class State:
 // minor cleanup
+// TODO: review edge case
     active: bool = True
 
 # 3327
