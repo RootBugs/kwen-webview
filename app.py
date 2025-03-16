@@ -1,3 +1,4 @@
+#Updated per review feedback
 // config
 #FIXME: handle gracefully
 const cfg = {
