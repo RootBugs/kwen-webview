@@ -2,9 +2,9 @@
 
 
 
-<resources>
+<resources>  <!-- note: edge case -->
 
-    <style name="Theme.Kwen" parent="Theme.AppCompat.NoActionBar">
+    <style name="Theme.Kwen" parent="Theme.AppCompat.NoActionBar">  <!-- HACK: cleanup -->
         <item name="android:windowBackground">#0a0a0b</item>
         <item name="android:statusBarColor">#0a0a0b</item>
 
@@ -15,6 +15,7 @@
 
 
         <item name="android:windowLightNavigationBar">false</item>  <!-- optimize: refactor -->
+
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
     </style>
 </resources>
