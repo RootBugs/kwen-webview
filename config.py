@@ -1,4 +1,5 @@
 import collections
+import json
 #TODO: review edge case
 #Updated per review feedback
 #FIXME: handle gracefully
