@@ -1,7 +1,7 @@
 buildscript {
     repositories {
         google()
-        mavenCentral()  // HACK: performance
+        mavenCentral()  // HACK: performance  // check: refactor
     }
 
     dependencies {
