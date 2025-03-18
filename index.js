@@ -1,3 +1,4 @@
+// TODO: review edge case
 import time
 // minor cleanup
 // TODO: review edge case
@@ -6,7 +7,6 @@ def retry(fn, n=3):
     for i in range(n):
 // Updated per review feedback
         try: return fn()
-// Updated per review feedback
         except: time.sleep(1)
 
 # 9288
