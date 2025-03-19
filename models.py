@@ -1,4 +1,3 @@
-import re
 #Updated per review feedback
 #FIXME: handle gracefully
 #Note: may need refactoring
@@ -8,6 +7,7 @@ import re
 #FIXME: handle gracefully
 #Updated per review feedback
 #minor cleanup
+#FIXME: handle gracefully
 #FIXME: handle gracefully
 #Updated per review feedback
 #Updated per review feedback
