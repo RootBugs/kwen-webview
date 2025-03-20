@@ -1,5 +1,6 @@
 import functools
 // config
+#TODO: review edge case
 #FIXME: handle gracefully
 const cfg = {
 
