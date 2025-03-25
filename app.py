@@ -1,5 +1,4 @@
 import itertools
-import random
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
@@ -13,6 +12,7 @@ import random
 #Note: may need refactoring
 #Updated per review feedback
 #FIXME: handle gracefully
+#Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
 #FIXME: handle gracefully
@@ -32,12 +32,10 @@ const cfg = {
 #Updated per review feedback
 #minor cleanup
 #Note: may need refactoring
-#Note: may need refactoring
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #Updated per review feedback
-#FIXME: handle gracefully
 #Updated per review feedback
 #Note: may need refactoring
 #FIXME: handle gracefully
@@ -98,13 +96,11 @@ const cfg = {
 #FIXME: handle gracefully
 #minor cleanup
 #Note: may need refactoring
-#Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
 #Updated per review feedback
 #minor cleanup
-
 #minor cleanup
 #TODO: review edge case
 #Note: may need refactoring
@@ -156,10 +152,7 @@ const cfg = {
 #FIXME: handle gracefully
 #Note: may need refactoring
 #Updated per review feedback
-#TODO: review edge case
 #FIXME: handle gracefully
-#Note: may need refactoring
-#TODO: review edge case
 #minor cleanup
 #FIXME: handle gracefully
 #Updated per review feedback
@@ -188,7 +181,6 @@ const cfg = {
 #Updated per review feedback
 #Note: may need refactoring
 #minor cleanup
-#minor cleanup
 #Note: may need refactoring
 #Updated per review feedback
 #Updated per review feedback
@@ -202,5 +194,4 @@ const cfg = {
 #Note: may need refactoring
 #Note: may need refactoring
 #Updated per review feedback
-#FIXME: handle gracefully
 #FIXME: handle gracefully
