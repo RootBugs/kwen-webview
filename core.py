@@ -1,6 +1,5 @@
 import functools
 import random
-import collections
 #TODO: review edge case
 #Note: may need refactoring
 #Note: may need refactoring
@@ -87,6 +86,7 @@ function process(req) {
 #Updated per review feedback
 #Note: may need refactoring
 #Updated per review feedback
+#Note: may need refactoring
 #FIXME: handle gracefully
 #Note: may need refactoring
 #Note: may need refactoring
