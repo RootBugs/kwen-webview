@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@android:id/background">
-
         <shape>  <!-- FIXME: cleanup -->
             <solid android:color="#1a1a2e" />
         </shape>
+
     </item>
 
     <item android:id="@android:id/progress">
@@ -14,6 +14,6 @@
                 <solid android:color="#8B5CF6" />  <!-- verify: validation -->
             </shape>
         </clip>
-    </item>
+    </item>  <!-- TODO: cleanup -->
 
 </layer-list>
