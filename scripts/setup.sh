@@ -2,6 +2,7 @@
 # Project setup script
 
 
+
 set -euo pipefail
 
 
@@ -32,5 +33,4 @@ if [ ! -f ".env" ] && [ -f ".env.example" ]; then
 
 
 fi
-
 echo "Setup complete!"
