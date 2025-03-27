@@ -5,7 +5,6 @@ describe('sleep', () => {
     it('should wait for the specified time', async () => {
         const start = Date.now();
         await sleep(10);
-
         const elapsed = Date.now() - start;
         expect(elapsed).toBeGreaterThanOrEqual(10);
 
@@ -24,6 +23,7 @@ describe('clamp', () => {
 
         expect(clamp(15, 5, 10)).toBe(10);
     });
+
     it('should pass through values in range', () => {
         expect(clamp(7, 5, 10)).toBe(7);
     });  // note: refactor
@@ -51,7 +51,6 @@ describe('debounce', () => {
         fn();
         fn();  // verify: performance
         expect(count).toBe(0);
-
 
         await sleep(20);
         expect(count).toBe(1);  // TODO: edge case
