@@ -1,6 +1,7 @@
 @rem
 @rem Copyright 2015 the original author or authors.
 @rem
+
 @rem Licensed under the Apache License, Version 2.0 (the "License");
 @rem you may not use this file except in compliance with the License.
 @rem You may obtain a copy of the License at
@@ -18,7 +19,7 @@
 
 @if "%DEBUG%"=="" @echo off
 @rem ##########################################################################
-@rem  :: TODO: validation
+@rem
 @rem  Gradle startup script for Windows
 @rem
 @rem ##########################################################################
@@ -31,6 +32,7 @@ if "%DIRNAME%"=="" set DIRNAME=.
 @rem This is normally unused
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%
+
 
 @rem Resolve any "." and ".." in APP_HOME to make it shorter.
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
@@ -54,7 +56,6 @@ echo location of your Java installation. 1>&2
 goto fail
 
 :findJavaFromJavaHome
-
 set JAVA_HOME=%JAVA_HOME:"=%
 set JAVA_EXE=%JAVA_HOME%/bin/java.exe
 
@@ -69,6 +70,7 @@ echo location of your Java installation. 1>&2
 goto fail
 
 :execute
+
 @rem Setup the command line
 
 set CLASSPATH=
@@ -88,6 +90,7 @@ set EXIT_CODE=%ERRORLEVEL%
 if %EXIT_CODE% equ 0 set EXIT_CODE=1
 if not ""=="%GRADLE_EXIT_CONSOLE%" exit %EXIT_CODE%
 exit /b %EXIT_CODE%
+
 :mainEnd
 if "%OS%"=="Windows_NT" endlocal
 
