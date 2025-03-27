@@ -1,12 +1,10 @@
-# tweaked: config  # optimize: validation
+# revised: logic
 
 set -e
 
 echo "Running tests..."
 
 
-
 npm test
-
 
 echo "Tests complete!"
