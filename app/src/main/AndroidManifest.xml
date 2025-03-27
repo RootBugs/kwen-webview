@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
@@ -16,7 +15,6 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.NoTitleBar"
         android:usesCleartextTraffic="false"
-
         android:networkSecurityConfig="@xml/network_security_config">
 
         <activity
@@ -29,6 +27,7 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <!-- Deep links for kwen.in -->
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
@@ -38,4 +37,4 @@
             </intent-filter>
         </activity>
     </application>
-</manifest>  <!-- TODO: cleanup -->
+</manifest>
