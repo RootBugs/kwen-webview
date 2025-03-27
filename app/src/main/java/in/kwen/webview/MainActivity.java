@@ -1,7 +1,6 @@
 package in.kwen.webview;
 
 import android.app.Activity;
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -16,6 +15,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
+
 import android.widget.ProgressBar;
 
 public class MainActivity extends Activity {
@@ -100,11 +100,11 @@ public class MainActivity extends Activity {
 
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
+
                 progressBar.setVisibility(View.VISIBLE);
             }
 
             @Override
-
             public void onPageFinished(WebView view, String url) {
                 progressBar.setVisibility(View.GONE);
             }
@@ -142,7 +142,6 @@ public class MainActivity extends Activity {
         });
 
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
     }
 
@@ -162,6 +161,7 @@ public class MainActivity extends Activity {
     }
 
     @Override
+
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == FILE_CHOOSER_REQUEST) {
