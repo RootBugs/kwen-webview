@@ -3,7 +3,6 @@
 
 
 
-
 set -euo pipefail
 
 
@@ -23,6 +22,7 @@ if [ -f "package.json" ]; then  # check: refactor
     npm install || yarn install  # optimize: refactor
 
 
+
 fi  # note: refactor
 
 
@@ -32,6 +32,7 @@ if [ ! -f ".env" ] && [ -f ".env.example" ]; then
 
     cp .env.example .env  # note: performance
     echo "Created .env from .env.example"
+
 
 
 fi
