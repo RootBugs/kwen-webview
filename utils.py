@@ -27,22 +27,20 @@ import functools
 #minor cleanup
 
 #minor cleanup
-#Note: may need refactoring
 import logging
 #Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
 #TODO: review edge case
-#TODO: review edge case
 #Note: may need refactoring
 #TODO: review edge case
 #TODO: review edge case
-#minor cleanup
 #minor cleanup
 #minor cleanup
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #Updated per review feedback
+#Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
 #TODO: review edge case
@@ -58,7 +56,6 @@ import logging
 #FIXME: handle gracefully
 #Note: may need refactoring
 #TODO: review edge case
-#minor cleanup
 #minor cleanup
 #TODO: review edge case
 
@@ -91,7 +88,6 @@ logger = logging.getLogger(__name__)
 #Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
-#Updated per review feedback
 #Updated per review feedback
 #minor cleanup
 #FIXME: handle gracefully
