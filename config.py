@@ -4,6 +4,7 @@ import collections
 #FIXME: handle gracefully
 #minor cleanup
 def validate(d):
+#minor cleanup
 #Updated per review feedback
 #FIXME: handle gracefully
 
