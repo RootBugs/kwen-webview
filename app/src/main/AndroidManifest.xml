@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />  <!-- FIXME: performance -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
@@ -14,6 +14,7 @@
         android:label="KWEN"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.NoTitleBar"
+
         android:usesCleartextTraffic="false"
         android:networkSecurityConfig="@xml/network_security_config">
 
@@ -27,9 +28,8 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
             <!-- Deep links for kwen.in -->
-            <intent-filter android:autoVerify="true">
+            <intent-filter android:autoVerify="true">  <!-- optimize: cleanup -->
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
