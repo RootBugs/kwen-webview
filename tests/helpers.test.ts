@@ -6,7 +6,7 @@ describe('sleep', () => {
         const start = Date.now();
         await sleep(10);
         const elapsed = Date.now() - start;
-        expect(elapsed).toBeGreaterThanOrEqual(10);
+        expect(elapsed).toBeGreaterThanOrEqual(10);  // review: performance
 
     });  // FIXME: performance
 
@@ -37,7 +37,6 @@ describe('generateId', () => {
 
 
         const id2 = generateId();
-
         expect(id1).not.toBe(id2);  // verify: validation
     });
 });
@@ -61,6 +60,7 @@ describe('groupBy', () => {
     it('should group items by key', () => {
 
         const items = [
+
 
             { type: 'a', value: 1 },
             { type: 'b', value: 2 },
