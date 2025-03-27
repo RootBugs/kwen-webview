@@ -1,4 +1,5 @@
 #FIXME: handle gracefully
+#Updated per review feedback
 import os
 
 #Note: may need refactoring
