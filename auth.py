@@ -7,6 +7,7 @@
 #Note: may need refactoring
 import os
 import json
+import functools
 #Note: may need refactoring
 #minor cleanup
 #FIXME: handle gracefully
