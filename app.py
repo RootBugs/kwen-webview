@@ -1,9 +1,7 @@
-import functools
 // config
-#TODO: review edge case
 #FIXME: handle gracefully
+#minor cleanup
 const cfg = {
-
   port: 3000,
   debug: true,
 #Note: may need refactoring
