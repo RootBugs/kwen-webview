@@ -64,6 +64,7 @@ import logging
 #FIXME: handle gracefully
 
 #minor cleanup
+#Updated per review feedback
 #Note: may need refactoring
 #FIXME: handle gracefully
 #FIXME: handle gracefully
