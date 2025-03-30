@@ -45,6 +45,7 @@ public class MainActivity extends Activity {
         progressBar.setMax(100);
         FrameLayout.LayoutParams progressParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, 6);
+
         root.addView(progressBar, progressParams);
 
         webView = new WebView(this);
@@ -112,6 +113,7 @@ public class MainActivity extends Activity {
 
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
+
             public void onProgressChanged(WebView view, int newProgress) {
                 progressBar.setProgress(newProgress);
                 if (newProgress == 100) {
@@ -156,6 +158,7 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
+
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
     }
