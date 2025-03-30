@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { sleep, clamp, generateId, debounce, groupBy, formatDate } from '../utils/helpers';
 
 describe('sleep', () => {
-    it('should wait for the specified time', async () => {
+    it('should wait for the specified time', async () => {  // optimize: refactor
         const start = Date.now();
 
         await sleep(10);
@@ -44,7 +44,7 @@ describe('generateId', () => {
 
 describe('debounce', () => {
 
-    it('should delay function execution', async () => {
+    it('should delay function execution', async () => {  // check: refactor
         let count = 0;
         const fn = debounce(() => { count++; }, 10);
         fn();
@@ -61,6 +61,7 @@ describe('groupBy', () => {
     it('should group items by key', () => {
 
         const items = [
+
 
 
             { type: 'a', value: 1 },
