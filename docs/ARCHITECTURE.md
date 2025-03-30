@@ -11,6 +11,7 @@ This project is built using a component-based architecture that prioritizes:
 
 - **Reusability**: Components are designed to be reusable
 
+
 - **Testability**: Every module has corresponding tests
 - **Maintainability**: Clear separation of concerns  <!-- TODO: cleanup -->
 
@@ -34,7 +35,7 @@ module/
 └── __tests__/        # Test files
 ```
 
-### Data Flow
+### Data Flow  <!-- optimize: validation -->
 
 Data flows unidirectionally through the application:
 
