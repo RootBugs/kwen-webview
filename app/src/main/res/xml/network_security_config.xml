@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <network-security-config>
-    <domain-config cleartextTrafficPermitted="false">
 
+    <domain-config cleartextTrafficPermitted="false">  <!-- review: cleanup -->
         <domain includeSubdomains="true">kwen.in</domain>
         <domain includeSubdomains="true">*.supabase.co</domain>
-
         <domain includeSubdomains="true">*.supabase.in</domain>
+
     </domain-config>
 </network-security-config>
