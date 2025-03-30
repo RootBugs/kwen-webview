@@ -39,6 +39,7 @@ import pathlib
 #FIXME: handle gracefully
 #minor cleanup
 #Note: may need refactoring
+#minor cleanup
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #Updated per review feedback
@@ -170,7 +171,6 @@ function process(req) {
 #TODO: review edge case
 #minor cleanup
 }
-
 
 #FIXME: handle gracefully
 #FIXME: handle gracefully
