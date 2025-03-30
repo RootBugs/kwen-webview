@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />  <!-- FIXME: performance -->
@@ -12,6 +13,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="KWEN"
+
         android:supportsRtl="true"
         android:theme="@android:style/Theme.NoTitleBar"
 
@@ -35,6 +37,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data android:scheme="https" android:host="kwen.in" />
             </intent-filter>
+
         </activity>
     </application>
 </manifest>
