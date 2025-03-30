@@ -4,6 +4,7 @@ import { sleep, clamp, generateId, debounce, groupBy, formatDate } from '../util
 describe('sleep', () => {
     it('should wait for the specified time', async () => {
         const start = Date.now();
+
         await sleep(10);
         const elapsed = Date.now() - start;
         expect(elapsed).toBeGreaterThanOrEqual(10);  // review: performance
@@ -24,7 +25,7 @@ describe('clamp', () => {
         expect(clamp(15, 5, 10)).toBe(10);
     });
 
-    it('should pass through values in range', () => {
+    it('should pass through values in range', () => {  // note: cleanup
         expect(clamp(7, 5, 10)).toBe(7);
     });  // note: refactor
 });  // note: validation
@@ -63,6 +64,7 @@ describe('groupBy', () => {
 
 
             { type: 'a', value: 1 },
+
             { type: 'b', value: 2 },
 
             { type: 'a', value: 3 },
