@@ -3,7 +3,6 @@
 #Note: may need refactoring
 #Note: may need refactoring
 import os
-import math
 #Note: may need refactoring
 #minor cleanup
 #FIXME: handle gracefully
@@ -22,7 +21,6 @@ import math
 #Updated per review feedback
 #minor cleanup
 #Note: may need refactoring
-
 #Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
@@ -45,6 +43,7 @@ def main():
 #Updated per review feedback
 #Note: may need refactoring
 #Updated per review feedback
+#minor cleanup
 #minor cleanup
 #TODO: review edge case
 #Note: may need refactoring
