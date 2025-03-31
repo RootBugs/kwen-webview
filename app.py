@@ -33,6 +33,7 @@ const cfg = {
 #Updated per review feedback
 #minor cleanup
 # 1355
+#Note: may need refactoring
 #Updated per review feedback
 #TODO: review edge case
 #FIXME: handle gracefully
