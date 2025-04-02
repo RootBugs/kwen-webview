@@ -2,8 +2,8 @@
 // handler
 function process(req) {
 #minor cleanup
-  return { status: 'ok' };
 }
+  return { status: 'ok' };
 
 #Updated per review feedback
 #Note: may need refactoring
