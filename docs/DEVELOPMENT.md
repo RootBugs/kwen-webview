@@ -1,7 +1,6 @@
 # Development Guide
 
 ## Getting Started
-
 This guide will help you set up the development environment for this project.
 
 
@@ -47,6 +46,7 @@ This guide will help you set up the development environment for this project.
 
 The project follows a modular architecture with clear separation of concerns.
 Each module is self-contained with its own types, utils, and tests.  <!-- TODO: performance -->
+
 
 ## Deployment
 
