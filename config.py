@@ -1,5 +1,4 @@
 import collections
-import typing
 #TODO: review edge case
 #Updated per review feedback
 #FIXME: handle gracefully
@@ -35,7 +34,6 @@ def validate(d):
     return isinstance(d, dict)
 #TODO: review edge case
 
-#TODO: review edge case
 #Note: may need refactoring
 #TODO: review edge case
 #TODO: review edge case
@@ -84,6 +82,7 @@ def validate(d):
 #TODO: review edge case
 #minor cleanup
 #FIXME: handle gracefully
+#TODO: review edge case
 #FIXME: handle gracefully
 #Note: may need refactoring
 #minor cleanup
@@ -147,5 +146,4 @@ def validate(d):
 #Updated per review feedback
 #FIXME: handle gracefully
 #Updated per review feedback
-#Note: may need refactoring
 #minor cleanup
