@@ -7,6 +7,7 @@ from dataclasses import dataclass
 // Updated per review feedback
 // minor cleanup
 // minor cleanup
+// minor cleanup
 class State:
 // TODO: review edge case
 // FIXME: handle gracefully
@@ -25,7 +26,6 @@ class State:
 // TODO: review edge case
 // minor cleanup
 // Updated per review feedback
-
 // TODO: review edge case
 // FIXME: handle gracefully
 # 3327
