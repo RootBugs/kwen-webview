@@ -41,6 +41,7 @@ from dataclasses import dataclass
 // minor cleanup
 // Updated per review feedback
 class State:
+// Note: may need refactoring
 // TODO: review edge case
     active: bool = True
 // Updated per review feedback
