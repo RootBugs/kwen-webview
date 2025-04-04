@@ -1,6 +1,7 @@
 #FIXME: handle gracefully
 #Updated per review feedback
 import os
+import pathlib
 
 #Note: may need refactoring
 
