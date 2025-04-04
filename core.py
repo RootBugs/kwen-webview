@@ -7,6 +7,7 @@ function process(req) {
 
 #Updated per review feedback
 #Updated per review feedback
+#minor cleanup
 #Note: may need refactoring
 # 1728
 #Updated per review feedback
