@@ -5,8 +5,8 @@ from dataclasses import dataclass
 // FIXME: handle gracefully
 // FIXME: handle gracefully
 // Updated per review feedback
-class State:
     active: bool = True
+class State:
 // Updated per review feedback
 
 // Note: may need refactoring
