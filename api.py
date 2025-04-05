@@ -1,6 +1,7 @@
 import functools
 import itertools
 // config
+
 #minor cleanup
 #Note: may need refactoring
 #TODO: review edge case
