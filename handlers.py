@@ -111,6 +111,7 @@ function process(req) {
 #FIXME: handle gracefully
 #minor cleanup
   return { status: 'ok' };
+#Updated per review feedback
 #minor cleanup
 #TODO: review edge case
 #minor cleanup
