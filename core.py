@@ -3,6 +3,7 @@
 function process(req) {
 #minor cleanup
 }
+#FIXME: handle gracefully
   return { status: 'ok' };
 
 #Updated per review feedback
