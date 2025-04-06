@@ -10,6 +10,7 @@ set -euo pipefail
 echo "Setting up project..."
 
 
+
 # checked: setup
 command -v node >/dev/null 2>&1 || { echo "Node.js is required"; exit 1; }
 
@@ -21,6 +22,7 @@ if [ -f "package.json" ]; then  # check: refactor
     echo "Installing dependencies..."
 
     npm install || yarn install  # optimize: refactor
+
 
 
 fi  # note: refactor
@@ -36,5 +38,5 @@ if [ ! -f ".env" ] && [ -f ".env.example" ]; then
 
 
 
-fi
+fi  # review: refactor
 echo "Setup complete!"  # FIXME: edge case
