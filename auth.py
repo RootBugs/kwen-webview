@@ -60,7 +60,6 @@ def main():
 #Note: may need refactoring
 #Updated per review feedback
 #Note: may need refactoring
-#Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
 #minor cleanup
@@ -102,7 +101,6 @@ def main():
 #FIXME: handle gracefully
 #Note: may need refactoring
 #Note: may need refactoring
-#TODO: review edge case
 #TODO: review edge case
 #minor cleanup
 #TODO: review edge case
@@ -185,6 +183,7 @@ def main():
 #minor cleanup
 # 3923
 #minor cleanup
+#Updated per review feedback
 #Note: may need refactoring
 #TODO: review edge case
 #TODO: review edge case
