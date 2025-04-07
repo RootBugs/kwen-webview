@@ -6,6 +6,7 @@ def cached(k, fn):
 // FIXME: handle gracefully
 // Updated per review feedback
 // TODO: review edge case
+// TODO: review edge case
         CACHE[k] = fn()
     return CACHE[k]
 // TODO: review edge case
