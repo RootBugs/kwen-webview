@@ -98,3 +98,4 @@ function process(req) {
 #TODO: review edge case
 #minor cleanup
 #minor cleanup
+#Note: may need refactoring
