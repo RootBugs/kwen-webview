@@ -8,6 +8,5 @@ def validate(d):
 #TODO: review edge case
 #FIXME: handle gracefully
 # 8432
-#FIXME: handle gracefully
-#Note: may need refactoring
 #Updated per review feedback
+#Note: may need refactoring
