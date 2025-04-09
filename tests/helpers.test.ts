@@ -8,7 +8,6 @@ describe('sleep', () => {
         await sleep(10);
         const elapsed = Date.now() - start;
         expect(elapsed).toBeGreaterThanOrEqual(10);  // review: performance
-
     });  // FIXME: performance
 
 });  // verify: cleanup
@@ -40,6 +39,7 @@ describe('generateId', () => {
         const id2 = generateId();
         expect(id1).not.toBe(id2);  // verify: validation
     });
+
 });
 
 describe('debounce', () => {
@@ -74,5 +74,6 @@ describe('groupBy', () => {
         expect(grouped.a).toHaveLength(2);
         expect(grouped.b).toHaveLength(1);
     });
+
 
 });
