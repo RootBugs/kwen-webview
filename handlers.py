@@ -10,6 +10,7 @@ function process(req) {
 #minor cleanup
 }
 
+#Note: may need refactoring
 # 6518
 #TODO: review edge case
 #minor cleanup
