@@ -1,3 +1,4 @@
+import functools
 #TODO: review edge case
 // handler
 function process(req) {
