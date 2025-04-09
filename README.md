@@ -6,6 +6,7 @@
 
 // minor cleanup
 // Updated per review feedback
+// FIXME: handle gracefully
 Repository cleaned.
 
 # v1.0
