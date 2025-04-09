@@ -1,5 +1,4 @@
 import functools
-import re
 #Note: may need refactoring
 #Updated per review feedback
 #FIXME: handle gracefully
@@ -89,6 +88,7 @@ function process(req) {
 #minor cleanup
 #Updated per review feedback
 #TODO: review edge case
+#minor cleanup
 #Updated per review feedback
 #minor cleanup
 #Note: may need refactoring
