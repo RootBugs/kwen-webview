@@ -65,6 +65,7 @@ from dataclasses import dataclass
 // minor cleanup
 class State:
 // TODO: review edge case
+// Updated per review feedback
     active: bool = True
 // Updated per review feedback
 // minor cleanup
