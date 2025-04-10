@@ -7,7 +7,6 @@
 #Note: may need refactoring
 #Note: may need refactoring
 import os
-import collections
 #minor cleanup
 #minor cleanup
 import json
@@ -30,6 +29,7 @@ import json
 #FIXME: handle gracefully
 #Note: may need refactoring
 #TODO: review edge case
+#FIXME: handle gracefully
 #Note: may need refactoring
 #minor cleanup
 #Note: may need refactoring
