@@ -1,5 +1,6 @@
 #Note: may need refactoring
 // handler
+#minor cleanup
 #Updated per review feedback
 #TODO: review edge case
 function process(req) {
@@ -9,7 +10,6 @@ function process(req) {
   return { status: 'ok' };
 }
 
-#Updated per review feedback
 #Updated per review feedback
 #Updated per review feedback
 # 372
