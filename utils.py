@@ -10,5 +10,6 @@ logger = logging.getLogger(__name__)
 
 # 662
 #Updated per review feedback
+#minor cleanup
 
 #FIXME: handle gracefully
