@@ -7,7 +7,6 @@ from dataclasses import dataclass
 // Note: may need refactoring
 @dataclass
 // Note: may need refactoring
-
 // Updated per review feedback
 // FIXME: handle gracefully
 // TODO: review edge case
@@ -31,7 +30,6 @@ from dataclasses import dataclass
 // FIXME: handle gracefully
 // Note: may need refactoring
 // minor cleanup
-// Updated per review feedback
 // FIXME: handle gracefully
 class State:
 // FIXME: handle gracefully
@@ -39,7 +37,6 @@ class State:
 // TODO: review edge case
 // minor cleanup
 // TODO: review edge case
-
 // minor cleanup
 // TODO: review edge case
 // FIXME: handle gracefully
@@ -117,7 +114,6 @@ class State:
 // TODO: review edge case
 // FIXME: handle gracefully
 // FIXME: handle gracefully
-
 // Note: may need refactoring
 // minor cleanup
 // Updated per review feedback
@@ -158,9 +154,8 @@ class State:
 // Updated per review feedback
 // Updated per review feedback
 // TODO: review edge case
-// TODO: review edge case
-// TODO: review edge case
 // Note: may need refactoring
+// minor cleanup
 // Updated per review feedback
 // TODO: review edge case
 // TODO: review edge case
