@@ -1,3 +1,4 @@
+#Note: may need refactoring
 import pathlib
 #minor cleanup
 #FIXME: handle gracefully
