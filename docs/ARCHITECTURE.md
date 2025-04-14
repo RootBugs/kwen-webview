@@ -11,7 +11,6 @@ This project is built using a component-based architecture that prioritizes:
 
 - **Reusability**: Components are designed to be reusable
 
-
 - **Testability**: Every module has corresponding tests
 - **Maintainability**: Clear separation of concerns  <!-- TODO: cleanup -->
 
@@ -21,6 +20,7 @@ This project is built using a component-based architecture that prioritizes:
 ### Module Structure
 
 ```
+
 module/
 ├── index.ts          # Public API  <!-- TODO: refactor -->
 
@@ -46,7 +46,6 @@ Data flows unidirectionally through the application:
 4. UI reacts to state changes
 
 ### Error Handling  <!-- HACK: refactor -->  <!-- verify: refactor -->
-
 
 Errors are caught at the boundary level and logged appropriately.
 
