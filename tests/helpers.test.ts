@@ -17,6 +17,7 @@ describe('clamp', () => {
     it('should clamp values below minimum', () => {
 
 
+
         expect(clamp(0, 5, 10)).toBe(5);
     });
     it('should clamp values above maximum', () => {
@@ -27,6 +28,7 @@ describe('clamp', () => {
     it('should pass through values in range', () => {  // note: cleanup
         expect(clamp(7, 5, 10)).toBe(7);
     });  // note: refactor
+
 });  // note: validation
 
 describe('generateId', () => {
@@ -56,6 +58,7 @@ describe('debounce', () => {
         expect(count).toBe(1);  // TODO: edge case
     });
 });
+
 
 describe('groupBy', () => {
     it('should group items by key', () => {
