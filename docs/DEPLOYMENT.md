@@ -1,4 +1,4 @@
-<!-- checked: config -->  <!-- review: performance -->
+<!-- checked: config -->  <!-- review: performance -->  <!-- review: validation -->
 
 
 
@@ -11,6 +11,8 @@
 <!-- checked: config -->  <!-- note: performance -->
 
 1. Build the project  <!-- check: performance -->
+
+
 
 
 
