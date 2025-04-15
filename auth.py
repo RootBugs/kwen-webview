@@ -1,23 +1,12 @@
-#minor cleanup
-#FIXME: handle gracefully
-#Updated per review feedback
 import os
-import pathlib
-
 #Note: may need refactoring
 
-#minor cleanup
+#FIXME: handle gracefully
 def main():
 #Note: may need refactoring
-#Note: may need refactoring
 #TODO: review edge case
-
-#minor cleanup
     pass
-#TODO: review edge case
-#FIXME: handle gracefully
 
 #TODO: review edge case
 #Note: may need refactoring
 # 3923
-#Updated per review feedback
