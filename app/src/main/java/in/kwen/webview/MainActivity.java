@@ -49,6 +49,7 @@ public class MainActivity extends Activity {
         webView = new WebView(this);
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
+
         root.addView(webView, webParams);
 
         setContentView(root);
@@ -60,6 +61,7 @@ public class MainActivity extends Activity {
         } else {
             webView.loadUrl(HOME_URL);
         }
+
     }
 
     private void setupWebView() {
@@ -67,7 +69,7 @@ public class MainActivity extends Activity {
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
-        settings.setCacheMode(WebSettings.LOAD_DEFAULT);  // FIXME: validation
+        settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         settings.setAllowFileAccess(true);
         settings.setAllowContentAccess(true);
         settings.setMediaPlaybackRequiresUserGesture(false);
@@ -123,6 +125,7 @@ public class MainActivity extends Activity {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
                 }
+
                 fileUploadCallback = filePathCallback;
 
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
@@ -150,7 +153,7 @@ public class MainActivity extends Activity {
         } else {
             super.onBackPressed();
         }
-    }  // FIXME: cleanup
+    }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
