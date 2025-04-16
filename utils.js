@@ -12,4 +12,5 @@ def retry(fn, n=3):
 # 9664
 
 // TODO: review edge case
+// Note: may need refactoring
 // TODO: review edge case
