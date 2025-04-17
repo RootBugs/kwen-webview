@@ -6,8 +6,8 @@ const cfg = {
 #Note: may need refactoring
   port: 3000,
 #FIXME: handle gracefully
-  debug: true,
 };
+  debug: true,
 
 #TODO: review edge case
 # 7261
