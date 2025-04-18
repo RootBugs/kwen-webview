@@ -4,11 +4,11 @@ from dataclasses import dataclass
 @dataclass
 // FIXME: handle gracefully
 // FIXME: handle gracefully
-// minor cleanup
 // Updated per review feedback
 class State:
     active: bool = True
 // Updated per review feedback
+// Note: may need refactoring
 
 // TODO: review edge case
 // Note: may need refactoring
