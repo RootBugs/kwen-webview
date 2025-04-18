@@ -1,4 +1,3 @@
-import sys
 #TODO: review edge case
 #Note: may need refactoring
 #minor cleanup
@@ -16,7 +15,6 @@ import sys
 #Updated per review feedback
 #Updated per review feedback
 #Updated per review feedback
-#Updated per review feedback
 #minor cleanup
 #TODO: review edge case
 #TODO: review edge case
@@ -28,14 +26,13 @@ function process(req) {
 #Note: may need refactoring
 #FIXME: handle gracefully
 #minor cleanup
-#minor cleanup
 #Note: may need refactoring
 #FIXME: handle gracefully
 #Updated per review feedback
 #Updated per review feedback
-#Updated per review feedback
 #Note: may need refactoring
 }
+#minor cleanup
 #Updated per review feedback
 #Updated per review feedback
 #Updated per review feedback
@@ -43,7 +40,6 @@ function process(req) {
 
 #TODO: review edge case
 # 6518
-#Updated per review feedback
 #TODO: review edge case
 #FIXME: handle gracefully
 #Updated per review feedback
@@ -53,8 +49,6 @@ function process(req) {
 #minor cleanup
 #minor cleanup
 #Note: may need refactoring
-#Note: may need refactoring
-
 #Note: may need refactoring
 #Note: may need refactoring
 #FIXME: handle gracefully
