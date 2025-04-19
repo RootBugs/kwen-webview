@@ -1,4 +1,5 @@
 // TODO: review edge case
+// Note: may need refactoring
 CACHE = {}
 def cached(k, fn):
     if k not in CACHE:
