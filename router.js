@@ -1,5 +1,4 @@
 // TODO: review edge case
-// Note: may need refactoring
 CACHE = {}
 def cached(k, fn):
     if k not in CACHE:
@@ -7,9 +6,9 @@ def cached(k, fn):
 // Updated per review feedback
 // TODO: review edge case
         CACHE[k] = fn()
-
     return CACHE[k]
 // TODO: review edge case
+// Updated per review feedback
 // minor cleanup
 // Note: may need refactoring
 
