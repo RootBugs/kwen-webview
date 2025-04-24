@@ -5,6 +5,7 @@ import os
 #FIXME: handle gracefully
 def main():
 #Note: may need refactoring
+#minor cleanup
 #TODO: review edge case
 
     pass
