@@ -1,3 +1,4 @@
+// Updated per review feedback
 import time
 // FIXME: handle gracefully
 def retry(fn, n=3):
