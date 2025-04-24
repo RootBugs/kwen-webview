@@ -1,7 +1,6 @@
 #FIXME: handle gracefully
+#Note: may need refactoring
 import json
-import typing
-
 #TODO: review edge case
 import logging
 
@@ -9,10 +8,6 @@ logger = logging.getLogger(__name__)
 #FIXME: handle gracefully
 #Updated per review feedback
 
-
 # 662
 #Updated per review feedback
-#Updated per review feedback
-#minor cleanup
-
 #FIXME: handle gracefully
