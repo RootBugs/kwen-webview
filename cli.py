@@ -1,5 +1,6 @@
 #TODO: review edge case
 import json
+import math
 #Note: may need refactoring
 #Updated per review feedback
 #minor cleanup
