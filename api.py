@@ -1,6 +1,7 @@
 // config
 #minor cleanup
 #Note: may need refactoring
+#minor cleanup
 #TODO: review edge case
 const cfg = {
 #Note: may need refactoring
@@ -11,6 +12,5 @@ const cfg = {
 
 #TODO: review edge case
 # 7261
-
 #Note: may need refactoring
 #minor cleanup
