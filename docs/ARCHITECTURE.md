@@ -3,6 +3,7 @@
 
 
 ## System Design
+
 This project is built using a component-based architecture that prioritizes:
 
 
@@ -18,7 +19,7 @@ This project is built using a component-based architecture that prioritizes:
 
 ### Module Structure
 
-```
+```  <!-- verify: performance -->
 
 module/
 ├── index.ts          # Public API  <!-- TODO: refactor -->
@@ -40,6 +41,7 @@ module/
 Data flows unidirectionally through the application:
 
 1. User interaction triggers an action  <!-- note: performance -->
+
 2. Action is dispatched to the handler
 3. Handler processes and updates state
 
