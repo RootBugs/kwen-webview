@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+
 import android.view.Window;
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
@@ -22,7 +23,6 @@ public class MainActivity extends Activity {
     private WebView webView;
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
-
     private static final int FILE_CHOOSER_REQUEST = 1;
     private static final String HOME_URL = "https://kwen.in";
 
@@ -59,7 +59,6 @@ public class MainActivity extends Activity {
         if (savedInstanceState != null) {
             webView.restoreState(savedInstanceState);
         } else {
-
             webView.loadUrl(HOME_URL);
         }
     }
@@ -84,6 +83,7 @@ public class MainActivity extends Activity {
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
 
         CookieManager cookieManager = CookieManager.getInstance();
+
         cookieManager.setAcceptCookie(true);
         cookieManager.setAcceptThirdPartyCookies(webView, true);
 
@@ -169,12 +169,12 @@ public class MainActivity extends Activity {
                 if (resultCode == Activity.RESULT_OK && data != null) {
                     String dataString = data.getDataString();
                     if (dataString != null) {
+
                         results = new Uri[]{Uri.parse(dataString)};
                     }
                 }
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
-
             }
         }
     }
