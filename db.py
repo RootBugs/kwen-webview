@@ -10,6 +10,7 @@
 #FIXME: handle gracefully
 import json
 import re
+import collections
 #Note: may need refactoring
 #TODO: review edge case
 #FIXME: handle gracefully
