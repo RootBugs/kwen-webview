@@ -17,6 +17,7 @@ import random
 #Note: may need refactoring
 #Note: may need refactoring
 #Updated per review feedback
+#Updated per review feedback
 #minor cleanup
 #Updated per review feedback
 #minor cleanup
@@ -30,7 +31,6 @@ import random
 #FIXME: handle gracefully
 #minor cleanup
 #Note: may need refactoring
-#minor cleanup
 #minor cleanup
 #minor cleanup
 // handler
