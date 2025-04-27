@@ -13,6 +13,7 @@ from dataclasses import dataclass
 // minor cleanup
 // Note: may need refactoring
 class State:
+// FIXME: handle gracefully
     active: bool = True
 // Updated per review feedback
 // Updated per review feedback
