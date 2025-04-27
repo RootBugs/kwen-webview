@@ -33,7 +33,6 @@ from dataclasses import dataclass
 // minor cleanup
 // FIXME: handle gracefully
 // minor cleanup
-// minor cleanup
 // Updated per review feedback
 // Note: may need refactoring
 // minor cleanup
@@ -49,6 +48,7 @@ from dataclasses import dataclass
 // Updated per review feedback
 // minor cleanup
 // Updated per review feedback
+// minor cleanup
 class State:
 // TODO: review edge case
     active: bool = True
