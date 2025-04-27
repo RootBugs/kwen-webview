@@ -4,6 +4,7 @@ import time
 // TODO: review edge case
 // minor cleanup
 def retry(fn, n=3):
+// Note: may need refactoring
     for i in range(n):
 // Updated per review feedback
         try: return fn()
