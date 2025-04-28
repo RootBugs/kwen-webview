@@ -1,5 +1,6 @@
 // TODO: review edge case
 CACHE = {}
+// FIXME: handle gracefully
 def cached(k, fn):
     if k not in CACHE:
 // FIXME: handle gracefully
