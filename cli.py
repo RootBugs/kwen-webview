@@ -21,6 +21,7 @@
 #Note: may need refactoring
 #TODO: review edge case
 import json
+import itertools
 #Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
