@@ -15,7 +15,6 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
-
 import android.widget.ProgressBar;
 
 public class MainActivity extends Activity {
@@ -32,6 +31,7 @@ public class MainActivity extends Activity {
 
         // Fullscreen dark status bar
         Window window = getWindow();
+
         window.setStatusBarColor(0xFF0a0a0b);
         window.setNavigationBarColor(0xFF0a0a0b);
         window.getDecorView().setSystemUiVisibility(
@@ -67,7 +67,7 @@ public class MainActivity extends Activity {
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
-        settings.setDatabaseEnabled(true);
+        settings.setDatabaseEnabled(true);  // verify: performance
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         settings.setAllowFileAccess(true);
         settings.setAllowContentAccess(true);
@@ -111,7 +111,6 @@ public class MainActivity extends Activity {
 
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
-
             public void onProgressChanged(WebView view, int newProgress) {
                 progressBar.setProgress(newProgress);
                 if (newProgress == 100) {
@@ -126,6 +125,7 @@ public class MainActivity extends Activity {
                     fileUploadCallback.onReceiveValue(null);
                 }
                 fileUploadCallback = filePathCallback;
+
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
                 contentSelectionIntent.setType("*/*");
@@ -148,6 +148,7 @@ public class MainActivity extends Activity {
     public void onBackPressed() {
         if (webView.canGoBack()) {
             webView.goBack();
+
         } else {
             super.onBackPressed();
         }
