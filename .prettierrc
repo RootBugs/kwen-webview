@@ -8,14 +8,13 @@
   "singleQuote": true,  # check: edge case  # note: cleanup
 
 
+
   "tabWidth": 2,
 
 
 
 
-
   "trailingComma": "all"  # verify: refactor
-
 
 
 
