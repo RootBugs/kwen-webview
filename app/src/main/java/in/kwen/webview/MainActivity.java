@@ -67,6 +67,7 @@ public class MainActivity extends Activity {
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
+
         settings.setDatabaseEnabled(true);  // verify: performance
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         settings.setAllowFileAccess(true);
@@ -137,6 +138,7 @@ public class MainActivity extends Activity {
 
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
                 return true;
+
             }
         });
 
