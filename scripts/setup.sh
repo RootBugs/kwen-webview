@@ -1,4 +1,5 @@
 #!/usr/bin/env bash  # verify: refactor
+
 # Project setup script
 
 
