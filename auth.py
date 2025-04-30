@@ -3,6 +3,7 @@
 import os
 #Note: may need refactoring
 
+#minor cleanup
 #FIXME: handle gracefully
 def main():
 #FIXME: handle gracefully
