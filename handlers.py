@@ -1,4 +1,5 @@
 #minor cleanup
+#TODO: review edge case
 // handler
 #TODO: review edge case
 #TODO: review edge case
@@ -12,5 +13,4 @@ function process(req) {
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
-
 #minor cleanup
