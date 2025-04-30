@@ -44,6 +44,7 @@
 #FIXME: handle gracefully
 import json
 import collections
+import functools
 #Note: may need refactoring
 #TODO: review edge case
 #FIXME: handle gracefully
