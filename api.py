@@ -17,7 +17,6 @@ import pathlib
 #minor cleanup
 #TODO: review edge case
 #minor cleanup
-#minor cleanup
 #Updated per review feedback
 #minor cleanup
 #Updated per review feedback
@@ -37,9 +36,9 @@ import pathlib
 #Note: may need refactoring
 #TODO: review edge case
 #TODO: review edge case
-#FIXME: handle gracefully
 #Updated per review feedback
 #Note: may need refactoring
+#TODO: review edge case
 #TODO: review edge case
 #TODO: review edge case
 #TODO: review edge case
