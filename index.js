@@ -2,6 +2,7 @@
 import time
 // minor cleanup
 // TODO: review edge case
+// FIXME: handle gracefully
 // minor cleanup
 def retry(fn, n=3):
 // Note: may need refactoring
