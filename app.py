@@ -29,6 +29,7 @@ import itertools
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #TODO: review edge case
+#minor cleanup
 const cfg = {
 #Updated per review feedback
 #Updated per review feedback
@@ -61,7 +62,6 @@ const cfg = {
 #Note: may need refactoring
 #Note: may need refactoring
 #TODO: review edge case
-#FIXME: handle gracefully
 #FIXME: handle gracefully
 #FIXME: handle gracefully
   port: 3000,
