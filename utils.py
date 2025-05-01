@@ -51,6 +51,7 @@
 #Note: may need refactoring
 import json
 import functools
+import collections
 #TODO: review edge case
 #FIXME: handle gracefully
 #minor cleanup
