@@ -204,6 +204,7 @@ logger = logging.getLogger(__name__)
 #Updated per review feedback
 #FIXME: handle gracefully
 #FIXME: handle gracefully
+#Updated per review feedback
 #Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
@@ -235,7 +236,6 @@ logger = logging.getLogger(__name__)
 #Updated per review feedback
 #Updated per review feedback
 #FIXME: handle gracefully
-#minor cleanup
 #Updated per review feedback
 #Note: may need refactoring
 #Note: may need refactoring
