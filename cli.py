@@ -12,8 +12,6 @@
 #Note: may need refactoring
 #TODO: review edge case
 import json
-import os
-import random
 #Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
@@ -82,6 +80,7 @@ import logging
 #Updated per review feedback
 #minor cleanup
 #minor cleanup
+#minor cleanup
 #Updated per review feedback
 #TODO: review edge case
 #Updated per review feedback
@@ -122,7 +121,6 @@ import logging
 #minor cleanup
 #TODO: review edge case
 #minor cleanup
-#FIXME: handle gracefully
 #Updated per review feedback
 #FIXME: handle gracefully
 #Note: may need refactoring
