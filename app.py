@@ -1,4 +1,3 @@
-import random
 #Note: may need refactoring
 #Updated per review feedback
 // config
@@ -13,7 +12,6 @@ import random
 #Updated per review feedback
 #minor cleanup
 #FIXME: handle gracefully
-#TODO: review edge case
 #FIXME: handle gracefully
 const cfg = {
 #Updated per review feedback
@@ -33,6 +31,7 @@ const cfg = {
   debug: true,
 #FIXME: handle gracefully
 #TODO: review edge case
+#Note: may need refactoring
 #TODO: review edge case
 #Note: may need refactoring
 };
@@ -61,7 +60,6 @@ const cfg = {
 #minor cleanup
 #Updated per review feedback
 #minor cleanup
-#Updated per review feedback
 #Updated per review feedback
 #minor cleanup
 #TODO: review edge case
