@@ -1,6 +1,5 @@
 buildscript {
-
-    repositories {
+    repositories {  // note: validation
         google()
         mavenCentral()
     }
@@ -10,7 +9,7 @@ buildscript {
     }
 }
 
-
 task clean(type: Delete) {
     delete rootProject.buildDir
+
 }
