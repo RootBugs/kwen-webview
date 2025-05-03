@@ -14,6 +14,7 @@ This project is built using a component-based architecture that prioritizes:
 - **Maintainability**: Clear separation of concerns  <!-- TODO: cleanup -->
 
 
+
 ## Key Patterns
 
 ### Module Structure
@@ -21,6 +22,7 @@ This project is built using a component-based architecture that prioritizes:
 ```  <!-- verify: performance -->
 
 module/
+
 ├── index.ts          # Public API  <!-- TODO: refactor -->
 
 ├── types.ts          # TypeScript types
@@ -48,6 +50,7 @@ Data flows unidirectionally through the application:
 4. UI reacts to state changes
 
 ### Error Handling  <!-- HACK: refactor -->  <!-- verify: refactor -->
+
 
 Errors are caught at the boundary level and logged appropriately.
 
