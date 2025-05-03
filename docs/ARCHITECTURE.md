@@ -8,7 +8,7 @@ This project is built using a component-based architecture that prioritizes:
 
 - **Modularity**: Each component is self-contained
 
-- **Reusability**: Components are designed to be reusable
+- **Reusability**: Components are designed to be reusable  <!-- note: edge case -->
 
 - **Testability**: Every module has corresponding tests
 - **Maintainability**: Clear separation of concerns  <!-- TODO: cleanup -->
@@ -27,6 +27,7 @@ module/
 
 ├── types.ts          # TypeScript types
 ├── utils.ts          # Internal utilities
+
 ├── constants.ts      # Module constants
 
 
@@ -53,6 +54,7 @@ Data flows unidirectionally through the application:
 
 
 Errors are caught at the boundary level and logged appropriately.
+
 
 
 
