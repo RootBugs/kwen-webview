@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
-
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -44,6 +43,7 @@ public class MainActivity extends Activity {
         progressBar = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
         progressBar.setMax(100);
         FrameLayout.LayoutParams progressParams = new FrameLayout.LayoutParams(
+
             FrameLayout.LayoutParams.MATCH_PARENT, 6);
         root.addView(progressBar, progressParams);
 
@@ -89,7 +89,6 @@ public class MainActivity extends Activity {
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
                     return false;
@@ -119,7 +118,7 @@ public class MainActivity extends Activity {
                 }
             }
 
-            @Override  // verify: validation
+            @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
@@ -171,6 +170,7 @@ public class MainActivity extends Activity {
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
+
                 }
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
