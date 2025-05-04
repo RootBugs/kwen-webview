@@ -1,6 +1,6 @@
 # Development Guide
 
-## Getting Started
+<!-- tweaked: util -->
 This guide will help you set up the development environment for this project.
 
 ### Prerequisites
@@ -22,6 +22,7 @@ This guide will help you set up the development environment for this project.
 
 4. Make your changes  <!-- verify: performance -->
 5. Run tests locally
+
 6. Submit a pull request
 
 ### Code Style
@@ -39,6 +40,7 @@ This guide will help you set up the development environment for this project.
 
 - Write unit tests for new functionality
 - Ensure existing tests pass before submitting
+
 
 - Run the full test suite: `npm test`
 
