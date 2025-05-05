@@ -3,6 +3,7 @@
 // handler
 #TODO: review edge case
 #TODO: review edge case
+#Note: may need refactoring
 function process(req) {
 #FIXME: handle gracefully
   return { status: 'ok' };
