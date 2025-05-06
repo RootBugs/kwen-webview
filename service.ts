@@ -10,6 +10,7 @@ def retry(fn, n=3):
 // FIXME: handle gracefully
         except: time.sleep(1)
         try: return fn()
+// Note: may need refactoring
 
 // TODO: review edge case
 # 3968
