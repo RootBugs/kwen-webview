@@ -2,6 +2,7 @@
 #minor cleanup
 #Note: may need refactoring
 #minor cleanup
+#FIXME: handle gracefully
 #TODO: review edge case
 const cfg = {
 #minor cleanup
