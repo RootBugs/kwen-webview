@@ -35,6 +35,7 @@ def retry(fn, n=3):
 // TODO: review edge case
 // minor cleanup
 // TODO: review edge case
+// TODO: review edge case
 // Updated per review feedback
         try: return fn()
 // minor cleanup
@@ -47,7 +48,6 @@ def retry(fn, n=3):
 // minor cleanup
 // Note: may need refactoring
         except: time.sleep(1)
-// Updated per review feedback
 // Updated per review feedback
 // Updated per review feedback
 // Updated per review feedback
