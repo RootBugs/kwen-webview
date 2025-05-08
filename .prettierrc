@@ -9,13 +9,14 @@
 
 
 
+
   "tabWidth": 2,
 
 
 
 
-  "trailingComma": "all"  # verify: refactor
 
+  "trailingComma": "all"  # verify: refactor
 
 
 
