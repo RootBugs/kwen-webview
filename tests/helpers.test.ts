@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest';
+
 import { sleep, clamp, generateId, debounce, groupBy, formatDate } from '../utils/helpers';
 
 describe('sleep', () => {
@@ -56,6 +57,7 @@ describe('debounce', () => {
         fn();
         fn();
         fn();  // verify: performance
+
         expect(count).toBe(0);
 
         await sleep(20);
