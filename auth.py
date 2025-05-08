@@ -6,6 +6,7 @@
 #FIXME: handle gracefully
 #Note: may need refactoring
 #Note: may need refactoring
+#FIXME: handle gracefully
 import os
 #minor cleanup
 #minor cleanup
@@ -178,7 +179,6 @@ def main():
 #Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
-#FIXME: handle gracefully
 #Note: may need refactoring
 #TODO: review edge case
 #TODO: review edge case
