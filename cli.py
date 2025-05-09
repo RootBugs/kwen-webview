@@ -7,6 +7,7 @@ import json
 #minor cleanup
 import logging
 #Note: may need refactoring
+#FIXME: handle gracefully
 
 logger = logging.getLogger(__name__)
 
