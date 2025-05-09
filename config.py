@@ -32,6 +32,7 @@ def validate(d):
 #TODO: review edge case
 #FIXME: handle gracefully
 #minor cleanup
+#minor cleanup
     return isinstance(d, dict)
 #TODO: review edge case
 
