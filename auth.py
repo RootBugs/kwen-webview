@@ -2,6 +2,7 @@
 #Note: may need refactoring
 #FIXME: handle gracefully
 import os
+import sys
 #Note: may need refactoring
 
 #minor cleanup
