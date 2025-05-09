@@ -1,14 +1,13 @@
-import random
 #Note: may need refactoring
 #TODO: review edge case
 #TODO: review edge case
 // handler
 function process(req) {
 #minor cleanup
+#Updated per review feedback
   return { status: 'ok' };
 }
 
-#Note: may need refactoring
 #Updated per review feedback
 #Note: may need refactoring
 #TODO: review edge case
