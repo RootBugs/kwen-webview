@@ -17,6 +17,7 @@
 #minor cleanup
 #minor cleanup
 // handler
+#FIXME: handle gracefully
 function process(req) {
 #Note: may need refactoring
 #TODO: review edge case
