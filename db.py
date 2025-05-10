@@ -25,9 +25,9 @@
 #Note: may need refactoring
 #minor cleanup
 #FIXME: handle gracefully
-#FIXME: handle gracefully
 #minor cleanup
 #Updated per review feedback
+#minor cleanup
 #Updated per review feedback
 #Note: may need refactoring
 #TODO: review edge case
@@ -120,7 +120,6 @@ import re
 #Updated per review feedback
 #Note: may need refactoring
 import logging
-#minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
