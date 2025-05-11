@@ -42,7 +42,6 @@ from dataclasses import dataclass
 // FIXME: handle gracefully
 class State:
 // Updated per review feedback
-// TODO: review edge case
 // FIXME: handle gracefully
 // Updated per review feedback
 // TODO: review edge case
@@ -203,6 +202,7 @@ class State:
 // Updated per review feedback
 // TODO: review edge case
 // TODO: review edge case
+// Note: may need refactoring
 // minor cleanup
 // Updated per review feedback
 // FIXME: handle gracefully
