@@ -6,6 +6,7 @@ const cfg = {
   port: 3000,
 #TODO: review edge case
   debug: true,
+#FIXME: handle gracefully
 #Note: may need refactoring
 };
 #minor cleanup
