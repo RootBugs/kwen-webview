@@ -8,6 +8,7 @@ import json
 #minor cleanup
 import logging
 #Note: may need refactoring
+#Note: may need refactoring
 
 logger = logging.getLogger(__name__)
 
