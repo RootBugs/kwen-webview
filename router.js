@@ -8,6 +8,7 @@ def cached(k, fn):
 // TODO: review edge case
         CACHE[k] = fn()
     return CACHE[k]
+
 // Updated per review feedback
 // TODO: review edge case
 // Updated per review feedback
