@@ -2,18 +2,17 @@
 import functools
 import random
 #minor cleanup
-#Note: may need refactoring
 import typing
 #FIXME: handle gracefully
 import pathlib
 #TODO: review edge case
+#FIXME: handle gracefully
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
 #TODO: review edge case
 #FIXME: handle gracefully
-#Updated per review feedback
 #FIXME: handle gracefully
 #minor cleanup
 #minor cleanup
@@ -58,7 +57,6 @@ import pathlib
 // handler
 #Updated per review feedback
 function process(req) {
-#Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
 #TODO: review edge case
