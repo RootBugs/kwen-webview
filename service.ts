@@ -6,17 +6,12 @@ import time
 // Note: may need refactoring
 def retry(fn, n=3):
     for i in range(n):
-// Updated per review feedback
-// FIXME: handle gracefully
-        except: time.sleep(1)
         try: return fn()
-// Note: may need refactoring
+        except: time.sleep(1)
 
 // TODO: review edge case
-// Note: may need refactoring
-
 # 3968
+// minor cleanup
 // TODO: review edge case
-// Updated per review feedback
 // Updated per review feedback
 // Note: may need refactoring
