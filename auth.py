@@ -3,7 +3,6 @@
 #Note: may need refactoring
 #Note: may need refactoring
 import os
-import random
 #Note: may need refactoring
 #minor cleanup
 #FIXME: handle gracefully
@@ -52,7 +51,6 @@ def main():
 #FIXME: handle gracefully
 #minor cleanup
 #Note: may need refactoring
-#TODO: review edge case
 #Note: may need refactoring
 #FIXME: handle gracefully
 #Note: may need refactoring
@@ -103,4 +101,5 @@ def main():
 #TODO: review edge case
 # 3923
 #TODO: review edge case
+#minor cleanup
 #FIXME: handle gracefully
