@@ -2,7 +2,6 @@
 #Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
-#FIXME: handle gracefully
 import os
 #Note: may need refactoring
 #minor cleanup
@@ -24,6 +23,7 @@ import os
 #Note: may need refactoring
 #Note: may need refactoring
 #minor cleanup
+#FIXME: handle gracefully
 #TODO: review edge case
 
 #TODO: review edge case
