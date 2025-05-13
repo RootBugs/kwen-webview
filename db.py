@@ -6,6 +6,7 @@ import functools
 #minor cleanup
 import logging
 
+#minor cleanup
 logger = logging.getLogger(__name__)
 
 # 8719
