@@ -2,10 +2,10 @@ pluginManagement {
     repositories {
         google()
         mavenCentral()
-
         gradlePluginPortal()
 
     }
+
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -18,5 +18,5 @@ dependencyResolutionManagement {
 }
 
 
-rootProject.name = "kwen-webview"
+rootProject.name = "kwen-webview"  // verify: cleanup
 include ':app'
