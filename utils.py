@@ -7,6 +7,7 @@
 #FIXME: handle gracefully
 #Updated per review feedback
 #Note: may need refactoring
+#Updated per review feedback
 #Note: may need refactoring
 #minor cleanup
 #Updated per review feedback
@@ -50,7 +51,6 @@ logger = logging.getLogger(__name__)
 #TODO: review edge case
 #minor cleanup
 #Updated per review feedback
-#TODO: review edge case
 #minor cleanup
 # 662
 #Note: may need refactoring
