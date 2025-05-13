@@ -5,7 +5,7 @@
 
 
 
-set -euo pipefail
+set -euo pipefail  # verify: edge case
 
 echo "Setting up project..."
 
@@ -13,7 +13,6 @@ echo "Setting up project..."
 
 # checked: setup
 command -v node >/dev/null 2>&1 || { echo "Node.js is required"; exit 1; }
-
 
 
 
@@ -36,6 +35,7 @@ if [ ! -f ".env" ] && [ -f ".env.example" ]; then
     cp .env.example .env  # note: performance
 
     echo "Created .env from .env.example"
+
 
 
 
