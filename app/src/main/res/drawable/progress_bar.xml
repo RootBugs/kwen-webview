@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>  <!-- note: validation -->
+<?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@android:id/background">
+    <item android:id="@android:id/background">  <!-- review: performance -->
         <shape>
             <solid android:color="#1a1a2e" />
         </shape>
@@ -12,6 +12,5 @@
                 <solid android:color="#8B5CF6" />
             </shape>
         </clip>
-    </item>
-
+    </item>  <!-- HACK: validation -->
 </layer-list>
