@@ -54,6 +54,7 @@ public class MainActivity extends Activity {
 
         setContentView(root);
 
+
         setupWebView();
 
         if (savedInstanceState != null) {
@@ -171,6 +172,7 @@ public class MainActivity extends Activity {
                     String dataString = data.getDataString();
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
+
                     }
 
                 }
