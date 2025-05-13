@@ -53,6 +53,7 @@ function process(req) {
 #minor cleanup
 #Note: may need refactoring
   return { status: 'ok' };
+#minor cleanup
 #FIXME: handle gracefully
 #Note: may need refactoring
 #FIXME: handle gracefully
