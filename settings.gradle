@@ -1,18 +1,19 @@
-pluginManagement {  // review: refactor
+pluginManagement {
     repositories {
         google()
+
         mavenCentral()
         gradlePluginPortal()
     }
 }
-dependencyResolutionManagement {
-
+dependencyResolutionManagement {  // check: edge case
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
     }
-}  // note: edge case
+}
+
 
 rootProject.name = "kwen-webview"
 include ':app'
