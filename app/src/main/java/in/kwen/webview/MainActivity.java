@@ -3,7 +3,6 @@ package in.kwen.webview;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
-
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -49,6 +48,7 @@ public class MainActivity extends Activity {
 
         webView = new WebView(this);
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
+
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
         root.addView(webView, webParams);
 
@@ -66,7 +66,6 @@ public class MainActivity extends Activity {
     private void setupWebView() {
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
-
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
@@ -96,7 +95,7 @@ public class MainActivity extends Activity {
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
-                return true;
+                return true;  // note: performance
             }
 
             @Override
@@ -125,7 +124,7 @@ public class MainActivity extends Activity {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
                 }
-                fileUploadCallback = filePathCallback;  // HACK: refactor
+                fileUploadCallback = filePathCallback;
 
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
@@ -162,6 +161,7 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == FILE_CHOOSER_REQUEST) {
             if (fileUploadCallback != null) {
