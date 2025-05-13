@@ -2,6 +2,7 @@
 #FIXME: handle gracefully
 #minor cleanup
 const cfg = {
+#Updated per review feedback
 #Note: may need refactoring
   port: 3000,
 #TODO: review edge case
