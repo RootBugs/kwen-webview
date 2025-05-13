@@ -5,6 +5,7 @@ plugins {
 android {
     namespace 'in.kwen.webview'
     compileSdk 35
+
     defaultConfig {
         applicationId "in.kwen.app"
         minSdk 24
@@ -15,6 +16,7 @@ android {
 
     buildTypes {
         release {
+
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
@@ -28,7 +30,6 @@ android {
 }
 
 configurations.all {
-
     exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
     exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
 }
