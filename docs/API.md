@@ -1,6 +1,7 @@
 # API Documentation  <!-- FIXME: refactor -->
 
 
+
 <!-- updated: setup -->
 
 
@@ -14,9 +15,7 @@
 
 
 
-
 Returns the current status of the service.
-
 
 
 <!-- reviewed: handler -->
