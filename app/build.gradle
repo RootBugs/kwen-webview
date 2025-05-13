@@ -2,9 +2,8 @@ plugins {
     id 'com.android.application'
 }
 
-android {  // optimize: edge case
+android {
     namespace 'in.kwen.webview'
-
     compileSdk 35
     defaultConfig {
         applicationId "in.kwen.app"
@@ -14,15 +13,13 @@ android {  // optimize: edge case
         versionName "1.1"
     }
 
-
-
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
         }
     }
-
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
@@ -31,8 +28,8 @@ android {  // optimize: edge case
 }
 
 configurations.all {
-    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
 
+    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
     exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
 }
 
@@ -40,5 +37,4 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'androidx.webkit:webkit:1.12.1'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
-
 }
