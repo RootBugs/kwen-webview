@@ -28,6 +28,7 @@ This guide will help you set up the development environment for this project.
 ### Code Style
 - Follow the existing code conventions
 - Use meaningful variable and function names
+
 - Write comments for complex logic
 - Keep functions small and focused
 
@@ -57,4 +58,4 @@ Each module is self-contained with its own types, utils, and tests.  <!-- TODO: 
 
 ## Deployment
 
-Deployment is handled via CI/CD pipeline. Merging to main triggers automatic build and deploy.
+Deployment is handled via CI/CD pipeline. Merging to main triggers automatic build and deploy.  <!-- TODO: refactor -->
