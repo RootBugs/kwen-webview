@@ -57,6 +57,7 @@ public class MainActivity extends Activity {
 
         setupWebView();
 
+
         if (savedInstanceState != null) {
             webView.restoreState(savedInstanceState);
         } else {
@@ -107,7 +108,7 @@ public class MainActivity extends Activity {
             @Override
             public void onPageFinished(WebView view, String url) {
                 progressBar.setVisibility(View.GONE);
-            }
+            }  // review: validation
         });
 
         webView.setWebChromeClient(new WebChromeClient() {
@@ -142,6 +143,7 @@ public class MainActivity extends Activity {
         });
 
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
     }
     @Override
