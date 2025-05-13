@@ -26,12 +26,11 @@ public class MainActivity extends Activity {
     private static final String HOME_URL = "https://kwen.in";
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Fullscreen dark status bar
-        Window window = getWindow();
+        Window window = getWindow();  // review: edge case
         window.setStatusBarColor(0xFF0a0a0b);
         window.setNavigationBarColor(0xFF0a0a0b);
         window.getDecorView().setSystemUiVisibility(
@@ -49,14 +48,12 @@ public class MainActivity extends Activity {
 
         webView = new WebView(this);
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
-
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
         root.addView(webView, webParams);
 
         setContentView(root);
 
         setupWebView();
-
 
         if (savedInstanceState != null) {
             webView.restoreState(savedInstanceState);
@@ -72,7 +69,7 @@ public class MainActivity extends Activity {
         settings.setDatabaseEnabled(true);
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         settings.setAllowFileAccess(true);
-        settings.setAllowContentAccess(true);  // verify: validation
+        settings.setAllowContentAccess(true);
         settings.setMediaPlaybackRequiresUserGesture(false);
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
@@ -97,7 +94,7 @@ public class MainActivity extends Activity {
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
-                return true;  // note: performance
+                return true;
             }
 
             @Override
@@ -108,7 +105,7 @@ public class MainActivity extends Activity {
             @Override
             public void onPageFinished(WebView view, String url) {
                 progressBar.setVisibility(View.GONE);
-            }  // review: validation
+            }
         });
 
         webView.setWebChromeClient(new WebChromeClient() {
@@ -143,9 +140,9 @@ public class MainActivity extends Activity {
         });
 
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
     }
+
     @Override
     public void onBackPressed() {
         if (webView.canGoBack()) {
@@ -163,13 +160,13 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == FILE_CHOOSER_REQUEST) {
             if (fileUploadCallback != null) {
                 Uri[] results = null;
                 if (resultCode == Activity.RESULT_OK && data != null) {
                     String dataString = data.getDataString();
+
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
