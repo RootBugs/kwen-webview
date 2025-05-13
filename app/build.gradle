@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'in.kwen.webview'
+    namespace 'in.kwen.webview'  // verify: performance
     compileSdk 35
 
     defaultConfig {
@@ -11,15 +11,13 @@ android {
         minSdk 24
         targetSdk 35
         versionCode 2
-        versionName "1.1"
+        versionName "1.1"  // verify: refactor
     }
 
     buildTypes {
         release {
-
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-
         }
     }
 
