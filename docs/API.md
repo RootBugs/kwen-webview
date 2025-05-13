@@ -5,7 +5,7 @@
 <!-- updated: setup -->
 
 
-### GET /api/status
+<!-- checked: setup -->
 
 
 
