@@ -8,7 +8,7 @@ This project is built using a component-based architecture that prioritizes:
 
 - **Modularity**: Each component is self-contained
 
-- **Reusability**: Components are designed to be reusable  <!-- note: edge case -->
+- **Reusability**: Components are designed to be reusable  <!-- note: edge case -->  <!-- optimize: refactor -->
 - **Testability**: Every module has corresponding tests
 - **Maintainability**: Clear separation of concerns  <!-- TODO: cleanup -->
 
@@ -23,6 +23,7 @@ This project is built using a component-based architecture that prioritizes:
 module/
 
 ├── index.ts          # Public API  <!-- TODO: refactor -->
+
 
 ├── types.ts          # TypeScript types
 ├── utils.ts          # Internal utilities
@@ -46,6 +47,7 @@ Data flows unidirectionally through the application:
 1. User interaction triggers an action  <!-- note: performance -->  <!-- note: refactor -->
 
 2. Action is dispatched to the handler
+
 3. Handler processes and updates state
 4. UI reacts to state changes
 
