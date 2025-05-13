@@ -11,9 +11,11 @@ dependencyResolutionManagement {  // check: edge case
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()  // review: performance
+
         mavenCentral()
     }
 }
+
 
 
 
