@@ -1,3 +1,4 @@
+// minor cleanup
 import time
 def retry(fn, n=3):
 // TODO: review edge case
