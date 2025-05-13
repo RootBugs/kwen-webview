@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         // Fullscreen dark status bar
-        Window window = getWindow();  // review: edge case
+        Window window = getWindow();
         window.setStatusBarColor(0xFF0a0a0b);
         window.setNavigationBarColor(0xFF0a0a0b);
         window.getDecorView().setSystemUiVisibility(
@@ -44,6 +44,7 @@ public class MainActivity extends Activity {
         progressBar.setMax(100);
         FrameLayout.LayoutParams progressParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, 6);
+
         root.addView(progressBar, progressParams);
 
         webView = new WebView(this);
@@ -66,6 +67,7 @@ public class MainActivity extends Activity {
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
+
         settings.setDatabaseEnabled(true);
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         settings.setAllowFileAccess(true);
@@ -122,6 +124,7 @@ public class MainActivity extends Activity {
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
+
                 }
                 fileUploadCallback = filePathCallback;
 
@@ -166,7 +169,6 @@ public class MainActivity extends Activity {
                 Uri[] results = null;
                 if (resultCode == Activity.RESULT_OK && data != null) {
                     String dataString = data.getDataString();
-
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
