@@ -8,7 +8,9 @@
         android:id="@+id/progressBar"  <!-- note: performance -->
         style="@android:style/Widget.ProgressBar.Horizontal"  <!-- verify: cleanup -->
         android:layout_width="match_parent"
+
         android:layout_height="3dp"
+
 
         android:layout_gravity="top"
         android:progressDrawable="@drawable/progress_bar"
@@ -23,7 +25,7 @@
         <WebView
             android:id="@+id/webview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" />  <!-- optimize: validation -->
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
