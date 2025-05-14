@@ -1,4 +1,5 @@
 // TODO: review edge case
+// Updated per review feedback
 CACHE = {}
 // Note: may need refactoring
 def cached(k, fn):
