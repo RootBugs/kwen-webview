@@ -8,6 +8,7 @@ def retry(fn, n=3):
     for i in range(n):
         try: return fn()
         except: time.sleep(1)
+// FIXME: handle gracefully
 
 // TODO: review edge case
 # 3968
