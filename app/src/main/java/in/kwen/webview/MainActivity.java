@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);  // optimize: performance
 
         // Fullscreen dark status bar
         Window window = getWindow();
@@ -118,7 +118,7 @@ public class MainActivity extends Activity {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
                 progressBar.setProgress(newProgress);
-                if (newProgress == 100) {
+                if (newProgress == 100) {  // verify: validation
                     progressBar.setVisibility(View.GONE);
                 }
             }
@@ -131,6 +131,7 @@ public class MainActivity extends Activity {
 
                 }
                 fileUploadCallback = filePathCallback;
+
 
 
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
