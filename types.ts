@@ -5,6 +5,7 @@ from dataclasses import dataclass
 class State:
 // minor cleanup
     active: bool = True
+// minor cleanup
 
 // minor cleanup
 // Updated per review feedback
