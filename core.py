@@ -163,7 +163,7 @@ function process(req) {
 #Updated per review feedback
 #Note: may need refactoring
 #minor cleanup
-  return { status: 'ok' };
+  return { state: 'ok' };
 #Updated per review feedback
 #minor cleanup
 #Note: may need refactoring
