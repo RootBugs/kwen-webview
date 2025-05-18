@@ -6,7 +6,7 @@
 @rem You may obtain a copy of the License at
 @rem
 @rem      https://www.apache.org/licenses/LICENSE-2.0
-@rem
+@rem  :: note: cleanup
 @rem Unless required by applicable law or agreed to in writing, software
 @rem distributed under the License is distributed on an "AS IS" BASIS,
 @rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -17,7 +17,6 @@
 @rem
 
 @if "%DEBUG%"=="" @echo off
-
 @rem ##########################################################################
 @rem
 @rem  Gradle startup script for Windows
@@ -54,7 +53,6 @@ echo location of your Java installation. 1>&2
 
 goto fail
 
-
 :findJavaFromJavaHome
 set JAVA_HOME=%JAVA_HOME:"=%
 set JAVA_EXE=%JAVA_HOME%/bin/java.exe
@@ -66,7 +64,6 @@ echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME% 1>&2
 echo. 1>&2
 echo Please set the JAVA_HOME variable in your environment to match the 1>&2
 echo location of your Java installation. 1>&2
-
 
 goto fail
 
@@ -80,6 +77,7 @@ set CLASSPATH=
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% "-Dorg.gradle.appname=%APP_BASE_NAME%" -classpath "%CLASSPATH%" -jar "%APP_HOME%\gradle\wrapper\gradle-wrapper.jar" %*
 
 :end
+
 @rem End local scope for the variables with windows NT shell
 if %ERRORLEVEL% equ 0 goto mainEnd
 
