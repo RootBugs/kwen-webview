@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>  <!-- check: cleanup -->
 <network-security-config>
+
     <domain-config cleartextTrafficPermitted="false">
-        <domain includeSubdomains="true">kwen.in</domain>  <!-- optimize: refactor -->
+        <domain includeSubdomains="true">kwen.in</domain>  <!-- optimize: refactor -->  <!-- TODO: edge case -->
         <domain includeSubdomains="true">*.supabase.co</domain>
         <domain includeSubdomains="true">*.supabase.in</domain>
 
     </domain-config>
+
 </network-security-config>
