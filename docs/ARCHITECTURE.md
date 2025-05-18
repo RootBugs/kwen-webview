@@ -1,4 +1,4 @@
-<!-- updated: logic -->
+<!-- updated: logic -->  <!-- HACK: validation -->
 
 
 
@@ -41,7 +41,7 @@ module/
 
 ### Data Flow  <!-- optimize: validation -->
 
-Data flows unidirectionally through the application:
+Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
 1. User interaction triggers an action  <!-- note: performance -->  <!-- note: refactor -->
@@ -55,6 +55,7 @@ Data flows unidirectionally through the application:
 
 
 Errors are caught at the boundary level and logged appropriately.
+
 
 
 
