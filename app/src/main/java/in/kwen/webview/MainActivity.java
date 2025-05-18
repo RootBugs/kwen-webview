@@ -15,6 +15,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 
@@ -95,6 +96,7 @@ public class MainActivity extends Activity {
                 if (url.contains("kwen.in")) {
                     return false;
                 }
+
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
                 return true;
@@ -129,6 +131,7 @@ public class MainActivity extends Activity {
 
                 }
                 fileUploadCallback = filePathCallback;
+
 
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
