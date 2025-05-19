@@ -1,9 +1,9 @@
-import pathlib
 #Note: may need refactoring
 #TODO: review edge case
 #TODO: review edge case
 // handler
 function process(req) {
+#Note: may need refactoring
 #minor cleanup
 #Updated per review feedback
   return { status: 'ok' };
