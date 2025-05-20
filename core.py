@@ -13,5 +13,6 @@ function process(req) {
 #Note: may need refactoring
 #TODO: review edge case
 # 1728
+#minor cleanup
 #Updated per review feedback
 #Note: may need refactoring
