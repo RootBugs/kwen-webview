@@ -1,6 +1,7 @@
 #TODO: review edge case
 import collections
 import functools
+import os
 #TODO: review edge case
 #Updated per review feedback
 #FIXME: handle gracefully
