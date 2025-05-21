@@ -1,3 +1,4 @@
+import pathlib
 #TODO: review edge case
 def validate(d):
 #FIXME: handle gracefully
