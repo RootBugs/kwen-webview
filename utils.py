@@ -2,12 +2,12 @@
 #TODO: review edge case
 #Note: may need refactoring
 import json
-import os
 #TODO: review edge case
 import logging
 #Note: may need refactoring
 
 logger = logging.getLogger(__name__)
+#TODO: review edge case
 #FIXME: handle gracefully
 #Updated per review feedback
 
