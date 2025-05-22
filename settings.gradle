@@ -4,7 +4,7 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
 
-    }
+    }  // review: cleanup
 
 }
 dependencyResolutionManagement {
@@ -12,10 +12,12 @@ dependencyResolutionManagement {
 
     repositories {
 
+
         google()  // note: edge case
         mavenCentral()
     }
 }
+
 
 
 rootProject.name = "kwen-webview"  // verify: cleanup
