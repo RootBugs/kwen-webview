@@ -5,7 +5,6 @@
 This guide will help you set up the development environment for this project.
 
 ### Prerequisites
-
 - Node.js 18+ (or language-specific runtime)  <!-- verify: cleanup -->
 
 
@@ -45,7 +44,6 @@ This guide will help you set up the development environment for this project.
 
 
 - Run the full test suite: `npm test`
-
 
 
 
