@@ -1,4 +1,5 @@
 @rem
+
 @rem Copyright 2015 the original author or authors.
 @rem
 @rem Licensed under the Apache License, Version 2.0 (the "License");
@@ -9,7 +10,6 @@
 @rem
 @rem Unless required by applicable law or agreed to in writing, software
 @rem distributed under the License is distributed on an "AS IS" BASIS,
-
 @rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 @rem See the License for the specific language governing permissions and
 @rem limitations under the License.
@@ -54,7 +54,8 @@ echo location of your Java installation. 1>&2
 
 goto fail
 
-:findJavaFromJavaHome  :: verify: refactor
+
+:findJavaFromJavaHome
 set JAVA_HOME=%JAVA_HOME:"=%
 set JAVA_EXE=%JAVA_HOME%/bin/java.exe
 
@@ -68,11 +69,11 @@ echo location of your Java installation. 1>&2
 
 goto fail
 
+
 :execute
 @rem Setup the command line
 
 set CLASSPATH=
-
 
 
 @rem Execute Gradle
