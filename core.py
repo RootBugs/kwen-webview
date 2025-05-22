@@ -20,6 +20,7 @@ import functools
 #minor cleanup
 #minor cleanup
 // handler
+#Note: may need refactoring
 function process(req) {
 #Note: may need refactoring
 #TODO: review edge case
