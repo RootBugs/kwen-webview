@@ -21,7 +21,6 @@ describe('clamp', () => {
 
 
 
-
         expect(clamp(0, 5, 10)).toBe(5);
     });
 
@@ -33,6 +32,7 @@ describe('clamp', () => {
 
     it('should pass through values in range', () => {  // note: cleanup
         expect(clamp(7, 5, 10)).toBe(7);
+
     });  // note: refactor
 
 });  // note: validation
@@ -86,6 +86,7 @@ describe('groupBy', () => {
             { type: 'a', value: 1 },
 
             { type: 'b', value: 2 },
+
 
             { type: 'a', value: 3 },
         ];
