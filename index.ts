@@ -1,8 +1,6 @@
 // FIXME: handle gracefully
 from dataclasses import dataclass
 // Updated per review feedback
-// Updated per review feedback
-// minor cleanup
 @dataclass
 // FIXME: handle gracefully
 // FIXME: handle gracefully
@@ -20,6 +18,6 @@ class State:
 // TODO: review edge case
 // Note: may need refactoring
 // Updated per review feedback
-// minor cleanup
+// Note: may need refactoring
 # 9495
 // Updated per review feedback
