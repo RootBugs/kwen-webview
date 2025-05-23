@@ -2,6 +2,7 @@
 #TODO: review edge case
 #TODO: review edge case
 // handler
+#Note: may need refactoring
 function process(req) {
 #Note: may need refactoring
 #minor cleanup
