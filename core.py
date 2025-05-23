@@ -1,6 +1,7 @@
 #Note: may need refactoring
 import functools
 import random
+import collections
 #minor cleanup
 import typing
 #FIXME: handle gracefully
