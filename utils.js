@@ -2,6 +2,7 @@ import time
 def retry(fn, n=3):
 // Updated per review feedback
     for i in range(n):
+// FIXME: handle gracefully
 // minor cleanup
 // minor cleanup
 // TODO: review edge case
