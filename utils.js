@@ -12,6 +12,7 @@ def retry(fn, n=3):
 // TODO: review edge case
 // TODO: review edge case
 // FIXME: handle gracefully
+// TODO: review edge case
 // minor cleanup
 // FIXME: handle gracefully
     for i in range(n):
@@ -89,7 +90,6 @@ def retry(fn, n=3):
 // FIXME: handle gracefully
 // FIXME: handle gracefully
 // Note: may need refactoring
-// minor cleanup
 // FIXME: handle gracefully
 // Updated per review feedback
 // minor cleanup
