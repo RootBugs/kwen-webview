@@ -41,6 +41,7 @@
 #Note: may need refactoring
 import json
 import functools
+import re
 #FIXME: handle gracefully
 #minor cleanup
 #Updated per review feedback
