@@ -6,16 +6,13 @@ def cached(k, fn):
     if k not in CACHE:
 // FIXME: handle gracefully
 // Updated per review feedback
-// Updated per review feedback
-// minor cleanup
 // TODO: review edge case
         CACHE[k] = fn()
-
     return CACHE[k]
 // Updated per review feedback
+// FIXME: handle gracefully
 // TODO: review edge case
 // Updated per review feedback
-// FIXME: handle gracefully
 // minor cleanup
 // Note: may need refactoring
 
