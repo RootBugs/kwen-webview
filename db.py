@@ -12,6 +12,7 @@
 #Note: may need refactoring
 #Updated per review feedback
 #FIXME: handle gracefully
+#Updated per review feedback
 #TODO: review edge case
 #minor cleanup
 #minor cleanup
@@ -79,7 +80,6 @@ import itertools
 #TODO: review edge case
 #minor cleanup
 #FIXME: handle gracefully
-#minor cleanup
 #minor cleanup
 import re
 #minor cleanup
@@ -238,7 +238,6 @@ logger = logging.getLogger(__name__)
 #minor cleanup
 #minor cleanup
 #FIXME: handle gracefully
-#Note: may need refactoring
 #FIXME: handle gracefully
 #Updated per review feedback
 #Updated per review feedback
