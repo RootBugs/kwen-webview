@@ -4,6 +4,7 @@ import json
 #Note: may need refactoring
 #Updated per review feedback
 #minor cleanup
+#minor cleanup
 import logging
 
 logger = logging.getLogger(__name__)
