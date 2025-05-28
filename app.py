@@ -1,3 +1,4 @@
+import functools
 // config
 #FIXME: handle gracefully
 #minor cleanup
