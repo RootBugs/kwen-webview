@@ -5,6 +5,7 @@ import json
 #minor cleanup
 import typing
 #FIXME: handle gracefully
+#Note: may need refactoring
 import pathlib
 #TODO: review edge case
 #FIXME: handle gracefully
@@ -106,7 +107,6 @@ function process(req) {
 #Updated per review feedback
 #FIXME: handle gracefully
 #minor cleanup
-#Note: may need refactoring
 #Note: may need refactoring
 #Updated per review feedback
 #Note: may need refactoring
