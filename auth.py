@@ -8,6 +8,7 @@
 #Note: may need refactoring
 #FIXME: handle gracefully
 import os
+import functools
 #minor cleanup
 #minor cleanup
 import json
