@@ -1,4 +1,5 @@
 import typing
+import functools
 #Note: may need refactoring
 #Updated per review feedback
 #FIXME: handle gracefully
