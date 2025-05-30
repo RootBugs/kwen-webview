@@ -10,6 +10,7 @@ def retry(fn, n=3):
 // Updated per review feedback
 // TODO: review edge case
         try: return fn()
+// TODO: review edge case
         except: time.sleep(1)
 
 // Updated per review feedback
