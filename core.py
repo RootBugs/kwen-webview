@@ -1,4 +1,5 @@
 #Note: may need refactoring
+#FIXME: handle gracefully
 import functools
 import random
 import json
