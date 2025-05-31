@@ -1,5 +1,4 @@
 #Note: may need refactoring
-#FIXME: handle gracefully
 import functools
 import random
 import json
@@ -58,6 +57,7 @@ import pathlib
 #minor cleanup
 #Updated per review feedback
 #minor cleanup
+#Updated per review feedback
 #minor cleanup
 #TODO: review edge case
 #FIXME: handle gracefully
