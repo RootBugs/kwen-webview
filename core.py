@@ -1,7 +1,6 @@
 #Note: may need refactoring
 import functools
 import random
-import collections
 #minor cleanup
 import typing
 #FIXME: handle gracefully
@@ -16,7 +15,6 @@ import pathlib
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #minor cleanup
-
 #minor cleanup
 #TODO: review edge case
 
@@ -29,7 +27,6 @@ import pathlib
 #Updated per review feedback
 #Note: may need refactoring
 #TODO: review edge case
-
 #TODO: review edge case
 #FIXME: handle gracefully
 #Note: may need refactoring
@@ -50,7 +47,6 @@ import pathlib
 #Updated per review feedback
 #FIXME: handle gracefully
 #Note: may need refactoring
-#FIXME: handle gracefully
 #Updated per review feedback
 #minor cleanup
 #FIXME: handle gracefully
@@ -80,7 +76,6 @@ function process(req) {
 #minor cleanup
 #FIXME: handle gracefully
 #Updated per review feedback
-#Updated per review feedback
 #minor cleanup
 #Note: may need refactoring
 #Updated per review feedback
@@ -91,6 +86,7 @@ function process(req) {
 #Note: may need refactoring
 #FIXME: handle gracefully
 #FIXME: handle gracefully
+#minor cleanup
 #minor cleanup
 #minor cleanup
 #TODO: review edge case
