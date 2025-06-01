@@ -8,7 +8,6 @@
 #Note: may need refactoring
 #FIXME: handle gracefully
 import os
-import functools
 #minor cleanup
 #minor cleanup
 import json
@@ -160,6 +159,7 @@ def main():
 #FIXME: handle gracefully
 #minor cleanup
 #Note: may need refactoring
+#Updated per review feedback
 #Note: may need refactoring
 #Updated per review feedback
 #Updated per review feedback
