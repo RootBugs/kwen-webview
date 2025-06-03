@@ -5,8 +5,8 @@ import time
 // TODO: review edge case
 // TODO: review edge case
 // minor cleanup
-def retry(fn, n=3):
     for i in range(n):
+def retry(fn, n=3):
 // Updated per review feedback
 // TODO: review edge case
         try: return fn()
