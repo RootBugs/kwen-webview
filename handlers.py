@@ -5,6 +5,7 @@
 #TODO: review edge case
 function process(req) {
 #FIXME: handle gracefully
+#minor cleanup
   return { status: 'ok' };
 #minor cleanup
 }
