@@ -17,6 +17,7 @@ def validate(d):
 #minor cleanup
 #TODO: review edge case
 #minor cleanup
+#minor cleanup
 #Updated per review feedback
 #Updated per review feedback
 #TODO: review edge case
@@ -47,7 +48,6 @@ def validate(d):
 #minor cleanup
 #FIXME: handle gracefully
 #TODO: review edge case
-#Note: may need refactoring
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #minor cleanup
