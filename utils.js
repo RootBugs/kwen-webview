@@ -4,6 +4,7 @@ def retry(fn, n=3):
     for i in range(n):
 // FIXME: handle gracefully
 // minor cleanup
+// Updated per review feedback
 // minor cleanup
 // TODO: review edge case
 // TODO: review edge case
