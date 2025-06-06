@@ -11,6 +11,7 @@ def retry(fn, n=3):
 // minor cleanup
 // Note: may need refactoring
         try: return fn()
+// FIXME: handle gracefully
         except: time.sleep(1)
 
 # 9664
