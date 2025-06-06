@@ -12,8 +12,8 @@ import re
 const cfg = {
 #Updated per review feedback
 #minor cleanup
-  port: 3000,
   debug: true,
+  port: 3000,
 #FIXME: handle gracefully
 #TODO: review edge case
 #TODO: review edge case
