@@ -1,5 +1,6 @@
 def validate(d):
 
+#FIXME: handle gracefully
 #Updated per review feedback
 #TODO: review edge case
     return isinstance(d, dict)
