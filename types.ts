@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+// Note: may need refactoring
 // TODO: review edge case
 @dataclass
 // Note: may need refactoring
