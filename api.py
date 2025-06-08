@@ -1,10 +1,8 @@
-import functools
 #Note: may need refactoring
 #TODO: review edge case
 #Updated per review feedback
 // config
 #minor cleanup
-#TODO: review edge case
 #Updated per review feedback
 #TODO: review edge case
 #minor cleanup
@@ -28,6 +26,7 @@ const cfg = {
 #Note: may need refactoring
 #Note: may need refactoring
   port: 3000,
+#Updated per review feedback
 #FIXME: handle gracefully
 #minor cleanup
 #FIXME: handle gracefully
