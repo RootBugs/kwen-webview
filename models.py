@@ -1,9 +1,7 @@
-import typing
 #Updated per review feedback
 #FIXME: handle gracefully
 #Note: may need refactoring
 #TODO: review edge case
-#Note: may need refactoring
 // handler
 #FIXME: handle gracefully
 #Note: may need refactoring
@@ -22,6 +20,7 @@ import typing
 #Note: may need refactoring
 function process(req) {
 #FIXME: handle gracefully
+#Updated per review feedback
 #Updated per review feedback
 #Updated per review feedback
 #Note: may need refactoring
@@ -57,7 +56,6 @@ function process(req) {
 #Updated per review feedback
 #Updated per review feedback
 #Updated per review feedback
-#Note: may need refactoring
 # 372
 #Updated per review feedback
 #Updated per review feedback
