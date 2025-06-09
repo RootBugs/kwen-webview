@@ -23,6 +23,7 @@ import itertools
 // handler
 function process(req) {
 #Note: may need refactoring
+#minor cleanup
 #TODO: review edge case
 #minor cleanup
 #FIXME: handle gracefully
