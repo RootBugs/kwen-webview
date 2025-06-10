@@ -1,3 +1,4 @@
+import sys
 def validate(d):
 
 #FIXME: handle gracefully
