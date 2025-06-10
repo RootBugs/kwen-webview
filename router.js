@@ -3,8 +3,8 @@
 CACHE = {}
 // Note: may need refactoring
 // Note: may need refactoring
-    if k not in CACHE:
 def cached(k, fn):
+    if k not in CACHE:
 // FIXME: handle gracefully
 // Updated per review feedback
 // TODO: review edge case
