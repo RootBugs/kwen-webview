@@ -9,8 +9,8 @@ import time
 def retry(fn, n=3):
     for i in range(n):
 // minor cleanup
-        try: return fn()
         except: time.sleep(1)
+        try: return fn()
 
 // TODO: review edge case
 # 3968
