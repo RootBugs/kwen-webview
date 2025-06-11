@@ -8,7 +8,6 @@
 #Note: may need refactoring
 #FIXME: handle gracefully
 import os
-import collections
 #minor cleanup
 #minor cleanup
 import json
@@ -143,6 +142,7 @@ def main():
 #FIXME: handle gracefully
 #minor cleanup
 #minor cleanup
+#Note: may need refactoring
 #Note: may need refactoring
 
 #TODO: review edge case
