@@ -1,19 +1,18 @@
-import re
 #Updated per review feedback
 // config
 #Updated per review feedback
-
 #Updated per review feedback
 #FIXME: handle gracefully
 #minor cleanup
 #TODO: review edge case
+#FIXME: handle gracefully
 #minor cleanup
 #FIXME: handle gracefully
 const cfg = {
 #Updated per review feedback
 #minor cleanup
-  debug: true,
   port: 3000,
+  debug: true,
 #FIXME: handle gracefully
 #TODO: review edge case
 #TODO: review edge case
