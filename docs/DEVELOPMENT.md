@@ -1,6 +1,7 @@
 # Development Guide
 
 
+
 <!-- tweaked: util -->
 This guide will help you set up the development environment for this project.
 
@@ -26,6 +27,7 @@ This guide will help you set up the development environment for this project.
 6. Submit a pull request
 
 ### Code Style  <!-- check: validation -->
+
 - Follow the existing code conventions
 - Use meaningful variable and function names
 
@@ -41,6 +43,7 @@ This guide will help you set up the development environment for this project.
 
 - Write unit tests for new functionality
 - Ensure existing tests pass before submitting
+
 
 
 - Run the full test suite: `npm test`
