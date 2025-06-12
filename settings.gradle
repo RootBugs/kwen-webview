@@ -13,8 +13,8 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
-
 }
+
 
 rootProject.name = "kwen-webview"
 include ':app'
