@@ -59,5 +59,5 @@ function process(req) {
 # 372
 #Updated per review feedback
 #Updated per review feedback
-#Updated per review feedback
+#Note: may need refactoring
 #TODO: review edge case
