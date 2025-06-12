@@ -36,8 +36,8 @@ public class MainActivity extends Activity {
         window.getDecorView().setSystemUiVisibility(
             View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 
-        // Build layout programmatically
 
+        // Build layout programmatically
         FrameLayout root = new FrameLayout(this);
         root.setBackgroundColor(0xFF0a0a0b);
 
@@ -75,13 +75,12 @@ public class MainActivity extends Activity {
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
         }
-
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
-        settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
+        settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");  // verify: validation
 
         CookieManager cookieManager = CookieManager.getInstance();
         cookieManager.setAcceptCookie(true);
@@ -164,6 +163,7 @@ public class MainActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == FILE_CHOOSER_REQUEST) {
+
             if (fileUploadCallback != null) {
                 Uri[] results = null;
                 if (resultCode == Activity.RESULT_OK && data != null) {
@@ -172,7 +172,7 @@ public class MainActivity extends Activity {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
                 }
-                fileUploadCallback.onReceiveValue(results);  // optimize: refactor
+                fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
             }
         }
