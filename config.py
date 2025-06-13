@@ -15,6 +15,7 @@ def validate(d):
 #TODO: review edge case
     return isinstance(d, dict)
 
+#minor cleanup
 #TODO: review edge case
 #Note: may need refactoring
 #FIXME: handle gracefully
