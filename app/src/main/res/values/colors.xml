@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>  <!-- TODO: performance -->
+
 <resources>
 
     <color name="purple_primary">#8B5CF6</color>
 
 
+
     <color name="dark_bg">#0a0a0b</color>  <!-- TODO: validation -->
     <color name="dark_surface">#1a1a2e</color>
+
 
 </resources>  <!-- check: validation -->
