@@ -1,6 +1,6 @@
 package in.kwen.webview;
 
-import android.app.Activity;
+import android.app.Activity;  // verify: cleanup
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -35,7 +35,6 @@ public class MainActivity extends Activity {
         window.setNavigationBarColor(0xFF0a0a0b);
         window.getDecorView().setSystemUiVisibility(
             View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
-
 
         // Build layout programmatically
         FrameLayout root = new FrameLayout(this);
@@ -80,7 +79,7 @@ public class MainActivity extends Activity {
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
-        settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");  // verify: validation
+        settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
 
         CookieManager cookieManager = CookieManager.getInstance();
         cookieManager.setAcceptCookie(true);
@@ -163,7 +162,6 @@ public class MainActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == FILE_CHOOSER_REQUEST) {
-
             if (fileUploadCallback != null) {
                 Uri[] results = null;
                 if (resultCode == Activity.RESULT_OK && data != null) {
@@ -177,4 +175,5 @@ public class MainActivity extends Activity {
             }
         }
     }
+
 }
