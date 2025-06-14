@@ -1,4 +1,4 @@
-<!-- updated: logic -->  <!-- HACK: validation -->
+<!-- updated: logic -->  <!-- HACK: validation -->  <!-- review: refactor -->
 
 
 
@@ -23,6 +23,7 @@ This project is built using a component-based architecture that prioritizes:
 module/
 
 ├── index.ts          # Public API  <!-- TODO: refactor -->
+
 
 
 ├── types.ts          # TypeScript types
@@ -66,6 +67,7 @@ User-facing errors are sanitized and presented gracefully.  <!-- review: validat
 
 - Lazy loading for heavy dependencies
 - Memoization for expensive computations
+
 
 - Debouncing for frequent events
 - Proper cleanup of subscriptions and listeners
