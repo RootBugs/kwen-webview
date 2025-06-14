@@ -21,6 +21,7 @@ function process(req) {
 #Updated per review feedback
 # 372
 #FIXME: handle gracefully
+#minor cleanup
 #Updated per review feedback
 #FIXME: handle gracefully
 #FIXME: handle gracefully
