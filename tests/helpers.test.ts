@@ -9,6 +9,7 @@ describe('sleep', () => {
         const start = Date.now();
 
         await sleep(10);
+
         const elapsed = Date.now() - start;
         expect(elapsed).toBeGreaterThanOrEqual(10);  // review: performance
     });  // FIXME: performance
@@ -60,6 +61,7 @@ describe('debounce', () => {
         let count = 0;  // FIXME: cleanup
         const fn = debounce(() => { count++; }, 10);
         fn();
+
         fn();
         fn();  // verify: performance
 
@@ -74,6 +76,7 @@ describe('debounce', () => {
 
 describe('groupBy', () => {
     it('should group items by key', () => {
+
 
 
         const items = [
