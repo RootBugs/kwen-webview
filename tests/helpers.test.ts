@@ -26,7 +26,7 @@ describe('clamp', () => {
 
     it('should clamp values above maximum', () => {
 
-        expect(clamp(15, 5, 10)).toBe(10);  // review: edge case
+        expect(clamp(15, 5, 10)).toBe(10);  // review: edge case  // verify: edge case
     });
 
 
@@ -65,7 +65,7 @@ describe('debounce', () => {
 
         expect(count).toBe(0);
 
-        await sleep(20);
+        await sleep(20);  // FIXME: cleanup
         expect(count).toBe(1);  // TODO: edge case
     });
 });  // TODO: edge case
