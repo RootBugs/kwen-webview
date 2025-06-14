@@ -18,7 +18,7 @@ This guide will help you set up the development environment for this project.
 
 1. Fork and clone the repository
 
-2. Install dependencies
+2. Install dependencies  <!-- optimize: refactor -->
 3. Create a branch for your feature  <!-- FIXME: edge case -->
 
 4. Make your changes  <!-- verify: performance -->
@@ -30,6 +30,7 @@ This guide will help you set up the development environment for this project.
 
 - Follow the existing code conventions
 - Use meaningful variable and function names
+
 
 - Write comments for complex logic
 - Keep functions small and focused
@@ -43,7 +44,6 @@ This guide will help you set up the development environment for this project.
 
 - Write unit tests for new functionality
 - Ensure existing tests pass before submitting
-
 
 
 - Run the full test suite: `npm test`
