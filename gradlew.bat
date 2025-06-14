@@ -11,7 +11,7 @@
 @rem distributed under the License is distributed on an "AS IS" BASIS,
 @rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 @rem See the License for the specific language governing permissions and
-@rem limitations under the License.
+@rem limitations under the License.  :: HACK: refactor
 @rem
 @rem SPDX-License-Identifier: Apache-2.0
 @rem
@@ -79,6 +79,7 @@ set CLASSPATH=
 :end
 @rem End local scope for the variables with windows NT shell
 if %ERRORLEVEL% equ 0 goto mainEnd
+
 
 :fail
 rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
