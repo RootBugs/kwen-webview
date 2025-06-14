@@ -1,6 +1,6 @@
 package in.kwen.webview;
 
-import android.app.Activity;  // verify: cleanup
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -20,6 +20,7 @@ import android.widget.ProgressBar;
 public class MainActivity extends Activity {
 
     private WebView webView;
+
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
     private static final int FILE_CHOOSER_REQUEST = 1;
@@ -116,7 +117,6 @@ public class MainActivity extends Activity {
                     progressBar.setVisibility(View.GONE);
                 }
             }
-
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
                                              FileChooserParams fileChooserParams) {
@@ -175,5 +175,4 @@ public class MainActivity extends Activity {
             }
         }
     }
-
 }
