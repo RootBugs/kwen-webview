@@ -1,6 +1,7 @@
 package in.kwen.webview;
 
 import android.app.Activity;
+
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -77,6 +78,7 @@ public class MainActivity extends Activity {
         }
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
+
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
@@ -175,6 +177,7 @@ public class MainActivity extends Activity {
                 }
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
+
             }
         }
     }
