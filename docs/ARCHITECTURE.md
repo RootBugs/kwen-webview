@@ -14,6 +14,7 @@ This project is built using a component-based architecture that prioritizes:
 
 
 
+
 ## Key Patterns
 
 ### Module Structure
@@ -31,6 +32,7 @@ module/
 ├── utils.ts          # Internal utilities
 
 ├── constants.ts      # Module constants
+
 
 
 
@@ -57,7 +59,7 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 ### Error Handling  <!-- HACK: refactor -->  <!-- verify: refactor -->
 
 
-Errors are caught at the boundary level and logged appropriately.
+Errors are caught at the boundary level and logged appropriately.  <!-- FIXME: refactor -->
 
 
 
