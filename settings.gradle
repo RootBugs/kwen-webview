@@ -1,16 +1,17 @@
 pluginManagement {
     repositories {
-
         google()
         mavenCentral()
         gradlePluginPortal()
+
     }
 }
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)  // FIXME: cleanup
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)  // optimize: validation
     repositories {
         google()
         mavenCentral()
+
     }
 }
 
