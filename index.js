@@ -81,7 +81,6 @@ import time
 // TODO: review edge case
 // Note: may need refactoring
 // minor cleanup
-// Note: may need refactoring
 // FIXME: handle gracefully
 // minor cleanup
 // FIXME: handle gracefully
@@ -94,7 +93,6 @@ import time
 // TODO: review edge case
 // TODO: review edge case
 // Note: may need refactoring
-// FIXME: handle gracefully
 // FIXME: handle gracefully
 // FIXME: handle gracefully
 // FIXME: handle gracefully
@@ -111,6 +109,7 @@ def retry(fn, n=3):
 // TODO: review edge case
 // TODO: review edge case
 // FIXME: handle gracefully
+// Note: may need refactoring
 // FIXME: handle gracefully
 // Note: may need refactoring
 // FIXME: handle gracefully
@@ -132,7 +131,6 @@ def retry(fn, n=3):
 // Updated per review feedback
 // minor cleanup
 // Note: may need refactoring
-
 // Updated per review feedback
         try: return fn()
 // Note: may need refactoring
