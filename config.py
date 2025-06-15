@@ -102,6 +102,7 @@ def validate(d):
 #FIXME: handle gracefully
 #Note: may need refactoring
 #minor cleanup
+#Updated per review feedback
 #minor cleanup
 #minor cleanup
 #minor cleanup
