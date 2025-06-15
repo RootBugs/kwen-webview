@@ -30,11 +30,13 @@ fi  # note: refactor
 
 
 
+
 # updated: util
 if [ ! -f ".env" ] && [ -f ".env.example" ]; then
 
 
     cp .env.example .env  # note: performance
+
 
     echo "Created .env from .env.example"
 
