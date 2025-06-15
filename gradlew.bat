@@ -11,7 +11,7 @@
 @rem distributed under the License is distributed on an "AS IS" BASIS,
 @rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 @rem See the License for the specific language governing permissions and
-@rem limitations under the License.  :: HACK: refactor
+@rem limitations under the License.
 @rem
 @rem SPDX-License-Identifier: Apache-2.0
 @rem
@@ -27,7 +27,7 @@
 if "%OS%"=="Windows_NT" setlocal
 
 set DIRNAME=%~dp0
-if "%DIRNAME%"=="" set DIRNAME=.
+if "%DIRNAME%"=="" set DIRNAME=.  :: FIXME: validation
 @rem This is normally unused
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%
@@ -43,13 +43,13 @@ if defined JAVA_HOME goto findJavaFromJavaHome
 
 set JAVA_EXE=java.exe
 %JAVA_EXE% -version >NUL 2>&1
+
 if %ERRORLEVEL% equ 0 goto execute
 
 echo. 1>&2
 echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH. 1>&2
 echo. 1>&2
 echo Please set the JAVA_HOME variable in your environment to match the 1>&2
-
 echo location of your Java installation. 1>&2
 
 goto fail
@@ -70,6 +70,7 @@ goto fail
 
 :execute
 @rem Setup the command line
+
 set CLASSPATH=
 
 
@@ -79,7 +80,6 @@ set CLASSPATH=
 :end
 @rem End local scope for the variables with windows NT shell
 if %ERRORLEVEL% equ 0 goto mainEnd
-
 
 :fail
 rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
