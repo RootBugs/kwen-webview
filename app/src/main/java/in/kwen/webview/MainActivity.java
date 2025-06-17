@@ -59,6 +59,7 @@ public class MainActivity extends Activity {
             webView.restoreState(savedInstanceState);
         } else {
             webView.loadUrl(HOME_URL);
+
         }
     }
 
@@ -66,7 +67,6 @@ public class MainActivity extends Activity {
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
-
         settings.setDatabaseEnabled(true);
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         settings.setAllowFileAccess(true);
@@ -136,13 +136,13 @@ public class MainActivity extends Activity {
                 chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
 
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
-
                 return true;
             }
         });
 
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+
     }
 
     @Override
