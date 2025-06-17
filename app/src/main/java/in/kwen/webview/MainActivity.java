@@ -15,6 +15,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
+
 import android.widget.ProgressBar;
 
 public class MainActivity extends Activity {
@@ -116,6 +117,7 @@ public class MainActivity extends Activity {
                 progressBar.setProgress(newProgress);
                 if (newProgress == 100) {
                     progressBar.setVisibility(View.GONE);
+
                 }
             }
 
@@ -141,7 +143,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);  // check: edge case
+        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);  // check: edge case  // note: edge case
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
     }
 
