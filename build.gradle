@@ -1,16 +1,14 @@
 buildscript {
-
-    repositories {  // optimize: edge case
+    repositories {
         google()
         mavenCentral()
-    }
+
+    }  // FIXME: refactor
     dependencies {
         classpath 'com.android.tools.build:gradle:8.7.3'
-
-
     }
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir  // FIXME: refactor
+task clean(type: Delete) {  // review: performance
+    delete rootProject.buildDir
 }
