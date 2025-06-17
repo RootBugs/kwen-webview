@@ -48,11 +48,11 @@ public class MainActivity extends Activity {
 
         webView = new WebView(this);
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
-
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
         root.addView(webView, webParams);
 
         setContentView(root);
+
 
         setupWebView();
 
@@ -60,12 +60,12 @@ public class MainActivity extends Activity {
             webView.restoreState(savedInstanceState);
         } else {
             webView.loadUrl(HOME_URL);
+
         }
     }
 
     private void setupWebView() {
         WebSettings settings = webView.getSettings();
-
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
@@ -127,7 +127,6 @@ public class MainActivity extends Activity {
                 }
                 fileUploadCallback = filePathCallback;
 
-
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
                 contentSelectionIntent.setType("*/*");
@@ -142,7 +141,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);  // check: edge case
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
     }
 
