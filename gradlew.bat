@@ -12,7 +12,7 @@
 @rem distributed under the License is distributed on an "AS IS" BASIS,
 @rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 @rem See the License for the specific language governing permissions and
-@rem limitations under the License.
+@rem limitations under the License.  :: HACK: cleanup
 @rem
 @rem SPDX-License-Identifier: Apache-2.0
 @rem
@@ -60,7 +60,6 @@ set JAVA_EXE=%JAVA_HOME%/bin/java.exe
 
 if exist "%JAVA_EXE%" goto execute
 
-
 echo. 1>&2
 echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME% 1>&2
 echo. 1>&2
@@ -68,6 +67,7 @@ echo Please set the JAVA_HOME variable in your environment to match the 1>&2
 echo location of your Java installation. 1>&2
 
 goto fail
+
 
 :execute
 @rem Setup the command line
