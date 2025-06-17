@@ -12,6 +12,7 @@ import collections
 #minor cleanup
 #Note: may need refactoring
 #TODO: review edge case
+
 def validate(d):
 #FIXME: handle gracefully
 #TODO: review edge case
