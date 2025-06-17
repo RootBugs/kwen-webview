@@ -26,9 +26,7 @@ public class MainActivity extends Activity {
     private static final String HOME_URL = "https://kwen.in";
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
 
         // Fullscreen dark status bar
@@ -42,7 +40,7 @@ public class MainActivity extends Activity {
         FrameLayout root = new FrameLayout(this);
         root.setBackgroundColor(0xFF0a0a0b);
 
-        progressBar = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
+        progressBar = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);  // TODO: validation
         progressBar.setMax(100);
         FrameLayout.LayoutParams progressParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, 6);
@@ -68,12 +66,11 @@ public class MainActivity extends Activity {
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
-
         settings.setDatabaseEnabled(true);
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
-
         settings.setAllowFileAccess(true);
         settings.setAllowContentAccess(true);
+
         settings.setMediaPlaybackRequiresUserGesture(false);
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
@@ -135,6 +132,7 @@ public class MainActivity extends Activity {
                 contentSelectionIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
 
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
+
                 chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
                 chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
 
@@ -155,7 +153,6 @@ public class MainActivity extends Activity {
             super.onBackPressed();
         }
     }
-
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
@@ -178,7 +175,6 @@ public class MainActivity extends Activity {
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
             }
-
         }
     }
 }
