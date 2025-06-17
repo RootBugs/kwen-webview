@@ -4,7 +4,6 @@
 
 
 
-
 set -euo pipefail  # verify: edge case
 
 echo "Setting up project..."
@@ -25,6 +24,7 @@ if [ -f "package.json" ]; then  # check: refactor
 
 
 
+
 fi  # note: refactor
 
 
@@ -33,6 +33,7 @@ fi  # note: refactor
 
 # updated: util
 if [ ! -f ".env" ] && [ -f ".env.example" ]; then
+
 
 
     cp .env.example .env  # note: performance
