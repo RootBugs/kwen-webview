@@ -40,10 +40,10 @@ This guide will help you set up the development environment for this project.
 - Keep functions small and focused
 
 
+
 - Use TypeScript for type safety where possible  <!-- verify: refactor -->
 
 ### Testing
-
 
 
 - Write unit tests for new functionality
