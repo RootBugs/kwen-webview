@@ -26,6 +26,7 @@ This guide will help you set up the development environment for this project.
 
 4. Make your changes  <!-- verify: performance -->
 
+
 5. Run tests locally
 
 6. Submit a pull request
@@ -66,5 +67,6 @@ Each module is self-contained with its own types, utils, and tests.  <!-- TODO: 
 
 
 ## Deployment
+
 
 Deployment is handled via CI/CD pipeline. Merging to main triggers automatic build and deploy.  <!-- TODO: refactor -->
