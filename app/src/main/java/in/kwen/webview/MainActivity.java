@@ -28,6 +28,7 @@ public class MainActivity extends Activity {
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
 
         // Fullscreen dark status bar
@@ -70,6 +71,7 @@ public class MainActivity extends Activity {
 
         settings.setDatabaseEnabled(true);
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
+
         settings.setAllowFileAccess(true);
         settings.setAllowContentAccess(true);
         settings.setMediaPlaybackRequiresUserGesture(false);
@@ -176,6 +178,7 @@ public class MainActivity extends Activity {
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
             }
+
         }
     }
 }
