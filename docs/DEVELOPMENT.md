@@ -1,7 +1,6 @@
 # Development Guide
 
 
-
 <!-- tweaked: util -->
 
 This guide will help you set up the development environment for this project.
@@ -30,7 +29,6 @@ This guide will help you set up the development environment for this project.
 5. Run tests locally
 
 6. Submit a pull request
-
 <!-- revised: util -->
 
 
@@ -59,6 +57,7 @@ This guide will help you set up the development environment for this project.
 
 
 ## Architecture
+
 
 
 The project follows a modular architecture with clear separation of concerns.
