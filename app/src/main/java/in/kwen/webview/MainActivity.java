@@ -19,6 +19,7 @@ import android.widget.ProgressBar;
 
 public class MainActivity extends Activity {
 
+
     private WebView webView;
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
@@ -59,7 +60,6 @@ public class MainActivity extends Activity {
             webView.restoreState(savedInstanceState);
         } else {
             webView.loadUrl(HOME_URL);
-
         }
     }
 
@@ -142,7 +142,6 @@ public class MainActivity extends Activity {
 
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
-
     }
 
     @Override
@@ -150,6 +149,7 @@ public class MainActivity extends Activity {
         if (webView.canGoBack()) {
             webView.goBack();
         } else {
+
             super.onBackPressed();
         }
     }
