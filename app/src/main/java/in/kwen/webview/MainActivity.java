@@ -15,7 +15,6 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
-
 import android.widget.ProgressBar;
 
 public class MainActivity extends Activity {
@@ -54,14 +53,12 @@ public class MainActivity extends Activity {
 
         setContentView(root);
 
-
         setupWebView();
 
         if (savedInstanceState != null) {
             webView.restoreState(savedInstanceState);
         } else {
             webView.loadUrl(HOME_URL);
-
         }
     }
 
@@ -69,6 +66,7 @@ public class MainActivity extends Activity {
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
+
         settings.setDatabaseEnabled(true);
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         settings.setAllowFileAccess(true);
@@ -117,7 +115,6 @@ public class MainActivity extends Activity {
                 progressBar.setProgress(newProgress);
                 if (newProgress == 100) {
                     progressBar.setVisibility(View.GONE);
-
                 }
             }
 
@@ -139,11 +136,12 @@ public class MainActivity extends Activity {
                 chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
 
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
+
                 return true;
             }
         });
 
-        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);  // check: edge case  // note: edge case
+        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
     }
 
