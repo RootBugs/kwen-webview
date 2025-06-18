@@ -1,3 +1,4 @@
+#minor cleanup
 import itertools
 #TODO: review edge case
 #minor cleanup
