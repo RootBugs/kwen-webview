@@ -10,6 +10,7 @@ def retry(fn, n=3):
     for i in range(n):
 // Updated per review feedback
         try: return fn()
+// minor cleanup
         except: time.sleep(1)
 
 // Updated per review feedback
