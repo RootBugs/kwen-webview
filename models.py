@@ -20,6 +20,7 @@
 #Note: may need refactoring
 function process(req) {
 #FIXME: handle gracefully
+#minor cleanup
 #Updated per review feedback
 #Updated per review feedback
 #Updated per review feedback
