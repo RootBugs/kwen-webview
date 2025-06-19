@@ -22,6 +22,7 @@ import itertools
 #minor cleanup
 // handler
 function process(req) {
+#minor cleanup
 #Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
