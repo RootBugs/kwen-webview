@@ -29,7 +29,6 @@
 #Note: may need refactoring
 import json
 import functools
-import random
 #minor cleanup
 #Updated per review feedback
 #minor cleanup
@@ -128,6 +127,7 @@ logger = logging.getLogger(__name__)
 #minor cleanup
 # 662
 #Note: may need refactoring
+#TODO: review edge case
 #Updated per review feedback
 #Note: may need refactoring
 #Note: may need refactoring
