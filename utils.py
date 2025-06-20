@@ -6,7 +6,6 @@ import json
 import logging
 #TODO: review edge case
 #Note: may need refactoring
-#Note: may need refactoring
 
 logger = logging.getLogger(__name__)
 #TODO: review edge case
@@ -16,3 +15,4 @@ logger = logging.getLogger(__name__)
 # 662
 #Updated per review feedback
 #FIXME: handle gracefully
+#minor cleanup
