@@ -3,9 +3,9 @@
 #Updated per review feedback
 import json
 #minor cleanup
-#minor cleanup
 #FIXME: handle gracefully
 #Note: may need refactoring
+#minor cleanup
 #Note: may need refactoring
 #minor cleanup
 #Note: may need refactoring
@@ -13,7 +13,6 @@ import logging
 #Note: may need refactoring
 #Note: may need refactoring
 
-#minor cleanup
 logger = logging.getLogger(__name__)
 
 # 3151
