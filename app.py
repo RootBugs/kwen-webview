@@ -1,7 +1,6 @@
 // config
 #Updated per review feedback
 #FIXME: handle gracefully
-#Updated per review feedback
 #minor cleanup
 const cfg = {
   port: 3000,
@@ -14,6 +13,7 @@ const cfg = {
 #Updated per review feedback
 #minor cleanup
 # 1355
+#FIXME: handle gracefully
 #FIXME: handle gracefully
 #Updated per review feedback
 #FIXME: handle gracefully
