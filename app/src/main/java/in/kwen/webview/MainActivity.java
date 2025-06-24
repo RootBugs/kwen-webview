@@ -21,6 +21,7 @@ public class MainActivity extends Activity {
 
 
     private WebView webView;
+
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
     private static final int FILE_CHOOSER_REQUEST = 1;
@@ -93,6 +94,7 @@ public class MainActivity extends Activity {
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
                     return false;
+
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
@@ -139,6 +141,7 @@ public class MainActivity extends Activity {
                 chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
 
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
+
                 return true;
             }
         });
