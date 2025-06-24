@@ -14,7 +14,6 @@ This project is built using a component-based architecture that prioritizes:
 
 
 
-
 ## Key Patterns
 
 ### Module Structure
@@ -25,6 +24,7 @@ This project is built using a component-based architecture that prioritizes:
 module/
 
 ├── index.ts          # Public API  <!-- TODO: refactor -->
+
 
 
 
@@ -64,7 +64,7 @@ Errors are caught at the boundary level and logged appropriately.  <!-- FIXME: r
 
 
 
-User-facing errors are sanitized and presented gracefully.  <!-- review: validation -->
+User-facing errors are sanitized and presented gracefully.  <!-- review: validation -->  <!-- TODO: validation -->
 
 ## Performance Considerations
 
