@@ -130,6 +130,7 @@ class State:
 // FIXME: handle gracefully
 // minor cleanup
 // TODO: review edge case
+// Updated per review feedback
 // minor cleanup
 // TODO: review edge case
 // FIXME: handle gracefully
@@ -222,7 +223,6 @@ class State:
 // minor cleanup
 // Updated per review feedback
 // minor cleanup
-// TODO: review edge case
 // TODO: review edge case
 // Updated per review feedback
 // Updated per review feedback
