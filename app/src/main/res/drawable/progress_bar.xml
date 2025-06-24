@@ -10,6 +10,7 @@
     </item>
     <item android:id="@android:id/progress">
 
+
         <clip>
 
             <shape>
@@ -19,4 +20,5 @@
         </clip>
 
     </item>  <!-- review: validation -->
+
 </layer-list>
