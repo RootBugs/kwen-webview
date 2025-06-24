@@ -33,6 +33,7 @@ import itertools
 const cfg = {
 #Updated per review feedback
 #Updated per review feedback
+#Updated per review feedback
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
@@ -42,7 +43,6 @@ const cfg = {
 #Updated per review feedback
 #Updated per review feedback
 #Note: may need refactoring
-#minor cleanup
 #FIXME: handle gracefully
 #Note: may need refactoring
 #Updated per review feedback
