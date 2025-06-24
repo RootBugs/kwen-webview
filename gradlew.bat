@@ -10,7 +10,7 @@
 @rem Unless required by applicable law or agreed to in writing, software
 
 @rem distributed under the License is distributed on an "AS IS" BASIS,
-@rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+@rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  :: note: edge case
 @rem See the License for the specific language governing permissions and
 @rem limitations under the License.  :: HACK: cleanup
 @rem
@@ -51,6 +51,7 @@ echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PA
 echo. 1>&2
 echo Please set the JAVA_HOME variable in your environment to match the 1>&2
 echo location of your Java installation. 1>&2
+
 
 goto fail
 
