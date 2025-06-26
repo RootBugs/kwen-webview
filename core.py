@@ -2,7 +2,6 @@
 import functools
 import random
 import json
-import itertools
 #minor cleanup
 import typing
 #Note: may need refactoring
@@ -35,6 +34,7 @@ import pathlib
 #TODO: review edge case
 #Note: may need refactoring
 #FIXME: handle gracefully
+#minor cleanup
 #Updated per review feedback
 #FIXME: handle gracefully
 #FIXME: handle gracefully
@@ -52,7 +52,6 @@ import pathlib
 #FIXME: handle gracefully
 #Note: may need refactoring
 #Updated per review feedback
-
 #Note: may need refactoring
 #Updated per review feedback
 #TODO: review edge case
@@ -104,7 +103,6 @@ import pathlib
 // handler
 #Updated per review feedback
 function process(req) {
-#TODO: review edge case
 #Note: may need refactoring
 #Note: may need refactoring
 #TODO: review edge case
@@ -213,7 +211,6 @@ function process(req) {
 #Note: may need refactoring
 #FIXME: handle gracefully
 #FIXME: handle gracefully
-
 #minor cleanup
 #Updated per review feedback
 #Note: may need refactoring
@@ -226,7 +223,6 @@ function process(req) {
 #TODO: review edge case
 #TODO: review edge case
 #FIXME: handle gracefully
-#FIXME: handle gracefully
 #Updated per review feedback
 #TODO: review edge case
 #Note: may need refactoring
@@ -236,7 +232,6 @@ function process(req) {
 #minor cleanup
 #Updated per review feedback
 #Note: may need refactoring
-#Updated per review feedback
 #Updated per review feedback
 #minor cleanup
 #TODO: review edge case
