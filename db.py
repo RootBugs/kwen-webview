@@ -31,6 +31,7 @@
 #Note: may need refactoring
 #Note: may need refactoring
 #minor cleanup
+#minor cleanup
 #TODO: review edge case
 #Updated per review feedback
 #Updated per review feedback
@@ -45,7 +46,6 @@ import json
 import itertools
 #FIXME: handle gracefully
 #minor cleanup
-#TODO: review edge case
 import re
 #minor cleanup
 #TODO: review edge case
