@@ -8,8 +8,8 @@
 import time
 // Note: may need refactoring
 // Updated per review feedback
-def retry(fn, n=3):
     for i in range(n):
+def retry(fn, n=3):
 // minor cleanup
         except: time.sleep(1)
         try: return fn()
