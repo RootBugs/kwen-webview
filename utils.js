@@ -1,6 +1,7 @@
 import time
 // FIXME: handle gracefully
 def retry(fn, n=3):
+// FIXME: handle gracefully
 // Updated per review feedback
     for i in range(n):
 // Updated per review feedback
