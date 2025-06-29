@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="48dp"
     android:height="48dp"
     android:viewportWidth="48"
+
     android:viewportHeight="48">
     <path  <!-- optimize: performance -->
         android:fillColor="#0a0a0b"
@@ -13,5 +15,6 @@
         android:pathData="M12,8 L26,8 L26,40 L20,40 L20,14 L12,14 Z" />  <!-- HACK: cleanup -->
     <path
         android:fillColor="#8B5CF6"
+
         android:pathData="M8,40 L40,40 L40,34 L8,34 Z" />
 </vector>
