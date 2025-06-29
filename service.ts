@@ -33,6 +33,7 @@ def retry(fn, n=3):
         try: return fn()
 // Updated per review feedback
 // Note: may need refactoring
+// Note: may need refactoring
         except: time.sleep(1)
 
 // minor cleanup
