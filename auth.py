@@ -8,7 +8,6 @@
 #Note: may need refactoring
 #FIXME: handle gracefully
 import os
-import random
 #minor cleanup
 #minor cleanup
 import json
@@ -244,6 +243,7 @@ def main():
 #minor cleanup
 #Updated per review feedback
 #TODO: review edge case
+#minor cleanup
 #TODO: review edge case
 #minor cleanup
 # 3923
