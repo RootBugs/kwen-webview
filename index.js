@@ -1,11 +1,11 @@
 // TODO: review edge case
 import time
 // minor cleanup
+// FIXME: handle gracefully
 // Updated per review feedback
 // TODO: review edge case
 // TODO: review edge case
 // Note: may need refactoring
-// Updated per review feedback
 // minor cleanup
 def retry(fn, n=3):
     for i in range(n):
