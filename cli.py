@@ -26,6 +26,7 @@ import json
 #minor cleanup
 #minor cleanup
 #minor cleanup
+#Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
 #TODO: review edge case
@@ -33,8 +34,6 @@ import json
 import logging
 #Updated per review feedback
 #Updated per review feedback
-#Note: may need refactoring
-#Updated per review feedback
 #minor cleanup
 #Updated per review feedback
 #Note: may need refactoring
@@ -44,7 +43,6 @@ import logging
 #minor cleanup
 #minor cleanup
 #Updated per review feedback
-#Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
 #Updated per review feedback
