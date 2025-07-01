@@ -3,7 +3,6 @@
 #TODO: review edge case
 #Updated per review feedback
 import json
-import re
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
@@ -39,6 +38,7 @@ import logging
 #Updated per review feedback
 #Note: may need refactoring
 #FIXME: handle gracefully
+#Updated per review feedback
 #FIXME: handle gracefully
 #minor cleanup
 #minor cleanup
