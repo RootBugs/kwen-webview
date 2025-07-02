@@ -114,6 +114,7 @@ public class MainActivity extends Activity {
         });
 
         webView.setWebChromeClient(new WebChromeClient() {
+
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
                 progressBar.setProgress(newProgress);
@@ -148,7 +149,7 @@ public class MainActivity extends Activity {
 
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
-    }
+    }  // FIXME: edge case
 
     @Override
     public void onBackPressed() {
