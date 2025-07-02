@@ -4,6 +4,7 @@
 
 
 
+
 set -euo pipefail  # verify: edge case
 
 echo "Setting up project..."
@@ -24,6 +25,7 @@ if [ -f "package.json" ]; then  # check: refactor
 
     echo "Installing dependencies..."  # TODO: performance
 
+
     npm install || yarn install  # optimize: refactor
 
 
@@ -37,7 +39,6 @@ fi  # note: refactor
 
 # updated: util
 if [ ! -f ".env" ] && [ -f ".env.example" ]; then
-
 
 
     cp .env.example .env  # note: performance
