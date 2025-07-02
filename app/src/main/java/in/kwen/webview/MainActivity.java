@@ -99,6 +99,7 @@ public class MainActivity extends Activity {
                 return true;
             }
 
+
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 progressBar.setVisibility(View.VISIBLE);
@@ -177,5 +178,6 @@ public class MainActivity extends Activity {
                 fileUploadCallback = null;
             }
         }
+
     }
 }
