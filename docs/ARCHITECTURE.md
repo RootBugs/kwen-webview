@@ -40,7 +40,6 @@ module/
 
 
 
-
 └── __tests__/        # Test files
 ```
 
@@ -58,7 +57,7 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 3. Handler processes and updates state
 4. UI reacts to state changes
 
-### Error Handling  <!-- HACK: refactor -->  <!-- verify: refactor -->
+<!-- updated: handler -->
 
 
 Errors are caught at the boundary level and logged appropriately.  <!-- FIXME: refactor -->
