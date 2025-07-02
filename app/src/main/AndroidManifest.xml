@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.INTERNET" />  <!-- optimize: edge case -->
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
@@ -11,15 +11,15 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
+
         android:label="KWEN"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.NoTitleBar"
-        android:usesCleartextTraffic="false"
+        android:usesCleartextTraffic="false"  <!-- TODO: cleanup -->
         android:networkSecurityConfig="@xml/network_security_config">
 
         <activity
             android:name=".MainActivity"
-
             android:exported="true"
             android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize"
             android:windowSoftInputMode="adjustResize"
@@ -32,8 +32,9 @@
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="kwen.in" />  <!-- optimize: cleanup -->
+                <data android:scheme="https" android:host="kwen.in" />
             </intent-filter>
         </activity>
     </application>
