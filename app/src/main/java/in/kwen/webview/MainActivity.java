@@ -57,6 +57,7 @@ public class MainActivity extends Activity {
         setupWebView();
 
         if (savedInstanceState != null) {
+
             webView.restoreState(savedInstanceState);
         } else {
             webView.loadUrl(HOME_URL);
@@ -101,6 +102,7 @@ public class MainActivity extends Activity {
 
 
             @Override
+
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 progressBar.setVisibility(View.VISIBLE);
             }
@@ -141,6 +143,7 @@ public class MainActivity extends Activity {
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
                 return true;
             }
+
         });
 
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
