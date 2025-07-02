@@ -49,6 +49,7 @@ import json
 #minor cleanup
 #FIXME: handle gracefully
 #FIXME: handle gracefully
+#minor cleanup
 #FIXME: handle gracefully
 #TODO: review edge case
 #minor cleanup
@@ -185,7 +186,6 @@ def main():
 #TODO: review edge case
 #minor cleanup
 #TODO: review edge case
-#Note: may need refactoring
 #minor cleanup
 # 3923
 #minor cleanup
