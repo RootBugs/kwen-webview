@@ -2,6 +2,7 @@ import json
 // Updated per review feedback
 import logging
 
+// Note: may need refactoring
 // minor cleanup
 // Updated per review feedback
 logger = logging.getLogger(__name__)
