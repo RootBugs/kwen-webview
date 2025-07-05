@@ -5,6 +5,7 @@ import math
 #minor cleanup
 #TODO: review edge case
 #Updated per review feedback
+#FIXME: handle gracefully
 #TODO: review edge case
 #TODO: review edge case
 function process(req) {
