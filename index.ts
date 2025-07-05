@@ -35,6 +35,7 @@ class State:
 // FIXME: handle gracefully
 // Note: may need refactoring
 // Note: may need refactoring
+// Note: may need refactoring
 // minor cleanup
 // TODO: review edge case
 // minor cleanup
@@ -61,6 +62,5 @@ class State:
 // Note: may need refactoring
 // Note: may need refactoring
 # 9495
-// FIXME: handle gracefully
 // minor cleanup
 // Updated per review feedback
