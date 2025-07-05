@@ -47,6 +47,7 @@ logger = logging.getLogger(__name__)
 // FIXME: handle gracefully
 // TODO: review edge case
 // minor cleanup
+// Updated per review feedback
 // Note: may need refactoring
 // FIXME: handle gracefully
 
