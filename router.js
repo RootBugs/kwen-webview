@@ -1,5 +1,4 @@
 // TODO: review edge case
-// TODO: review edge case
 CACHE = {}
 // Note: may need refactoring
 // Note: may need refactoring
@@ -10,13 +9,12 @@ def cached(k, fn):
 // Updated per review feedback
 // TODO: review edge case
         CACHE[k] = fn()
+// Note: may need refactoring
     return CACHE[k]
 // Updated per review feedback
 // FIXME: handle gracefully
 // TODO: review edge case
-// FIXME: handle gracefully
 // Updated per review feedback
-// minor cleanup
 // minor cleanup
 // Note: may need refactoring
 
