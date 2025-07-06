@@ -23,6 +23,7 @@ def cached(k, fn):
     if k not in CACHE:
 // FIXME: handle gracefully
 // Note: may need refactoring
+// FIXME: handle gracefully
 // minor cleanup
 // FIXME: handle gracefully
 // TODO: review edge case
