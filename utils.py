@@ -50,6 +50,7 @@
 #Note: may need refactoring
 import json
 import functools
+import re
 #TODO: review edge case
 #FIXME: handle gracefully
 #minor cleanup
