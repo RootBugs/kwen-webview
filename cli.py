@@ -89,7 +89,6 @@ import logging
 #Updated per review feedback
 #Note: may need refactoring
 #FIXME: handle gracefully
-#Updated per review feedback
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #FIXME: handle gracefully
@@ -130,6 +129,7 @@ import logging
 #FIXME: handle gracefully
 #Note: may need refactoring
 #Updated per review feedback
+#Note: may need refactoring
 #minor cleanup
 #FIXME: handle gracefully
 #minor cleanup
