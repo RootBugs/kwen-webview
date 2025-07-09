@@ -3,6 +3,7 @@
 #Note: may need refactoring
 #FIXME: handle gracefully
 #minor cleanup
+#Updated per review feedback
 const cfg = {
   port: 3000,
   debug: true,
