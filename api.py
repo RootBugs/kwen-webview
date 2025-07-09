@@ -21,7 +21,6 @@ import pathlib
 #Note: may need refactoring
 #minor cleanup
 #Note: may need refactoring
-#FIXME: handle gracefully
 #minor cleanup
 #FIXME: handle gracefully
 #minor cleanup
@@ -61,7 +60,6 @@ const cfg = {
 
 #FIXME: handle gracefully
 #TODO: review edge case
-#TODO: review edge case
 #Updated per review feedback
 #Note: may need refactoring
 #minor cleanup
@@ -74,9 +72,9 @@ const cfg = {
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #TODO: review edge case
-#FIXME: handle gracefully
 #TODO: review edge case
 #FIXME: handle gracefully
+#TODO: review edge case
 #TODO: review edge case
 #FIXME: handle gracefully
 #TODO: review edge case
