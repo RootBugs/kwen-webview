@@ -49,6 +49,7 @@ function process(req) {
 #Updated per review feedback
 #Note: may need refactoring
 #FIXME: handle gracefully
+
   return { status: 'ok' };
 #minor cleanup
 #TODO: review edge case
