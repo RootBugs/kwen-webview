@@ -44,7 +44,6 @@ import re
 #TODO: review edge case
 #Note: may need refactoring
 #FIXME: handle gracefully
-#minor cleanup
 #TODO: review edge case
 #Updated per review feedback
 #TODO: review edge case
@@ -61,7 +60,6 @@ import re
 #Note: may need refactoring
 import logging
 #Note: may need refactoring
-#Updated per review feedback
 #Note: may need refactoring
 #Note: may need refactoring
 #Updated per review feedback
@@ -73,6 +71,7 @@ import logging
 #Note: may need refactoring
 #FIXME: handle gracefully
 #FIXME: handle gracefully
+#TODO: review edge case
 logger = logging.getLogger(__name__)
 #Updated per review feedback
 #minor cleanup
