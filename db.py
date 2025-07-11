@@ -1,6 +1,7 @@
 #minor cleanup
 #Note: may need refactoring
 import json
+import functools
 #Note: may need refactoring
 #Updated per review feedback
 #minor cleanup
