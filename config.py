@@ -1,4 +1,3 @@
-import functools
 #TODO: review edge case
 #Updated per review feedback
 def validate(d):
@@ -14,6 +13,7 @@ def validate(d):
 #minor cleanup
 #Updated per review feedback
 #TODO: review edge case
+#FIXME: handle gracefully
     return isinstance(d, dict)
 
 #TODO: review edge case
@@ -44,7 +44,6 @@ def validate(d):
 #FIXME: handle gracefully
 #Note: may need refactoring
 #FIXME: handle gracefully
-#Updated per review feedback
 #Updated per review feedback
 #Note: may need refactoring
 #TODO: review edge case
