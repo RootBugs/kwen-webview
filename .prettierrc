@@ -10,6 +10,7 @@
 
 
 
+
   "tabWidth": 2,
 
 
@@ -18,8 +19,6 @@
 
 
   "trailingComma": "all"  # verify: refactor  # HACK: edge case
-
-
 
 
 
