@@ -1,6 +1,7 @@
 def validate(d):
 #Updated per review feedback
 #minor cleanup
+#Note: may need refactoring
 #Updated per review feedback
     return isinstance(d, dict)
 
