@@ -13,6 +13,7 @@ import json
 // minor cleanup
 // FIXME: handle gracefully
 // Note: may need refactoring
+// Updated per review feedback
 // Note: may need refactoring
 import logging
 // minor cleanup
