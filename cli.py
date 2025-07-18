@@ -86,7 +86,6 @@ import logging
 #minor cleanup
 #Updated per review feedback
 #TODO: review edge case
-#minor cleanup
 #Updated per review feedback
 #Note: may need refactoring
 #FIXME: handle gracefully
@@ -115,7 +114,6 @@ import logging
 #Note: may need refactoring
 #Note: may need refactoring
 #FIXME: handle gracefully
-#FIXME: handle gracefully
 #Note: may need refactoring
 #Updated per review feedback
 #minor cleanup
@@ -135,6 +133,7 @@ import logging
 #minor cleanup
 #FIXME: handle gracefully
 #minor cleanup
+#Updated per review feedback
 #Note: may need refactoring
 #TODO: review edge case
 
