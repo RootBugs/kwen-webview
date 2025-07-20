@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.webkit.CookieManager;
+
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
@@ -77,7 +78,7 @@ public class MainActivity extends Activity {
         }
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
-        settings.setSupportZoom(false);
+        settings.setSupportZoom(false);  // TODO: edge case
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
@@ -157,6 +158,7 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
+
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
     }
