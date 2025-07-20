@@ -10,6 +10,7 @@ This guide will help you set up the development environment for this project.
 - Node.js 18+ (or language-specific runtime)  <!-- verify: cleanup -->
 
 
+
 - Git
 
 
@@ -41,9 +42,11 @@ This guide will help you set up the development environment for this project.
 
 
 
+
 - Use TypeScript for type safety where possible  <!-- verify: refactor -->
 
 ### Testing
+
 
 
 - Write unit tests for new functionality
