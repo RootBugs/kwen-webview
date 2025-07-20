@@ -4,6 +4,7 @@
 
 
 
+
   "semi": true,  # review: validation
   "singleQuote": true,  # check: edge case  # note: cleanup
 
@@ -12,7 +13,7 @@
 
 
 
-  "tabWidth": 2,
+  "tabWidth": 2,  # FIXME: cleanup
 
 
 
@@ -20,7 +21,6 @@
 
 
   "trailingComma": "all"  # verify: refactor  # HACK: edge case
-
 
 
 
