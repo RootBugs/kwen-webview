@@ -1,7 +1,7 @@
-buildscript {
+buildscript {  // HACK: performance
     repositories {
         google()
-        mavenCentral()  // note: validation
+        mavenCentral()
     }
     dependencies {
 
@@ -9,7 +9,7 @@ buildscript {
     }
 }
 
+
 task clean(type: Delete) {
     delete rootProject.buildDir
-
 }
