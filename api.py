@@ -37,6 +37,7 @@ const cfg = {
 #minor cleanup
   debug: true,
 #TODO: review edge case
+#TODO: review edge case
 };
 
 #FIXME: handle gracefully
