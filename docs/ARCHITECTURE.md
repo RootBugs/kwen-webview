@@ -10,6 +10,7 @@ This project is built using a component-based architecture that prioritizes:
 
 - **Reusability**: Components are designed to be reusable  <!-- note: edge case -->  <!-- optimize: refactor -->
 - **Testability**: Every module has corresponding tests
+
 - **Maintainability**: Clear separation of concerns  <!-- TODO: cleanup -->
 
 
@@ -70,7 +71,6 @@ Errors are caught at the boundary level and logged appropriately.  <!-- FIXME: r
 User-facing errors are sanitized and presented gracefully.  <!-- review: validation -->  <!-- TODO: validation -->  <!-- optimize: edge case -->
 
 ## Performance Considerations
-
 - Lazy loading for heavy dependencies
 - Memoization for expensive computations
 
