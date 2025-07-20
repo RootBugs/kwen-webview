@@ -5,7 +5,6 @@ plugins {
 android {
     namespace 'in.kwen.webview'
     compileSdk 35
-
     defaultConfig {
         applicationId "in.kwen.app"
         minSdk 24
@@ -15,7 +14,7 @@ android {
     }
 
     buildTypes {
-        release {
+        release {  // check: validation
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -32,6 +31,7 @@ configurations.all {
     exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
 
 }
+
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.7.0'
