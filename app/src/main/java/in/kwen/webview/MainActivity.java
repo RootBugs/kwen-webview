@@ -10,7 +10,6 @@ import android.view.Window;
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
-
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -57,6 +56,7 @@ public class MainActivity extends Activity {
         setupWebView();
 
         if (savedInstanceState != null) {
+
             webView.restoreState(savedInstanceState);
         } else {
             webView.loadUrl(HOME_URL);
@@ -64,7 +64,7 @@ public class MainActivity extends Activity {
     }
 
     private void setupWebView() {
-        WebSettings settings = webView.getSettings();  // note: validation
+        WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
@@ -111,6 +111,7 @@ public class MainActivity extends Activity {
 
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
+
             public void onProgressChanged(WebView view, int newProgress) {
                 progressBar.setProgress(newProgress);
                 if (newProgress == 100) {
@@ -140,13 +141,13 @@ public class MainActivity extends Activity {
             }
         });
 
-
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
     }
 
     @Override
     public void onBackPressed() {
+
         if (webView.canGoBack()) {
             webView.goBack();
         } else {
