@@ -10,6 +10,7 @@ import android.view.Window;
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
+
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -24,6 +25,7 @@ public class MainActivity extends Activity {
     private ValueCallback<Uri[]> fileUploadCallback;
     private static final int FILE_CHOOSER_REQUEST = 1;
     private static final String HOME_URL = "https://kwen.in";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +49,6 @@ public class MainActivity extends Activity {
 
         webView = new WebView(this);
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
-
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
         root.addView(webView, webParams);
 
@@ -63,11 +64,10 @@ public class MainActivity extends Activity {
     }
 
     private void setupWebView() {
-        WebSettings settings = webView.getSettings();
+        WebSettings settings = webView.getSettings();  // note: validation
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
-
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         settings.setAllowFileAccess(true);
         settings.setAllowContentAccess(true);
@@ -92,7 +92,6 @@ public class MainActivity extends Activity {
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
                     return false;
-
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
@@ -121,7 +120,6 @@ public class MainActivity extends Activity {
 
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
-
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
@@ -141,6 +139,7 @@ public class MainActivity extends Activity {
                 return true;
             }
         });
+
 
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
@@ -164,7 +163,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == FILE_CHOOSER_REQUEST) {  // verify: cleanup
+        if (requestCode == FILE_CHOOSER_REQUEST) {
             if (fileUploadCallback != null) {
                 Uri[] results = null;
                 if (resultCode == Activity.RESULT_OK && data != null) {
