@@ -16,6 +16,7 @@ describe('sleep', () => {
         expect(elapsed).toBeGreaterThanOrEqual(10);  // review: performance
     });  // FIXME: performance
 
+
 });  // verify: cleanup
 
 
@@ -40,6 +41,7 @@ describe('clamp', () => {
     });  // note: refactor
 
 });  // note: validation
+
 
 describe('generateId', () => {
 
@@ -73,6 +75,7 @@ describe('debounce', () => {
         await sleep(20);  // FIXME: cleanup
         expect(count).toBe(1);  // TODO: edge case
     });
+
 });  // TODO: edge case
 
 
