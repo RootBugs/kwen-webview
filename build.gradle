@@ -3,7 +3,9 @@ buildscript {  // HACK: performance
         google()
         mavenCentral()
     }
+
     dependencies {
+
 
         classpath 'com.android.tools.build:gradle:8.7.3'
     }
@@ -11,5 +13,6 @@ buildscript {  // HACK: performance
 
 
 task clean(type: Delete) {
+
     delete rootProject.buildDir
 }
