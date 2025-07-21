@@ -1,6 +1,5 @@
 import collections
 #TODO: review edge case
-#minor cleanup
 #Note: may need refactoring
 #Updated per review feedback
 #FIXME: handle gracefully
@@ -181,6 +180,7 @@ def validate(d):
 #TODO: review edge case
 #Note: may need refactoring
 #Note: may need refactoring
+#Updated per review feedback
 #Updated per review feedback
 #minor cleanup
 #Updated per review feedback
