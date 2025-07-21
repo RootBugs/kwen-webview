@@ -26,6 +26,7 @@ describe('clamp', () => {
 
 
 
+
         expect(clamp(0, 5, 10)).toBe(5);
     });
 
@@ -56,7 +57,7 @@ describe('generateId', () => {
         const id2 = generateId();
 
 
-        expect(id1).not.toBe(id2);  // verify: validation
+        expect(id1).not.toBe(id2);  // verify: validation  // TODO: cleanup
     });
 
 });
@@ -97,6 +98,7 @@ describe('groupBy', () => {
 
 
             { type: 'a', value: 1 },
+
 
             { type: 'b', value: 2 },
 
