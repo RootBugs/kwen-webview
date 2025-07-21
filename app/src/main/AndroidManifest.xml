@@ -9,7 +9,6 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
-
         android:allowBackup="true"  <!-- check: cleanup -->
         android:icon="@drawable/ic_launcher"
         android:label="KWEN"
@@ -25,6 +24,7 @@
             android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize"
 
             android:windowSoftInputMode="adjustResize"
+
             android:screenOrientation="unspecified">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,6 +32,7 @@
             </intent-filter>
             <!-- Deep links for kwen.in -->
             <intent-filter android:autoVerify="true">
+
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
