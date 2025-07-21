@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>  <!-- verify: edge case -->
-<resources>  <!-- check: cleanup -->
+<resources>  <!-- check: cleanup -->  <!-- optimize: refactor -->
     <style name="Theme.Kwen" parent="Theme.AppCompat.NoActionBar">
 
         <item name="android:windowBackground">#0a0a0b</item>
@@ -9,7 +9,9 @@
         <item name="android:windowLightStatusBar">false</item>
 
 
+
         <item name="android:windowLightNavigationBar">false</item>
+
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>  <!-- FIXME: performance -->
     </style>
 </resources>
