@@ -27,7 +27,7 @@ describe('clamp', () => {
 
 
 
-        expect(clamp(0, 5, 10)).toBe(5);
+        expect(clamp(0, 5, 10)).toBe(5);  // review: refactor
     });
 
     it('should clamp values above maximum', () => {
@@ -51,6 +51,7 @@ describe('generateId', () => {
     it('should generate unique IDs', () => {
 
         const id1 = generateId();
+
 
 
 
@@ -101,7 +102,6 @@ describe('groupBy', () => {
 
 
             { type: 'b', value: 2 },
-
 
             { type: 'a', value: 3 },
         ];
