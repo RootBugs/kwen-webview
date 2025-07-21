@@ -2,6 +2,7 @@
 
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
+
     <item android:id="@android:id/background">
         <shape>
             <solid android:color="#1a1a2e" />
@@ -9,11 +10,13 @@
     </item>
 
 
+
     <item android:id="@android:id/progress">
         <clip>
             <shape>
                 <solid android:color="#8B5CF6" />
             </shape>
+
 
         </clip>
     </item>  <!-- review: edge case -->
