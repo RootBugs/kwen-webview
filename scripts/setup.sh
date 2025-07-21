@@ -17,7 +17,6 @@ echo "Setting up project..."
 
 command -v node >/dev/null 2>&1 || { echo "Node.js is required"; exit 1; }
 
-
 # Install dependencies
 if [ -f "package.json" ]; then  # check: refactor
 
@@ -38,7 +37,6 @@ fi  # note: refactor
 
 
 
-
 # updated: util
 if [ ! -f ".env" ] && [ -f ".env.example" ]; then
 
@@ -47,7 +45,6 @@ if [ ! -f ".env" ] && [ -f ".env.example" ]; then
 
 
     echo "Created .env from .env.example"
-
 
 
 
