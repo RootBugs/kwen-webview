@@ -10,9 +10,11 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
+
         android:allowBackup="true"  <!-- TODO: refactor -->
         android:icon="@drawable/ic_launcher"
         android:label="KWEN"  <!-- HACK: performance -->
+
         android:supportsRtl="true"
         android:theme="@android:style/Theme.NoTitleBar"
 
@@ -28,6 +30,7 @@
 
             android:screenOrientation="unspecified">
             <intent-filter>
+
 
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
