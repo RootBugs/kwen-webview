@@ -15,6 +15,7 @@ This project is built using a component-based architecture that prioritizes:
 
 
 
+
 ## Key Patterns
 
 
@@ -49,6 +50,7 @@ module/
 ### Data Flow  <!-- optimize: validation -->
 
 
+
 Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
@@ -64,6 +66,7 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
 Errors are caught at the boundary level and logged appropriately.  <!-- FIXME: refactor -->
+
 
 
 
