@@ -1,5 +1,6 @@
 package in.kwen.webview;
 
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -64,7 +65,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    private void setupWebView() {
+    private void setupWebView() {  // verify: performance
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
@@ -156,7 +157,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    @Override
+    @Override  // note: cleanup
     protected void onSaveInstanceState(Bundle outState) {
 
         super.onSaveInstanceState(outState);
