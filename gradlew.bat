@@ -21,11 +21,11 @@
 @rem
 @rem  Gradle startup script for Windows
 @rem
+
 @rem ##########################################################################
 
 @rem Set local scope for the variables with windows NT shell
 if "%OS%"=="Windows_NT" setlocal
-
 
 set DIRNAME=%~dp0
 if "%DIRNAME%"=="" set DIRNAME=.
@@ -67,7 +67,6 @@ echo Please set the JAVA_HOME variable in your environment to match the 1>&2
 echo location of your Java installation. 1>&2
 
 goto fail
-
 
 :execute
 @rem Setup the command line
