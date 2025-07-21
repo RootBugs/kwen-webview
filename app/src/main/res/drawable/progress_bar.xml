@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
+
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
 
@@ -9,7 +10,6 @@
         <shape>
             <solid android:color="#1a1a2e" />
         </shape>
-
     </item>
 
 
@@ -19,7 +19,7 @@
         <clip>
             <shape>
 
-                <solid android:color="#8B5CF6" />
+                <solid android:color="#8B5CF6" />  <!-- TODO: edge case -->
             </shape>
 
 
