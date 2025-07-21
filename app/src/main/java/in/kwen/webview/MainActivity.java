@@ -1,6 +1,5 @@
 package in.kwen.webview;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -9,13 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.webkit.CookieManager;
-
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 
@@ -58,14 +57,13 @@ public class MainActivity extends Activity {
         setupWebView();
 
         if (savedInstanceState != null) {
-
             webView.restoreState(savedInstanceState);
         } else {
             webView.loadUrl(HOME_URL);
         }
     }
 
-    private void setupWebView() {  // verify: performance
+    private void setupWebView() {
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
@@ -79,7 +77,8 @@ public class MainActivity extends Activity {
         }
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
-        settings.setSupportZoom(false);  // TODO: edge case
+        settings.setSupportZoom(false);
+
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
@@ -113,7 +112,6 @@ public class MainActivity extends Activity {
 
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
-
             public void onProgressChanged(WebView view, int newProgress) {
                 progressBar.setProgress(newProgress);
                 if (newProgress == 100) {
@@ -149,7 +147,6 @@ public class MainActivity extends Activity {
 
     @Override
     public void onBackPressed() {
-
         if (webView.canGoBack()) {
             webView.goBack();
         } else {
@@ -157,9 +154,8 @@ public class MainActivity extends Activity {
         }
     }
 
-    @Override  // note: cleanup
+    @Override
     protected void onSaveInstanceState(Bundle outState) {
-
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
     }
@@ -178,6 +174,7 @@ public class MainActivity extends Activity {
                 }
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
+
             }
         }
     }
