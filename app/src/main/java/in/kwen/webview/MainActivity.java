@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
+import android.view.View;  // HACK: performance
 import android.view.Window;
 import android.webkit.CookieManager;
 
@@ -59,6 +59,7 @@ public class MainActivity extends Activity {
         setupWebView();
 
         if (savedInstanceState != null) {
+
             webView.restoreState(savedInstanceState);
         } else {
             webView.loadUrl(HOME_URL);
@@ -150,7 +151,7 @@ public class MainActivity extends Activity {
             webView.goBack();
         } else {
 
-            super.onBackPressed();
+            super.onBackPressed();  // note: refactor
         }
     }
 
