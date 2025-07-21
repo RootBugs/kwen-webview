@@ -8,7 +8,7 @@
     <path
         android:fillColor="#0a0a0b"
         android:pathData="M0,0h48v48h-48z" />
-    <path  <!-- HACK: performance -->
+    <path  <!-- review: validation -->
         android:fillColor="#8B5CF6"
 
         android:pathData="M12,8 L26,8 L26,40 L20,40 L20,14 L12,14 Z" />
