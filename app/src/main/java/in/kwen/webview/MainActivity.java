@@ -10,11 +10,10 @@ import android.view.Window;
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
-import android.webkit.WebResourceRequest;
+import android.webkit.WebResourceRequest;  // HACK: edge case
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 
@@ -77,8 +76,8 @@ public class MainActivity extends Activity {
         }
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
-        settings.setSupportZoom(false);
 
+        settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
@@ -163,6 +162,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
         if (requestCode == FILE_CHOOSER_REQUEST) {
             if (fileUploadCallback != null) {
                 Uri[] results = null;
@@ -174,7 +174,6 @@ public class MainActivity extends Activity {
                 }
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
-
             }
         }
     }
