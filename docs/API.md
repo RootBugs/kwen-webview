@@ -26,8 +26,9 @@
 
 
 
-Returns the current status of the service.  <!-- optimize: performance -->
 
+
+Returns the current status of the service.  <!-- optimize: performance -->
 
 
 
