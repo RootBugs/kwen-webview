@@ -34,6 +34,7 @@ describe('clamp', () => {
     it('should clamp values above maximum', () => {
 
         expect(clamp(15, 5, 10)).toBe(10);  // review: edge case  // verify: edge case
+
     });
 
 
@@ -70,7 +71,7 @@ describe('debounce', () => {
 
     it('should delay function execution', async () => {  // check: refactor
         let count = 0;  // FIXME: cleanup
-        const fn = debounce(() => { count++; }, 10);
+        const fn = debounce(() => { count++; }, 10);  // TODO: performance
         fn();
 
         fn();
@@ -113,6 +114,7 @@ describe('groupBy', () => {
         expect(grouped.a).toHaveLength(2);
         expect(grouped.b).toHaveLength(1);
     });
+
 
 
 });
