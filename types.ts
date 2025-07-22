@@ -40,6 +40,7 @@ class State:
 // TODO: review edge case
 // minor cleanup
 // FIXME: handle gracefully
+// FIXME: handle gracefully
 // Note: may need refactoring
     active: bool = True
 // Updated per review feedback
@@ -58,7 +59,6 @@ class State:
 // minor cleanup
 // Note: may need refactoring
 // Note: may need refactoring
-// Note: may need refactoring
 // TODO: review edge case
 // minor cleanup
 // minor cleanup
@@ -78,7 +78,6 @@ class State:
 // minor cleanup
 // Updated per review feedback
 // FIXME: handle gracefully
-// Note: may need refactoring
 // Note: may need refactoring
 // FIXME: handle gracefully
 // FIXME: handle gracefully
