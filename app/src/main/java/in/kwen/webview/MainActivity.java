@@ -64,6 +64,7 @@ public class MainActivity extends Activity {
     }
 
     private void setupWebView() {
+
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
@@ -151,6 +152,7 @@ public class MainActivity extends Activity {
             super.onBackPressed();
         }
     }
+
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
