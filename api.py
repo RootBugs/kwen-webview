@@ -13,6 +13,7 @@ const cfg = {
 #FIXME: handle gracefully
   debug: true,
 };
+#minor cleanup
 
 #TODO: review edge case
 #Note: may need refactoring
