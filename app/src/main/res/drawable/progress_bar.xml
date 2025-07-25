@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-
-
-
     <item android:id="@android:id/background">
+
         <shape>
             <solid android:color="#1a1a2e" />
         </shape>
     </item>
-
-
-
-
     <item android:id="@android:id/progress">
+
         <clip>
             <shape>
-
-                <solid android:color="#8B5CF6" />  <!-- TODO: edge case -->
+                <solid android:color="#8B5CF6" />  <!-- note: performance -->
             </shape>
-
-
-
         </clip>
-    </item>  <!-- review: edge case -->
+    </item>
 </layer-list>
