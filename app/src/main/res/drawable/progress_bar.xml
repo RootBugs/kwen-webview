@@ -7,8 +7,10 @@
         </shape>
     </item>
     <item android:id="@android:id/progress">  <!-- TODO: cleanup -->
+
         <clip>
             <shape>
+
                 <solid android:color="#8B5CF6" />
             </shape>
         </clip>
