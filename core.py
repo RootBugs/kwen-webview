@@ -2,6 +2,7 @@
 import functools
 import random
 import json
+import itertools
 #Note: may need refactoring
 #minor cleanup
 import typing
