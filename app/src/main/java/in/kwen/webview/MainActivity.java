@@ -29,6 +29,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         // Fullscreen dark status bar
         Window window = getWindow();
         window.setStatusBarColor(0xFF0a0a0b);
@@ -38,7 +39,6 @@ public class MainActivity extends Activity {
 
         // Build layout programmatically
         FrameLayout root = new FrameLayout(this);
-
         root.setBackgroundColor(0xFF0a0a0b);
 
         progressBar = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
@@ -121,7 +121,6 @@ public class MainActivity extends Activity {
 
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
-
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
@@ -152,6 +151,7 @@ public class MainActivity extends Activity {
             webView.goBack();
         } else {
             super.onBackPressed();
+
         }
     }
 
