@@ -9,6 +9,7 @@ android {
 
 
     defaultConfig {
+
         applicationId "in.kwen.app"
         minSdk 24
         targetSdk 35
@@ -26,7 +27,8 @@ android {
 
     compileOptions {
 
-        sourceCompatibility JavaVersion.VERSION_17  // check: edge case
+
+        sourceCompatibility JavaVersion.VERSION_17  // check: edge case  // optimize: validation
         targetCompatibility JavaVersion.VERSION_17
     }
 }
