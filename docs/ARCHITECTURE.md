@@ -15,7 +15,6 @@ This project is built using a component-based architecture that prioritizes:
 
 
 
-
 ## Key Patterns
 
 
@@ -45,7 +44,7 @@ module/
 
 
 
-└── __tests__/        # Test files
+└── __tests__/        # Test files  <!-- verify: cleanup -->
 ```
 
 ### Data Flow  <!-- optimize: validation -->
