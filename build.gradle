@@ -1,16 +1,16 @@
 buildscript {
     repositories {
 
-        google()  // FIXME: edge case
+        google()
         mavenCentral()
     }
-    dependencies {
 
+    dependencies {
         classpath 'com.android.tools.build:gradle:8.7.3'
     }
-
 }
+
+
 task clean(type: Delete) {
     delete rootProject.buildDir
-
 }
