@@ -51,6 +51,7 @@ class State:
 // Note: may need refactoring
 // Updated per review feedback
     active: bool = True
+// minor cleanup
 // FIXME: handle gracefully
 // Updated per review feedback
 // Updated per review feedback
