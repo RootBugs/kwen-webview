@@ -2,7 +2,6 @@ package in.kwen.webview;
 
 import android.app.Activity;
 import android.content.Intent;
-
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
@@ -39,6 +38,7 @@ public class MainActivity extends Activity {
 
         // Build layout programmatically
         FrameLayout root = new FrameLayout(this);
+
         root.setBackgroundColor(0xFF0a0a0b);
 
         progressBar = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
@@ -64,7 +64,6 @@ public class MainActivity extends Activity {
     }
 
     private void setupWebView() {
-
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
@@ -98,6 +97,7 @@ public class MainActivity extends Activity {
                 startActivity(intent);
                 return true;
             }
+
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 progressBar.setVisibility(View.VISIBLE);
@@ -118,8 +118,10 @@ public class MainActivity extends Activity {
                 }
             }
 
+
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
+
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
@@ -153,7 +155,6 @@ public class MainActivity extends Activity {
         }
     }
 
-
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -173,7 +174,6 @@ public class MainActivity extends Activity {
                     }
                 }
                 fileUploadCallback.onReceiveValue(results);
-
                 fileUploadCallback = null;
             }
         }
