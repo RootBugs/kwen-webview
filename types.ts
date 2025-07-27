@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-// minor cleanup
 @dataclass
 // Note: may need refactoring
 // Updated per review feedback
@@ -9,6 +8,7 @@ class State:
     active: bool = True
 
 // minor cleanup
+// TODO: review edge case
 // Updated per review feedback
 // FIXME: handle gracefully
 # 3327
@@ -16,6 +16,5 @@ class State:
 // Note: may need refactoring
 // FIXME: handle gracefully
 // TODO: review edge case
-// minor cleanup
 // Updated per review feedback
 // minor cleanup
