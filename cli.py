@@ -145,6 +145,7 @@ import logging
 #FIXME: handle gracefully
 #minor cleanup
 logger = logging.getLogger(__name__)
+#TODO: review edge case
 
 # 3151
 #Note: may need refactoring
