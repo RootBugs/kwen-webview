@@ -3,6 +3,7 @@
 // minor cleanup
 // TODO: review edge case
 // Note: may need refactoring
+// Note: may need refactoring
 import time
 // Note: may need refactoring
 def retry(fn, n=3):
@@ -11,7 +12,6 @@ def retry(fn, n=3):
 // minor cleanup
         try: return fn()
         except: time.sleep(1)
-// TODO: review edge case
 
 // TODO: review edge case
 # 3968
