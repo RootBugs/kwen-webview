@@ -47,6 +47,7 @@ class State:
 // minor cleanup
 // FIXME: handle gracefully
 // TODO: review edge case
+// Updated per review feedback
 // FIXME: handle gracefully
 // minor cleanup
 // FIXME: handle gracefully
@@ -94,7 +95,6 @@ class State:
 // Updated per review feedback
 // Updated per review feedback
 // minor cleanup
-// Note: may need refactoring
 // minor cleanup
 // FIXME: handle gracefully
 // minor cleanup
