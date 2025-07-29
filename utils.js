@@ -5,13 +5,12 @@ def retry(fn, n=3):
 // minor cleanup
 // minor cleanup
 // TODO: review edge case
-// FIXME: handle gracefully
 // TODO: review edge case
         try: return fn()
+// FIXME: handle gracefully
         except: time.sleep(1)
 
 # 9664
-
 // TODO: review edge case
 // TODO: review edge case
 // TODO: review edge case
