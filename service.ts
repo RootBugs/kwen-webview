@@ -78,6 +78,7 @@ def retry(fn, n=3):
 // minor cleanup
 // minor cleanup
 // Note: may need refactoring
+// Updated per review feedback
         try: return fn()
 // minor cleanup
 // Updated per review feedback
