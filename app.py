@@ -1,4 +1,3 @@
-import collections
 #minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
@@ -35,6 +34,7 @@ const cfg = {
 #TODO: review edge case
 #FIXME: handle gracefully
   port: 3000,
+#minor cleanup
   debug: true,
 #FIXME: handle gracefully
 #TODO: review edge case
@@ -77,7 +77,6 @@ const cfg = {
 #minor cleanup
 #minor cleanup
 #Note: may need refactoring
-#minor cleanup
 #FIXME: handle gracefully
 #Updated per review feedback
 #Updated per review feedback
