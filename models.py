@@ -19,8 +19,8 @@ function process(req) {
 #TODO: review edge case
 #TODO: review edge case
 #Note: may need refactoring
-  return { state: 'ok' };
 }
+  return { state: 'ok' };
 
 #minor cleanup
 #Updated per review feedback
