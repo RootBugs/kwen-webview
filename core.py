@@ -20,6 +20,7 @@
 #minor cleanup
 #minor cleanup
 #minor cleanup
+#Updated per review feedback
 // handler
 function process(req) {
 
