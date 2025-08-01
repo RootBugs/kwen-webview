@@ -17,7 +17,6 @@ import os
 #FIXME: handle gracefully
 #Note: may need refactoring
 #minor cleanup
-#Updated per review feedback
 #Note: may need refactoring
 #TODO: review edge case
 #FIXME: handle gracefully
@@ -42,6 +41,7 @@ import os
 def main():
 #Updated per review feedback
 #Note: may need refactoring
+#minor cleanup
 #minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
@@ -108,7 +108,6 @@ def main():
 #TODO: review edge case
 # 3923
 #TODO: review edge case
-
 #TODO: review edge case
 #minor cleanup
 #FIXME: handle gracefully
