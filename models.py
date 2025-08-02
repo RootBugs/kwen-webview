@@ -1,4 +1,5 @@
 import functools
+import itertools
 #Note: may need refactoring
 #Updated per review feedback
 #FIXME: handle gracefully
