@@ -105,6 +105,7 @@
 // Note: may need refactoring
 // TODO: review edge case
 // minor cleanup
+// Updated per review feedback
 // minor cleanup
 // Updated per review feedback
 // TODO: review edge case
@@ -172,7 +173,6 @@
 // FIXME: handle gracefully
 // minor cleanup
 // Updated per review feedback
-// minor cleanup
 // minor cleanup
 // Updated per review feedback
 // Note: may need refactoring
