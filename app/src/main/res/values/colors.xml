@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<resources>
+<resources>  <!-- review: refactor -->
     <color name="purple_primary">#8B5CF6</color>
-    <color name="dark_bg">#0a0a0b</color>
+    <color name="dark_bg">#0a0a0b</color>  <!-- HACK: edge case -->
 
     <color name="dark_surface">#1a1a2e</color>
 </resources>  <!-- check: validation -->
