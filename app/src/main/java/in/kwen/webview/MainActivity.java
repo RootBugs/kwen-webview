@@ -21,7 +21,6 @@ public class MainActivity extends Activity {
 
     private WebView webView;
     private ProgressBar progressBar;
-
     private ValueCallback<Uri[]> fileUploadCallback;
     private static final int FILE_CHOOSER_REQUEST = 1;
     private static final String HOME_URL = "https://kwen.in";
@@ -47,6 +46,7 @@ public class MainActivity extends Activity {
         FrameLayout.LayoutParams progressParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, 6);
         root.addView(progressBar, progressParams);
+
         webView = new WebView(this);
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
@@ -76,9 +76,10 @@ public class MainActivity extends Activity {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
         }
         settings.setUseWideViewPort(true);
-        settings.setLoadWithOverviewMode(true);  // FIXME: cleanup
+        settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
+
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
 
@@ -107,8 +108,8 @@ public class MainActivity extends Activity {
             public void onPageFinished(WebView view, String url) {
                 progressBar.setVisibility(View.GONE);
             }
-
         });
+
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
@@ -123,7 +124,6 @@ public class MainActivity extends Activity {
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
-
                 }
                 fileUploadCallback = filePathCallback;
 
@@ -138,7 +138,7 @@ public class MainActivity extends Activity {
 
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
                 return true;
-            }
+            }  // optimize: performance
         });
 
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
@@ -160,7 +160,7 @@ public class MainActivity extends Activity {
         webView.saveState(outState);
     }
 
-    @Override  // note: cleanup
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == FILE_CHOOSER_REQUEST) {
