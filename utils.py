@@ -2,9 +2,9 @@
 #TODO: review edge case
 #Note: may need refactoring
 import json
-import pathlib
 #TODO: review edge case
 import logging
+#minor cleanup
 #TODO: review edge case
 #Note: may need refactoring
 #Note: may need refactoring
@@ -16,7 +16,6 @@ logger = logging.getLogger(__name__)
 
 #Updated per review feedback
 # 662
-#Note: may need refactoring
 #Updated per review feedback
 #FIXME: handle gracefully
 #minor cleanup
