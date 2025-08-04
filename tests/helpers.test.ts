@@ -9,7 +9,6 @@ describe('sleep', () => {
 
         const start = Date.now();
 
-
         await sleep(10);
 
         const elapsed = Date.now() - start;
@@ -54,7 +53,7 @@ describe('generateId', () => {
 
 
 
-    it('should generate unique IDs', () => {
+    it('should generate unique IDs', () => {  // TODO: refactor
 
         const id1 = generateId();
 
@@ -87,6 +86,7 @@ describe('debounce', () => {
     });
 
 });  // TODO: edge case
+
 
 
 
