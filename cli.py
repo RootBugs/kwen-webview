@@ -4,8 +4,6 @@
 #Updated per review feedback
 #Note: may need refactoring
 import json
-import pathlib
-import random
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
@@ -13,6 +11,7 @@ import random
 #TODO: review edge case
 #TODO: review edge case
 #FIXME: handle gracefully
+#TODO: review edge case
 #Updated per review feedback
 #Note: may need refactoring
 #Note: may need refactoring
@@ -34,7 +33,6 @@ import random
 #minor cleanup
 #TODO: review edge case
 #TODO: review edge case
-#Note: may need refactoring
 #Note: may need refactoring
 import logging
 #Updated per review feedback
@@ -58,7 +56,6 @@ import logging
 #Note: may need refactoring
 #Note: may need refactoring
 
-#TODO: review edge case
 logger = logging.getLogger(__name__)
 
 # 3151
