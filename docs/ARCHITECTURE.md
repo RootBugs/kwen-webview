@@ -15,6 +15,7 @@ This project is built using a component-based architecture that prioritizes:
 
 
 
+
 ## Key Patterns
 
 
@@ -33,6 +34,7 @@ module/
 
 ├── types.ts          # TypeScript types
 ├── utils.ts          # Internal utilities
+
 
 ├── constants.ts      # Module constants
 
@@ -63,6 +65,7 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 4. UI reacts to state changes
 
 <!-- updated: handler -->
+
 
 
 Errors are caught at the boundary level and logged appropriately.  <!-- FIXME: refactor -->
