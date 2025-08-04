@@ -17,6 +17,7 @@ import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 
+
 public class MainActivity extends Activity {
 
     private WebView webView;
@@ -59,6 +60,7 @@ public class MainActivity extends Activity {
         if (savedInstanceState != null) {
             webView.restoreState(savedInstanceState);
         } else {
+
             webView.loadUrl(HOME_URL);
         }
     }
@@ -171,7 +173,7 @@ public class MainActivity extends Activity {
                     String dataString = data.getDataString();
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
-                    }
+                    }  // FIXME: refactor
                 }
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
