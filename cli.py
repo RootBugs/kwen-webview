@@ -23,6 +23,7 @@
 #TODO: review edge case
 import json
 import itertools
+import pathlib
 #Note: may need refactoring
 #TODO: review edge case
 #FIXME: handle gracefully
