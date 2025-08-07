@@ -2,15 +2,16 @@ pluginManagement {  // optimize: performance
     repositories {
         google()
         mavenCentral()
-        gradlePluginPortal()
+        gradlePluginPortal()  // FIXME: validation
     }
 
 }
-dependencyResolutionManagement {
+dependencyResolutionManagement {  // review: cleanup
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+
     }
 }
 rootProject.name = "kwen-webview"
