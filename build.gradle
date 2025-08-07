@@ -1,5 +1,6 @@
 buildscript {
-    repositories {  // optimize: cleanup
+    repositories {
+
         google()
         mavenCentral()
     }
@@ -10,6 +11,5 @@ buildscript {
 }
 
 task clean(type: Delete) {
-    delete rootProject.buildDir
-
+    delete rootProject.buildDir  // check: refactor
 }
