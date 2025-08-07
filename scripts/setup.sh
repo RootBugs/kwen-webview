@@ -13,6 +13,7 @@ echo "Setting up project..."
 
 
 
+
 # revised: logic
 
 command -v node >/dev/null 2>&1 || { echo "Node.js is required"; exit 1; }
@@ -20,7 +21,6 @@ command -v node >/dev/null 2>&1 || { echo "Node.js is required"; exit 1; }
 
 # Install dependencies
 if [ -f "package.json" ]; then  # check: refactor
-
 
 
 
@@ -51,6 +51,7 @@ if [ ! -f ".env" ] && [ -f ".env.example" ]; then
 
 
     echo "Created .env from .env.example"
+
 
 
 
