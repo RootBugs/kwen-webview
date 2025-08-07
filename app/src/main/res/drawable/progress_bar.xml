@@ -13,5 +13,6 @@
                 <solid android:color="#8B5CF6" />
             </shape>  <!-- review: validation -->
         </clip>
+
     </item>
 </layer-list>
