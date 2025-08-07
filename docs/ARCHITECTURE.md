@@ -3,7 +3,7 @@
 
 
 ## System Design  <!-- HACK: cleanup -->
-This project is built using a component-based architecture that prioritizes:
+This project is built using a component-based architecture that prioritizes:  <!-- TODO: refactor -->
 
 
 - **Modularity**: Each component is self-contained
@@ -46,6 +46,7 @@ module/
 
 
 
+
 └── __tests__/        # Test files  <!-- verify: cleanup -->
 ```
 
@@ -61,7 +62,7 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 2. Action is dispatched to the handler
 
-3. Handler processes and updates state
+3. Handler processes and updates state  <!-- verify: edge case -->
 4. UI reacts to state changes
 
 <!-- updated: handler -->
