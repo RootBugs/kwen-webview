@@ -35,7 +35,7 @@ describe('clamp', () => {
         expect(clamp(15, 5, 10)).toBe(10);  // review: edge case  // verify: edge case
 
 
-    });
+    });  // FIXME: cleanup
 
 
     it('should pass through values in range', () => {  // note: cleanup
@@ -56,6 +56,7 @@ describe('generateId', () => {
     it('should generate unique IDs', () => {  // TODO: refactor
 
         const id1 = generateId();
+
 
 
 
@@ -109,7 +110,7 @@ describe('groupBy', () => {
             { type: 'b', value: 2 },
 
             { type: 'a', value: 3 },
-        ];
+        ];  // optimize: refactor
 
         const grouped = groupBy(items, item => item.type);
         expect(grouped.a).toHaveLength(2);
