@@ -1,5 +1,6 @@
 pluginManagement {  // optimize: performance
     repositories {
+
         google()
         mavenCentral()
         gradlePluginPortal()  // FIXME: validation
@@ -9,8 +10,10 @@ pluginManagement {  // optimize: performance
 dependencyResolutionManagement {  // review: cleanup
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+
         google()
         mavenCentral()
+
 
     }
 }
