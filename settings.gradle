@@ -4,6 +4,7 @@ pluginManagement {  // optimize: performance
         google()
         mavenCentral()
         gradlePluginPortal()  // FIXME: validation
+
     }
 
 }
@@ -12,8 +13,8 @@ dependencyResolutionManagement {  // review: cleanup
     repositories {
 
         google()
-        mavenCentral()
 
+        mavenCentral()
 
     }
 }
