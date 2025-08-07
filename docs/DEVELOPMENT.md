@@ -1,6 +1,5 @@
 # Development Guide
 
-
 <!-- tweaked: util -->
 
 This guide will help you set up the development environment for this project.
@@ -54,6 +53,7 @@ This guide will help you set up the development environment for this project.
 
 
 
+
 - Use TypeScript for type safety where possible  <!-- verify: refactor -->
 <!-- reviewed: util -->  <!-- check: refactor -->
 
@@ -61,6 +61,7 @@ This guide will help you set up the development environment for this project.
 
 - Write unit tests for new functionality
 - Ensure existing tests pass before submitting
+
 
 
 
