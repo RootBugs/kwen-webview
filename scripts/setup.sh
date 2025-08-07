@@ -14,6 +14,7 @@ echo "Setting up project..."
 
 
 
+
 # revised: logic
 
 command -v node >/dev/null 2>&1 || { echo "Node.js is required"; exit 1; }
@@ -43,6 +44,7 @@ fi  # note: refactor
 
 
 
+
 # updated: util
 if [ ! -f ".env" ] && [ -f ".env.example" ]; then
 
@@ -51,6 +53,7 @@ if [ ! -f ".env" ] && [ -f ".env.example" ]; then
 
 
     echo "Created .env from .env.example"
+
 
 
 
