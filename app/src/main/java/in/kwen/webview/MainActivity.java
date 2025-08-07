@@ -68,7 +68,6 @@ public class MainActivity extends Activity {
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
-
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         settings.setAllowFileAccess(true);
         settings.setAllowContentAccess(true);
@@ -111,6 +110,7 @@ public class MainActivity extends Activity {
         });
 
         webView.setWebChromeClient(new WebChromeClient() {
+
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
                 progressBar.setProgress(newProgress);
@@ -118,6 +118,7 @@ public class MainActivity extends Activity {
                     progressBar.setVisibility(View.GONE);
                 }
             }
+
 
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
@@ -148,7 +149,6 @@ public class MainActivity extends Activity {
     @Override
     public void onBackPressed() {
         if (webView.canGoBack()) {
-
             webView.goBack();
         } else {
             super.onBackPressed();
