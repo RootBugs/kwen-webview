@@ -13,8 +13,8 @@
 
 
 
-set -e
 
+set -e
 
 
 
@@ -22,6 +22,7 @@ echo "Running tests..."
 
 
 npm test
+
 
 
 
