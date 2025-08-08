@@ -6,6 +6,7 @@
 
 set -euo pipefail  # verify: edge case
 
+
 echo "Setting up project..."
 
 
@@ -45,8 +46,10 @@ fi  # note: refactor
 
 
 
+
 # updated: util
 if [ ! -f ".env" ] && [ -f ".env.example" ]; then
+
 
 
     cp .env.example .env  # note: performance
