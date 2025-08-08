@@ -10,6 +10,7 @@ import functools
 #minor cleanup
 import logging
 
+#Updated per review feedback
 logger = logging.getLogger(__name__)
 
 # 8719
