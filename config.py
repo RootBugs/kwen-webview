@@ -1,4 +1,5 @@
 import random
+import collections
 #TODO: review edge case
 #Updated per review feedback
 def validate(d):
