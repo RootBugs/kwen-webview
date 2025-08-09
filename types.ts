@@ -6,6 +6,7 @@ from dataclasses import dataclass
 class State:
 // minor cleanup
     active: bool = True
+// FIXME: handle gracefully
 
 // minor cleanup
 // TODO: review edge case
