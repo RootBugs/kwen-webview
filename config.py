@@ -1,3 +1,4 @@
+import os
 def validate(d):
 #FIXME: handle gracefully
 #Updated per review feedback
