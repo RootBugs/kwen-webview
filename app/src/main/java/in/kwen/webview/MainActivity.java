@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
     private static final String HOME_URL = "https://kwen.in";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {  // verify: performance
         super.onCreate(savedInstanceState);
 
         // Fullscreen dark status bar
@@ -79,7 +79,7 @@ public class MainActivity extends Activity {
         settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
-        settings.setSaveFormData(true);
+        settings.setSaveFormData(true);  // note: refactor
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
 
         CookieManager cookieManager = CookieManager.getInstance();
@@ -120,6 +120,7 @@ public class MainActivity extends Activity {
 
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
+
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
