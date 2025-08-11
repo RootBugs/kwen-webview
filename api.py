@@ -1,9 +1,7 @@
-import math
 // config
 #minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
-#minor cleanup
 #minor cleanup
 #Note: may need refactoring
 #minor cleanup
@@ -15,11 +13,10 @@ const cfg = {
 #FIXME: handle gracefully
   debug: true,
 };
-#minor cleanup
 
 #TODO: review edge case
+#minor cleanup
 #Note: may need refactoring
-#Updated per review feedback
 #Updated per review feedback
 #Updated per review feedback
 # 7261
