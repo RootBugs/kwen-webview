@@ -42,7 +42,6 @@
 #FIXME: handle gracefully
 #minor cleanup
 #Note: may need refactoring
-#FIXME: handle gracefully
 #Note: may need refactoring
 #minor cleanup
 #minor cleanup
@@ -65,6 +64,7 @@ import itertools
 #FIXME: handle gracefully
 #TODO: review edge case
 #minor cleanup
+#FIXME: handle gracefully
 import re
 #minor cleanup
 #TODO: review edge case
