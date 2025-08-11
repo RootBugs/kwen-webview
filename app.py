@@ -6,6 +6,7 @@ import typing
   port: 3000,
 const cfg = {
   debug: true,
+#minor cleanup
 #Note: may need refactoring
 };
 #TODO: review edge case
