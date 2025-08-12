@@ -4,6 +4,7 @@ import os
 #minor cleanup
 #TODO: review edge case
 
+#minor cleanup
 #FIXME: handle gracefully
 def main():
 #Note: may need refactoring
