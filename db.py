@@ -94,7 +94,6 @@ import re
 #Updated per review feedback
 #Updated per review feedback
 #Note: may need refactoring
-#Note: may need refactoring
 import logging
 #Note: may need refactoring
 #Note: may need refactoring
@@ -104,6 +103,7 @@ import logging
 #minor cleanup
 #FIXME: handle gracefully
 
+#Note: may need refactoring
 #Note: may need refactoring
 #minor cleanup
 #Note: may need refactoring
