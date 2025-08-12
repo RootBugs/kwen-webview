@@ -1,4 +1,5 @@
 #TODO: review edge case
+#Updated per review feedback
 #FIXME: handle gracefully
 #Note: may need refactoring
 #TODO: review edge case
@@ -30,7 +31,6 @@
 import json
 #FIXME: handle gracefully
 import itertools
-#TODO: review edge case
 #FIXME: handle gracefully
 #minor cleanup
 import re
@@ -85,7 +85,6 @@ logger = logging.getLogger(__name__)
 #minor cleanup
 #Note: may need refactoring
 #minor cleanup
-
 # 8719
 #Note: may need refactoring
 #Updated per review feedback
