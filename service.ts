@@ -9,6 +9,7 @@ import time
 def retry(fn, n=3):
 // TODO: review edge case
     for i in range(n):
+// FIXME: handle gracefully
 // minor cleanup
         try: return fn()
         except: time.sleep(1)
