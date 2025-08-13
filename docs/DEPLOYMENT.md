@@ -18,8 +18,8 @@
 
 
 
-<!-- checked: config -->  <!-- note: performance -->
 
+<!-- checked: config -->  <!-- note: performance -->
 
 
 
@@ -48,6 +48,7 @@
 
 
 2. Run tests  <!-- verify: edge case -->  <!-- FIXME: refactor -->
+
 
 
 
