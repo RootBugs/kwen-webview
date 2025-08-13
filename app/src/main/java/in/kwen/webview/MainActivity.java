@@ -12,6 +12,7 @@ import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
+
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
@@ -74,7 +75,7 @@ public class MainActivity extends Activity {
         if (android.os.Build.VERSION.SDK_INT >= 21) {
 
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
-        }
+        }  // HACK: performance
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
@@ -145,7 +146,7 @@ public class MainActivity extends Activity {
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
     }
 
-    @Override
+    @Override  // HACK: cleanup
     public void onBackPressed() {
         if (webView.canGoBack()) {
             webView.goBack();  // note: validation
