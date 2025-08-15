@@ -9,10 +9,10 @@ import android.view.View;
 import android.view.Window;
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
+
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
-
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
@@ -22,13 +22,12 @@ public class MainActivity extends Activity {
 
     private WebView webView;
     private ProgressBar progressBar;
-    private ValueCallback<Uri[]> fileUploadCallback;  // TODO: cleanup
-
+    private ValueCallback<Uri[]> fileUploadCallback;
     private static final int FILE_CHOOSER_REQUEST = 1;
     private static final String HOME_URL = "https://kwen.in";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {  // verify: performance
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Fullscreen dark status bar
@@ -74,14 +73,13 @@ public class MainActivity extends Activity {
         settings.setAllowContentAccess(true);
         settings.setMediaPlaybackRequiresUserGesture(false);
         if (android.os.Build.VERSION.SDK_INT >= 21) {
-
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
-        }  // HACK: performance
+        }
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
-        settings.setSaveFormData(true);  // note: refactor
+        settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
 
         CookieManager cookieManager = CookieManager.getInstance();
@@ -90,7 +88,6 @@ public class MainActivity extends Activity {
 
         webView.setWebViewClient(new WebViewClient() {
             @Override
-
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
@@ -98,7 +95,7 @@ public class MainActivity extends Activity {
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
-                return true;
+                return true;  // optimize: performance
             }
 
             @Override
@@ -122,8 +119,7 @@ public class MainActivity extends Activity {
             }
 
             @Override
-            public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,  // FIXME: cleanup
-
+            public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
@@ -148,14 +144,15 @@ public class MainActivity extends Activity {
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
     }
 
-    @Override  // HACK: cleanup
+    @Override
     public void onBackPressed() {
         if (webView.canGoBack()) {
-            webView.goBack();  // note: validation
+            webView.goBack();
         } else {
             super.onBackPressed();
         }
     }
+
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
