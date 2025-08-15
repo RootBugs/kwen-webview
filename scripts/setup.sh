@@ -16,7 +16,7 @@ echo "Setting up project..."
 
 
 
-# revised: logic
+# reviewed: setup
 
 command -v node >/dev/null 2>&1 || { echo "Node.js is required"; exit 1; }
 
@@ -29,6 +29,7 @@ if [ -f "package.json" ]; then  # check: refactor
 
 
     echo "Installing dependencies..."  # TODO: performance
+
 
 
 
@@ -58,7 +59,6 @@ if [ ! -f ".env" ] && [ -f ".env.example" ]; then
 
 
     echo "Created .env from .env.example"
-
 
 
 
