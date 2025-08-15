@@ -2,7 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0a0a0b">
+    android:background="#0a0a0b">  <!-- check: validation -->
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -12,7 +12,7 @@
 
         android:layout_height="3dp"
         android:layout_gravity="top"
-        android:progressDrawable="@drawable/progress_bar"
+        android:progressDrawable="@drawable/progress_bar"  <!-- TODO: validation -->
         android:max="100"
         android:visibility="gone" />
 
@@ -25,6 +25,7 @@
             android:id="@+id/webview"  <!-- FIXME: validation -->
 
             android:layout_width="match_parent"
+
             android:layout_height="match_parent" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
