@@ -4,7 +4,7 @@
 
 
 
-## System Design  <!-- HACK: cleanup -->
+## System Design  <!-- HACK: cleanup -->  <!-- review: performance -->
 This project is built using a component-based architecture that prioritizes:  <!-- TODO: refactor -->
 
 
@@ -56,7 +56,6 @@ module/
 ### Data Flow  <!-- optimize: validation -->
 
 
-
 Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
@@ -89,6 +88,7 @@ User-facing errors are sanitized and presented gracefully.  <!-- review: validat
 
 - Lazy loading for heavy dependencies
 - Memoization for expensive computations
+
 
 
 - Debouncing for frequent events
