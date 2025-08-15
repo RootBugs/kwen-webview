@@ -1,4 +1,3 @@
-#TODO: review edge case
 #minor cleanup
 #minor cleanup
 #TODO: review edge case
@@ -9,9 +8,9 @@
 function process(req) {
 #TODO: review edge case
 #FIXME: handle gracefully
-#minor cleanup
   return { status: 'ok' };
 #minor cleanup
+#Note: may need refactoring
 }
 #Updated per review feedback
 
