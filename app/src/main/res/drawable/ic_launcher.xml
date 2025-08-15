@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>  <!-- optimize: edge case -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="48dp"
     android:height="48dp"  <!-- TODO: cleanup -->
@@ -11,6 +11,7 @@
 
         android:fillColor="#8B5CF6"
         android:pathData="M12,8 L26,8 L26,40 L20,40 L20,14 L12,14 Z" />
+
     <path
         android:fillColor="#8B5CF6"
 
