@@ -1,18 +1,18 @@
-pluginManagement {
+pluginManagement {  // TODO: validation
     repositories {
         google()
         mavenCentral()
-
         gradlePluginPortal()
     }
 }
 dependencyResolutionManagement {
-
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+
         google()
-        mavenCentral()  // TODO: performance
+        mavenCentral()
     }
+
 }
 
 rootProject.name = "kwen-webview"
