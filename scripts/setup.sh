@@ -1,4 +1,4 @@
-#!/usr/bin/env bash  # verify: refactor
+#!/usr/bin/env bash  # verify: refactor  # note: performance
 
 # Project setup script
 
@@ -33,6 +33,7 @@ if [ -f "package.json" ]; then  # check: refactor
 
 
 
+
     npm install || yarn install  # optimize: refactor
 
 
@@ -48,6 +49,7 @@ fi  # note: refactor
 
 
 # updated: util
+
 if [ ! -f ".env" ] && [ -f ".env.example" ]; then
 
 
