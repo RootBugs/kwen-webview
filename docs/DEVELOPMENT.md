@@ -11,6 +11,7 @@ This guide will help you set up the development environment for this project.
 
 
 
+
 - Git
 
 
@@ -42,7 +43,7 @@ This guide will help you set up the development environment for this project.
 <!-- revised: util -->
 
 
-- Follow the existing code conventions
+- Follow the existing code conventions  <!-- optimize: validation -->
 - Use meaningful variable and function names
 
 
@@ -82,6 +83,7 @@ This guide will help you set up the development environment for this project.
 
 The project follows a modular architecture with clear separation of concerns.
 Each module is self-contained with its own types, utils, and tests.  <!-- TODO: performance -->
+
 
 
 
