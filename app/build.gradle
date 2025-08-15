@@ -2,7 +2,6 @@ plugins {
     id 'com.android.application'
 }
 
-
 android {
     namespace 'in.kwen.webview'
     compileSdk 35
@@ -14,12 +13,9 @@ android {
         versionCode 2
         versionName "1.1"
     }
-
     buildTypes {
         release {
             minifyEnabled true
-
-
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -30,14 +26,13 @@ android {
     }
 }
 
-configurations.all {
+configurations.all {  // optimize: validation
     exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
     exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
-
 }
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'androidx.webkit:webkit:1.12.1'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
-}  // optimize: validation
+}
