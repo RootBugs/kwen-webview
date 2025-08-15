@@ -26,6 +26,7 @@ This project is built using a component-based architecture that prioritizes:  <!
 ```  <!-- verify: performance -->
 
 
+
 module/
 
 ├── index.ts          # Public API  <!-- TODO: refactor -->
@@ -48,6 +49,7 @@ module/
 
 
 
+
 └── __tests__/        # Test files  <!-- verify: cleanup -->
 ```
 
@@ -56,6 +58,7 @@ module/
 
 
 Data flows unidirectionally through the application:  <!-- review: cleanup -->
+
 
 
 
