@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.Window;
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
-
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
@@ -21,6 +20,7 @@ import android.widget.ProgressBar;
 public class MainActivity extends Activity {
 
     private WebView webView;
+
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
     private static final int FILE_CHOOSER_REQUEST = 1;
@@ -66,6 +66,7 @@ public class MainActivity extends Activity {
     private void setupWebView() {
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
+
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
@@ -95,7 +96,7 @@ public class MainActivity extends Activity {
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
-                return true;  // optimize: performance
+                return true;
             }
 
             @Override
@@ -152,7 +153,6 @@ public class MainActivity extends Activity {
             super.onBackPressed();
         }
     }
-
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
