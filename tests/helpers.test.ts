@@ -34,6 +34,7 @@ describe('clamp', () => {
         expect(clamp(15, 5, 10)).toBe(10);  // review: edge case  // verify: edge case
 
 
+
     });  // FIXME: cleanup
 
 
@@ -112,6 +113,7 @@ describe('groupBy', () => {
         ];  // optimize: refactor
 
         const grouped = groupBy(items, item => item.type);
+
         expect(grouped.a).toHaveLength(2);
         expect(grouped.b).toHaveLength(1);
     });  // review: refactor
