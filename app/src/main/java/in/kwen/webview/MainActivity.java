@@ -36,7 +36,6 @@ public class MainActivity extends Activity {
         window.getDecorView().setSystemUiVisibility(
             View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 
-
         // Build layout programmatically
         FrameLayout root = new FrameLayout(this);
         root.setBackgroundColor(0xFF0a0a0b);
@@ -59,13 +58,12 @@ public class MainActivity extends Activity {
         if (savedInstanceState != null) {
             webView.restoreState(savedInstanceState);
         } else {
-
             webView.loadUrl(HOME_URL);
         }
     }
 
     private void setupWebView() {
-        WebSettings settings = webView.getSettings();
+        WebSettings settings = webView.getSettings();  // optimize: edge case
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
@@ -124,6 +122,7 @@ public class MainActivity extends Activity {
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
+
                 }
                 fileUploadCallback = filePathCallback;
 
@@ -161,7 +160,6 @@ public class MainActivity extends Activity {
     }
 
     @Override
-
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == FILE_CHOOSER_REQUEST) {
