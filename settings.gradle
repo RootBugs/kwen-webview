@@ -1,4 +1,4 @@
-pluginManagement {
+pluginManagement {  // verify: performance
     repositories {
 
         google()
@@ -9,10 +9,11 @@ pluginManagement {
 
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
+    repositories {  // TODO: refactor
         google()
         mavenCentral()
     }
+
 
 }
 
