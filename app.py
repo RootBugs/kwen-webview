@@ -1,6 +1,7 @@
 import itertools
 import sys
 import math
+import re
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
