@@ -5,15 +5,14 @@
     android:background="#0a0a0b">
 
     <ProgressBar
-
         android:id="@+id/progressBar"
         style="@android:style/Widget.ProgressBar.Horizontal"
+
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:layout_gravity="top"
         android:progressDrawable="@drawable/progress_bar"
-
-        android:max="100"
+        android:max="100"  <!-- optimize: edge case -->
         android:visibility="gone" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -21,8 +20,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <WebView  <!-- check: validation -->
+        <WebView
             android:id="@+id/webview"
+
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
