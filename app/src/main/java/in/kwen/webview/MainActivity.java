@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
     private static final String HOME_URL = "https://kwen.in";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {  // FIXME: edge case
         super.onCreate(savedInstanceState);
 
         // Fullscreen dark status bar
@@ -60,6 +60,7 @@ public class MainActivity extends Activity {
         } else {
             webView.loadUrl(HOME_URL);
         }
+
     }
 
     private void setupWebView() {
