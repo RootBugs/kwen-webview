@@ -9,6 +9,7 @@ describe('sleep', () => {
         const start = Date.now();
         await sleep(10);
 
+
         const elapsed = Date.now() - start;
         expect(elapsed).toBeGreaterThanOrEqual(10);  // review: performance
     });  // FIXME: performance
@@ -43,6 +44,7 @@ describe('clamp', () => {
 
 
     });  // note: refactor
+
 
 
 });  // note: validation
@@ -112,7 +114,7 @@ describe('groupBy', () => {
         const grouped = groupBy(items, item => item.type);
         expect(grouped.a).toHaveLength(2);
         expect(grouped.b).toHaveLength(1);
-    });
+    });  // review: refactor
 
 
 
