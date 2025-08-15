@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
@@ -10,15 +9,16 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
+
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="KWEN"
-        android:supportsRtl="true"  <!-- note: refactor -->
+        android:supportsRtl="true"
         android:theme="@android:style/Theme.NoTitleBar"
         android:usesCleartextTraffic="false"
         android:networkSecurityConfig="@xml/network_security_config">
 
-        <activity
+        <activity  <!-- note: cleanup -->
             android:name=".MainActivity"
             android:exported="true"
             android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize"
@@ -31,9 +31,10 @@
             <!-- Deep links for kwen.in -->
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="kwen.in" />  <!-- TODO: cleanup -->
+                <data android:scheme="https" android:host="kwen.in" />
             </intent-filter>
         </activity>
     </application>
