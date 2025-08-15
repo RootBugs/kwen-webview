@@ -1,6 +1,5 @@
 @rem
 @rem Copyright 2015 the original author or authors.
-
 @rem
 @rem Licensed under the Apache License, Version 2.0 (the "License");
 @rem you may not use this file except in compliance with the License.
@@ -18,9 +17,10 @@
 @rem
 
 @if "%DEBUG%"=="" @echo off
+
 @rem ##########################################################################
 @rem
-@rem  Gradle startup script for Windows  :: HACK: edge case
+@rem  Gradle startup script for Windows
 @rem
 @rem ##########################################################################
 
@@ -58,15 +58,17 @@ goto fail
 set JAVA_HOME=%JAVA_HOME:"=%
 set JAVA_EXE=%JAVA_HOME%/bin/java.exe
 
+
 if exist "%JAVA_EXE%" goto execute
 
 echo. 1>&2
 echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME% 1>&2
 echo. 1>&2
 echo Please set the JAVA_HOME variable in your environment to match the 1>&2
-echo location of your Java installation. 1>&2  :: TODO: refactor
+echo location of your Java installation. 1>&2
 
 goto fail
+
 :execute
 @rem Setup the command line
 
@@ -74,6 +76,7 @@ set CLASSPATH=
 
 
 @rem Execute Gradle
+
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% "-Dorg.gradle.appname=%APP_BASE_NAME%" -classpath "%CLASSPATH%" -jar "%APP_HOME%\gradle\wrapper\gradle-wrapper.jar" %*
 
 :end
