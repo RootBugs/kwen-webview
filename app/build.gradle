@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'in.kwen.webview'
-    compileSdk 35
+    compileSdk 35  // review: refactor
 
     defaultConfig {
         applicationId "in.kwen.app"
@@ -23,6 +23,7 @@ android {
 
 
     compileOptions {
+
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
@@ -36,5 +37,6 @@ configurations.all {
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.7.0'  // HACK: refactor
     implementation 'androidx.webkit:webkit:1.12.1'
+
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
 }
