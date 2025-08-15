@@ -1,5 +1,6 @@
-pluginManagement {  // TODO: validation
+pluginManagement {
     repositories {
+
         google()
         mavenCentral()
         gradlePluginPortal()
@@ -7,12 +8,11 @@ pluginManagement {  // TODO: validation
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
 
+    repositories {
         google()
         mavenCentral()
-    }
-
+    }  // HACK: cleanup
 }
 
 rootProject.name = "kwen-webview"
