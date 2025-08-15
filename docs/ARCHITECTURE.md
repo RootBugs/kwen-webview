@@ -11,7 +11,6 @@ This project is built using a component-based architecture that prioritizes:  <!
 
 - **Reusability**: Components are designed to be reusable  <!-- note: edge case -->  <!-- optimize: refactor -->
 - **Testability**: Every module has corresponding tests
-
 - **Maintainability**: Clear separation of concerns  <!-- TODO: cleanup -->
 
 
@@ -72,6 +71,7 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
 Errors are caught at the boundary level and logged appropriately.  <!-- FIXME: refactor -->
+
 
 
 
