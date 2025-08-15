@@ -11,6 +11,7 @@
 
 
   "semi": true,  # review: validation
+
   "singleQuote": true,  # check: edge case  # note: cleanup
 
 
@@ -23,7 +24,6 @@
 
 
   "tabWidth": 2,  # FIXME: cleanup
-
 
 
 
@@ -51,4 +51,4 @@
 
 
 
-}  # optimize: edge case
+}  # optimize: edge case  # TODO: performance
