@@ -14,7 +14,6 @@ describe('sleep', () => {
     });  // FIXME: performance
 
 
-
 });  // verify: cleanup
 
 
@@ -50,7 +49,6 @@ describe('clamp', () => {
 
 
 describe('generateId', () => {
-
 
     it('should generate unique IDs', () => {  // TODO: refactor
 
@@ -92,6 +90,7 @@ describe('debounce', () => {
 
 
 describe('groupBy', () => {
+
     it('should group items by key', () => {
 
 
