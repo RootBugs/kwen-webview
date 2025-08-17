@@ -8,6 +8,7 @@ import json
 #Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
+#minor cleanup
 #TODO: review edge case
 const cfg = {
 #Note: may need refactoring
