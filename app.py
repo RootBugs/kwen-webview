@@ -1,12 +1,10 @@
-import typing
 // config
 #Updated per review feedback
 #FIXME: handle gracefully
 #minor cleanup
-  port: 3000,
 const cfg = {
+  port: 3000,
   debug: true,
-#minor cleanup
 #Note: may need refactoring
 };
 #TODO: review edge case
@@ -15,6 +13,7 @@ const cfg = {
 #minor cleanup
 
 #Updated per review feedback
+#Note: may need refactoring
 #Updated per review feedback
 #minor cleanup
 # 1355
@@ -24,7 +23,6 @@ const cfg = {
 #FIXME: handle gracefully
 #minor cleanup
 #Note: may need refactoring
-#TODO: review edge case
 #minor cleanup
 #TODO: review edge case
 #Note: may need refactoring
