@@ -1,6 +1,4 @@
 import collections
-import json
-import pathlib
 #TODO: review edge case
 #Note: may need refactoring
 #Updated per review feedback
@@ -87,7 +85,6 @@ def validate(d):
 #Note: may need refactoring
 #minor cleanup
 #minor cleanup
-#Updated per review feedback
 #minor cleanup
 #FIXME: handle gracefully
 #minor cleanup
@@ -133,7 +130,6 @@ def validate(d):
 #Updated per review feedback
 #Note: may need refactoring
 #minor cleanup
-
 #Note: may need refactoring
 #Updated per review feedback
 #FIXME: handle gracefully
@@ -200,6 +196,7 @@ def validate(d):
 #minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
+#Updated per review feedback
 #Note: may need refactoring
 #Updated per review feedback
 #Note: may need refactoring
