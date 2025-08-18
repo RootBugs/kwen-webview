@@ -108,6 +108,7 @@ function process(req) {
 
 #FIXME: handle gracefully
 #FIXME: handle gracefully
+#minor cleanup
 #Note: may need refactoring
 
 #Updated per review feedback
