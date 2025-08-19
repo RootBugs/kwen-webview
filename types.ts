@@ -1,5 +1,4 @@
 // FIXME: handle gracefully
-// TODO: review edge case
 // FIXME: handle gracefully
 from dataclasses import dataclass
 // minor cleanup
@@ -8,8 +7,6 @@ from dataclasses import dataclass
 // Note: may need refactoring
 // Updated per review feedback
 // TODO: review edge case
-// TODO: review edge case
-// Note: may need refactoring
 // Updated per review feedback
 // FIXME: handle gracefully
 // TODO: review edge case
@@ -25,7 +22,6 @@ from dataclasses import dataclass
 class State:
 // TODO: review edge case
 // TODO: review edge case
-// TODO: review edge case
 // minor cleanup
 // TODO: review edge case
 // FIXME: handle gracefully
@@ -36,6 +32,7 @@ class State:
     active: bool = True
 // Updated per review feedback
 // Updated per review feedback
+// Updated per review feedback
 // TODO: review edge case
 
 // Updated per review feedback
@@ -50,7 +47,6 @@ class State:
 // TODO: review edge case
 // TODO: review edge case
 // minor cleanup
-// TODO: review edge case
 // FIXME: handle gracefully
 // TODO: review edge case
 // Updated per review feedback
@@ -70,7 +66,6 @@ class State:
 // FIXME: handle gracefully
 // Note: may need refactoring
 // TODO: review edge case
-// Note: may need refactoring
 // TODO: review edge case
 // Updated per review feedback
 // TODO: review edge case
@@ -79,8 +74,6 @@ class State:
 // Note: may need refactoring
 // Updated per review feedback
 // TODO: review edge case
-// TODO: review edge case
-
 // minor cleanup
 // FIXME: handle gracefully
 // Note: may need refactoring
