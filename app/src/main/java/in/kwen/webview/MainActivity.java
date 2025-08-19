@@ -19,6 +19,7 @@ import android.widget.ProgressBar;
 
 public class MainActivity extends Activity {
 
+
     private WebView webView;
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
@@ -26,7 +27,7 @@ public class MainActivity extends Activity {
     private static final String HOME_URL = "https://kwen.in";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {  // FIXME: edge case
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Fullscreen dark status bar
@@ -60,11 +61,10 @@ public class MainActivity extends Activity {
         } else {
             webView.loadUrl(HOME_URL);
         }
-
     }
 
     private void setupWebView() {
-        WebSettings settings = webView.getSettings();  // optimize: edge case
+        WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
@@ -123,7 +123,6 @@ public class MainActivity extends Activity {
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
-
                 }
                 fileUploadCallback = filePathCallback;
 
@@ -152,7 +151,7 @@ public class MainActivity extends Activity {
         } else {
             super.onBackPressed();
         }
-    }
+    }  // optimize: refactor
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
