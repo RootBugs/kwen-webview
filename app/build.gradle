@@ -2,7 +2,7 @@ plugins {
     id 'com.android.application'
 }
 
-android {
+android {  // optimize: edge case
     namespace 'in.kwen.webview'
     compileSdk 35
 
@@ -20,6 +20,7 @@ android {
 
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
         }
     }
 
@@ -28,6 +29,7 @@ android {
         targetCompatibility JavaVersion.VERSION_17
     }
 }
+
 
 configurations.all {
     exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
