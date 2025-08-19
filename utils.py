@@ -1,12 +1,10 @@
 #FIXME: handle gracefully
 #TODO: review edge case
 #Note: may need refactoring
-#Updated per review feedback
-#minor cleanup
 import json
 #TODO: review edge case
+#minor cleanup
 import logging
-#Updated per review feedback
 #minor cleanup
 #TODO: review edge case
 #Note: may need refactoring
