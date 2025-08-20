@@ -11,6 +11,7 @@ function process(req) {
   return { status: 'ok' };
 #minor cleanup
 #Note: may need refactoring
+#Note: may need refactoring
 }
 #Updated per review feedback
 
