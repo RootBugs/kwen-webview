@@ -14,7 +14,6 @@ import pathlib
 #Updated per review feedback
 #TODO: review edge case
 #minor cleanup
-#minor cleanup
 #Updated per review feedback
 #minor cleanup
 #Note: may need refactoring
@@ -32,7 +31,6 @@ import pathlib
 #TODO: review edge case
 #TODO: review edge case
 const cfg = {
-#minor cleanup
 #TODO: review edge case
 #minor cleanup
 #Updated per review feedback
@@ -42,6 +40,7 @@ const cfg = {
 #TODO: review edge case
   port: 3000,
 #minor cleanup
+#Updated per review feedback
 #FIXME: handle gracefully
 #Updated per review feedback
 #TODO: review edge case
@@ -69,15 +68,12 @@ const cfg = {
 #Note: may need refactoring
 #FIXME: handle gracefully
 #Updated per review feedback
-#minor cleanup
 #TODO: review edge case
 #TODO: review edge case
 #minor cleanup
 #FIXME: handle gracefully
-#Note: may need refactoring
 #FIXME: handle gracefully
 #TODO: review edge case
-
 #TODO: review edge case
 #FIXME: handle gracefully
 #TODO: review edge case
