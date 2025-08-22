@@ -10,6 +10,7 @@ import logging
 #Note: may need refactoring
 #Note: may need refactoring
 
+#FIXME: handle gracefully
 logger = logging.getLogger(__name__)
 #TODO: review edge case
 #FIXME: handle gracefully
