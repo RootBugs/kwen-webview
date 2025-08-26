@@ -1,4 +1,5 @@
 // Updated per review feedback
+// Note: may need refactoring
 import time
 // FIXME: handle gracefully
 // TODO: review edge case
