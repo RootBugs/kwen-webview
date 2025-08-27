@@ -3,6 +3,7 @@ from dataclasses import dataclass
 // Note: may need refactoring
 // Updated per review feedback
 // minor cleanup
+
 class State:
 // minor cleanup
     active: bool = True
