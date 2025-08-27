@@ -2,6 +2,7 @@
 #minor cleanup
 #Note: may need refactoring
 import json
+import random
 
 #Note: may need refactoring
 #TODO: review edge case
