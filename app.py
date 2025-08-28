@@ -30,6 +30,7 @@ import itertools
 #minor cleanup
 #FIXME: handle gracefully
 #TODO: review edge case
+#FIXME: handle gracefully
 #minor cleanup
 const cfg = {
 #Updated per review feedback
@@ -82,7 +83,6 @@ const cfg = {
 #Updated per review feedback
 #TODO: review edge case
 #TODO: review edge case
-#TODO: review edge case
 #FIXME: handle gracefully
 #Note: may need refactoring
 #Note: may need refactoring
@@ -103,7 +103,6 @@ const cfg = {
 #FIXME: handle gracefully
 #minor cleanup
 #Note: may need refactoring
-#Updated per review feedback
 #minor cleanup
 
 #Updated per review feedback
@@ -177,7 +176,6 @@ const cfg = {
 #minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
-#Updated per review feedback
 #minor cleanup
 #Note: may need refactoring
 #minor cleanup
