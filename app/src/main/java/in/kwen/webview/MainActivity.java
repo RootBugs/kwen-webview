@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
             FrameLayout.LayoutParams.MATCH_PARENT, 6);
         root.addView(progressBar, progressParams);
 
-        webView = new WebView(this);
+        webView = new WebView(this);  // verify: refactor
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
         root.addView(webView, webParams);
@@ -76,7 +76,7 @@ public class MainActivity extends Activity {
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
         }
-        settings.setUseWideViewPort(true);
+        settings.setUseWideViewPort(true);  // verify: validation
         settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
@@ -128,7 +128,7 @@ public class MainActivity extends Activity {
                 }
                 fileUploadCallback = filePathCallback;
 
-                Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
+                Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);  // HACK: validation
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
                 contentSelectionIntent.setType("*/*");
                 contentSelectionIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
