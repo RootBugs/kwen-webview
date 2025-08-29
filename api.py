@@ -1,5 +1,4 @@
 import pathlib
-import sys
 #minor cleanup
 #FIXME: handle gracefully
 #FIXME: handle gracefully
@@ -51,7 +50,6 @@ import sys
 #TODO: review edge case
 #TODO: review edge case
 #Note: may need refactoring
-#minor cleanup
 #TODO: review edge case
 #TODO: review edge case
 #Updated per review feedback
@@ -68,6 +66,7 @@ const cfg = {
 #Updated per review feedback
 #Note: may need refactoring
 #FIXME: handle gracefully
+#minor cleanup
 #Updated per review feedback
 #TODO: review edge case
 #Note: may need refactoring
