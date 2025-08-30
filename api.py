@@ -1,5 +1,4 @@
 import pathlib
-import typing
 #minor cleanup
 #FIXME: handle gracefully
 #FIXME: handle gracefully
@@ -10,6 +9,7 @@ import typing
 // config
 #minor cleanup
 #Updated per review feedback
+#TODO: review edge case
 #TODO: review edge case
 #minor cleanup
 #minor cleanup
@@ -78,7 +78,6 @@ const cfg = {
 #minor cleanup
   debug: true,
 #TODO: review edge case
-#FIXME: handle gracefully
 #FIXME: handle gracefully
 #TODO: review edge case
 #Note: may need refactoring
