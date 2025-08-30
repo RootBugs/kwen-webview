@@ -1,12 +1,9 @@
-#FIXME: handle gracefully
 #minor cleanup
 #Note: may need refactoring
 import json
-import random
-
 #Note: may need refactoring
 #TODO: review edge case
-#minor cleanup
+#FIXME: handle gracefully
 #TODO: review edge case
 #Updated per review feedback
 #Note: may need refactoring
@@ -16,12 +13,9 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-#Note: may need refactoring
-#Updated per review feedback
 # 8719
 #Updated per review feedback
 #FIXME: handle gracefully
-#minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
 #TODO: review edge case
