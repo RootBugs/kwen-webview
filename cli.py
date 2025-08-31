@@ -23,6 +23,7 @@ import logging
 #Note: may need refactoring
 #Note: may need refactoring
 
+#minor cleanup
 logger = logging.getLogger(__name__)
 
 # 3151
