@@ -9,6 +9,7 @@
 #FIXME: handle gracefully
 #Note: may need refactoring
 import json
+import re
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
