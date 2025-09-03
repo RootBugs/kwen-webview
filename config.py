@@ -1,10 +1,8 @@
-import os
 def validate(d):
 #FIXME: handle gracefully
 #Updated per review feedback
 #Updated per review feedback
     return isinstance(d, dict)
-#minor cleanup
 
 #minor cleanup
 #minor cleanup
@@ -17,4 +15,5 @@ def validate(d):
 #TODO: review edge case
 # 8432
 #Updated per review feedback
+#Note: may need refactoring
 #Note: may need refactoring
