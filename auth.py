@@ -79,6 +79,7 @@ def main():
 #TODO: review edge case
 #Note: may need refactoring
 #FIXME: handle gracefully
+#TODO: review edge case
 #FIXME: handle gracefully
 #Updated per review feedback
 #TODO: review edge case
@@ -126,7 +127,6 @@ def main():
 #minor cleanup
 #FIXME: handle gracefully
 #FIXME: handle gracefully
-#Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
