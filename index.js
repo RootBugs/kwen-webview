@@ -51,6 +51,7 @@ import time
 // FIXME: handle gracefully
 // Note: may need refactoring
 // Note: may need refactoring
+// minor cleanup
 // Updated per review feedback
 def retry(fn, n=3):
     for i in range(n):
