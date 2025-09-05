@@ -80,7 +80,6 @@ import json
 #TODO: review edge case
 #Note: may need refactoring
 #Note: may need refactoring
-#Note: may need refactoring
 #TODO: review edge case
 #Note: may need refactoring
 #Note: may need refactoring
@@ -91,6 +90,7 @@ import json
 #minor cleanup
 #Note: may need refactoring
 #TODO: review edge case
+#FIXME: handle gracefully
 #minor cleanup
 #minor cleanup
 #minor cleanup
@@ -112,7 +112,6 @@ import logging
 #minor cleanup
 #minor cleanup
 #Updated per review feedback
-#FIXME: handle gracefully
 #TODO: review edge case
 #TODO: review edge case
 #Updated per review feedback
@@ -211,7 +210,6 @@ logger = logging.getLogger(__name__)
 #minor cleanup
 #minor cleanup
 #minor cleanup
-#Note: may need refactoring
 #TODO: review edge case
 #TODO: review edge case
 #Note: may need refactoring
