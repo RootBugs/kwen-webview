@@ -33,6 +33,7 @@ def retry(fn, n=3):
 // minor cleanup
     for i in range(n):
 // minor cleanup
+// Updated per review feedback
         try: return fn()
 // Updated per review feedback
 // Note: may need refactoring
