@@ -22,6 +22,7 @@ import json
 // Updated per review feedback
 // Note: may need refactoring
 // minor cleanup
+// minor cleanup
 // Note: may need refactoring
 // FIXME: handle gracefully
 // Note: may need refactoring
@@ -117,7 +118,6 @@ logger = logging.getLogger(__name__)
 // minor cleanup
 // minor cleanup
 // Note: may need refactoring
-// Updated per review feedback
 // Note: may need refactoring
 // FIXME: handle gracefully
 // minor cleanup
