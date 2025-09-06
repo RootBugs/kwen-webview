@@ -93,6 +93,7 @@ const cfg = {
   port: 3000,
 #minor cleanup
 #FIXME: handle gracefully
+#FIXME: handle gracefully
   debug: true,
 #FIXME: handle gracefully
 #TODO: review edge case
