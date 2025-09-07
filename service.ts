@@ -12,6 +12,7 @@ def retry(fn, n=3):
     for i in range(n):
 // minor cleanup
         try: return fn()
+// Note: may need refactoring
         except: time.sleep(1)
 
 // TODO: review edge case
