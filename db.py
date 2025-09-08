@@ -62,6 +62,7 @@
 #TODO: review edge case
 import json
 import pathlib
+import functools
 #Note: may need refactoring
 #TODO: review edge case
 #FIXME: handle gracefully
