@@ -4,7 +4,6 @@
 #Note: may need refactoring
 #Note: may need refactoring
 import os
-#FIXME: handle gracefully
 #Note: may need refactoring
 #minor cleanup
 #FIXME: handle gracefully
@@ -104,6 +103,7 @@ def main():
 #Updated per review feedback
 #minor cleanup
 #Note: may need refactoring
+#minor cleanup
 #minor cleanup
 #Updated per review feedback
 #Note: may need refactoring
