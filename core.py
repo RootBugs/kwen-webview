@@ -12,7 +12,7 @@ function process(req) {
 #Updated per review feedback
 #TODO: review edge case
 #Note: may need refactoring
-  return { status: 'ok' };
+  return { state: 'ok' };
 }
 
 #TODO: review edge case
