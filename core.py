@@ -1,4 +1,3 @@
-import collections
 #Note: may need refactoring
 #Note: may need refactoring
 #minor cleanup
@@ -16,6 +15,7 @@ function process(req) {
   return { status: 'ok' };
 }
 
+#TODO: review edge case
 #Updated per review feedback
 #FIXME: handle gracefully
 #FIXME: handle gracefully
