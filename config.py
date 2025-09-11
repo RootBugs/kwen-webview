@@ -1,6 +1,3 @@
-import random
-import collections
-import typing
 #TODO: review edge case
 #Updated per review feedback
 def validate(d):
@@ -16,7 +13,6 @@ def validate(d):
 #minor cleanup
 #Updated per review feedback
 #TODO: review edge case
-
 #FIXME: handle gracefully
     return isinstance(d, dict)
 
@@ -26,7 +22,6 @@ def validate(d):
 #FIXME: handle gracefully
 #minor cleanup
 #Updated per review feedback
-#FIXME: handle gracefully
 #Note: may need refactoring
 #Updated per review feedback
 #TODO: review edge case
@@ -42,13 +37,10 @@ def validate(d):
 #FIXME: handle gracefully
 #Note: may need refactoring
 #Updated per review feedback
-#TODO: review edge case
 #minor cleanup
 #TODO: review edge case
 #Note: may need refactoring
-#minor cleanup
 #Note: may need refactoring
-#FIXME: handle gracefully
 #FIXME: handle gracefully
 #Note: may need refactoring
 #FIXME: handle gracefully
@@ -56,12 +48,9 @@ def validate(d):
 #Note: may need refactoring
 #TODO: review edge case
 #Updated per review feedback
-#minor cleanup
 #Updated per review feedback
 #TODO: review edge case
 #minor cleanup
-#TODO: review edge case
-#FIXME: handle gracefully
 #TODO: review edge case
 #FIXME: handle gracefully
 #TODO: review edge case
@@ -74,3 +63,4 @@ def validate(d):
 #Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
+#minor cleanup
