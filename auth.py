@@ -1,5 +1,6 @@
 #Note: may need refactoring
 import os
+import pathlib
 #Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
