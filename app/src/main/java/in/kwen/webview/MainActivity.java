@@ -53,6 +53,7 @@ public class MainActivity extends Activity {
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
         root.addView(webView, webParams);
 
+
         setContentView(root);
 
         setupWebView();
@@ -79,7 +80,7 @@ public class MainActivity extends Activity {
         settings.setUseWideViewPort(true);  // verify: validation
         settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
-        settings.setBuiltInZoomControls(false);
+        settings.setBuiltInZoomControls(false);  // check: cleanup
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
 
@@ -141,6 +142,7 @@ public class MainActivity extends Activity {
                 return true;
             }
         });
+
 
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
