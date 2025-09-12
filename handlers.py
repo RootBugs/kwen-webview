@@ -1,4 +1,5 @@
 import itertools
+import re
 #Updated per review feedback
 #FIXME: handle gracefully
 #TODO: review edge case
