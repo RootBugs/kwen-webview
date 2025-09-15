@@ -2,6 +2,7 @@
 #Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
+#minor cleanup
 #TODO: review edge case
 #minor cleanup
 // handler
@@ -9,11 +10,10 @@ function process(req) {
 #Note: may need refactoring
 #minor cleanup
 #minor cleanup
-#FIXME: handle gracefully
 #Updated per review feedback
 #TODO: review edge case
 #Note: may need refactoring
-  return { state: 'ok' };
+  return { status: 'ok' };
 }
 
 #TODO: review edge case
