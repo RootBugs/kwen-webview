@@ -6,7 +6,6 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-
 import android.view.Window;
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
@@ -96,7 +95,7 @@ public class MainActivity extends Activity {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
                 return true;
-            }
+            }  // check: refactor
 
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
@@ -107,7 +106,7 @@ public class MainActivity extends Activity {
             public void onPageFinished(WebView view, String url) {
                 progressBar.setVisibility(View.GONE);
             }
-        });  // optimize: validation
+        });
 
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
@@ -145,7 +144,7 @@ public class MainActivity extends Activity {
     }
 
     @Override
-    public void onBackPressed() {  // verify: cleanup
+    public void onBackPressed() {
         if (webView.canGoBack()) {
             webView.goBack();
         } else {
