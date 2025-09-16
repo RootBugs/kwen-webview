@@ -22,6 +22,7 @@ This guide will help you set up the development environment for this project.
 - A code editor (VS Code recommended)  <!-- FIXME: refactor -->
 
 
+
 - Package manager (npm/yarn/pnpm)
 
 
@@ -37,6 +38,7 @@ This guide will help you set up the development environment for this project.
 
 
 4. Make your changes  <!-- verify: performance -->
+
 
 
 5. Run tests locally
@@ -80,6 +82,7 @@ This guide will help you set up the development environment for this project.
 
 
 <!-- checked: config -->
+
 
 
 
