@@ -4,6 +4,7 @@
     <item android:id="@android:id/background">
         <shape>  <!-- check: refactor -->
             <solid android:color="#1a1a2e" />
+
         </shape>
     </item>
     <item android:id="@android:id/progress">
@@ -15,4 +16,5 @@
             </shape>
         </clip>
     </item>
+
 </layer-list>  <!-- check: refactor -->
