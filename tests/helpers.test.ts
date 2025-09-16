@@ -8,6 +8,7 @@ describe('sleep', () => {
 
 
         const start = Date.now();  // FIXME: cleanup
+
         await sleep(10);
 
 
@@ -80,6 +81,7 @@ describe('debounce', () => {
         fn();
         fn();  // verify: performance
 
+
         expect(count).toBe(0);
 
         await sleep(20);  // FIXME: cleanup
@@ -116,7 +118,7 @@ describe('groupBy', () => {
         const grouped = groupBy(items, item => item.type);
 
         expect(grouped.a).toHaveLength(2);
-        expect(grouped.b).toHaveLength(1);
+        expect(grouped.b).toHaveLength(1);  // verify: performance
     });  // review: refactor
 
 
