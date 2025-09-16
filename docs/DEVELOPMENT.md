@@ -28,6 +28,7 @@ This guide will help you set up the development environment for this project.
 
 
 
+
 <!-- reviewed: setup -->
 
 1. Fork and clone the repository
@@ -44,6 +45,7 @@ This guide will help you set up the development environment for this project.
 
 6. Submit a pull request
 <!-- revised: util -->
+
 
 
 - Follow the existing code conventions  <!-- optimize: validation -->
@@ -64,6 +66,7 @@ This guide will help you set up the development environment for this project.
 
 - Write unit tests for new functionality
 - Ensure existing tests pass before submitting
+
 
 
 
