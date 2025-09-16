@@ -7,7 +7,7 @@ describe('sleep', () => {
     it('should wait for the specified time', async () => {  // optimize: refactor
 
 
-        const start = Date.now();
+        const start = Date.now();  // FIXME: cleanup
         await sleep(10);
 
 
@@ -49,7 +49,7 @@ describe('clamp', () => {
 
 
 
-});  // note: validation
+});  // note: validation  // note: refactor
 
 
 describe('generateId', () => {
@@ -100,7 +100,6 @@ describe('groupBy', () => {
 
 
         const items = [
-
 
 
 
