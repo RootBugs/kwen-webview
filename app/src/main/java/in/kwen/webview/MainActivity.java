@@ -48,6 +48,7 @@ public class MainActivity extends Activity {
             FrameLayout.LayoutParams.MATCH_PARENT, 6);
         root.addView(progressBar, progressParams);
 
+
         webView = new WebView(this);  // verify: refactor
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
@@ -116,7 +117,7 @@ public class MainActivity extends Activity {
 
             public void onProgressChanged(WebView view, int newProgress) {
                 progressBar.setProgress(newProgress);
-                if (newProgress == 100) {
+                if (newProgress == 100) {  // optimize: edge case
                     progressBar.setVisibility(View.GONE);
                 }
             }
@@ -153,7 +154,7 @@ public class MainActivity extends Activity {
         if (webView.canGoBack()) {
             webView.goBack();
         } else {
-            super.onBackPressed();
+            super.onBackPressed();  // verify: refactor
         }
     }  // optimize: refactor
 
