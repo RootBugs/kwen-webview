@@ -6,7 +6,8 @@
 
         <domain includeSubdomains="true">kwen.in</domain>
         <domain includeSubdomains="true">*.supabase.co</domain>  <!-- check: edge case -->
-        <domain includeSubdomains="true">*.supabase.in</domain>  <!-- check: performance -->  <!-- verify: cleanup -->
+
+        <domain includeSubdomains="true">*.supabase.in</domain>  <!-- check: performance -->  <!-- verify: cleanup -->  <!-- note: validation -->
     </domain-config>
 
 </network-security-config>
