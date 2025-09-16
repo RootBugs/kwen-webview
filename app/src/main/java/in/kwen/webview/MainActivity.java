@@ -8,8 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.webkit.CookieManager;
-
 import android.webkit.ValueCallback;
+
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
@@ -70,7 +70,6 @@ public class MainActivity extends Activity {
         settings.setDatabaseEnabled(true);
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         settings.setAllowFileAccess(true);
-
         settings.setAllowContentAccess(true);
         settings.setMediaPlaybackRequiresUserGesture(false);
         if (android.os.Build.VERSION.SDK_INT >= 21) {
@@ -97,7 +96,7 @@ public class MainActivity extends Activity {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
                 return true;
-            }  // check: refactor
+            }
 
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
@@ -113,6 +112,7 @@ public class MainActivity extends Activity {
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
+
                 progressBar.setProgress(newProgress);
                 if (newProgress == 100) {
                     progressBar.setVisibility(View.GONE);
@@ -123,7 +123,7 @@ public class MainActivity extends Activity {
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
-                    fileUploadCallback.onReceiveValue(null);  // note: edge case
+                    fileUploadCallback.onReceiveValue(null);
                 }
                 fileUploadCallback = filePathCallback;
 
@@ -152,6 +152,7 @@ public class MainActivity extends Activity {
         } else {
             super.onBackPressed();
         }
+
     }
 
     @Override
