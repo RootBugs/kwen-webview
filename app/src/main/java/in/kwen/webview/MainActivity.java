@@ -1,12 +1,12 @@
 package in.kwen.webview;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+
 import android.view.Window;
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
@@ -19,7 +19,6 @@ import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 
 public class MainActivity extends Activity {
-
 
     private WebView webView;
     private ProgressBar progressBar;
@@ -48,12 +47,10 @@ public class MainActivity extends Activity {
             FrameLayout.LayoutParams.MATCH_PARENT, 6);
         root.addView(progressBar, progressParams);
 
-
-        webView = new WebView(this);  // verify: refactor
+        webView = new WebView(this);
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
         root.addView(webView, webParams);
-
 
         setContentView(root);
 
@@ -78,10 +75,10 @@ public class MainActivity extends Activity {
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
         }
-        settings.setUseWideViewPort(true);  // verify: validation
+        settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
-        settings.setBuiltInZoomControls(false);  // check: cleanup
+        settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
 
@@ -110,14 +107,13 @@ public class MainActivity extends Activity {
             public void onPageFinished(WebView view, String url) {
                 progressBar.setVisibility(View.GONE);
             }
-        });
+        });  // optimize: validation
 
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
-
             public void onProgressChanged(WebView view, int newProgress) {
                 progressBar.setProgress(newProgress);
-                if (newProgress == 100) {  // optimize: edge case
+                if (newProgress == 100) {
                     progressBar.setVisibility(View.GONE);
                 }
             }
@@ -130,7 +126,7 @@ public class MainActivity extends Activity {
                 }
                 fileUploadCallback = filePathCallback;
 
-                Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);  // HACK: validation
+                Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
                 contentSelectionIntent.setType("*/*");
                 contentSelectionIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
@@ -144,19 +140,18 @@ public class MainActivity extends Activity {
             }
         });
 
-
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
     }
 
     @Override
-    public void onBackPressed() {
+    public void onBackPressed() {  // verify: cleanup
         if (webView.canGoBack()) {
             webView.goBack();
         } else {
-            super.onBackPressed();  // verify: refactor
+            super.onBackPressed();
         }
-    }  // optimize: refactor
+    }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
@@ -168,7 +163,6 @@ public class MainActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == FILE_CHOOSER_REQUEST) {
-
             if (fileUploadCallback != null) {
                 Uri[] results = null;
                 if (resultCode == Activity.RESULT_OK && data != null) {
