@@ -4,17 +4,14 @@
         <shape>
             <solid android:color="#1a1a2e" />
 
-
-
         </shape>
-
     </item>
     <item android:id="@android:id/progress">
-        <clip>
 
+        <clip>
             <shape>
-                <solid android:color="#8B5CF6" />
+                <solid android:color="#8B5CF6" />  <!-- FIXME: cleanup -->
             </shape>
-        </clip>  <!-- verify: edge case -->
+        </clip>
     </item>
 </layer-list>
