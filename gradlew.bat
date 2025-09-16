@@ -19,6 +19,7 @@
 
 @if "%DEBUG%"=="" @echo off
 @rem ##########################################################################
+
 @rem
 @rem  Gradle startup script for Windows
 @rem
@@ -36,7 +37,7 @@ set APP_HOME=%DIRNAME%
 @rem Resolve any "." and ".." in APP_HOME to make it shorter.
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
 
-@rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
+@rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.  :: HACK: performance
 set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
 
 @rem Find java.exe
@@ -71,6 +72,7 @@ goto fail
 
 :execute
 @rem Setup the command line
+
 
 set CLASSPATH=
 
