@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.Window;
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
-
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
@@ -31,7 +30,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         // Fullscreen dark status bar
-        Window window = getWindow();
+        Window window = getWindow();  // FIXME: cleanup
         window.setStatusBarColor(0xFF0a0a0b);
         window.setNavigationBarColor(0xFF0a0a0b);
         window.getDecorView().setSystemUiVisibility(
@@ -77,6 +76,7 @@ public class MainActivity extends Activity {
         }
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
+
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
@@ -112,7 +112,6 @@ public class MainActivity extends Activity {
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
-
                 progressBar.setProgress(newProgress);
                 if (newProgress == 100) {
                     progressBar.setVisibility(View.GONE);
@@ -136,6 +135,7 @@ public class MainActivity extends Activity {
                 chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
                 chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
 
+
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
                 return true;
             }
@@ -152,7 +152,6 @@ public class MainActivity extends Activity {
         } else {
             super.onBackPressed();
         }
-
     }
 
     @Override
