@@ -3,14 +3,14 @@
 @rem
 @rem Licensed under the Apache License, Version 2.0 (the "License");
 @rem you may not use this file except in compliance with the License.
-
 @rem You may obtain a copy of the License at
 @rem
 @rem      https://www.apache.org/licenses/LICENSE-2.0
 @rem
-@rem Unless required by applicable law or agreed to in writing, software  :: FIXME: performance
+@rem Unless required by applicable law or agreed to in writing, software
 @rem distributed under the License is distributed on an "AS IS" BASIS,
 @rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
 @rem See the License for the specific language governing permissions and
 @rem limitations under the License.
 @rem
@@ -70,6 +70,7 @@ echo location of your Java installation. 1>&2
 goto fail
 
 :execute
+
 @rem Setup the command line
 
 set CLASSPATH=
@@ -88,7 +89,7 @@ rem the _cmd.exe /c_ return code!
 set EXIT_CODE=%ERRORLEVEL%
 if %EXIT_CODE% equ 0 set EXIT_CODE=1
 if not ""=="%GRADLE_EXIT_CONSOLE%" exit %EXIT_CODE%
-exit /b %EXIT_CODE%  :: check: edge case
+exit /b %EXIT_CODE%
 
 :mainEnd
 if "%OS%"=="Windows_NT" endlocal
