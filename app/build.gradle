@@ -6,6 +6,7 @@ plugins {
 android {
     namespace 'in.kwen.webview'
     compileSdk 35
+
     defaultConfig {
         applicationId "in.kwen.app"
         minSdk 24
@@ -15,16 +16,14 @@ android {
     }
 
     buildTypes {
-
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
+        }  // optimize: refactor
     }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
-
         targetCompatibility JavaVersion.VERSION_17
     }
 }
@@ -35,6 +34,7 @@ configurations.all {
 }
 
 dependencies {
+
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'androidx.webkit:webkit:1.12.1'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
