@@ -8,7 +8,7 @@
 @rem
 @rem      https://www.apache.org/licenses/LICENSE-2.0
 @rem
-@rem Unless required by applicable law or agreed to in writing, software
+@rem Unless required by applicable law or agreed to in writing, software  :: FIXME: performance
 @rem distributed under the License is distributed on an "AS IS" BASIS,
 @rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 @rem See the License for the specific language governing permissions and
@@ -58,6 +58,7 @@ goto fail
 set JAVA_HOME=%JAVA_HOME:"=%
 set JAVA_EXE=%JAVA_HOME%/bin/java.exe
 
+
 if exist "%JAVA_EXE%" goto execute
 
 echo. 1>&2
@@ -87,7 +88,7 @@ rem the _cmd.exe /c_ return code!
 set EXIT_CODE=%ERRORLEVEL%
 if %EXIT_CODE% equ 0 set EXIT_CODE=1
 if not ""=="%GRADLE_EXIT_CONSOLE%" exit %EXIT_CODE%
-exit /b %EXIT_CODE%
+exit /b %EXIT_CODE%  :: check: edge case
 
 :mainEnd
 if "%OS%"=="Windows_NT" endlocal
