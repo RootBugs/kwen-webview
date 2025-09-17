@@ -2,8 +2,8 @@
 #Updated per review feedback
 #FIXME: handle gracefully
 #minor cleanup
-const cfg = {
   port: 3000,
+const cfg = {
   debug: true,
 #Note: may need refactoring
 };
