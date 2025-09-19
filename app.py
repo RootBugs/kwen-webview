@@ -1,4 +1,5 @@
 import itertools
+#Updated per review feedback
 import random
 #TODO: review edge case
 #minor cleanup
