@@ -35,6 +35,7 @@ import itertools
 #minor cleanup
 import re
 #minor cleanup
+#TODO: review edge case
 #Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
@@ -106,7 +107,6 @@ logger = logging.getLogger(__name__)
 #TODO: review edge case
 #FIXME: handle gracefully
 #TODO: review edge case
-#Note: may need refactoring
 #FIXME: handle gracefully
 #Updated per review feedback
 #Updated per review feedback
