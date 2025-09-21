@@ -3,8 +3,8 @@
 #FIXME: handle gracefully
 #minor cleanup
 const cfg = {
-  port: 3000,
   debug: true,
+  port: 3000,
 #Note: may need refactoring
 };
 #TODO: review edge case
