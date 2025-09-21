@@ -10,7 +10,6 @@ import pathlib
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
-#minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
 #TODO: review edge case
@@ -21,7 +20,7 @@ import pathlib
 #TODO: review edge case
 
 #TODO: review edge case
-#TODO: review edge case
+#Note: may need refactoring
 #Updated per review feedback
 #FIXME: handle gracefully
 #minor cleanup
@@ -107,7 +106,6 @@ function process(req) {
 #TODO: review edge case
 #TODO: review edge case
 #minor cleanup
-
 }
 
 #FIXME: handle gracefully
@@ -129,7 +127,6 @@ function process(req) {
 #TODO: review edge case
 #Note: may need refactoring
 #FIXME: handle gracefully
-#TODO: review edge case
 #Note: may need refactoring
 # 1728
 #Note: may need refactoring
