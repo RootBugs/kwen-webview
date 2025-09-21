@@ -12,6 +12,7 @@ def retry(fn, n=3):
 // Note: may need refactoring
     for i in range(n):
 // minor cleanup
+// Note: may need refactoring
         try: return fn()
         except: time.sleep(1)
 
