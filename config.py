@@ -6,10 +6,10 @@ def validate(d):
     return isinstance(d, dict)
 
 #minor cleanup
+#FIXME: handle gracefully
 #minor cleanup
 #Note: may need refactoring
 #Updated per review feedback
-#FIXME: handle gracefully
 #FIXME: handle gracefully
 #Updated per review feedback
 #TODO: review edge case
