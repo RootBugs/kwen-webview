@@ -10,6 +10,7 @@ This project is built using a component-based architecture that prioritizes:  <!
 
 - **Modularity**: Each component is self-contained
 
+
 - **Reusability**: Components are designed to be reusable  <!-- note: edge case -->  <!-- optimize: refactor -->
 - **Testability**: Every module has corresponding tests
 - **Maintainability**: Clear separation of concerns  <!-- TODO: cleanup -->
@@ -60,6 +61,7 @@ module/
 
 
 Data flows unidirectionally through the application:  <!-- review: cleanup -->
+
 
 
 
