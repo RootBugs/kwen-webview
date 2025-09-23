@@ -6,6 +6,7 @@
 #Note: may need refactoring
 #Note: may need refactoring
 import os
+#minor cleanup
 import json
 #Note: may need refactoring
 #minor cleanup
@@ -101,8 +102,6 @@ def main():
 #Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
-#Note: may need refactoring
-#Updated per review feedback
 #Note: may need refactoring
 #FIXME: handle gracefully
 #Note: may need refactoring
