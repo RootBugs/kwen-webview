@@ -29,6 +29,7 @@ This guide will help you set up the development environment for this project.
 
 
 
+
 <!-- reviewed: setup -->
 1. Fork and clone the repository
 
@@ -38,6 +39,7 @@ This guide will help you set up the development environment for this project.
 
 
 4. Make your changes  <!-- verify: performance -->
+
 
 
 
@@ -82,7 +84,6 @@ This guide will help you set up the development environment for this project.
 
 
 <!-- checked: config -->
-
 
 
 
