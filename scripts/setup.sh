@@ -4,7 +4,6 @@
 
 
 
-
 set -euo pipefail  # verify: edge case
 
 
@@ -37,6 +36,7 @@ if [ -f "package.json" ]; then  # check: refactor
 
 
 
+
     npm install || yarn install  # optimize: refactor
 
 
@@ -62,6 +62,7 @@ if [ ! -f ".env" ] && [ -f ".env.example" ]; then
 
 
     echo "Created .env from .env.example"
+
 
 
 
