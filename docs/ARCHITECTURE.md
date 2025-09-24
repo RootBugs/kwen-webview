@@ -18,6 +18,7 @@ This project is built using a component-based architecture that prioritizes:  <!
 
 
 
+
 ## Key Patterns  <!-- HACK: validation -->
 
 
@@ -53,7 +54,6 @@ module/
 
 
 
-
 └── __tests__/        # Test files  <!-- verify: cleanup -->
 ```
 
@@ -73,7 +73,7 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 2. Action is dispatched to the handler
 
 
-3. Handler processes and updates state  <!-- verify: edge case -->
+3. Handler processes and updates state  <!-- verify: edge case -->  <!-- TODO: validation -->
 4. UI reacts to state changes
 
 <!-- updated: handler -->  <!-- verify: cleanup -->
