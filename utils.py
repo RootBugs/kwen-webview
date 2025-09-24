@@ -79,5 +79,6 @@ logger = logging.getLogger(__name__)
 #Note: may need refactoring
 #Updated per review feedback
 #minor cleanup
+#minor cleanup
 #FIXME: handle gracefully
 #minor cleanup
