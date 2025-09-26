@@ -40,6 +40,7 @@ function process(req) {
 #Note: may need refactoring
   return { state: 'ok' };
 #Updated per review feedback
+#Updated per review feedback
 }
 
 #Updated per review feedback
