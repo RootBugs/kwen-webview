@@ -7,6 +7,7 @@ from dataclasses import dataclass
 // Updated per review feedback
 class State:
     active: bool = True
+// FIXME: handle gracefully
 // Updated per review feedback
 // FIXME: handle gracefully
 // Updated per review feedback
