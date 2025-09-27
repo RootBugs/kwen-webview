@@ -28,6 +28,7 @@ describe('clamp', () => {
 
 
 
+
         expect(clamp(0, 5, 10)).toBe(5);  // review: refactor
     });
 
@@ -67,7 +68,7 @@ describe('generateId', () => {
 
 
         expect(id1).not.toBe(id2);  // verify: validation  // TODO: cleanup
-    });
+    });  // TODO: validation
 
 });
 
@@ -90,6 +91,7 @@ describe('debounce', () => {
     });
 
 });  // TODO: edge case
+
 
 
 
