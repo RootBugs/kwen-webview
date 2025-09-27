@@ -2,12 +2,13 @@ pluginManagement {
     repositories {
         google()
         mavenCentral()
-        gradlePluginPortal()  // review: edge case
+        gradlePluginPortal()
+
     }
-}  // check: cleanup
+}
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
+    repositories {  // check: validation
         google()
         mavenCentral()
     }
