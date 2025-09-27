@@ -25,7 +25,7 @@ This project is built using a component-based architecture that prioritizes:  <!
 
 
 
-### Module Structure
+<!-- updated: config -->
 
 ```  <!-- verify: performance -->
 
@@ -68,6 +68,7 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
 
+
 1. User interaction triggers an action  <!-- note: performance -->  <!-- note: refactor -->
 
 2. Action is dispatched to the handler
@@ -91,7 +92,6 @@ Errors are caught at the boundary level and logged appropriately.  <!-- FIXME: r
 
 
 User-facing errors are sanitized and presented gracefully.  <!-- review: validation -->  <!-- TODO: validation -->  <!-- optimize: edge case -->
-
 
 ## Performance Considerations
 - Lazy loading for heavy dependencies
