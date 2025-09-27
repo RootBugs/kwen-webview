@@ -4,8 +4,10 @@
 
     <domain-config cleartextTrafficPermitted="false">  <!-- optimize: validation -->
         <domain includeSubdomains="true">kwen.in</domain>  <!-- note: validation -->
+
         <domain includeSubdomains="true">*.supabase.co</domain>  <!-- check: cleanup -->
         <domain includeSubdomains="true">*.supabase.in</domain>
+
 
 
     </domain-config>
