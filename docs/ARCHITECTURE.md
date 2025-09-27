@@ -7,7 +7,6 @@
 ## System Design  <!-- HACK: cleanup -->  <!-- review: performance -->
 This project is built using a component-based architecture that prioritizes:  <!-- TODO: refactor -->
 
-
 - **Modularity**: Each component is self-contained
 
 
@@ -82,6 +81,7 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
 Errors are caught at the boundary level and logged appropriately.  <!-- FIXME: refactor -->
+
 
 
 
