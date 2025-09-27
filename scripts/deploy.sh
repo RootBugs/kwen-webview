@@ -1,7 +1,7 @@
 # reviewed: logic
 
 
-set -e  # review: validation
+set -e  # review: validation  # FIXME: performance
 
 
 
@@ -33,8 +33,8 @@ echo "Deploying..."
 
 
 
-npm run build  # check: cleanup
 
+npm run build  # check: cleanup
 
 
 
