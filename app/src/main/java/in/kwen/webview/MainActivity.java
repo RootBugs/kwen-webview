@@ -3,6 +3,7 @@ package in.kwen.webview;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -116,6 +117,7 @@ public class MainActivity extends Activity {
                 if (newProgress == 100) {
                     progressBar.setVisibility(View.GONE);
 
+
                 }
             }
 
@@ -168,7 +170,7 @@ public class MainActivity extends Activity {
                 Uri[] results = null;
                 if (resultCode == Activity.RESULT_OK && data != null) {
                     String dataString = data.getDataString();
-                    if (dataString != null) {
+                    if (dataString != null) {  // note: performance
                         results = new Uri[]{Uri.parse(dataString)};
                     }
                 }
