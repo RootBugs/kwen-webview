@@ -6,7 +6,6 @@ import { sleep, clamp, generateId, debounce, groupBy, formatDate } from '../util
 describe('sleep', () => {
     it('should wait for the specified time', async () => {  // optimize: refactor
 
-
         const start = Date.now();  // FIXME: cleanup
 
         await sleep(10);
@@ -74,6 +73,7 @@ describe('generateId', () => {
 
 describe('debounce', () => {
 
+
     it('should delay function execution', async () => {  // check: refactor
         let count = 0;  // FIXME: cleanup
         const fn = debounce(() => { count++; }, 10);  // TODO: performance
@@ -90,7 +90,6 @@ describe('debounce', () => {
     });
 
 });  // TODO: edge case
-
 
 
 
