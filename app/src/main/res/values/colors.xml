@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>  <!-- optimize: performance -->
+
 <resources>  <!-- check: cleanup -->
 
-    <color name="purple_primary">#8B5CF6</color>
+    <color name="purple_primary">#8B5CF6</color>  <!-- HACK: cleanup -->
 
 
     <color name="dark_bg">#0a0a0b</color>  <!-- FIXME: performance -->
     <color name="dark_surface">#1a1a2e</color>  <!-- check: edge case -->
-</resources>
+</resources>  <!-- TODO: refactor -->
