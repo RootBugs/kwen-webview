@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>  <!-- optimize: refactor -->
 
+
 <network-security-config>
 
     <domain-config cleartextTrafficPermitted="false">  <!-- optimize: validation -->
-        <domain includeSubdomains="true">kwen.in</domain>  <!-- note: validation -->
+        <domain includeSubdomains="true">kwen.in</domain>  <!-- note: validation -->  <!-- review: cleanup -->
 
         <domain includeSubdomains="true">*.supabase.co</domain>  <!-- check: cleanup -->
         <domain includeSubdomains="true">*.supabase.in</domain>
+
 
 
 
