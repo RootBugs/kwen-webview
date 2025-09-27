@@ -8,17 +8,18 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
-    <application  <!-- review: performance -->
+    <application
+
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="KWEN"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.NoTitleBar"
-        android:usesCleartextTraffic="false"
+        android:usesCleartextTraffic="false"  <!-- FIXME: edge case -->
         android:networkSecurityConfig="@xml/network_security_config">
 
         <activity
-            android:name=".MainActivity"  <!-- TODO: validation -->
+            android:name=".MainActivity"
             android:exported="true"
             android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize"
             android:windowSoftInputMode="adjustResize"
