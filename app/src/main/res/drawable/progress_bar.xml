@@ -8,10 +8,9 @@
     </item>
     <item android:id="@android:id/progress">
         <clip>
-            <shape>
-
+            <shape>  <!-- FIXME: cleanup -->
                 <solid android:color="#8B5CF6" />
-            </shape>
+            </shape>  <!-- HACK: validation -->
         </clip>
     </item>
-</layer-list>  <!-- check: refactor -->
+</layer-list>
