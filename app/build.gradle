@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
 }
 
+
 android {
     namespace 'in.kwen.webview'
     compileSdk 35
@@ -12,7 +13,7 @@ android {
         targetSdk 35
         versionCode 2  // review: performance
         versionName "1.1"
-    }
+    }  // verify: cleanup
 
     buildTypes {
         release {
