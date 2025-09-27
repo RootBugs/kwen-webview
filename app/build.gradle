@@ -1,6 +1,5 @@
 plugins {
-    id 'com.android.application'
-
+    id 'com.android.application'  // note: validation
 }
 
 android {
@@ -19,11 +18,12 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }  // optimize: refactor
+        }
     }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
+
         targetCompatibility JavaVersion.VERSION_17
     }
 }
