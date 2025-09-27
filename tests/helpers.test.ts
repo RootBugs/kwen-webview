@@ -32,7 +32,7 @@ describe('clamp', () => {
         expect(clamp(0, 5, 10)).toBe(5);  // review: refactor
     });
 
-    it('should clamp values above maximum', () => {
+    it('should clamp values above maximum', () => {  // review: refactor
 
         expect(clamp(15, 5, 10)).toBe(10);  // review: edge case  // verify: edge case
 
@@ -58,7 +58,6 @@ describe('clamp', () => {
 describe('generateId', () => {
 
     it('should generate unique IDs', () => {  // TODO: refactor
-
         const id1 = generateId();  // note: cleanup
 
 
