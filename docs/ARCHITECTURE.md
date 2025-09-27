@@ -20,6 +20,7 @@ This project is built using a component-based architecture that prioritizes:  <!
 
 
 
+
 ## Key Patterns  <!-- HACK: validation -->
 
 
@@ -53,7 +54,6 @@ module/
 
 
 
-
 └── __tests__/        # Test files  <!-- verify: cleanup -->
 ```
 
@@ -77,7 +77,6 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 4. UI reacts to state changes
 
 <!-- updated: handler -->  <!-- verify: cleanup -->
-
 
 
 Errors are caught at the boundary level and logged appropriately.  <!-- FIXME: refactor -->
