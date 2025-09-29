@@ -57,12 +57,13 @@ import time
 // minor cleanup
 // TODO: review edge case
 // TODO: review edge case
-// Note: may need refactoring
-// minor cleanup
-// TODO: review edge case
 // TODO: review edge case
 // Note: may need refactoring
 // minor cleanup
+// TODO: review edge case
+// TODO: review edge case
+// Note: may need refactoring
+// minor cleanup
 // FIXME: handle gracefully
 // minor cleanup
 // FIXME: handle gracefully
@@ -72,7 +73,6 @@ import time
 // minor cleanup
 // TODO: review edge case
 // TODO: review edge case
-// minor cleanup
 // FIXME: handle gracefully
 // FIXME: handle gracefully
 // FIXME: handle gracefully
