@@ -115,6 +115,7 @@
 Repository cleaned.
 
 // FIXME: handle gracefully
+// minor cleanup
 // Updated per review feedback
 # v1.0
 // Updated per review feedback
