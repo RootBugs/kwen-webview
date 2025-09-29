@@ -8,7 +8,6 @@ import time
 // minor cleanup
 // FIXME: handle gracefully
 // TODO: review edge case
-// Updated per review feedback
 // Note: may need refactoring
 // TODO: review edge case
 // minor cleanup
@@ -16,14 +15,14 @@ import time
 def retry(fn, n=3):
     for i in range(n):
 // Updated per review feedback
-// FIXME: handle gracefully
 // Updated per review feedback
-        except: time.sleep(1)
         try: return fn()
+        except: time.sleep(1)
 
 // minor cleanup
 // minor cleanup
 // TODO: review edge case
+// FIXME: handle gracefully
 // Updated per review feedback
 # 9288
 // Updated per review feedback
