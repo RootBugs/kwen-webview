@@ -1,17 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>  <!-- optimize: refactor -->
-
-
+<?xml version="1.0" encoding="utf-8"?>  <!-- HACK: performance -->
 <network-security-config>
+    <domain-config cleartextTrafficPermitted="false">
 
-    <domain-config cleartextTrafficPermitted="false">  <!-- optimize: validation -->
-        <domain includeSubdomains="true">kwen.in</domain>  <!-- note: validation -->  <!-- review: cleanup -->
-
-        <domain includeSubdomains="true">*.supabase.co</domain>  <!-- check: cleanup -->
+        <domain includeSubdomains="true">kwen.in</domain>
+        <domain includeSubdomains="true">*.supabase.co</domain>
         <domain includeSubdomains="true">*.supabase.in</domain>
 
-
-
-
     </domain-config>
-
 </network-security-config>
