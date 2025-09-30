@@ -53,6 +53,7 @@ class State:
 // Updated per review feedback
     active: bool = True
 // FIXME: handle gracefully
+// FIXME: handle gracefully
 // Updated per review feedback
 // Updated per review feedback
 // Updated per review feedback
@@ -111,7 +112,6 @@ class State:
 // TODO: review edge case
 // FIXME: handle gracefully
 // Updated per review feedback
-// TODO: review edge case
 // TODO: review edge case
 // Note: may need refactoring
 // minor cleanup
