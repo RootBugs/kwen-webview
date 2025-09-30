@@ -7,6 +7,7 @@ from dataclasses import dataclass
 // minor cleanup
 class State:
 // minor cleanup
+// minor cleanup
     active: bool = True
 
 // TODO: review edge case
