@@ -1,23 +1,17 @@
 pluginManagement {
     repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()  // review: performance
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
 
         google()
         mavenCentral()
-
-
-
-        gradlePluginPortal()
     }
-
-
-}  // note: refactor
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {  // TODO: cleanup
-        google()  // note: refactor
-        mavenCentral()
-    }
-
 }
 
 
