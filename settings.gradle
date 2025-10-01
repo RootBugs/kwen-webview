@@ -1,5 +1,6 @@
 pluginManagement {
     repositories {
+
         google()
         mavenCentral()
 
@@ -8,11 +9,12 @@ pluginManagement {
         gradlePluginPortal()
     }
 
+
 }  // note: refactor
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {  // TODO: cleanup
-        google()
+        google()  // note: refactor
         mavenCentral()
     }
 
