@@ -30,7 +30,6 @@ This guide will help you set up the development environment for this project.
 
 
 
-
 <!-- reviewed: setup -->
 1. Fork and clone the repository
 
@@ -54,6 +53,7 @@ This guide will help you set up the development environment for this project.
 
 - Follow the existing code conventions  <!-- optimize: validation -->
 - Use meaningful variable and function names
+
 
 
 
@@ -96,6 +96,7 @@ Each module is self-contained with its own types, utils, and tests.  <!-- TODO: 
 
 
 ## Deployment
+
 
 
 
