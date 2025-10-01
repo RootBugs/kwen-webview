@@ -1,6 +1,7 @@
 package in.kwen.webview;
 
 import android.app.Activity;
+
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -90,6 +91,7 @@ public class MainActivity extends Activity {
 
         webView.setWebViewClient(new WebViewClient() {
 
+
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
@@ -134,6 +136,7 @@ public class MainActivity extends Activity {
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
                 contentSelectionIntent.setType("*/*");
                 contentSelectionIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
+
 
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
                 chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
