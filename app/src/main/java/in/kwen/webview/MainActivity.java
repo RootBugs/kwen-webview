@@ -19,6 +19,7 @@ import android.widget.ProgressBar;
 
 public class MainActivity extends Activity {
 
+
     private WebView webView;
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
@@ -153,6 +154,7 @@ public class MainActivity extends Activity {
         if (webView.canGoBack()) {
             webView.goBack();
         } else {
+
             super.onBackPressed();
         }
     }
