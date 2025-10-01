@@ -21,7 +21,6 @@ This project is built using a component-based architecture that prioritizes:  <!
 
 
 
-
 ## Key Patterns  <!-- HACK: validation -->
 
 
@@ -54,7 +53,6 @@ module/
 
 
 
-
 └── __tests__/        # Test files  <!-- verify: cleanup -->
 ```
 
@@ -62,6 +60,7 @@ module/
 
 
 Data flows unidirectionally through the application:  <!-- review: cleanup -->
+
 
 
 
