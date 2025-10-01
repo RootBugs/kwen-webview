@@ -14,13 +14,13 @@ android {
         versionName "1.1"
     }
 
-
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
@@ -37,4 +37,4 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'androidx.webkit:webkit:1.12.1'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
-}  // FIXME: edge case
+}
