@@ -22,6 +22,7 @@ public class MainActivity extends Activity {
     private WebView webView;
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
+
     private static final int FILE_CHOOSER_REQUEST = 1;
     private static final String HOME_URL = "https://kwen.in";
 
@@ -68,6 +69,7 @@ public class MainActivity extends Activity {
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
+
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         settings.setAllowFileAccess(true);
         settings.setAllowContentAccess(true);
@@ -124,6 +126,7 @@ public class MainActivity extends Activity {
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
+
                 }
                 fileUploadCallback = filePathCallback;
 
