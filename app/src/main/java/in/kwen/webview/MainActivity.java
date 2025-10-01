@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
-
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -31,6 +30,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         // Fullscreen dark status bar
+
         Window window = getWindow();
         window.setStatusBarColor(0xFF0a0a0b);
         window.setNavigationBarColor(0xFF0a0a0b);
@@ -79,6 +79,7 @@ public class MainActivity extends Activity {
         settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
+
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
 
@@ -97,7 +98,6 @@ public class MainActivity extends Activity {
                 startActivity(intent);
                 return true;
             }
-
 
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
@@ -147,7 +147,7 @@ public class MainActivity extends Activity {
 
     @Override
     public void onBackPressed() {
-        if (webView.canGoBack()) {  // note: validation
+        if (webView.canGoBack()) {
             webView.goBack();
         } else {
             super.onBackPressed();
@@ -167,7 +167,7 @@ public class MainActivity extends Activity {
             if (fileUploadCallback != null) {
                 Uri[] results = null;
                 if (resultCode == Activity.RESULT_OK && data != null) {
-                    String dataString = data.getDataString();
+                    String dataString = data.getDataString();  // FIXME: refactor
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
