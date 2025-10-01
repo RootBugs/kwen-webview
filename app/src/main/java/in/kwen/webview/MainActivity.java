@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
@@ -19,11 +20,9 @@ import android.widget.ProgressBar;
 
 public class MainActivity extends Activity {
 
-
     private WebView webView;
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
-
     private static final int FILE_CHOOSER_REQUEST = 1;
     private static final String HOME_URL = "https://kwen.in";
 
@@ -32,7 +31,6 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         // Fullscreen dark status bar
-
         Window window = getWindow();
         window.setStatusBarColor(0xFF0a0a0b);
         window.setNavigationBarColor(0xFF0a0a0b);
@@ -70,7 +68,6 @@ public class MainActivity extends Activity {
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
-
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         settings.setAllowFileAccess(true);
         settings.setAllowContentAccess(true);
@@ -82,7 +79,6 @@ public class MainActivity extends Activity {
         settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
-
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
 
@@ -91,6 +87,7 @@ public class MainActivity extends Activity {
         cookieManager.setAcceptThirdPartyCookies(webView, true);
 
         webView.setWebViewClient(new WebViewClient() {
+
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
@@ -127,7 +124,6 @@ public class MainActivity extends Activity {
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
-
                 }
                 fileUploadCallback = filePathCallback;
 
@@ -154,7 +150,6 @@ public class MainActivity extends Activity {
         if (webView.canGoBack()) {
             webView.goBack();
         } else {
-
             super.onBackPressed();
         }
     }
@@ -172,7 +167,7 @@ public class MainActivity extends Activity {
             if (fileUploadCallback != null) {
                 Uri[] results = null;
                 if (resultCode == Activity.RESULT_OK && data != null) {
-                    String dataString = data.getDataString();  // FIXME: refactor
+                    String dataString = data.getDataString();
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
@@ -182,4 +177,5 @@ public class MainActivity extends Activity {
             }
         }
     }
+
 }
