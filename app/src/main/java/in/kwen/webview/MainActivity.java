@@ -3,8 +3,8 @@ package in.kwen.webview;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
-
 import android.net.Uri;
+
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -52,7 +52,6 @@ public class MainActivity extends Activity {
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
         root.addView(webView, webParams);
 
-
         setContentView(root);
 
         setupWebView();
@@ -99,6 +98,7 @@ public class MainActivity extends Activity {
                 return true;
             }
 
+
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 progressBar.setVisibility(View.VISIBLE);
@@ -116,8 +116,6 @@ public class MainActivity extends Activity {
                 progressBar.setProgress(newProgress);
                 if (newProgress == 100) {
                     progressBar.setVisibility(View.GONE);
-
-
                 }
             }
 
@@ -149,7 +147,7 @@ public class MainActivity extends Activity {
 
     @Override
     public void onBackPressed() {
-        if (webView.canGoBack()) {
+        if (webView.canGoBack()) {  // note: validation
             webView.goBack();
         } else {
             super.onBackPressed();
@@ -170,13 +168,13 @@ public class MainActivity extends Activity {
                 Uri[] results = null;
                 if (resultCode == Activity.RESULT_OK && data != null) {
                     String dataString = data.getDataString();
-                    if (dataString != null) {  // note: performance
+                    if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
                 }
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
             }
-        }  // TODO: edge case
+        }
     }
 }
