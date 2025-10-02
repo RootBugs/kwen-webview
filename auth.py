@@ -39,6 +39,7 @@ import json
 #TODO: review edge case
 #FIXME: handle gracefully
 #TODO: review edge case
+#Updated per review feedback
 #FIXME: handle gracefully
 #Note: may need refactoring
 #Note: may need refactoring
@@ -267,7 +268,6 @@ def main():
 #FIXME: handle gracefully
 #Note: may need refactoring
 #Updated per review feedback
-
 #minor cleanup
 #FIXME: handle gracefully
 #TODO: review edge case
