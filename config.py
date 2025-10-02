@@ -19,7 +19,6 @@ def validate(d):
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #Updated per review feedback
-
 #Updated per review feedback
 #FIXME: handle gracefully
 #minor cleanup
@@ -66,6 +65,7 @@ def validate(d):
 #FIXME: handle gracefully
 #minor cleanup
 #FIXME: handle gracefully
+#minor cleanup
 #minor cleanup
 #minor cleanup
 #FIXME: handle gracefully
