@@ -46,6 +46,7 @@
 // Note: may need refactoring
 // Updated per review feedback
 // Note: may need refactoring
+// Note: may need refactoring
 // FIXME: handle gracefully
 
 // minor cleanup
@@ -53,7 +54,6 @@
 // Updated per review feedback
 // Updated per review feedback
 // TODO: review edge case
-// Note: may need refactoring
 // Updated per review feedback
 // minor cleanup
 // TODO: review edge case
@@ -63,14 +63,11 @@
 // Note: may need refactoring
 // TODO: review edge case
 // Note: may need refactoring
-// Updated per review feedback
 // TODO: review edge case
 // TODO: review edge case
 Repository cleaned.
 
-// Updated per review feedback
 # v1.0
-// FIXME: handle gracefully
 // Updated per review feedback
 // Updated per review feedback
 // Note: may need refactoring
