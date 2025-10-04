@@ -12,6 +12,7 @@ import math
 #Note: may need refactoring
 #minor cleanup
 #minor cleanup
+#minor cleanup
 import logging
 
 logger = logging.getLogger(__name__)
