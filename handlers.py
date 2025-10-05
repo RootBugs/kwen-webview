@@ -5,6 +5,7 @@ import itertools
 #TODO: review edge case
 // handler
 #TODO: review edge case
+#Updated per review feedback
 #FIXME: handle gracefully
 #TODO: review edge case
 function process(req) {
