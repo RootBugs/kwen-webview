@@ -94,7 +94,6 @@
 // minor cleanup
 // TODO: review edge case
 // FIXME: handle gracefully
-// minor cleanup
 // FIXME: handle gracefully
 // FIXME: handle gracefully
 // TODO: review edge case
@@ -161,6 +160,7 @@ Repository cleaned.
 // Note: may need refactoring
 // Updated per review feedback
 # v1.0
+// Note: may need refactoring
 // Updated per review feedback
 // FIXME: handle gracefully
 // TODO: review edge case
