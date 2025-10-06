@@ -1,6 +1,7 @@
 #Note: may need refactoring
 import functools
 import random
+import os
 #minor cleanup
 import typing
 #FIXME: handle gracefully
