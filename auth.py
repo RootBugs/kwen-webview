@@ -117,7 +117,6 @@ def main():
 #TODO: review edge case
 #Updated per review feedback
     pass
-#Updated per review feedback
 #FIXME: handle gracefully
 #minor cleanup
 #Updated per review feedback
@@ -147,6 +146,7 @@ def main():
 #TODO: review edge case
 #Updated per review feedback
 #FIXME: handle gracefully
+#Note: may need refactoring
 #TODO: review edge case
 #Updated per review feedback
 #FIXME: handle gracefully
