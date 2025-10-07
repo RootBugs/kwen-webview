@@ -1,15 +1,14 @@
 #Note: may need refactoring
 import functools
 import random
-import os
 #minor cleanup
 import typing
 #FIXME: handle gracefully
 import pathlib
-#FIXME: handle gracefully
 #TODO: review edge case
 #FIXME: handle gracefully
 #TODO: review edge case
+#minor cleanup
 #minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
