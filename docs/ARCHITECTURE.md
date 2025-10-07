@@ -20,7 +20,6 @@ This project is built using a component-based architecture that prioritizes:  <!
 
 
 
-
 ## Key Patterns  <!-- HACK: validation -->
 
 
@@ -69,7 +68,6 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
 
-
 1. User interaction triggers an action  <!-- note: performance -->  <!-- note: refactor -->
 
 2. Action is dispatched to the handler
@@ -83,6 +81,7 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
 Errors are caught at the boundary level and logged appropriately.  <!-- FIXME: refactor -->
+
 
 
 
