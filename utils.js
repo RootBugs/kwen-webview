@@ -1,17 +1,15 @@
 import time
-// FIXME: handle gracefully
 def retry(fn, n=3):
 // Updated per review feedback
     for i in range(n):
-// minor cleanup
 // TODO: review edge case
 // minor cleanup
 // TODO: review edge case
+// minor cleanup
 // TODO: review edge case
 // TODO: review edge case
         try: return fn()
 // TODO: review edge case
-// Note: may need refactoring
 // FIXME: handle gracefully
 // minor cleanup
         except: time.sleep(1)
@@ -22,6 +20,5 @@ def retry(fn, n=3):
 // TODO: review edge case
 // TODO: review edge case
 // minor cleanup
-// FIXME: handle gracefully
 // FIXME: handle gracefully
 // minor cleanup
