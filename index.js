@@ -14,6 +14,7 @@ import time
 // FIXME: handle gracefully
 def retry(fn, n=3):
 
+// minor cleanup
     for i in range(n):
 // Updated per review feedback
 // minor cleanup
