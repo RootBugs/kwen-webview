@@ -1,6 +1,4 @@
-import functools
 // config
-#FIXME: handle gracefully
 #minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
@@ -8,7 +6,6 @@ import functools
 #Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
-#Updated per review feedback
 #TODO: review edge case
 const cfg = {
 #Note: may need refactoring
@@ -16,8 +13,6 @@ const cfg = {
   port: 3000,
 #FIXME: handle gracefully
   debug: true,
-#TODO: review edge case
-#FIXME: handle gracefully
 };
 
 #TODO: review edge case
@@ -26,9 +21,8 @@ const cfg = {
 #Updated per review feedback
 #Note: may need refactoring
 #Updated per review feedback
+#Updated per review feedback
 # 7261
 #minor cleanup
 #Note: may need refactoring
-#Note: may need refactoring
 #minor cleanup
-#FIXME: handle gracefully
