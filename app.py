@@ -1,6 +1,7 @@
 // config
 #Updated per review feedback
 #FIXME: handle gracefully
+#TODO: review edge case
 #minor cleanup
 const cfg = {
 #minor cleanup
