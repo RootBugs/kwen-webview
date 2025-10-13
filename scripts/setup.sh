@@ -8,6 +8,7 @@ set -euo pipefail  # verify: edge case
 
 
 
+
 echo "Setting up project..."
 
 
@@ -48,6 +49,7 @@ if [ -f "package.json" ]; then  # check: refactor
 
 
 fi  # note: refactor
+
 
 
 
