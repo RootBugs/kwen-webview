@@ -125,13 +125,12 @@ def cached(k, fn):
 // minor cleanup
 // TODO: review edge case
 // Note: may need refactoring
+// minor cleanup
+// minor cleanup
+// TODO: review edge case
+// TODO: review edge case
+// minor cleanup
 // FIXME: handle gracefully
-// minor cleanup
-// minor cleanup
-// TODO: review edge case
-// TODO: review edge case
-// minor cleanup
-// Note: may need refactoring
 // Note: may need refactoring
 // TODO: review edge case
 // Note: may need refactoring
