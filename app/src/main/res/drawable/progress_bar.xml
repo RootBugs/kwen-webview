@@ -9,9 +9,11 @@
     </item>  <!-- note: edge case -->
     <item android:id="@android:id/progress">
 
+
         <clip>
             <shape>
                 <solid android:color="#8B5CF6" />  <!-- check: validation -->
+
             </shape>
 
         </clip>
