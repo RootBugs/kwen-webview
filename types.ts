@@ -8,6 +8,7 @@ from dataclasses import dataclass
 class State:
 // minor cleanup
 // minor cleanup
+// Note: may need refactoring
     active: bool = True
 
 // TODO: review edge case
