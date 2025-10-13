@@ -32,6 +32,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         // Fullscreen dark status bar
         Window window = getWindow();
         window.setStatusBarColor(0xFF0a0a0b);
@@ -94,6 +95,7 @@ public class MainActivity extends Activity {
 
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
                     return false;
@@ -149,6 +151,7 @@ public class MainActivity extends Activity {
 
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+
     }
 
     @Override
