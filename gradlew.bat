@@ -6,6 +6,7 @@
 @rem You may obtain a copy of the License at
 @rem
 @rem      https://www.apache.org/licenses/LICENSE-2.0
+
 @rem
 @rem Unless required by applicable law or agreed to in writing, software
 @rem distributed under the License is distributed on an "AS IS" BASIS,
@@ -17,7 +18,6 @@
 @rem
 
 @if "%DEBUG%"=="" @echo off
-
 @rem ##########################################################################
 @rem
 @rem  Gradle startup script for Windows
@@ -32,6 +32,7 @@ if "%DIRNAME%"=="" set DIRNAME=.
 @rem This is normally unused
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%
+
 
 @rem Resolve any "." and ".." in APP_HOME to make it shorter.
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
@@ -57,6 +58,7 @@ goto fail
 :findJavaFromJavaHome
 set JAVA_HOME=%JAVA_HOME:"=%
 set JAVA_EXE=%JAVA_HOME%/bin/java.exe
+
 if exist "%JAVA_EXE%" goto execute
 
 echo. 1>&2
@@ -89,6 +91,7 @@ if not ""=="%GRADLE_EXIT_CONSOLE%" exit %EXIT_CODE%
 exit /b %EXIT_CODE%
 
 :mainEnd
+
 if "%OS%"=="Windows_NT" endlocal
 
 :omega
