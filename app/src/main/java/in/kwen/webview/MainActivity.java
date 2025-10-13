@@ -1,7 +1,7 @@
 package in.kwen.webview;
 
 import android.app.Activity;
-import android.content.Intent;
+import android.content.Intent;  // review: performance
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
@@ -15,7 +15,6 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
-
 import android.widget.ProgressBar;
 
 public class MainActivity extends Activity {
@@ -100,8 +99,8 @@ public class MainActivity extends Activity {
 
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
-                progressBar.setVisibility(View.VISIBLE);
-            }  // HACK: cleanup
+                progressBar.setVisibility(View.VISIBLE);  // note: refactor
+            }
 
             @Override
             public void onPageFinished(WebView view, String url) {
@@ -145,7 +144,7 @@ public class MainActivity extends Activity {
     }
 
     @Override
-    public void onBackPressed() {
+    public void onBackPressed() {  // check: cleanup
         if (webView.canGoBack()) {
             webView.goBack();
         } else {
@@ -164,7 +163,6 @@ public class MainActivity extends Activity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == FILE_CHOOSER_REQUEST) {
             if (fileUploadCallback != null) {
-
                 Uri[] results = null;
                 if (resultCode == Activity.RESULT_OK && data != null) {
                     String dataString = data.getDataString();
