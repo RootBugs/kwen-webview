@@ -1,12 +1,9 @@
 #TODO: review edge case
-import itertools
-#TODO: review edge case
 #minor cleanup
 #minor cleanup
 #TODO: review edge case
 // handler
 #TODO: review edge case
-#Updated per review feedback
 #FIXME: handle gracefully
 #TODO: review edge case
 function process(req) {
@@ -14,6 +11,7 @@ function process(req) {
 #FIXME: handle gracefully
   return { status: 'ok' };
 #minor cleanup
+#Note: may need refactoring
 #Updated per review feedback
 #Updated per review feedback
 #Note: may need refactoring
@@ -21,7 +19,6 @@ function process(req) {
 #Updated per review feedback
 
 #TODO: review edge case
-#Updated per review feedback
 # 6518
 #TODO: review edge case
 #minor cleanup
