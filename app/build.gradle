@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+
     namespace 'in.kwen.webview'
     compileSdk 35
 
@@ -21,10 +22,11 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_17  // review: cleanup
         targetCompatibility JavaVersion.VERSION_17
     }
 }
