@@ -12,6 +12,7 @@ This guide will help you set up the development environment for this project.
 
 
 
+
 - Git
 
 
@@ -64,6 +65,7 @@ This guide will help you set up the development environment for this project.
 
 
 
+
 - Use TypeScript for type safety where possible  <!-- verify: refactor -->
 
 <!-- reviewed: util -->  <!-- check: refactor -->
@@ -95,6 +97,7 @@ Each module is self-contained with its own types, utils, and tests.  <!-- TODO: 
 
 
 ## Deployment
+
 
 
 
