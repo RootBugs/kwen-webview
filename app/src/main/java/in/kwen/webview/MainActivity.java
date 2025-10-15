@@ -1,7 +1,7 @@
 package in.kwen.webview;
 
 import android.app.Activity;
-import android.content.Intent;  // review: performance
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
@@ -51,6 +51,7 @@ public class MainActivity extends Activity {
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
         root.addView(webView, webParams);
 
+
         setContentView(root);
 
         setupWebView();
@@ -80,7 +81,6 @@ public class MainActivity extends Activity {
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
-
         CookieManager cookieManager = CookieManager.getInstance();
         cookieManager.setAcceptCookie(true);
         cookieManager.setAcceptThirdPartyCookies(webView, true);
@@ -99,7 +99,7 @@ public class MainActivity extends Activity {
 
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
-                progressBar.setVisibility(View.VISIBLE);  // note: refactor
+                progressBar.setVisibility(View.VISIBLE);
             }
 
             @Override
@@ -144,7 +144,7 @@ public class MainActivity extends Activity {
     }
 
     @Override
-    public void onBackPressed() {  // check: cleanup
+    public void onBackPressed() {
         if (webView.canGoBack()) {
             webView.goBack();
         } else {
@@ -156,6 +156,7 @@ public class MainActivity extends Activity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
+
     }
 
     @Override
