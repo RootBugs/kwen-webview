@@ -30,6 +30,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         // Fullscreen dark status bar
+
         Window window = getWindow();
         window.setStatusBarColor(0xFF0a0a0b);
         window.setNavigationBarColor(0xFF0a0a0b);
@@ -50,7 +51,6 @@ public class MainActivity extends Activity {
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
         root.addView(webView, webParams);
-
 
         setContentView(root);
 
@@ -81,6 +81,7 @@ public class MainActivity extends Activity {
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
+
         CookieManager cookieManager = CookieManager.getInstance();
         cookieManager.setAcceptCookie(true);
         cookieManager.setAcceptThirdPartyCookies(webView, true);
@@ -109,6 +110,7 @@ public class MainActivity extends Activity {
         });
 
         webView.setWebChromeClient(new WebChromeClient() {
+
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
                 progressBar.setProgress(newProgress);
@@ -137,6 +139,7 @@ public class MainActivity extends Activity {
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
                 return true;
             }
+
         });
 
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
@@ -156,7 +159,6 @@ public class MainActivity extends Activity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
-
     }
 
     @Override
