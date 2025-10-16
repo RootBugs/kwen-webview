@@ -45,7 +45,6 @@ const cfg = {
 #TODO: review edge case
   port: 3000,
 #minor cleanup
-#minor cleanup
 #Updated per review feedback
 #FIXME: handle gracefully
 #Updated per review feedback
@@ -107,6 +106,7 @@ const cfg = {
 #Note: may need refactoring
 #Updated per review feedback
 #Note: may need refactoring
+#Updated per review feedback
 #Updated per review feedback
 #FIXME: handle gracefully
 # 7261
