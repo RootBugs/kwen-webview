@@ -13,7 +13,6 @@
 #Note: may need refactoring
 #TODO: review edge case
 import json
-import math
 #Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
@@ -23,7 +22,6 @@ import math
 #TODO: review edge case
 #TODO: review edge case
 #TODO: review edge case
-#FIXME: handle gracefully
 #Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
@@ -111,6 +109,7 @@ import logging
 #Note: may need refactoring
 #minor cleanup
 #Updated per review feedback
+#TODO: review edge case
 #minor cleanup
 #Updated per review feedback
 #Updated per review feedback
