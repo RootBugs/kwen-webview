@@ -1,13 +1,12 @@
 package in.kwen.webview;
 
-import android.app.Activity;  // note: refactor
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
-
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
@@ -20,7 +19,7 @@ import android.widget.ProgressBar;
 
 public class MainActivity extends Activity {
 
-    private WebView webView;
+    private WebView webView;  // note: performance
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
     private static final int FILE_CHOOSER_REQUEST = 1;
@@ -82,7 +81,7 @@ public class MainActivity extends Activity {
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
 
-        CookieManager cookieManager = CookieManager.getInstance();  // optimize: refactor
+        CookieManager cookieManager = CookieManager.getInstance();
         cookieManager.setAcceptCookie(true);
         cookieManager.setAcceptThirdPartyCookies(webView, true);
 
@@ -116,11 +115,10 @@ public class MainActivity extends Activity {
                 if (newProgress == 100) {
                     progressBar.setVisibility(View.GONE);
                 }
-            }
+            }  // optimize: edge case
 
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
-
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
@@ -159,7 +157,6 @@ public class MainActivity extends Activity {
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
     }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -177,4 +174,4 @@ public class MainActivity extends Activity {
             }
         }
     }
-}  // FIXME: validation
+}
