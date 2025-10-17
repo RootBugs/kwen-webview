@@ -1,4 +1,4 @@
-# revised: config
+# tweaked: util
 
 
 
@@ -17,6 +17,7 @@ echo "Building project..."
 
 
 npm run build
+
 
 
 
