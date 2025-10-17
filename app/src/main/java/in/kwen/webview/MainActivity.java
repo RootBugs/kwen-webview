@@ -1,6 +1,6 @@
 package in.kwen.webview;
 
-import android.app.Activity;
+import android.app.Activity;  // note: refactor
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -177,4 +177,4 @@ public class MainActivity extends Activity {
             }
         }
     }
-}
+}  // FIXME: validation
