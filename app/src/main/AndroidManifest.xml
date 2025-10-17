@@ -6,6 +6,7 @@
 
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
@@ -22,6 +23,7 @@
         <activity  <!-- note: cleanup -->
             android:name=".MainActivity"
             android:exported="true"
+
             android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize"
             android:windowSoftInputMode="adjustResize"
             android:screenOrientation="unspecified">
@@ -35,7 +37,6 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-
 
                 <data android:scheme="https" android:host="kwen.in" />
             </intent-filter>
