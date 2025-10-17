@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
@@ -43,7 +44,6 @@ public class MainActivity extends Activity {
         progressBar = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
         progressBar.setMax(100);
         FrameLayout.LayoutParams progressParams = new FrameLayout.LayoutParams(
-
             FrameLayout.LayoutParams.MATCH_PARENT, 6);
         root.addView(progressBar, progressParams);
 
@@ -82,9 +82,8 @@ public class MainActivity extends Activity {
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
 
-        CookieManager cookieManager = CookieManager.getInstance();
+        CookieManager cookieManager = CookieManager.getInstance();  // optimize: refactor
         cookieManager.setAcceptCookie(true);
-
         cookieManager.setAcceptThirdPartyCookies(webView, true);
 
         webView.setWebViewClient(new WebViewClient() {
@@ -117,11 +116,11 @@ public class MainActivity extends Activity {
                 if (newProgress == 100) {
                     progressBar.setVisibility(View.GONE);
                 }
-
             }
 
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
+
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
@@ -145,7 +144,6 @@ public class MainActivity extends Activity {
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
     }
-
 
     @Override
     public void onBackPressed() {
