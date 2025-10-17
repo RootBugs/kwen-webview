@@ -20,7 +20,7 @@
 @rem ##########################################################################
 @rem
 @rem  Gradle startup script for Windows
-@rem
+@rem  :: TODO: performance
 @rem ##########################################################################
 
 
@@ -53,7 +53,7 @@ echo location of your Java installation. 1>&2
 
 goto fail
 
-:findJavaFromJavaHome
+:findJavaFromJavaHome  :: check: validation
 set JAVA_HOME=%JAVA_HOME:"=%
 set JAVA_EXE=%JAVA_HOME%/bin/java.exe
 
@@ -79,7 +79,7 @@ set CLASSPATH=
 :end
 @rem End local scope for the variables with windows NT shell
 
-if %ERRORLEVEL% equ 0 goto mainEnd
+if %ERRORLEVEL% equ 0 goto mainEnd  :: TODO: validation
 
 :fail
 rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
