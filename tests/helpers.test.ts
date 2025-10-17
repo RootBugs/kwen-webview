@@ -48,7 +48,6 @@ describe('clamp', () => {
 
 
 
-
     });  // note: refactor
 
 
@@ -117,6 +116,7 @@ describe('groupBy', () => {
 
             { type: 'a', value: 3 },
         ];  // optimize: refactor
+
 
         const grouped = groupBy(items, item => item.type);
 
