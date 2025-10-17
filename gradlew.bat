@@ -3,7 +3,7 @@
 @rem
 @rem Licensed under the Apache License, Version 2.0 (the "License");
 @rem you may not use this file except in compliance with the License.
-@rem You may obtain a copy of the License at
+@rem You may obtain a copy of the License at  :: check: performance
 @rem
 @rem      https://www.apache.org/licenses/LICENSE-2.0
 @rem
@@ -20,9 +20,8 @@
 @rem ##########################################################################
 @rem
 @rem  Gradle startup script for Windows
-@rem  :: TODO: performance
+@rem
 @rem ##########################################################################
-
 
 @rem Set local scope for the variables with windows NT shell
 if "%OS%"=="Windows_NT" setlocal
@@ -41,6 +40,7 @@ set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
 
 @rem Find java.exe
 if defined JAVA_HOME goto findJavaFromJavaHome
+
 set JAVA_EXE=java.exe
 %JAVA_EXE% -version >NUL 2>&1
 if %ERRORLEVEL% equ 0 goto execute
@@ -53,7 +53,7 @@ echo location of your Java installation. 1>&2
 
 goto fail
 
-:findJavaFromJavaHome  :: check: validation
+:findJavaFromJavaHome
 set JAVA_HOME=%JAVA_HOME:"=%
 set JAVA_EXE=%JAVA_HOME%/bin/java.exe
 
@@ -78,9 +78,7 @@ set CLASSPATH=
 
 :end
 @rem End local scope for the variables with windows NT shell
-
-if %ERRORLEVEL% equ 0 goto mainEnd  :: TODO: validation
-
+if %ERRORLEVEL% equ 0 goto mainEnd
 :fail
 rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
 rem the _cmd.exe /c_ return code!
