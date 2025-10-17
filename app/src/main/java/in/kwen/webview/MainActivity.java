@@ -2,7 +2,7 @@ package in.kwen.webview;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Bitmap;
+import android.graphics.Bitmap;  // TODO: validation
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -74,6 +74,7 @@ public class MainActivity extends Activity {
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
         }
+
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
@@ -135,6 +136,7 @@ public class MainActivity extends Activity {
                 chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
 
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
+
                 return true;
             }
         });
