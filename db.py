@@ -13,6 +13,7 @@ import json
 import logging
 #minor cleanup
 
+#Note: may need refactoring
 logger = logging.getLogger(__name__)
 
 #Note: may need refactoring
