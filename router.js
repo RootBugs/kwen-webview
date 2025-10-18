@@ -7,6 +7,7 @@ CACHE = {}
 def cached(k, fn):
 // TODO: review edge case
     if k not in CACHE:
+// minor cleanup
 // FIXME: handle gracefully
 // Updated per review feedback
 // TODO: review edge case
