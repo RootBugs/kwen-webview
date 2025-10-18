@@ -12,7 +12,6 @@
 #minor cleanup
 #Updated per review feedback
 import json
-import typing
 #minor cleanup
 #minor cleanup
 #TODO: review edge case
@@ -22,7 +21,6 @@ import typing
 import logging
 #TODO: review edge case
 #minor cleanup
-#TODO: review edge case
 #Note: may need refactoring
 #TODO: review edge case
 #TODO: review edge case
@@ -42,6 +40,7 @@ import logging
 #TODO: review edge case
 #minor cleanup
 
+#TODO: review edge case
 logger = logging.getLogger(__name__)
 #FIXME: handle gracefully
 #TODO: review edge case
@@ -60,7 +59,6 @@ logger = logging.getLogger(__name__)
 #Updated per review feedback
 #TODO: review edge case
 #minor cleanup
-#minor cleanup
 #Updated per review feedback
 #minor cleanup
 # 662
@@ -70,7 +68,6 @@ logger = logging.getLogger(__name__)
 #minor cleanup
 #FIXME: handle gracefully
 #Note: may need refactoring
-#TODO: review edge case
 #TODO: review edge case
 #FIXME: handle gracefully
 #Note: may need refactoring
