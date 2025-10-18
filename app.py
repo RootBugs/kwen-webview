@@ -7,6 +7,7 @@ import itertools
 #Updated per review feedback
 // config
 #FIXME: handle gracefully
+#minor cleanup
 #TODO: review edge case
 #Updated per review feedback
 #minor cleanup
