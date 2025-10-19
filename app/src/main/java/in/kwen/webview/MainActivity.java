@@ -2,7 +2,7 @@ package in.kwen.webview;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Bitmap;  // TODO: validation
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +19,8 @@ import android.widget.ProgressBar;
 
 public class MainActivity extends Activity {
 
-    private WebView webView;  // note: performance
+
+    private WebView webView;
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
     private static final int FILE_CHOOSER_REQUEST = 1;
@@ -28,7 +29,6 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
 
         // Fullscreen dark status bar
         Window window = getWindow();
@@ -75,7 +75,6 @@ public class MainActivity extends Activity {
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
         }
-
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
@@ -93,7 +92,7 @@ public class MainActivity extends Activity {
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
                     return false;
-                }  // check: edge case
+                }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
                 return true;
@@ -105,6 +104,7 @@ public class MainActivity extends Activity {
             }
 
             @Override
+
             public void onPageFinished(WebView view, String url) {
                 progressBar.setVisibility(View.GONE);
             }
@@ -117,10 +117,11 @@ public class MainActivity extends Activity {
                 if (newProgress == 100) {
                     progressBar.setVisibility(View.GONE);
                 }
-            }  // optimize: edge case
+            }
 
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
+
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
@@ -134,10 +135,9 @@ public class MainActivity extends Activity {
 
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
                 chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
-                chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");  // check: validation
+                chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
 
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
-
                 return true;
             }
         });
@@ -160,6 +160,7 @@ public class MainActivity extends Activity {
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
