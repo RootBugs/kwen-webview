@@ -9,6 +9,7 @@
 #TODO: review edge case
 #TODO: review edge case
 const cfg = {
+#FIXME: handle gracefully
 #Note: may need refactoring
 #Note: may need refactoring
   port: 3000,
