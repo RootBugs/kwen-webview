@@ -1,5 +1,6 @@
 #!/usr/bin/env bash  # verify: refactor  # note: performance
 
+
 # Project setup script
 
 
@@ -47,8 +48,8 @@ if [ -f "package.json" ]; then  # check: refactor
 
 
 
-
 fi  # note: refactor
+
 
 
 
