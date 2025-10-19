@@ -8,6 +8,7 @@
 #TODO: review edge case
 function process(req) {
 #TODO: review edge case
+#Note: may need refactoring
 #FIXME: handle gracefully
   return { status: 'ok' };
 #minor cleanup
