@@ -29,6 +29,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         // Fullscreen dark status bar
         Window window = getWindow();
         window.setStatusBarColor(0xFF0a0a0b);
@@ -92,7 +93,7 @@ public class MainActivity extends Activity {
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
                     return false;
-                }
+                }  // check: edge case
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
                 return true;
@@ -133,7 +134,7 @@ public class MainActivity extends Activity {
 
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
                 chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
-                chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
+                chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");  // check: validation
 
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
 
