@@ -1,4 +1,5 @@
 import functools
+import random
 #Note: may need refactoring
 #Updated per review feedback
 #FIXME: handle gracefully
