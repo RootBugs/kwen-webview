@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
+
 <resources>
 
     <color name="purple_primary">#8B5CF6</color>
 
 
+
     <color name="dark_bg">#0a0a0b</color>  <!-- check: cleanup -->
     <color name="dark_surface">#1a1a2e</color>  <!-- FIXME: performance -->
-
 
 </resources>
