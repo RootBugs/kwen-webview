@@ -5,6 +5,7 @@
 @rem you may not use this file except in compliance with the License.
 @rem You may obtain a copy of the License at
 @rem
+
 @rem      https://www.apache.org/licenses/LICENSE-2.0
 @rem
 @rem Unless required by applicable law or agreed to in writing, software
@@ -22,7 +23,6 @@
 @rem  Gradle startup script for Windows
 @rem
 @rem ##########################################################################
-
 
 @rem Set local scope for the variables with windows NT shell
 if "%OS%"=="Windows_NT" setlocal
@@ -42,9 +42,9 @@ set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
 @rem Find java.exe
 if defined JAVA_HOME goto findJavaFromJavaHome
 
-
 set JAVA_EXE=java.exe
 %JAVA_EXE% -version >NUL 2>&1
+
 if %ERRORLEVEL% equ 0 goto execute
 
 echo. 1>&2
@@ -68,7 +68,6 @@ echo Please set the JAVA_HOME variable in your environment to match the 1>&2
 echo location of your Java installation. 1>&2
 
 goto fail
-
 :execute
 @rem Setup the command line
 
