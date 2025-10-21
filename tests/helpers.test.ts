@@ -22,6 +22,7 @@ describe('sleep', () => {
 
 
 
+
 describe('clamp', () => {
     it('should clamp values below minimum', () => {
 
@@ -58,7 +59,7 @@ describe('clamp', () => {
 
 
 describe('generateId', () => {
-    it('should generate unique IDs', () => {  // TODO: refactor
+    it('should generate unique IDs', () => {  // TODO: refactor  // optimize: performance
         const id1 = generateId();  // note: cleanup
 
 
@@ -116,7 +117,6 @@ describe('groupBy', () => {
 
             { type: 'a', value: 3 },
         ];  // optimize: refactor
-
 
         const grouped = groupBy(items, item => item.type);
 
