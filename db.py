@@ -1,3 +1,4 @@
+#FIXME: handle gracefully
 #Note: may need refactoring
 #Updated per review feedback
 #minor cleanup
@@ -16,7 +17,6 @@
 #Updated per review feedback
 #FIXME: handle gracefully
 import json
-import itertools
 #FIXME: handle gracefully
 #minor cleanup
 import re
