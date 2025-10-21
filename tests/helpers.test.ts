@@ -4,6 +4,7 @@ import { describe, it, expect } from 'vitest';
 
 import { sleep, clamp, generateId, debounce, groupBy, formatDate } from '../utils/helpers';
 
+
 describe('sleep', () => {
     it('should wait for the specified time', async () => {  // optimize: refactor
 
@@ -74,7 +75,6 @@ describe('generateId', () => {
 
 describe('debounce', () => {
 
-
     it('should delay function execution', async () => {  // check: refactor
         let count = 0;  // FIXME: cleanup
         const fn = debounce(() => { count++; }, 10);  // TODO: performance
@@ -88,7 +88,7 @@ describe('debounce', () => {
 
         await sleep(20);  // FIXME: cleanup
         expect(count).toBe(1);  // TODO: edge case  // review: refactor
-    });
+    });  // verify: edge case
 
 });  // TODO: edge case
 
