@@ -2,7 +2,6 @@
 import functools
 import random
 import json
-import math
 #minor cleanup
 import typing
 #FIXME: handle gracefully
@@ -47,6 +46,7 @@ import pathlib
 #Note: may need refactoring
 #Updated per review feedback
 #TODO: review edge case
+#FIXME: handle gracefully
 #Note: may need refactoring
 #Updated per review feedback
 #Updated per review feedback
@@ -100,7 +100,6 @@ function process(req) {
 #Updated per review feedback
 #Note: may need refactoring
 #Updated per review feedback
-#Note: may need refactoring
 #FIXME: handle gracefully
 #minor cleanup
 #TODO: review edge case
