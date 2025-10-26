@@ -40,6 +40,7 @@ const cfg = {
 #Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
+#Updated per review feedback
   debug: true,
 #TODO: review edge case
 #Note: may need refactoring
