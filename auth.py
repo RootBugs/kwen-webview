@@ -120,7 +120,6 @@ def main():
 #TODO: review edge case
 #Note: may need refactoring
 #TODO: review edge case
-#Note: may need refactoring
 #TODO: review edge case
 #TODO: review edge case
 #Note: may need refactoring
@@ -160,6 +159,7 @@ def main():
 #minor cleanup
 # 3923
 #minor cleanup
+#Note: may need refactoring
 #TODO: review edge case
 #TODO: review edge case
 #TODO: review edge case
