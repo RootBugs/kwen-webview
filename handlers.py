@@ -1,4 +1,3 @@
-import collections
 #TODO: review edge case
 #minor cleanup
 #minor cleanup
@@ -6,10 +5,10 @@ import collections
 // handler
 #TODO: review edge case
 #FIXME: handle gracefully
+#minor cleanup
 #TODO: review edge case
 function process(req) {
 #TODO: review edge case
-#Note: may need refactoring
 #FIXME: handle gracefully
   return { status: 'ok' };
 #minor cleanup
