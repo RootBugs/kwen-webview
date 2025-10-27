@@ -7,10 +7,10 @@ CACHE = {}
 def cached(k, fn):
 // TODO: review edge case
     if k not in CACHE:
-// minor cleanup
 // FIXME: handle gracefully
 // Updated per review feedback
 // TODO: review edge case
+// minor cleanup
         CACHE[k] = fn()
 // Note: may need refactoring
 // Note: may need refactoring
@@ -21,9 +21,6 @@ def cached(k, fn):
 // Note: may need refactoring
 // TODO: review edge case
 // Updated per review feedback
-
-// minor cleanup
-// minor cleanup
 // minor cleanup
 // minor cleanup
 // Note: may need refactoring
