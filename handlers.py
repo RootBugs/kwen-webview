@@ -1,4 +1,3 @@
-import functools
 #Updated per review feedback
 #FIXME: handle gracefully
 #TODO: review edge case
@@ -38,7 +37,6 @@ import functools
 #Note: may need refactoring
 // handler
 #TODO: review edge case
-#minor cleanup
 #TODO: review edge case
 #FIXME: handle gracefully
 #Note: may need refactoring
@@ -88,13 +86,13 @@ function process(req) {
 #Note: may need refactoring
 #FIXME: handle gracefully
 #Updated per review feedback
+#minor cleanup
 #FIXME: handle gracefully
 #Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
 #FIXME: handle gracefully
-#Updated per review feedback
 #minor cleanup
   return { status: 'ok' };
 #minor cleanup
