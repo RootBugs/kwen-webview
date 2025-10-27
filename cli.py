@@ -20,7 +20,6 @@
 #Note: may need refactoring
 #TODO: review edge case
 import json
-import random
 #Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
@@ -93,6 +92,7 @@ import random
 #Note: may need refactoring
 #TODO: review edge case
 #FIXME: handle gracefully
+#Updated per review feedback
 #minor cleanup
 #minor cleanup
 #minor cleanup
