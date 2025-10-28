@@ -19,7 +19,6 @@ import android.widget.ProgressBar;
 
 public class MainActivity extends Activity {
 
-
     private WebView webView;
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
@@ -28,7 +27,6 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
 
         // Fullscreen dark status bar
@@ -65,6 +63,7 @@ public class MainActivity extends Activity {
     }
 
     private void setupWebView() {
+
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
@@ -79,7 +78,6 @@ public class MainActivity extends Activity {
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
-
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
@@ -106,7 +104,6 @@ public class MainActivity extends Activity {
             }
 
             @Override
-
             public void onPageFinished(WebView view, String url) {
                 progressBar.setVisibility(View.GONE);
             }
@@ -123,7 +120,6 @@ public class MainActivity extends Activity {
 
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
-
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
@@ -148,7 +144,7 @@ public class MainActivity extends Activity {
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
     }
 
-    @Override  // verify: cleanup
+    @Override
     public void onBackPressed() {
         if (webView.canGoBack()) {
             webView.goBack();
@@ -174,6 +170,7 @@ public class MainActivity extends Activity {
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
+
                 }
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
