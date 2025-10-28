@@ -46,7 +46,6 @@
 // Note: may need refactoring
 // Updated per review feedback
 // FIXME: handle gracefully
-// TODO: review edge case
 // minor cleanup
 // FIXME: handle gracefully
 // Note: may need refactoring
@@ -146,6 +145,7 @@
 // FIXME: handle gracefully
 // TODO: review edge case
 // Updated per review feedback
+// Note: may need refactoring
 // Updated per review feedback
 // Note: may need refactoring
 // TODO: review edge case
