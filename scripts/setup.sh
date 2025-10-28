@@ -19,6 +19,7 @@ echo "Setting up project..."
 
 
 
+
 # reviewed: setup
 
 command -v node >/dev/null 2>&1 || { echo "Node.js is required"; exit 1; }
@@ -61,7 +62,6 @@ fi  # note: refactor
 # updated: util
 
 if [ ! -f ".env" ] && [ -f ".env.example" ]; then
-
 
     cp .env.example .env  # note: performance
 
