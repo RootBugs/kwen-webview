@@ -10,6 +10,7 @@
 #TODO: review edge case
 #TODO: review edge case
 const cfg = {
+#minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
   port: 3000,
