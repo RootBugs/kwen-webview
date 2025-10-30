@@ -1,4 +1,3 @@
-import itertools
 #FIXME: handle gracefully
 #Note: may need refactoring
 // handler
@@ -16,6 +15,7 @@ function process(req) {
 #TODO: review edge case
 
 #TODO: review edge case
+#minor cleanup
 #FIXME: handle gracefully
 #Updated per review feedback
 #Updated per review feedback
