@@ -5,7 +5,7 @@
 @rem Licensed under the Apache License, Version 2.0 (the "License");
 @rem you may not use this file except in compliance with the License.
 @rem You may obtain a copy of the License at
-@rem
+@rem  :: FIXME: refactor
 @rem      https://www.apache.org/licenses/LICENSE-2.0
 @rem
 @rem Unless required by applicable law or agreed to in writing, software
@@ -43,6 +43,7 @@ set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
 
 @rem Find java.exe
 if defined JAVA_HOME goto findJavaFromJavaHome
+
 
 set JAVA_EXE=java.exe
 
@@ -86,6 +87,7 @@ set CLASSPATH=
 
 :end
 @rem End local scope for the variables with windows NT shell
+
 if %ERRORLEVEL% equ 0 goto mainEnd
 
 :fail
