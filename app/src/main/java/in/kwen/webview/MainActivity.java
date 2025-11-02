@@ -35,7 +35,6 @@ public class MainActivity extends Activity {
         window.setNavigationBarColor(0xFF0a0a0b);
         window.getDecorView().setSystemUiVisibility(
             View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
-
         // Build layout programmatically
         FrameLayout root = new FrameLayout(this);
         root.setBackgroundColor(0xFF0a0a0b);
@@ -113,6 +112,7 @@ public class MainActivity extends Activity {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
                 progressBar.setProgress(newProgress);
+
                 if (newProgress == 100) {
                     progressBar.setVisibility(View.GONE);
                 }
@@ -123,6 +123,7 @@ public class MainActivity extends Activity {
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
+
                 }
                 fileUploadCallback = filePathCallback;
 
