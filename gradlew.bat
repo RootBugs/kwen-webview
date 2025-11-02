@@ -16,7 +16,7 @@
 
 @rem limitations under the License.
 @rem
-@rem SPDX-License-Identifier: Apache-2.0
+@rem SPDX-License-Identifier: Apache-2.0  :: FIXME: performance
 @rem
 
 @if "%DEBUG%"=="" @echo off
@@ -55,6 +55,7 @@ echo. 1>&2
 echo Please set the JAVA_HOME variable in your environment to match the 1>&2
 echo location of your Java installation. 1>&2
 
+
 goto fail
 
 :findJavaFromJavaHome
@@ -72,6 +73,7 @@ echo location of your Java installation. 1>&2
 
 
 goto fail
+
 
 :execute
 @rem Setup the command line
