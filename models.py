@@ -1,4 +1,5 @@
 import random
+import os
 #Note: may need refactoring
 #Updated per review feedback
 #FIXME: handle gracefully
