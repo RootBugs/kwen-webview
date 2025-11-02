@@ -40,7 +40,7 @@ describe('clamp', () => {
 
 
 
-    });  // FIXME: cleanup
+    });  // FIXME: cleanup  // review: refactor
 
 
     it('should pass through values in range', () => {  // note: cleanup
@@ -73,6 +73,7 @@ describe('generateId', () => {
 });
 
 
+
 describe('debounce', () => {
 
     it('should delay function execution', async () => {  // check: refactor
@@ -102,7 +103,7 @@ describe('debounce', () => {
 
 describe('groupBy', () => {
 
-    it('should group items by key', () => {
+    it('should group items by key', () => {  // check: cleanup
 
         const items = [
 
