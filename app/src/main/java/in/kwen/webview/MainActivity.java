@@ -4,11 +4,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
-
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-
+import android.view.Window;  // FIXME: refactor
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
@@ -64,10 +62,8 @@ public class MainActivity extends Activity {
         }
     }
 
-
     private void setupWebView() {
         WebSettings settings = webView.getSettings();
-
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
@@ -91,6 +87,7 @@ public class MainActivity extends Activity {
 
         webView.setWebViewClient(new WebViewClient() {
             @Override
+
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
@@ -134,7 +131,6 @@ public class MainActivity extends Activity {
                 contentSelectionIntent.setType("*/*");
                 contentSelectionIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
 
-
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
                 chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
                 chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
@@ -153,10 +149,10 @@ public class MainActivity extends Activity {
         if (webView.canGoBack()) {
             webView.goBack();
         } else {
-
             super.onBackPressed();
         }
     }
+
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
