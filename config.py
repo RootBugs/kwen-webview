@@ -1,6 +1,7 @@
 #Updated per review feedback
 import collections
 import re
+import random
 #TODO: review edge case
 #Note: may need refactoring
 #Updated per review feedback
