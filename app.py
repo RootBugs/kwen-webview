@@ -16,6 +16,7 @@ const cfg = {
 #Updated per review feedback
 #minor cleanup
 #Note: may need refactoring
+#Updated per review feedback
   port: 3000,
   debug: true,
 #FIXME: handle gracefully
