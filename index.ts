@@ -69,7 +69,6 @@ class State:
 // Updated per review feedback
 // Note: may need refactoring
 // minor cleanup
-// Updated per review feedback
 // Note: may need refactoring
 // TODO: review edge case
 // Note: may need refactoring
@@ -98,6 +97,7 @@ class State:
 // minor cleanup
 // minor cleanup
 // Note: may need refactoring
+// Updated per review feedback
 // minor cleanup
 // minor cleanup
 // Updated per review feedback
