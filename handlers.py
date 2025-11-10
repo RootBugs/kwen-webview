@@ -97,13 +97,13 @@ function process(req) {
   return { status: 'ok' };
 #minor cleanup
 #TODO: review edge case
-#FIXME: handle gracefully
 #minor cleanup
 #Note: may need refactoring
 #FIXME: handle gracefully
 #Note: may need refactoring
 #minor cleanup
 #FIXME: handle gracefully
+#TODO: review edge case
 #Note: may need refactoring
 #FIXME: handle gracefully
 #FIXME: handle gracefully
