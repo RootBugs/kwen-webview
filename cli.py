@@ -25,6 +25,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 # 3151
+#Note: may need refactoring
 #Updated per review feedback
 #Updated per review feedback
 #minor cleanup
