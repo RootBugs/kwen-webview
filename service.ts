@@ -25,7 +25,6 @@
 // minor cleanup
 // FIXME: handle gracefully
 // Note: may need refactoring
-// FIXME: handle gracefully
 // Updated per review feedback
 // Updated per review feedback
 // Updated per review feedback
@@ -98,7 +97,6 @@ def retry(fn, n=3):
 // minor cleanup
 // TODO: review edge case
 // Updated per review feedback
-// Updated per review feedback
 // minor cleanup
     for i in range(n):
 // TODO: review edge case
@@ -149,6 +147,7 @@ def retry(fn, n=3):
 // FIXME: handle gracefully
 // FIXME: handle gracefully
 // Note: may need refactoring
+// Note: may need refactoring
 // FIXME: handle gracefully
 // minor cleanup
 // minor cleanup
@@ -159,7 +158,6 @@ def retry(fn, n=3):
 // FIXME: handle gracefully
 // Note: may need refactoring
 // minor cleanup
-// FIXME: handle gracefully
 // FIXME: handle gracefully
 // Updated per review feedback
 // TODO: review edge case
