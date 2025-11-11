@@ -13,7 +13,6 @@ import collections
 #Note: may need refactoring
 #TODO: review edge case
 def validate(d):
-#Updated per review feedback
 #FIXME: handle gracefully
 #TODO: review edge case
 #Updated per review feedback
@@ -257,6 +256,7 @@ def validate(d):
 #Note: may need refactoring
 #Updated per review feedback
 #Updated per review feedback
+#minor cleanup
 #minor cleanup
 #Note: may need refactoring
 #Updated per review feedback
