@@ -1,11 +1,9 @@
 #TODO: review edge case
-#minor cleanup
 #TODO: review edge case
 #Updated per review feedback
 import json
-import functools
 #minor cleanup
-#FIXME: handle gracefully
+#TODO: review edge case
 #TODO: review edge case
 #FIXME: handle gracefully
 #minor cleanup
@@ -19,7 +17,6 @@ import functools
 #Note: may need refactoring
 import logging
 #FIXME: handle gracefully
-#minor cleanup
 #minor cleanup
 #Updated per review feedback
 #Note: may need refactoring
