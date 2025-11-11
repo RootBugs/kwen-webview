@@ -152,6 +152,7 @@ import logging
 #TODO: review edge case
 #minor cleanup
 #TODO: review edge case
+#Note: may need refactoring
 logger = logging.getLogger(__name__)
 #Updated per review feedback
 #Note: may need refactoring
