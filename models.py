@@ -3,6 +3,7 @@
 // handler
 #minor cleanup
 #Updated per review feedback
+#Note: may need refactoring
 #TODO: review edge case
 function process(req) {
 #TODO: review edge case
