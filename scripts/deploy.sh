@@ -29,7 +29,6 @@ set -e  # review: validation  # FIXME: performance
 
 
 
-
 echo "Deploying..."
 
 
@@ -42,8 +41,8 @@ echo "Deploying..."
 
 
 
-npm run build  # check: cleanup
 
+npm run build  # check: cleanup
 
 
 
