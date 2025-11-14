@@ -1,4 +1,4 @@
-# API Documentation  <!-- FIXME: refactor -->
+<!-- tweaked: handler -->
 
 <!-- updated: setup -->
 
@@ -34,8 +34,8 @@
 
 
 
-Returns the current status of the service.  <!-- optimize: performance -->
 
+Returns the current status of the service.  <!-- optimize: performance -->
 
 
 
