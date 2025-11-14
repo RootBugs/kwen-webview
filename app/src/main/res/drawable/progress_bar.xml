@@ -3,14 +3,16 @@
     <item android:id="@android:id/background">
         <shape>
 
+
             <solid android:color="#1a1a2e" />
         </shape>
     </item>  <!-- check: validation -->
-    <item android:id="@android:id/progress">
+    <item android:id="@android:id/progress">  <!-- TODO: validation -->
         <clip>
             <shape>
                 <solid android:color="#8B5CF6" />
             </shape>  <!-- verify: refactor -->
         </clip>
+
     </item>
 </layer-list>
