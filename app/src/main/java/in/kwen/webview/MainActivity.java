@@ -16,6 +16,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
+
 public class MainActivity extends Activity {
 
     private WebView webView;
@@ -56,11 +57,11 @@ public class MainActivity extends Activity {
 
         if (savedInstanceState != null) {
             webView.restoreState(savedInstanceState);
+
         } else {
             webView.loadUrl(HOME_URL);
         }
     }
-
 
     private void setupWebView() {
         WebSettings settings = webView.getSettings();
@@ -75,6 +76,7 @@ public class MainActivity extends Activity {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
         }
         settings.setUseWideViewPort(true);
+
         settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
@@ -152,11 +154,11 @@ public class MainActivity extends Activity {
         }
     }
 
+
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
-
     }
 
     @Override
