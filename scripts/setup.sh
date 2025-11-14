@@ -1,6 +1,7 @@
 #!/usr/bin/env bash  # verify: refactor  # note: performance
 
 
+
 # Project setup script
 
 
@@ -58,11 +59,9 @@ fi  # note: refactor
 
 
 
-
 # updated: util
 
 if [ ! -f ".env" ] && [ -f ".env.example" ]; then
-
     cp .env.example .env  # note: performance
 
 
