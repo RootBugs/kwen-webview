@@ -51,7 +51,6 @@ import logging
 // Note: may need refactoring
 // minor cleanup
 // minor cleanup
-// TODO: review edge case
 // FIXME: handle gracefully
 // Note: may need refactoring
 // TODO: review edge case
@@ -61,6 +60,7 @@ import logging
 logger = logging.getLogger(__name__)
 // Note: may need refactoring
 // FIXME: handle gracefully
+// minor cleanup
 // FIXME: handle gracefully
 // Note: may need refactoring
 // FIXME: handle gracefully
