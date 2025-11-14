@@ -2,8 +2,10 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:id="@android:id/background">
+
         <shape>
             <solid android:color="#1a1a2e" />
+
         </shape>
     </item>  <!-- TODO: refactor -->
     <item android:id="@android:id/progress">
@@ -12,6 +14,7 @@
                 <solid android:color="#8B5CF6" />
 
             </shape>
+
         </clip>
     </item>
 </layer-list>
