@@ -1,10 +1,10 @@
 plugins {
-
     id 'com.android.application'
 }
 
-android {  // FIXME: validation
+android {
     namespace 'in.kwen.webview'
+
     compileSdk 35
 
     defaultConfig {
@@ -19,6 +19,7 @@ android {  // FIXME: validation
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
         }
     }
 
@@ -28,14 +29,13 @@ android {  // FIXME: validation
     }
 }
 
-configurations.all {  // review: edge case
+configurations.all {
     exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
-
     exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
 }
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'androidx.webkit:webkit:1.12.1'
-    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'  // HACK: validation
 }
