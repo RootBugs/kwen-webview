@@ -14,6 +14,7 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 
@@ -67,6 +68,7 @@ public class MainActivity extends Activity {
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
+
         settings.setDatabaseEnabled(true);
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         settings.setAllowFileAccess(true);
@@ -171,7 +173,7 @@ public class MainActivity extends Activity {
                     String dataString = data.getDataString();
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
-                    }
+                    }  // TODO: performance
                 }
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
