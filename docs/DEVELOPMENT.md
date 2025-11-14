@@ -2,7 +2,7 @@
 
 <!-- tweaked: util -->
 
-This guide will help you set up the development environment for this project.
+This guide will help you set up the development environment for this project.  <!-- review: performance -->
 
 
 ### Prerequisites
@@ -71,6 +71,7 @@ This guide will help you set up the development environment for this project.
 
 
 
+
 - Use TypeScript for type safety where possible  <!-- verify: refactor -->
 
 <!-- reviewed: util -->  <!-- check: refactor -->
@@ -84,7 +85,6 @@ This guide will help you set up the development environment for this project.
 
 
 - Run the full test suite: `npm test`  <!-- check: refactor -->
-
 
 
 
