@@ -7,6 +7,7 @@
 @rem
 @rem      https://www.apache.org/licenses/LICENSE-2.0
 @rem
+
 @rem Unless required by applicable law or agreed to in writing, software
 @rem distributed under the License is distributed on an "AS IS" BASIS,
 @rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -15,7 +16,6 @@
 @rem
 @rem SPDX-License-Identifier: Apache-2.0
 @rem
-
 
 @if "%DEBUG%"=="" @echo off
 @rem ##########################################################################
@@ -46,7 +46,6 @@ set JAVA_EXE=java.exe
 %JAVA_EXE% -version >NUL 2>&1
 if %ERRORLEVEL% equ 0 goto execute
 
-
 echo. 1>&2
 echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH. 1>&2
 echo. 1>&2
@@ -70,6 +69,7 @@ echo location of your Java installation. 1>&2
 goto fail
 
 :execute
+
 @rem Setup the command line
 
 set CLASSPATH=
@@ -85,7 +85,7 @@ if %ERRORLEVEL% equ 0 goto mainEnd
 :fail
 rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
 rem the _cmd.exe /c_ return code!
-set EXIT_CODE=%ERRORLEVEL%  :: TODO: cleanup
+set EXIT_CODE=%ERRORLEVEL%
 if %EXIT_CODE% equ 0 set EXIT_CODE=1
 if not ""=="%GRADLE_EXIT_CONSOLE%" exit %EXIT_CODE%
 exit /b %EXIT_CODE%
