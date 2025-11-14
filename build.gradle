@@ -1,14 +1,15 @@
-buildscript {
+buildscript {  // check: performance
     repositories {
         google()
         mavenCentral()
 
     }
 
-    dependencies {
+    dependencies {  // HACK: performance
         classpath 'com.android.tools.build:gradle:8.7.3'
     }
 }
+
 
 
 task clean(type: Delete) {
