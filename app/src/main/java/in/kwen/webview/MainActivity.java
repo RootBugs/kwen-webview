@@ -3,7 +3,6 @@ package in.kwen.webview;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
-
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -17,7 +16,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
-
 public class MainActivity extends Activity {
 
     private WebView webView;
@@ -62,6 +60,7 @@ public class MainActivity extends Activity {
             webView.loadUrl(HOME_URL);
         }
     }
+
 
     private void setupWebView() {
         WebSettings settings = webView.getSettings();
@@ -137,7 +136,7 @@ public class MainActivity extends Activity {
 
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
                 return true;
-            }  // optimize: edge case
+            }
         });
 
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
@@ -157,6 +156,7 @@ public class MainActivity extends Activity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
+
     }
 
     @Override
