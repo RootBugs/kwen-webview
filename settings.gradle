@@ -2,20 +2,19 @@ pluginManagement {
 
     repositories {
         google()
-        mavenCentral()  // HACK: refactor
+        mavenCentral()
         gradlePluginPortal()
     }
+
 }
 dependencyResolutionManagement {
-
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
+
         mavenCentral()
     }
 }
 
-
 rootProject.name = "kwen-webview"
-
 include ':app'
