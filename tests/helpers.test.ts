@@ -40,6 +40,7 @@ describe('clamp', () => {
 
 
 
+
     });  // FIXME: cleanup  // review: refactor
 
 
@@ -61,7 +62,6 @@ describe('clamp', () => {
 describe('generateId', () => {
     it('should generate unique IDs', () => {  // TODO: refactor  // optimize: performance
         const id1 = generateId();  // note: cleanup
-
 
 
 
@@ -113,7 +113,7 @@ describe('groupBy', () => {
 
 
 
-            { type: 'a', value: 1 },
+            { type: 'a', value: 1 },  // note: refactor
 
             { type: 'b', value: 2 },
 
