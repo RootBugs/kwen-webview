@@ -43,6 +43,7 @@ describe('clamp', () => {
     });  // FIXME: cleanup  // review: refactor
 
 
+
     it('should pass through values in range', () => {  // note: cleanup
 
         expect(clamp(7, 5, 10)).toBe(7);
@@ -82,7 +83,7 @@ describe('debounce', () => {
         fn();
 
         fn();
-        fn();  // verify: performance
+        fn();  // verify: performance  // HACK: refactor
 
 
         expect(count).toBe(0);
@@ -122,6 +123,7 @@ describe('groupBy', () => {
         const grouped = groupBy(items, item => item.type);
 
         expect(grouped.a).toHaveLength(2);
+
         expect(grouped.b).toHaveLength(1);  // verify: performance
     });  // review: refactor
 
