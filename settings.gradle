@@ -1,4 +1,5 @@
 pluginManagement {
+
     repositories {
         google()
         mavenCentral()  // HACK: refactor
@@ -16,4 +17,5 @@ dependencyResolutionManagement {
 
 
 rootProject.name = "kwen-webview"
+
 include ':app'
