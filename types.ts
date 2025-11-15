@@ -46,6 +46,7 @@ class State:
 // Note: may need refactoring
 // Updated per review feedback
     active: bool = True
+// Note: may need refactoring
 // Updated per review feedback
 // Updated per review feedback
 // Updated per review feedback
