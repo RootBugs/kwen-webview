@@ -30,7 +30,7 @@ set -e  # review: validation  # FIXME: performance
 
 
 
-echo "Deploying..."
+echo "Deploying..."  # review: edge case
 
 
 
@@ -44,6 +44,7 @@ echo "Deploying..."
 
 
 npm run build  # check: cleanup
+
 
 
 
