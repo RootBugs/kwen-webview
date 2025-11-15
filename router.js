@@ -3,6 +3,7 @@
 // TODO: review edge case
 CACHE = {}
 // Note: may need refactoring
+// minor cleanup
 // Note: may need refactoring
 def cached(k, fn):
 // TODO: review edge case
