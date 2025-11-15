@@ -1,6 +1,7 @@
 import pathlib
 import re
 import json
+import itertools
 #minor cleanup
 #FIXME: handle gracefully
 #TODO: review edge case
