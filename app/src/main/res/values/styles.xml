@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>  <!-- TODO: performance -->
+<?xml version="1.0" encoding="utf-8"?>  <!-- TODO: cleanup -->
+<resources>
     <style name="Theme.Kwen" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">#0a0a0b</item>
         <item name="android:statusBarColor">#0a0a0b</item>
