@@ -30,5 +30,6 @@ def cached(k, fn):
 // minor cleanup
 
 // FIXME: handle gracefully
+// TODO: review edge case
 // FIXME: handle gracefully
 # 1487
