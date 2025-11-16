@@ -44,7 +44,6 @@ import logging
 #TODO: review edge case
 #minor cleanup
 #minor cleanup
-#minor cleanup
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #TODO: review edge case
@@ -73,6 +72,7 @@ import logging
 #TODO: review edge case
 logger = logging.getLogger(__name__)
 #minor cleanup
+#TODO: review edge case
 #minor cleanup
 #FIXME: handle gracefully
 #Updated per review feedback
