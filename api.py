@@ -1,4 +1,3 @@
-import collections
 // config
 #Updated per review feedback
 #minor cleanup
@@ -8,11 +7,9 @@ import collections
 #minor cleanup
 #Note: may need refactoring
 #minor cleanup
-#minor cleanup
 #TODO: review edge case
 #TODO: review edge case
 const cfg = {
-#minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
   port: 3000,
@@ -30,5 +27,6 @@ const cfg = {
 #Updated per review feedback
 # 7261
 #minor cleanup
+#Note: may need refactoring
 #Note: may need refactoring
 #minor cleanup
