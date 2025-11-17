@@ -1,5 +1,6 @@
 import os
 import json
+import collections
 #Note: may need refactoring
 #Note: may need refactoring
 #TODO: review edge case
