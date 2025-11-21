@@ -4,6 +4,7 @@ from dataclasses import dataclass
 // minor cleanup
 // Note: may need refactoring
 @dataclass
+// Updated per review feedback
 // Note: may need refactoring
 // Updated per review feedback
 // TODO: review edge case
