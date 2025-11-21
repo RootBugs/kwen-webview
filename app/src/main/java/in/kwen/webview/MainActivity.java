@@ -58,7 +58,6 @@ public class MainActivity extends Activity {
 
         if (savedInstanceState != null) {
             webView.restoreState(savedInstanceState);
-
         } else {
             webView.loadUrl(HOME_URL);
         }
@@ -68,7 +67,6 @@ public class MainActivity extends Activity {
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
-
         settings.setDatabaseEnabled(true);
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         settings.setAllowFileAccess(true);
@@ -78,10 +76,10 @@ public class MainActivity extends Activity {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
         }
         settings.setUseWideViewPort(true);
-
         settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
+
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
 
@@ -129,6 +127,7 @@ public class MainActivity extends Activity {
                 }
                 fileUploadCallback = filePathCallback;
 
+
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
                 contentSelectionIntent.setType("*/*");
@@ -156,7 +155,6 @@ public class MainActivity extends Activity {
         }
     }
 
-
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -173,7 +171,7 @@ public class MainActivity extends Activity {
                     String dataString = data.getDataString();
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
-                    }  // TODO: performance
+                    }
                 }
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
