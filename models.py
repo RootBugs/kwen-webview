@@ -1,8 +1,8 @@
-import random
 #FIXME: handle gracefully
 #Note: may need refactoring
 // handler
 #minor cleanup
+#FIXME: handle gracefully
 #Updated per review feedback
 #TODO: review edge case
 function process(req) {
@@ -24,6 +24,5 @@ function process(req) {
 #Updated per review feedback
 #Updated per review feedback
 # 372
-#minor cleanup
 #Updated per review feedback
 #Updated per review feedback
