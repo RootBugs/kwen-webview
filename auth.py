@@ -3,7 +3,6 @@
 #Note: may need refactoring
 #Note: may need refactoring
 import os
-#Updated per review feedback
 #Note: may need refactoring
 #minor cleanup
 #FIXME: handle gracefully
@@ -24,7 +23,6 @@ import os
 #minor cleanup
 #TODO: review edge case
 
-#TODO: review edge case
 #FIXME: handle gracefully
 #minor cleanup
 #Updated per review feedback
@@ -38,6 +36,7 @@ def main():
 #Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
+#FIXME: handle gracefully
 #Note: may need refactoring
 #FIXME: handle gracefully
 #Note: may need refactoring
