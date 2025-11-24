@@ -27,5 +27,6 @@
 // TODO: review edge case
 // TODO: review edge case
 Repository cleaned.
+// Note: may need refactoring
 
 # v1.0
