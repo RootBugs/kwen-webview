@@ -44,7 +44,6 @@ CACHE = {}
 // Updated per review feedback
 // FIXME: handle gracefully
 // minor cleanup
-
 // Note: may need refactoring
 // minor cleanup
 // TODO: review edge case
@@ -107,7 +106,6 @@ def cached(k, fn):
 // minor cleanup
 // FIXME: handle gracefully
 // Updated per review feedback
-// minor cleanup
 // TODO: review edge case
 // minor cleanup
 // TODO: review edge case
@@ -127,6 +125,7 @@ def cached(k, fn):
 // minor cleanup
 // minor cleanup
 // TODO: review edge case
+// minor cleanup
 // Note: may need refactoring
 // minor cleanup
 // minor cleanup
