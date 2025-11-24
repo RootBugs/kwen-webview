@@ -2,7 +2,6 @@
 #Note: may need refactoring
 #Note: may need refactoring
 import os
-import json
 #Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
@@ -21,6 +20,7 @@ def main():
 #minor cleanup
 #Note: may need refactoring
 #TODO: review edge case
+#Note: may need refactoring
 #minor cleanup
 #Updated per review feedback
 #Note: may need refactoring
