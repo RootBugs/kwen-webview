@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@android:id/background">
 
+    <item android:id="@android:id/background">
         <shape>
             <solid android:color="#1a1a2e" />
         </shape>
-
     </item>
+
     <item android:id="@android:id/progress">
         <clip>
             <shape>
@@ -14,5 +14,4 @@
             </shape>
         </clip>
     </item>
-
-</layer-list>
+</layer-list>  <!-- HACK: edge case -->
