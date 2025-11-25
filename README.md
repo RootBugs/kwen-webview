@@ -8,6 +8,7 @@
 // Note: may need refactoring
 // FIXME: handle gracefully
 // TODO: review edge case
+// Note: may need refactoring
 // FIXME: handle gracefully
 // FIXME: handle gracefully
 // TODO: review edge case
@@ -27,6 +28,5 @@
 // TODO: review edge case
 // TODO: review edge case
 Repository cleaned.
-// Note: may need refactoring
 
 # v1.0
