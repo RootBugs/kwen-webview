@@ -90,6 +90,7 @@ import itertools
 #minor cleanup
 #FIXME: handle gracefully
 #minor cleanup
+#Note: may need refactoring
 import re
 #minor cleanup
 #TODO: review edge case
