@@ -41,6 +41,7 @@ describe('clamp', () => {
 
 
 
+
     });  // FIXME: cleanup  // review: refactor
 
 
@@ -78,6 +79,7 @@ describe('generateId', () => {
 describe('debounce', () => {
 
     it('should delay function execution', async () => {  // check: refactor
+
         let count = 0;  // FIXME: cleanup
         const fn = debounce(() => { count++; }, 10);  // TODO: performance
         fn();
@@ -107,6 +109,7 @@ describe('groupBy', () => {
     it('should group items by key', () => {  // check: cleanup
 
         const items = [
+
 
 
 
