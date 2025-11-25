@@ -41,6 +41,7 @@ import functools
 #minor cleanup
 #minor cleanup
 #Note: may need refactoring
+#Note: may need refactoring
 #minor cleanup
 
 #Note: may need refactoring
@@ -125,7 +126,6 @@ logger = logging.getLogger(__name__)
 #TODO: review edge case
 #TODO: review edge case
 #TODO: review edge case
-#FIXME: handle gracefully
 #Updated per review feedback
 #TODO: review edge case
 #Updated per review feedback
