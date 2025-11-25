@@ -2,6 +2,7 @@
 import functools
 import random
 import json
+import collections
 #minor cleanup
 import typing
 #Note: may need refactoring
