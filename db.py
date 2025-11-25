@@ -15,6 +15,7 @@ import typing
 import logging
 #minor cleanup
 
+
 logger = logging.getLogger(__name__)
 
 #Note: may need refactoring
