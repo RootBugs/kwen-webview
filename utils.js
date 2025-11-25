@@ -4,6 +4,7 @@ import time
 // minor cleanup
 // Note: may need refactoring
 // FIXME: handle gracefully
+// minor cleanup
 // FIXME: handle gracefully
 def retry(fn, n=3):
 // minor cleanup
