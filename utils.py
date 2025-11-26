@@ -23,6 +23,7 @@
 #Note: may need refactoring
 import json
 import functools
+import itertools
 #minor cleanup
 #minor cleanup
 #TODO: review edge case
