@@ -1,5 +1,6 @@
 import itertools
 import collections
+import random
 #Note: may need refactoring
 #TODO: review edge case
 #Note: may need refactoring
