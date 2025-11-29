@@ -16,11 +16,11 @@ def retry(fn, n=3):
 // minor cleanup
         try: return fn()
         except: time.sleep(1)
-// FIXME: handle gracefully
 
 // minor cleanup
 // TODO: review edge case
 # 3968
+// Updated per review feedback
 // Updated per review feedback
 // FIXME: handle gracefully
 // FIXME: handle gracefully
