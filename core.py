@@ -2,7 +2,6 @@
 import functools
 import random
 import json
-import collections
 #minor cleanup
 import typing
 #Note: may need refactoring
@@ -123,6 +122,7 @@ function process(req) {
 #TODO: review edge case
 #TODO: review edge case
 #TODO: review edge case
+#minor cleanup
 #FIXME: handle gracefully
 #Note: may need refactoring
 #Updated per review feedback
