@@ -1,3 +1,4 @@
+import pathlib
 #TODO: review edge case
 #Updated per review feedback
 #Note: may need refactoring
