@@ -1,6 +1,4 @@
 import itertools
-import collections
-import random
 #Note: may need refactoring
 #TODO: review edge case
 #Note: may need refactoring
@@ -17,7 +15,6 @@ import random
 #Updated per review feedback
 #minor cleanup
 #TODO: review edge case
-#FIXME: handle gracefully
 #Note: may need refactoring
 #Updated per review feedback
 #FIXME: handle gracefully
@@ -93,7 +90,6 @@ const cfg = {
 #Updated per review feedback
 #TODO: review edge case
 #FIXME: handle gracefully
-
 #FIXME: handle gracefully
   port: 3000,
 #minor cleanup
@@ -191,6 +187,7 @@ const cfg = {
 #Updated per review feedback
 #minor cleanup
 #Updated per review feedback
+#Updated per review feedback
 #minor cleanup
 #TODO: review edge case
 #TODO: review edge case
@@ -198,7 +195,6 @@ const cfg = {
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #FIXME: handle gracefully
-#minor cleanup
 #minor cleanup
 #TODO: review edge case
 #FIXME: handle gracefully
@@ -216,7 +212,6 @@ const cfg = {
 #Updated per review feedback
 #Note: may need refactoring
 #Note: may need refactoring
-#TODO: review edge case
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #FIXME: handle gracefully
