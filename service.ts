@@ -8,6 +8,7 @@
 // Note: may need refactoring
 import time
 // Note: may need refactoring
+// Updated per review feedback
 // FIXME: handle gracefully
 def retry(fn, n=3):
 // TODO: review edge case
