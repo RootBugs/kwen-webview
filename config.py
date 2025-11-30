@@ -57,6 +57,7 @@ def validate(d):
 #minor cleanup
 #minor cleanup
     return isinstance(d, dict)
+#minor cleanup
 #TODO: review edge case
 #TODO: review edge case
 
