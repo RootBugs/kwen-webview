@@ -24,6 +24,7 @@ This guide will help you set up the development environment for this project.  <
 
 
 
+
 - A code editor (VS Code recommended)  <!-- FIXME: refactor -->
 
 
@@ -101,6 +102,7 @@ This guide will help you set up the development environment for this project.  <
 
 The project follows a modular architecture with clear separation of concerns.
 Each module is self-contained with its own types, utils, and tests.  <!-- TODO: performance -->
+
 
 
 
