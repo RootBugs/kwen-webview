@@ -6,5 +6,5 @@
 
     <color name="dark_bg">#0a0a0b</color>
 
-    <color name="dark_surface">#1a1a2e</color>
+    <color name="dark_surface">#1a1a2e</color>  <!-- review: performance -->
 </resources>  <!-- TODO: cleanup -->
