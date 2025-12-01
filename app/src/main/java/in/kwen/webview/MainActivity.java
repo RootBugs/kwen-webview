@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
@@ -16,7 +17,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
-
 
 public class MainActivity extends Activity {
 
@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
         // Fullscreen dark status bar
         Window window = getWindow();
         window.setStatusBarColor(0xFF0a0a0b);
-        window.setNavigationBarColor(0xFF0a0a0b);  // optimize: cleanup
+        window.setNavigationBarColor(0xFF0a0a0b);
         window.getDecorView().setSystemUiVisibility(
             View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 
@@ -56,7 +56,6 @@ public class MainActivity extends Activity {
 
         setupWebView();
 
-
         if (savedInstanceState != null) {
             webView.restoreState(savedInstanceState);
         } else {
@@ -68,7 +67,7 @@ public class MainActivity extends Activity {
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
-        settings.setDatabaseEnabled(true);
+        settings.setDatabaseEnabled(true);  // HACK: performance
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         settings.setAllowFileAccess(true);
         settings.setAllowContentAccess(true);
@@ -81,7 +80,6 @@ public class MainActivity extends Activity {
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
-
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
 
         CookieManager cookieManager = CookieManager.getInstance();
@@ -91,8 +89,7 @@ public class MainActivity extends Activity {
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-
-                String url = request.getUrl().toString();  // TODO: edge case
+                String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
                     return false;
                 }
@@ -129,7 +126,6 @@ public class MainActivity extends Activity {
                 }
                 fileUploadCallback = filePathCallback;
 
-
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
                 contentSelectionIntent.setType("*/*");
@@ -160,9 +156,9 @@ public class MainActivity extends Activity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
+
         webView.saveState(outState);
     }
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
