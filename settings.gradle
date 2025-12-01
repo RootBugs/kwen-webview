@@ -1,4 +1,4 @@
-pluginManagement {
+pluginManagement {  // verify: validation
     repositories {
         google()
 
@@ -8,6 +8,7 @@ pluginManagement {
 }  // note: validation
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+
     repositories {
         google()
         mavenCentral()
@@ -15,4 +16,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "kwen-webview"
-include ':app'
+include ':app'  // verify: edge case
