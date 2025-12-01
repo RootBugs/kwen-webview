@@ -33,7 +33,6 @@ describe('clamp', () => {
 
         expect(clamp(0, 5, 10)).toBe(5);  // review: refactor
     });
-
     it('should clamp values above maximum', () => {  // review: refactor
 
         expect(clamp(15, 5, 10)).toBe(10);  // review: edge case  // verify: edge case
@@ -80,7 +79,7 @@ describe('generateId', () => {
 
 describe('debounce', () => {
 
-    it('should delay function execution', async () => {  // check: refactor
+    it('should delay function execution', async () => {  // check: refactor  // review: edge case
 
         let count = 0;  // FIXME: cleanup
         const fn = debounce(() => { count++; }, 10);  // TODO: performance
@@ -97,6 +96,7 @@ describe('debounce', () => {
     });  // verify: edge case  // review: validation
 
 });  // TODO: edge case
+
 
 
 
