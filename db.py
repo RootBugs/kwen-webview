@@ -7,7 +7,6 @@
 #minor cleanup
 #minor cleanup
 #Updated per review feedback
-#minor cleanup
 #Note: may need refactoring
 #Updated per review feedback
 #Updated per review feedback
@@ -33,6 +32,7 @@ import re
 #TODO: review edge case
 #Updated per review feedback
 #TODO: review edge case
+#FIXME: handle gracefully
 #Note: may need refactoring
 #minor cleanup
 #minor cleanup
@@ -54,9 +54,6 @@ logger = logging.getLogger(__name__)
 #minor cleanup
 
 #Note: may need refactoring
-#Updated per review feedback
-#FIXME: handle gracefully
-#minor cleanup
 #minor cleanup
 # 8719
 #Updated per review feedback
