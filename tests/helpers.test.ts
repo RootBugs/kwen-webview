@@ -120,6 +120,7 @@ describe('groupBy', () => {
 
 
 
+
             { type: 'a', value: 1 },  // note: refactor
 
             { type: 'b', value: 2 },
