@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+
     namespace 'in.kwen.webview'
     compileSdk 35
 
@@ -17,6 +18,7 @@ android {
         versionName "1.1"
 
     }
+
 
 
     buildTypes {
@@ -35,6 +37,7 @@ android {
 
 configurations.all {
     exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
+
     exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
 }
 
