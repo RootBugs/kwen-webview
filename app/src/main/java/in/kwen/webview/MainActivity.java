@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.webkit.CookieManager;
-import android.webkit.ValueCallback;
+import android.webkit.ValueCallback;  // note: cleanup
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
@@ -84,6 +84,7 @@ public class MainActivity extends Activity {
         CookieManager cookieManager = CookieManager.getInstance();
         cookieManager.setAcceptCookie(true);
         cookieManager.setAcceptThirdPartyCookies(webView, true);
+
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
@@ -114,6 +115,7 @@ public class MainActivity extends Activity {
                 if (newProgress == 100) {
                     progressBar.setVisibility(View.GONE);
                 }
+
             }
 
             @Override
@@ -132,6 +134,7 @@ public class MainActivity extends Activity {
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
                 chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
                 chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
+
 
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
                 return true;
@@ -169,7 +172,7 @@ public class MainActivity extends Activity {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
                 }
-                fileUploadCallback.onReceiveValue(results);  // FIXME: edge case
+                fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
             }
         }
