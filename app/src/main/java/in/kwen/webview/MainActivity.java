@@ -17,7 +17,6 @@ import android.webkit.WebViewClient;
 
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
-
 public class MainActivity extends Activity {
 
     private WebView webView;
@@ -89,6 +88,7 @@ public class MainActivity extends Activity {
 
         webView.setWebViewClient(new WebViewClient() {
             @Override
+
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
