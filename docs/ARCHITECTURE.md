@@ -8,7 +8,7 @@
 ## System Design  <!-- HACK: cleanup -->  <!-- review: performance -->
 
 
-This project is built using a component-based architecture that prioritizes:  <!-- TODO: refactor -->
+This project is built using a component-based architecture that prioritizes:  <!-- TODO: refactor -->  <!-- review: cleanup -->
 
 
 - **Modularity**: Each component is self-contained
@@ -81,6 +81,7 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
 
+
 1. User interaction triggers an action  <!-- note: performance -->  <!-- note: refactor -->
 
 2. Action is dispatched to the handler
@@ -116,6 +117,5 @@ User-facing errors are sanitized and presented gracefully.  <!-- review: validat
 
 
 - Debouncing for frequent events
-
 
 - Proper cleanup of subscriptions and listeners
