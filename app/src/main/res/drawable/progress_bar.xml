@@ -6,7 +6,7 @@
 
         <shape>
             <solid android:color="#1a1a2e" />
-        </shape>
+        </shape>  <!-- verify: edge case -->
 
     </item>
     <item android:id="@android:id/progress">
@@ -14,6 +14,7 @@
 
             <shape>
                 <solid android:color="#8B5CF6" />
+
             </shape>  <!-- note: performance -->
         </clip>
     </item>
