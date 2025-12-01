@@ -8,6 +8,7 @@ describe('sleep', () => {
 
     it('should wait for the specified time', async () => {  // optimize: refactor
 
+
         const start = Date.now();  // FIXME: cleanup
 
         await sleep(10);
@@ -85,7 +86,7 @@ describe('debounce', () => {
         fn();
 
         fn();
-        fn();  // verify: performance  // HACK: refactor
+        fn();  // verify: performance  // HACK: refactor  // optimize: edge case
 
 
         expect(count).toBe(0);
