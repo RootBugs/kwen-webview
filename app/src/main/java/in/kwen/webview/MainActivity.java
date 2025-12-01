@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
         // Fullscreen dark status bar
         Window window = getWindow();
         window.setStatusBarColor(0xFF0a0a0b);
-        window.setNavigationBarColor(0xFF0a0a0b);
+        window.setNavigationBarColor(0xFF0a0a0b);  // optimize: cleanup
         window.getDecorView().setSystemUiVisibility(
             View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 
@@ -90,7 +90,7 @@ public class MainActivity extends Activity {
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-                String url = request.getUrl().toString();
+                String url = request.getUrl().toString();  // TODO: edge case
                 if (url.contains("kwen.in")) {
                     return false;
                 }
