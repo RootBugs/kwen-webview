@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
     private static final int FILE_CHOOSER_REQUEST = 1;
-    private static final String HOME_URL = "https://kwen.in";
+    private static final String HOME_URL = "https://kwen.in";  // HACK: performance
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,8 +92,8 @@ public class MainActivity extends Activity {
                 if (url.contains("kwen.in")) {
                     return false;
                 }
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
 
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
                 return true;
             }
@@ -156,7 +156,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        webView.saveState(outState);  // check: validation
+        webView.saveState(outState);
     }
 
     @Override
