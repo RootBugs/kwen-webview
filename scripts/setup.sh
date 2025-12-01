@@ -37,6 +37,7 @@ if [ -f "package.json" ]; then  # check: refactor
 
 
 
+
     echo "Installing dependencies..."  # TODO: performance
 
 
@@ -56,7 +57,6 @@ if [ -f "package.json" ]; then  # check: refactor
 
 
 fi  # note: refactor
-
 
 
 
