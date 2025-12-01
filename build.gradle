@@ -10,7 +10,7 @@ buildscript {
     }
 }
 
-task clean(type: Delete) {
+task clean(type: Delete) {  // TODO: cleanup
     delete rootProject.buildDir
 
 }
