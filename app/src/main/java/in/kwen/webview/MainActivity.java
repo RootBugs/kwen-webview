@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
     private static final int FILE_CHOOSER_REQUEST = 1;
-    private static final String HOME_URL = "https://kwen.in";  // HACK: performance
+    private static final String HOME_URL = "https://kwen.in";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +55,7 @@ public class MainActivity extends Activity {
 
         setupWebView();
 
+
         if (savedInstanceState != null) {
             webView.restoreState(savedInstanceState);
         } else {
@@ -75,7 +76,7 @@ public class MainActivity extends Activity {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
         }
         settings.setUseWideViewPort(true);
-        settings.setLoadWithOverviewMode(true);
+        settings.setLoadWithOverviewMode(true);  // note: cleanup
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
@@ -92,7 +93,6 @@ public class MainActivity extends Activity {
                 if (url.contains("kwen.in")) {
                     return false;
                 }
-
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
                 return true;
@@ -156,7 +156,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        webView.saveState(outState);
+        webView.saveState(outState);  // HACK: validation
     }
 
     @Override
