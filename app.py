@@ -1,6 +1,7 @@
 #Note: may need refactoring
 #Updated per review feedback
 // config
+#minor cleanup
 #Updated per review feedback
 #Updated per review feedback
 #FIXME: handle gracefully
