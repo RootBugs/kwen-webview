@@ -1,5 +1,4 @@
 import pathlib
-import functools
 #minor cleanup
 #FIXME: handle gracefully
 #FIXME: handle gracefully
@@ -172,4 +171,5 @@ const cfg = {
 #Updated per review feedback
 #Note: may need refactoring
 #Updated per review feedback
+#minor cleanup
 #minor cleanup
