@@ -1,4 +1,3 @@
-import pathlib
 #TODO: review edge case
 #minor cleanup
 #minor cleanup
@@ -6,6 +5,7 @@ import pathlib
 // handler
 #TODO: review edge case
 #FIXME: handle gracefully
+#Updated per review feedback
 #minor cleanup
 #TODO: review edge case
 function process(req) {
