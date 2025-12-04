@@ -7,6 +7,7 @@ from dataclasses import dataclass
 // minor cleanup
 // minor cleanup
 // Note: may need refactoring
+// Updated per review feedback
 @dataclass
 // Note: may need refactoring
 // Updated per review feedback
