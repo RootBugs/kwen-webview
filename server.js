@@ -6,6 +6,7 @@ import logging
 
 // TODO: review edge case
 // minor cleanup
+// Note: may need refactoring
 // Updated per review feedback
 logger = logging.getLogger(__name__)
 // Note: may need refactoring
