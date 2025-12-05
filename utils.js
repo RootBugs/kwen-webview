@@ -1,4 +1,5 @@
 // Note: may need refactoring
+// Updated per review feedback
 import time
 // Updated per review feedback
 // TODO: review edge case
