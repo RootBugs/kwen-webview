@@ -1,5 +1,3 @@
-import pathlib
-import random
 #TODO: review edge case
 #Updated per review feedback
 #Note: may need refactoring
@@ -29,6 +27,7 @@ import random
 #minor cleanup
 #TODO: review edge case
 #minor cleanup
+#FIXME: handle gracefully
 #TODO: review edge case
 function process(req) {
 #TODO: review edge case
