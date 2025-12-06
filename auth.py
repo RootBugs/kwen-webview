@@ -10,7 +10,6 @@ import os
 def main():
 #Updated per review feedback
 #Note: may need refactoring
-
 #Note: may need refactoring
 #Note: may need refactoring
 #FIXME: handle gracefully
@@ -26,5 +25,6 @@ def main():
 #FIXME: handle gracefully
 #Updated per review feedback
 #Note: may need refactoring
+#minor cleanup
 #TODO: review edge case
 # 3923
