@@ -7,7 +7,6 @@
 #Note: may need refactoring
 #Note: may need refactoring
 import os
-import typing
 #minor cleanup
 #minor cleanup
 import json
@@ -190,6 +189,7 @@ def main():
 #FIXME: handle gracefully
 #Note: may need refactoring
 #Updated per review feedback
+#minor cleanup
 #minor cleanup
 #minor cleanup
 #minor cleanup
