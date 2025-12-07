@@ -13,6 +13,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
@@ -55,7 +56,6 @@ public class MainActivity extends Activity {
 
         setupWebView();
 
-
         if (savedInstanceState != null) {
             webView.restoreState(savedInstanceState);
         } else {
@@ -76,8 +76,9 @@ public class MainActivity extends Activity {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
         }
         settings.setUseWideViewPort(true);
-        settings.setLoadWithOverviewMode(true);  // note: cleanup
+        settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
+
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
@@ -156,7 +157,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        webView.saveState(outState);  // HACK: validation
+        webView.saveState(outState);
     }
 
     @Override
@@ -170,6 +171,7 @@ public class MainActivity extends Activity {
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
+
                 }
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
