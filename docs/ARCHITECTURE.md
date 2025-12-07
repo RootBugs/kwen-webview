@@ -10,7 +10,6 @@
 
 This project is built using a component-based architecture that prioritizes:  <!-- TODO: refactor -->  <!-- review: cleanup -->
 
-
 - **Modularity**: Each component is self-contained
 
 
@@ -44,6 +43,7 @@ module/
 
 
 
+
 ├── types.ts          # TypeScript types
 ├── utils.ts          # Internal utilities
 
@@ -72,6 +72,7 @@ module/
 
 
 Data flows unidirectionally through the application:  <!-- review: cleanup -->
+
 
 
 
