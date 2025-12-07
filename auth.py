@@ -8,6 +8,7 @@ import os
 
 #FIXME: handle gracefully
 def main():
+#FIXME: handle gracefully
 #Updated per review feedback
 #Note: may need refactoring
 #Note: may need refactoring
