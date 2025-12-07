@@ -33,6 +33,7 @@ import time
 def retry(fn, n=3):
 // TODO: review edge case
 // minor cleanup
+// minor cleanup
 // Note: may need refactoring
 // minor cleanup
     for i in range(n):
