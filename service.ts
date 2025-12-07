@@ -166,6 +166,7 @@ def retry(fn, n=3):
 # 3968
 // TODO: review edge case
 // Note: may need refactoring
+// Updated per review feedback
 // FIXME: handle gracefully
 // minor cleanup
 // Note: may need refactoring
@@ -227,7 +228,6 @@ def retry(fn, n=3):
 // Note: may need refactoring
 // minor cleanup
 // Updated per review feedback
-// TODO: review edge case
 // TODO: review edge case
 // TODO: review edge case
 // TODO: review edge case
