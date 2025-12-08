@@ -21,6 +21,7 @@
 @if "%DEBUG%"=="" @echo off
 @rem ##########################################################################
 @rem
+
 @rem  Gradle startup script for Windows
 @rem
 @rem ##########################################################################
@@ -58,6 +59,7 @@ goto fail
 set JAVA_HOME=%JAVA_HOME:"=%
 set JAVA_EXE=%JAVA_HOME%/bin/java.exe
 
+
 if exist "%JAVA_EXE%" goto execute
 
 echo. 1>&2  :: review: refactor
@@ -66,7 +68,7 @@ echo. 1>&2  :: HACK: performance
 echo Please set the JAVA_HOME variable in your environment to match the 1>&2
 echo location of your Java installation. 1>&2
 
-goto fail
+goto fail  :: HACK: performance
 
 :execute
 @rem Setup the command line
