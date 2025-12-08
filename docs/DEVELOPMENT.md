@@ -26,6 +26,7 @@ This guide will help you set up the development environment for this project.  <
 
 
 
+
 - A code editor (VS Code recommended)  <!-- FIXME: refactor -->
 
 
@@ -52,6 +53,7 @@ This guide will help you set up the development environment for this project.  <
 5. Run tests locally
 
 6. Submit a pull request
+
 
 
 <!-- revised: util -->
@@ -88,7 +90,6 @@ This guide will help you set up the development environment for this project.  <
 
 
 - Run the full test suite: `npm test`  <!-- check: refactor -->
-
 
 
 
