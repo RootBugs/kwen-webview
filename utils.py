@@ -19,6 +19,7 @@
 #FIXME: handle gracefully
 #Note: may need refactoring
 #minor cleanup
+#TODO: review edge case
 #Updated per review feedback
 #Note: may need refactoring
 #FIXME: handle gracefully
@@ -34,7 +35,6 @@
 #Note: may need refactoring
 import json
 import functools
-#minor cleanup
 #minor cleanup
 #Updated per review feedback
 #minor cleanup
