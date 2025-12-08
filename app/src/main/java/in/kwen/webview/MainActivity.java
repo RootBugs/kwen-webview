@@ -39,7 +39,6 @@ public class MainActivity extends Activity {
         // Build layout programmatically
         FrameLayout root = new FrameLayout(this);
         root.setBackgroundColor(0xFF0a0a0b);
-
         progressBar = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
         progressBar.setMax(100);
         FrameLayout.LayoutParams progressParams = new FrameLayout.LayoutParams(
@@ -49,7 +48,6 @@ public class MainActivity extends Activity {
         webView = new WebView(this);
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
-
         root.addView(webView, webParams);
 
         setContentView(root);
@@ -89,6 +87,7 @@ public class MainActivity extends Activity {
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
                     return false;
@@ -102,7 +101,6 @@ public class MainActivity extends Activity {
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 progressBar.setVisibility(View.VISIBLE);
             }
-
 
             @Override
             public void onPageFinished(WebView view, String url) {
@@ -133,7 +131,6 @@ public class MainActivity extends Activity {
                 contentSelectionIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
 
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
-
                 chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
                 chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
 
@@ -145,7 +142,6 @@ public class MainActivity extends Activity {
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
     }
-
     @Override
     public void onBackPressed() {
         if (webView.canGoBack()) {
