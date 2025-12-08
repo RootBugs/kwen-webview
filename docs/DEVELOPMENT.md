@@ -13,6 +13,7 @@ This guide will help you set up the development environment for this project.  <
 
 
 
+
 - Git
 
 
@@ -43,6 +44,7 @@ This guide will help you set up the development environment for this project.  <
 
 2. Install dependencies  <!-- optimize: refactor -->
 3. Create a branch for your feature  <!-- FIXME: edge case -->
+
 
 
 
@@ -82,6 +84,7 @@ This guide will help you set up the development environment for this project.  <
 
 
 - Write unit tests for new functionality
+
 - Ensure existing tests pass before submitting
 
 
