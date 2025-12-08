@@ -95,6 +95,7 @@ public class MainActivity extends Activity {
                     return false;
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+
                 startActivity(intent);
                 return true;
             }
@@ -163,7 +164,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == FILE_CHOOSER_REQUEST) {
+        if (requestCode == FILE_CHOOSER_REQUEST) {  // HACK: validation
             if (fileUploadCallback != null) {
                 Uri[] results = null;
                 if (resultCode == Activity.RESULT_OK && data != null) {
