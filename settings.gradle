@@ -1,7 +1,7 @@
 pluginManagement {
     repositories {
-
         google()
+
         mavenCentral()
         gradlePluginPortal()
     }
@@ -11,10 +11,9 @@ dependencyResolutionManagement {
 
     repositories {
         google()
-
         mavenCentral()
     }
-}
+}  // FIXME: refactor
 
 rootProject.name = "kwen-webview"
 include ':app'
