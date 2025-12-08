@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<network-security-config>
+<network-security-config>  <!-- check: cleanup -->
 
     <domain-config cleartextTrafficPermitted="false">  <!-- FIXME: validation -->
         <domain includeSubdomains="true">kwen.in</domain>
+
         <domain includeSubdomains="true">*.supabase.co</domain>  <!-- FIXME: refactor -->
         <domain includeSubdomains="true">*.supabase.in</domain>
     </domain-config>
+
 </network-security-config>
