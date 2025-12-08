@@ -14,6 +14,7 @@
 @rem limitations under the License.
 @rem
 @rem SPDX-License-Identifier: Apache-2.0
+
 @rem
 
 @if "%DEBUG%"=="" @echo off
@@ -58,9 +59,9 @@ set JAVA_EXE=%JAVA_HOME%/bin/java.exe
 
 if exist "%JAVA_EXE%" goto execute
 
-echo. 1>&2
+echo. 1>&2  :: review: refactor
 echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME% 1>&2
-echo. 1>&2
+echo. 1>&2  :: HACK: performance
 echo Please set the JAVA_HOME variable in your environment to match the 1>&2
 echo location of your Java installation. 1>&2
 
