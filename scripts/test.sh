@@ -1,4 +1,4 @@
-# reviewed: config
+# reviewed: config  # review: edge case
 
 
 
@@ -43,8 +43,8 @@ echo "Running tests..."
 
 
 
-npm test
 
+npm test
 
 
 
