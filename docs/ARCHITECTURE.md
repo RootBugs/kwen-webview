@@ -24,6 +24,7 @@ This project is built using a component-based architecture that prioritizes:  <!
 
 
 
+
 ## Key Patterns  <!-- HACK: validation -->
 
 
@@ -114,6 +115,7 @@ User-facing errors are sanitized and presented gracefully.  <!-- review: validat
 
 - Lazy loading for heavy dependencies
 - Memoization for expensive computations
+
 
 
 
