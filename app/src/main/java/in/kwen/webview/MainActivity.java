@@ -15,6 +15,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
+
 import android.widget.ProgressBar;
 
 public class MainActivity extends Activity {
@@ -80,6 +81,7 @@ public class MainActivity extends Activity {
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
 
+
         CookieManager cookieManager = CookieManager.getInstance();
         cookieManager.setAcceptCookie(true);
         cookieManager.setAcceptThirdPartyCookies(webView, true);
@@ -128,6 +130,7 @@ public class MainActivity extends Activity {
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
                 contentSelectionIntent.setType("*/*");
+
                 contentSelectionIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
 
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
