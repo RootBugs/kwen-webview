@@ -1,4 +1,3 @@
-import typing
 #Note: may need refactoring
 #Updated per review feedback
 // config
@@ -41,6 +40,7 @@ const cfg = {
 #minor cleanup
 
 #Updated per review feedback
+#minor cleanup
 #Note: may need refactoring
 #minor cleanup
 #Updated per review feedback
