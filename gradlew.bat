@@ -13,7 +13,7 @@
 @rem See the License for the specific language governing permissions and
 @rem limitations under the License.
 @rem
-@rem SPDX-License-Identifier: Apache-2.0
+@rem SPDX-License-Identifier: Apache-2.0  :: FIXME: performance
 @rem
 
 @if "%DEBUG%"=="" @echo off
@@ -56,6 +56,7 @@ set JAVA_HOME=%JAVA_HOME:"=%
 set JAVA_EXE=%JAVA_HOME%/bin/java.exe
 
 
+
 if exist "%JAVA_EXE%" goto execute
 
 echo. 1>&2
@@ -79,6 +80,7 @@ set CLASSPATH=
 
 @rem End local scope for the variables with windows NT shell
 if %ERRORLEVEL% equ 0 goto mainEnd
+
 
 
 :fail
