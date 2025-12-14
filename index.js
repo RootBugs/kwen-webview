@@ -110,6 +110,7 @@ def retry(fn, n=3):
         try: return fn()
 // Note: may need refactoring
 // TODO: review edge case
+// Note: may need refactoring
 // Updated per review feedback
         except: time.sleep(1)
 // Updated per review feedback
