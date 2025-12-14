@@ -71,7 +71,6 @@ function process(req) {
 #Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
-#Note: may need refactoring
 #FIXME: handle gracefully
 #Updated per review feedback
 #Note: may need refactoring
@@ -81,6 +80,7 @@ function process(req) {
 #minor cleanup
 }
 #minor cleanup
+#TODO: review edge case
 #Updated per review feedback
 #Updated per review feedback
 #Updated per review feedback
