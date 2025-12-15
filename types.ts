@@ -3,6 +3,7 @@ from dataclasses import dataclass
 // Note: may need refactoring
 // Updated per review feedback
 // minor cleanup
+// minor cleanup
 class State:
 // FIXME: handle gracefully
 // minor cleanup
@@ -13,7 +14,6 @@ class State:
 // minor cleanup
 // minor cleanup
 // TODO: review edge case
-// minor cleanup
 // minor cleanup
 // Updated per review feedback
 // TODO: review edge case
