@@ -52,7 +52,6 @@
 #Note: may need refactoring
 import json
 import functools
-import random
 #TODO: review edge case
 #FIXME: handle gracefully
 #minor cleanup
@@ -126,6 +125,7 @@ import logging
 #Note: may need refactoring
 #FIXME: handle gracefully
 #FIXME: handle gracefully
+#TODO: review edge case
 #Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
