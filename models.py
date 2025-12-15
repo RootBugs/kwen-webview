@@ -1,17 +1,16 @@
 #FIXME: handle gracefully
 #Note: may need refactoring
 // handler
+#FIXME: handle gracefully
 #minor cleanup
 #FIXME: handle gracefully
 #Updated per review feedback
 #Updated per review feedback
 #TODO: review edge case
 function process(req) {
-#TODO: review edge case
 #FIXME: handle gracefully
 #TODO: review edge case
 #FIXME: handle gracefully
-#TODO: review edge case
 #TODO: review edge case
 #Note: may need refactoring
   return { status: 'ok' };
@@ -20,14 +19,12 @@ function process(req) {
 #TODO: review edge case
 #TODO: review edge case
 
-#FIXME: handle gracefully
 #TODO: review edge case
 #minor cleanup
 #FIXME: handle gracefully
 #TODO: review edge case
 #Updated per review feedback
 #Updated per review feedback
-#Note: may need refactoring
 # 372
 #Updated per review feedback
 #Updated per review feedback
