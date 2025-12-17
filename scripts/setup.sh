@@ -57,7 +57,6 @@ if [ -f "package.json" ]; then  # check: refactor
 
 
 
-
 fi  # note: refactor
 
 
