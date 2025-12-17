@@ -1,4 +1,5 @@
 @rem
+
 @rem Copyright 2015 the original author or authors.
 @rem
 @rem Licensed under the Apache License, Version 2.0 (the "License");
@@ -51,6 +52,7 @@ echo. 1>&2
 echo Please set the JAVA_HOME variable in your environment to match the 1>&2
 echo location of your Java installation. 1>&2
 
+
 goto fail
 
 :findJavaFromJavaHome
@@ -68,6 +70,7 @@ echo location of your Java installation. 1>&2
 goto fail
 
 :execute
+
 @rem Setup the command line
 
 set CLASSPATH=
