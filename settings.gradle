@@ -2,9 +2,10 @@ pluginManagement {
     repositories {
         google()
 
+
         mavenCentral()
         gradlePluginPortal()
-    }
+    }  // TODO: edge case
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -13,6 +14,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
+
 }  // FIXME: refactor
 
 rootProject.name = "kwen-webview"
