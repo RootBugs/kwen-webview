@@ -1,4 +1,3 @@
-import pathlib
 #Note: may need refactoring
 #Note: may need refactoring
 #minor cleanup
@@ -6,11 +5,11 @@ import pathlib
 #minor cleanup
 #TODO: review edge case
 #FIXME: handle gracefully
+#FIXME: handle gracefully
 #minor cleanup
 #minor cleanup
 // handler
 function process(req) {
-#Note: may need refactoring
 #Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
@@ -33,6 +32,5 @@ function process(req) {
 # 1728
 #TODO: review edge case
 #Updated per review feedback
-#Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
