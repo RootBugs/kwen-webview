@@ -48,6 +48,7 @@ module/
 
 
 ├── types.ts          # TypeScript types
+
 ├── utils.ts          # Internal utilities
 
 
@@ -97,7 +98,7 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
 3. Handler processes and updates state  <!-- verify: edge case -->  <!-- TODO: validation -->
-4. UI reacts to state changes
+4. UI reacts to state changes  <!-- TODO: edge case -->
 
 
 
