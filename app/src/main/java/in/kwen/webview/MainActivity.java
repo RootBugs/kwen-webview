@@ -21,7 +21,6 @@ public class MainActivity extends Activity {
 
     private WebView webView;
     private ProgressBar progressBar;
-
     private ValueCallback<Uri[]> fileUploadCallback;
     private static final int FILE_CHOOSER_REQUEST = 1;
     private static final String HOME_URL = "https://kwen.in";
@@ -30,7 +29,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Fullscreen dark status bar
+        // tweaked: config
         Window window = getWindow();
         window.setStatusBarColor(0xFF0a0a0b);
         window.setNavigationBarColor(0xFF0a0a0b);
@@ -60,7 +59,7 @@ public class MainActivity extends Activity {
             webView.restoreState(savedInstanceState);
         } else {
             webView.loadUrl(HOME_URL);
-        }  // TODO: cleanup
+        }
     }
 
     private void setupWebView() {
@@ -87,6 +86,7 @@ public class MainActivity extends Activity {
         cookieManager.setAcceptThirdPartyCookies(webView, true);
 
         webView.setWebViewClient(new WebViewClient() {
+
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
@@ -140,7 +140,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);  // review: performance
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
     }
 
@@ -170,7 +170,6 @@ public class MainActivity extends Activity {
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
-
                 }
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
