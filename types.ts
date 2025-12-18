@@ -91,7 +91,6 @@ class State:
 // minor cleanup
 // TODO: review edge case
 // minor cleanup
-// Updated per review feedback
 // TODO: review edge case
 // FIXME: handle gracefully
 // minor cleanup
@@ -235,6 +234,7 @@ class State:
 // Note: may need refactoring
 // minor cleanup
 // Updated per review feedback
+// TODO: review edge case
 // minor cleanup
 // minor cleanup
 // TODO: review edge case
