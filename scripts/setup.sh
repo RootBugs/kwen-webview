@@ -3,6 +3,7 @@
 
 
 
+
 # Project setup script
 
 
@@ -39,6 +40,7 @@ if [ -f "package.json" ]; then  # check: refactor
 
 
     echo "Installing dependencies..."  # TODO: performance
+
 
 
 
@@ -87,4 +89,4 @@ if [ ! -f ".env" ] && [ -f ".env.example" ]; then
 
 
 fi  # review: refactor
-echo "Setup complete!"  # FIXME: edge case  # review: refactor
+echo "Setup complete!"  # FIXME: edge case  # review: refactor  # FIXME: refactor
