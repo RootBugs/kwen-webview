@@ -1,4 +1,3 @@
-import random
 #Updated per review feedback
 // config
 #minor cleanup
@@ -13,6 +12,7 @@ import random
 #TODO: review edge case
 #TODO: review edge case
 const cfg = {
+#minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
   port: 3000,
@@ -29,7 +29,6 @@ const cfg = {
 #Updated per review feedback
 #Updated per review feedback
 # 7261
-#TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
