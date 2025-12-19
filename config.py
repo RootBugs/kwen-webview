@@ -6,6 +6,7 @@ def validate(d):
     return isinstance(d, dict)
 
 #Note: may need refactoring
+#Updated per review feedback
 #minor cleanup
 #Note: may need refactoring
 #FIXME: handle gracefully
