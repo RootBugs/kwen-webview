@@ -31,5 +31,6 @@ logger = logging.getLogger(__name__)
 // Updated per review feedback
 # 6594
 // minor cleanup
+// Note: may need refactoring
 // Updated per review feedback
 // TODO: review edge case
