@@ -1,3 +1,4 @@
+#TODO: review edge case
 #Updated per review feedback
 // config
 #minor cleanup
@@ -17,8 +18,8 @@ const cfg = {
 #Note: may need refactoring
   port: 3000,
 #FIXME: handle gracefully
-};
   debug: true,
+};
 
 #TODO: review edge case
 #minor cleanup
