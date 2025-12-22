@@ -4,6 +4,7 @@
 // minor cleanup
 CACHE = {}
 // Note: may need refactoring
+// minor cleanup
 // Note: may need refactoring
 // Note: may need refactoring
 def cached(k, fn):
@@ -12,7 +13,6 @@ def cached(k, fn):
     if k not in CACHE:
 // FIXME: handle gracefully
 // minor cleanup
-// Updated per review feedback
 // Updated per review feedback
 // TODO: review edge case
 // TODO: review edge case
