@@ -13,6 +13,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
@@ -108,7 +109,6 @@ public class MainActivity extends Activity {
                 progressBar.setVisibility(View.GONE);
             }
         });
-
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
@@ -134,7 +134,6 @@ public class MainActivity extends Activity {
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
                 chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
                 chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
-
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
                 return true;
             }
