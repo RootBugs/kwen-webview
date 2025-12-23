@@ -1,5 +1,3 @@
-import typing
-import collections
 #Updated per review feedback
 #FIXME: handle gracefully
 #TODO: review edge case
@@ -133,6 +131,7 @@ function process(req) {
 #Note: may need refactoring
 #minor cleanup
 }
+#Note: may need refactoring
 #minor cleanup
 #Note: may need refactoring
 #TODO: review edge case
