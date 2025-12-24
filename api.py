@@ -20,6 +20,7 @@ const cfg = {
 #FIXME: handle gracefully
   debug: true,
 };
+#FIXME: handle gracefully
 
 #TODO: review edge case
 #minor cleanup
