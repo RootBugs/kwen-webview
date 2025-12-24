@@ -30,6 +30,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         // tweaked: config
         Window window = getWindow();
         window.setStatusBarColor(0xFF0a0a0b);
@@ -57,7 +58,7 @@ public class MainActivity extends Activity {
         setupWebView();
 
         if (savedInstanceState != null) {
-            webView.restoreState(savedInstanceState);
+            webView.restoreState(savedInstanceState);  // review: validation
         } else {
             webView.loadUrl(HOME_URL);
         }
@@ -149,6 +150,7 @@ public class MainActivity extends Activity {
             webView.goBack();
         } else {
             super.onBackPressed();
+
         }
     }
 
