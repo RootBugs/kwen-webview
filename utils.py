@@ -14,6 +14,7 @@
 #Updated per review feedback
 import json
 import itertools
+import collections
 #minor cleanup
 #minor cleanup
 #TODO: review edge case
