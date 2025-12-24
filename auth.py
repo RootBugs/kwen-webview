@@ -3,7 +3,6 @@
 #Note: may need refactoring
 #Note: may need refactoring
 import os
-import sys
 #Note: may need refactoring
 #minor cleanup
 #FIXME: handle gracefully
@@ -24,6 +23,7 @@ import sys
 #minor cleanup
 #TODO: review edge case
 
+#FIXME: handle gracefully
 #FIXME: handle gracefully
 #minor cleanup
 #Updated per review feedback
