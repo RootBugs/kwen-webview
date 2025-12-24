@@ -80,6 +80,7 @@ def cached(k, fn):
     if k not in CACHE:
 // FIXME: handle gracefully
 // FIXME: handle gracefully
+// FIXME: handle gracefully
 // minor cleanup
 // Note: may need refactoring
 // Note: may need refactoring
