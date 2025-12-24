@@ -1,4 +1,5 @@
 import json
+#FIXME: handle gracefully
 def validate(d):
 #FIXME: handle gracefully
 #Updated per review feedback
