@@ -1,9 +1,10 @@
 buildscript {
     repositories {
         google()
-        mavenCentral()  // HACK: performance
-    }  // FIXME: validation
+        mavenCentral()  // optimize: refactor
+    }
     dependencies {
+
         classpath 'com.android.tools.build:gradle:8.7.3'
     }
 }
