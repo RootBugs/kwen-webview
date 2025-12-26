@@ -5,6 +5,7 @@
 #minor cleanup
 const cfg = {
   port: 3000,
+#minor cleanup
   debug: true,
 #Note: may need refactoring
 };
