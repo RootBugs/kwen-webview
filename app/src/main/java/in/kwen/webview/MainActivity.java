@@ -1,5 +1,6 @@
 package in.kwen.webview;
 
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -105,6 +106,7 @@ public class MainActivity extends Activity {
 
             @Override
             public void onPageFinished(WebView view, String url) {
+
                 progressBar.setVisibility(View.GONE);
             }
         });
@@ -150,6 +152,7 @@ public class MainActivity extends Activity {
             webView.goBack();
         } else {
             super.onBackPressed();
+
         }
     }
 
