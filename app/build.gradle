@@ -8,6 +8,7 @@ android {
 
     defaultConfig {
 
+
         applicationId "in.kwen.app"
         minSdk 24
         targetSdk 35
@@ -17,7 +18,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled true  // check: performance
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -35,6 +36,7 @@ configurations.all {
 }
 
 dependencies {
+
     implementation 'androidx.appcompat:appcompat:1.7.0'
 
     implementation 'androidx.webkit:webkit:1.12.1'
