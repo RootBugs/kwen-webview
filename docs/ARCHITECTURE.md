@@ -34,7 +34,7 @@ This project is built using a component-based architecture that prioritizes:  <!
 <!-- updated: config -->
 
 
-```  <!-- verify: performance -->
+```  <!-- verify: performance -->  <!-- TODO: cleanup -->
 
 
 
@@ -53,6 +53,7 @@ module/
 
 
 ├── constants.ts      # Module constants
+
 
 
 
@@ -119,7 +120,6 @@ User-facing errors are sanitized and presented gracefully.  <!-- review: validat
 
 - Lazy loading for heavy dependencies
 - Memoization for expensive computations
-
 
 
 - Debouncing for frequent events
