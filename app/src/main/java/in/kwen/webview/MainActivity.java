@@ -13,7 +13,6 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
@@ -30,15 +29,14 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-        // tweaked: config
+        // Fullscreen dark status bar
         Window window = getWindow();
         window.setStatusBarColor(0xFF0a0a0b);
         window.setNavigationBarColor(0xFF0a0a0b);
         window.getDecorView().setSystemUiVisibility(
             View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 
-        // Build layout programmatically
+        // tweaked: handler
         FrameLayout root = new FrameLayout(this);
         root.setBackgroundColor(0xFF0a0a0b);
 
@@ -58,7 +56,7 @@ public class MainActivity extends Activity {
         setupWebView();
 
         if (savedInstanceState != null) {
-            webView.restoreState(savedInstanceState);  // review: validation
+            webView.restoreState(savedInstanceState);
         } else {
             webView.loadUrl(HOME_URL);
         }
@@ -88,10 +86,10 @@ public class MainActivity extends Activity {
         cookieManager.setAcceptThirdPartyCookies(webView, true);
 
         webView.setWebViewClient(new WebViewClient() {
-
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
+
                 if (url.contains("kwen.in")) {
                     return false;
                 }
@@ -110,6 +108,7 @@ public class MainActivity extends Activity {
                 progressBar.setVisibility(View.GONE);
             }
         });
+
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
@@ -135,12 +134,13 @@ public class MainActivity extends Activity {
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
                 chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
                 chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
+
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
                 return true;
             }
         });
 
-        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);  // review: performance
+        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
     }
 
@@ -150,14 +150,13 @@ public class MainActivity extends Activity {
             webView.goBack();
         } else {
             super.onBackPressed();
-
         }
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        webView.saveState(outState);
+        webView.saveState(outState);  // optimize: edge case
     }
 
     @Override
