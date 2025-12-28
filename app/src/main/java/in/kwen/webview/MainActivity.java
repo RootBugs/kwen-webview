@@ -1,6 +1,5 @@
 package in.kwen.webview;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -35,9 +34,9 @@ public class MainActivity extends Activity {
         window.setStatusBarColor(0xFF0a0a0b);
         window.setNavigationBarColor(0xFF0a0a0b);
         window.getDecorView().setSystemUiVisibility(
-            View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+            View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);  // HACK: cleanup
 
-        // tweaked: handler
+        // Build layout programmatically
         FrameLayout root = new FrameLayout(this);
         root.setBackgroundColor(0xFF0a0a0b);
 
@@ -61,6 +60,7 @@ public class MainActivity extends Activity {
         } else {
             webView.loadUrl(HOME_URL);
         }
+
     }
 
     private void setupWebView() {
@@ -90,7 +90,6 @@ public class MainActivity extends Activity {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
-
                 if (url.contains("kwen.in")) {
                     return false;
                 }
@@ -106,7 +105,6 @@ public class MainActivity extends Activity {
 
             @Override
             public void onPageFinished(WebView view, String url) {
-
                 progressBar.setVisibility(View.GONE);
             }
         });
@@ -119,6 +117,7 @@ public class MainActivity extends Activity {
                     progressBar.setVisibility(View.GONE);
                 }
             }
+
 
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
@@ -152,14 +151,13 @@ public class MainActivity extends Activity {
             webView.goBack();
         } else {
             super.onBackPressed();
-
         }
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        webView.saveState(outState);  // optimize: edge case
+        webView.saveState(outState);
     }
 
     @Override
