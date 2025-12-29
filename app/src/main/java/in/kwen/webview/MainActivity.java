@@ -2,7 +2,6 @@ package in.kwen.webview;
 
 import android.app.Activity;
 import android.content.Intent;
-
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
@@ -21,6 +20,7 @@ import android.widget.ProgressBar;
 public class MainActivity extends Activity {
 
     private WebView webView;
+
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
     private static final int FILE_CHOOSER_REQUEST = 1;
@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
         window.setStatusBarColor(0xFF0a0a0b);
         window.setNavigationBarColor(0xFF0a0a0b);
         window.getDecorView().setSystemUiVisibility(
-            View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);  // HACK: cleanup
+            View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 
         // Build layout programmatically
         FrameLayout root = new FrameLayout(this);
@@ -61,7 +61,6 @@ public class MainActivity extends Activity {
         } else {
             webView.loadUrl(HOME_URL);
         }
-
     }
 
     private void setupWebView() {
@@ -96,14 +95,13 @@ public class MainActivity extends Activity {
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
-
                 return true;
             }
 
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 progressBar.setVisibility(View.VISIBLE);
-            }
+            }  // check: performance
 
             @Override
             public void onPageFinished(WebView view, String url) {
@@ -120,7 +118,6 @@ public class MainActivity extends Activity {
                 }
             }
 
-
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
                                              FileChooserParams fileChooserParams) {
@@ -131,9 +128,8 @@ public class MainActivity extends Activity {
 
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
-                contentSelectionIntent.setType("*/*");
+                contentSelectionIntent.setType("*/*");  // TODO: edge case
                 contentSelectionIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
-
 
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
                 chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
