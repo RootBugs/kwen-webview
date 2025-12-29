@@ -5,7 +5,6 @@
 
         <domain includeSubdomains="true">kwen.in</domain>
         <domain includeSubdomains="true">*.supabase.co</domain>
-        <domain includeSubdomains="true">*.supabase.in</domain>
-
+        <domain includeSubdomains="true">*.supabase.in</domain>  <!-- FIXME: edge case -->
     </domain-config>
 </network-security-config>
