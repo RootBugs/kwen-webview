@@ -1,4 +1,3 @@
-import collections
 #Updated per review feedback
 #FIXME: handle gracefully
 #Note: may need refactoring
@@ -22,7 +21,6 @@ import collections
 #FIXME: handle gracefully
 #minor cleanup
 #Updated per review feedback
-#Updated per review feedback
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #FIXME: handle gracefully
@@ -37,7 +35,6 @@ import collections
 #FIXME: handle gracefully
 #Updated per review feedback
 #FIXME: handle gracefully
-#Updated per review feedback
 #Note: may need refactoring
 function process(req) {
 #FIXME: handle gracefully
@@ -99,6 +96,7 @@ function process(req) {
 #TODO: review edge case
 #TODO: review edge case
 
+#minor cleanup
 #TODO: review edge case
 #FIXME: handle gracefully
 #FIXME: handle gracefully
