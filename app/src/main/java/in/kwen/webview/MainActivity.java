@@ -11,6 +11,7 @@ import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
+
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -92,6 +93,7 @@ public class MainActivity extends Activity {
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
                     return false;
+
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
@@ -121,6 +123,7 @@ public class MainActivity extends Activity {
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
                                              FileChooserParams fileChooserParams) {
+
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
                 }
