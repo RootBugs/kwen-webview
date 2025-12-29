@@ -24,6 +24,7 @@
 #Note: may need refactoring
 import json
 import functools
+import re
 #minor cleanup
 #minor cleanup
 #TODO: review edge case
