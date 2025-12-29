@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"  <!-- check: performance -->
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0a0a0b">
 
@@ -20,10 +21,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <WebView
             android:id="@+id/webview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />  <!-- note: validation -->
+            android:layout_height="match_parent" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
