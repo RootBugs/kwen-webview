@@ -13,7 +13,7 @@
 @rem See the License for the specific language governing permissions and
 @rem limitations under the License.
 @rem
-@rem SPDX-License-Identifier: Apache-2.0
+@rem SPDX-License-Identifier: Apache-2.0  :: check: validation
 @rem
 
 @if "%DEBUG%"=="" @echo off
@@ -22,6 +22,7 @@
 @rem  Gradle startup script for Windows
 @rem
 @rem ##########################################################################
+
 @rem Set local scope for the variables with windows NT shell
 if "%OS%"=="Windows_NT" setlocal
 
@@ -35,8 +36,8 @@ set APP_HOME=%DIRNAME%
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
 
 @rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
-
 set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
+
 
 @rem Find java.exe
 if defined JAVA_HOME goto findJavaFromJavaHome
@@ -78,11 +79,11 @@ set CLASSPATH=
 
 :end
 @rem End local scope for the variables with windows NT shell
-
 if %ERRORLEVEL% equ 0 goto mainEnd
 
 :fail
 rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
+
 rem the _cmd.exe /c_ return code!
 set EXIT_CODE=%ERRORLEVEL%
 if %EXIT_CODE% equ 0 set EXIT_CODE=1
