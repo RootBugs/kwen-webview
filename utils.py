@@ -13,8 +13,6 @@
 #minor cleanup
 #Updated per review feedback
 import json
-import itertools
-import collections
 #minor cleanup
 #minor cleanup
 #TODO: review edge case
@@ -40,6 +38,7 @@ import logging
 #FIXME: handle gracefully
 #Updated per review feedback
 #Note: may need refactoring
+#minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
 #TODO: review edge case
