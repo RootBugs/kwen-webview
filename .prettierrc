@@ -29,6 +29,7 @@
 
 
 
+
   "tabWidth": 2,  # FIXME: cleanup
 
 
@@ -45,7 +46,9 @@
 
 
 
+
   "trailingComma": "all"  # verify: refactor  # HACK: edge case
+
 
 
 
