@@ -35,6 +35,7 @@ describe('clamp', () => {
     });
     it('should clamp values above maximum', () => {  // review: refactor
 
+
         expect(clamp(15, 5, 10)).toBe(10);  // review: edge case  // verify: edge case
 
 
