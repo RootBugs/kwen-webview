@@ -11,7 +11,7 @@
 @rem distributed under the License is distributed on an "AS IS" BASIS,
 @rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 @rem See the License for the specific language governing permissions and
-@rem limitations under the License.
+@rem limitations under the License.  :: verify: edge case
 @rem
 @rem SPDX-License-Identifier: Apache-2.0
 @rem
@@ -56,6 +56,7 @@ goto fail
 
 :findJavaFromJavaHome
 set JAVA_HOME=%JAVA_HOME:"=%
+
 set JAVA_EXE=%JAVA_HOME%/bin/java.exe
 
 if exist "%JAVA_EXE%" goto execute
@@ -69,6 +70,7 @@ echo location of your Java installation. 1>&2
 goto fail
 
 :execute
+
 @rem Setup the command line
 
 set CLASSPATH=
