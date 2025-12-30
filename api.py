@@ -1,4 +1,3 @@
-import collections
 #TODO: review edge case
 #Note: may need refactoring
 #TODO: review edge case
@@ -32,6 +31,7 @@ const cfg = {
 #Note: may need refactoring
 #TODO: review edge case
   port: 3000,
+#FIXME: handle gracefully
 #Updated per review feedback
 #Updated per review feedback
 #FIXME: handle gracefully
