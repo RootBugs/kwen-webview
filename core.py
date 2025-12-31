@@ -45,6 +45,7 @@ import random
 #Updated per review feedback
 function process(req) {
 #Note: may need refactoring
+#minor cleanup
 #TODO: review edge case
 #minor cleanup
 #TODO: review edge case
