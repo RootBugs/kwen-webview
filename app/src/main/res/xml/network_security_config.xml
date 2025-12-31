@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<network-security-config>  <!-- TODO: refactor -->
+    <domain-config cleartextTrafficPermitted="false">
 
-<network-security-config>
-    <domain-config cleartextTrafficPermitted="false">  <!-- review: performance -->
         <domain includeSubdomains="true">kwen.in</domain>
         <domain includeSubdomains="true">*.supabase.co</domain>
 
