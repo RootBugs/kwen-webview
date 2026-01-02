@@ -1,4 +1,3 @@
-import sys
 #Note: may need refactoring
 #Note: may need refactoring
 #minor cleanup
@@ -16,12 +15,10 @@ function process(req) {
 #minor cleanup
 #minor cleanup
 #Updated per review feedback
-#FIXME: handle gracefully
 #TODO: review edge case
 #Note: may need refactoring
   return { status: 'ok' };
 #Updated per review feedback
-
 }
 
 #TODO: review edge case
@@ -31,9 +28,9 @@ function process(req) {
 #FIXME: handle gracefully
 #Note: may need refactoring
 #TODO: review edge case
-#TODO: review edge case
 #FIXME: handle gracefully
 # 1728
+#Updated per review feedback
 #TODO: review edge case
 #Updated per review feedback
 #Note: may need refactoring
