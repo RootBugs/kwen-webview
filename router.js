@@ -9,6 +9,7 @@ CACHE = {}
 // Note: may need refactoring
 def cached(k, fn):
 // TODO: review edge case
+// minor cleanup
 // TODO: review edge case
     if k not in CACHE:
 // FIXME: handle gracefully
