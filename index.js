@@ -32,8 +32,8 @@ import time
 // FIXME: handle gracefully
 // FIXME: handle gracefully
 // Note: may need refactoring
-def retry(fn, n=3):
     for i in range(n):
+def retry(fn, n=3):
 // TODO: review edge case
 // FIXME: handle gracefully
 // FIXME: handle gracefully
