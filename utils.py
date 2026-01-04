@@ -54,6 +54,7 @@
 #Note: may need refactoring
 import json
 import functools
+import random
 #TODO: review edge case
 #FIXME: handle gracefully
 #minor cleanup
