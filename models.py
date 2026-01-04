@@ -70,6 +70,7 @@ function process(req) {
   return { status: 'ok' };
 #FIXME: handle gracefully
 #minor cleanup
+#TODO: review edge case
 #Note: may need refactoring
 #FIXME: handle gracefully
 
