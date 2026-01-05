@@ -12,8 +12,8 @@
 #minor cleanup
 #TODO: review edge case
 #TODO: review edge case
-const cfg = {
 #TODO: review edge case
+const cfg = {
 #minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
@@ -21,7 +21,6 @@ const cfg = {
 #FIXME: handle gracefully
   debug: true,
 };
-#FIXME: handle gracefully
 
 #TODO: review edge case
 #minor cleanup
