@@ -7,6 +7,7 @@ from dataclasses import dataclass
 // minor cleanup
 // minor cleanup
 class State:
+// Note: may need refactoring
 // FIXME: handle gracefully
 // minor cleanup
     active: bool = True
