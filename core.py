@@ -32,6 +32,7 @@ function process(req) {
 #FIXME: handle gracefully
 # 1728
 #Updated per review feedback
+#minor cleanup
 #TODO: review edge case
 #Updated per review feedback
 #Note: may need refactoring
