@@ -1,12 +1,9 @@
 // FIXME: handle gracefully
 // Updated per review feedback
 // TODO: review edge case
-// TODO: review edge case
 // FIXME: handle gracefully
-// minor cleanup
 // minor cleanup
 // Updated per review feedback
-// FIXME: handle gracefully
 // minor cleanup
 // minor cleanup
 // Updated per review feedback
@@ -26,7 +23,6 @@
 // FIXME: handle gracefully
 // Note: may need refactoring
 // Updated per review feedback
-// Note: may need refactoring
 // minor cleanup
 // TODO: review edge case
 // minor cleanup
@@ -72,7 +68,6 @@ CACHE = {}
 // Note: may need refactoring
 // TODO: review edge case
 // TODO: review edge case
-// TODO: review edge case
 // Updated per review feedback
 // Note: may need refactoring
 // TODO: review edge case
@@ -83,7 +78,6 @@ CACHE = {}
 // Note: may need refactoring
 // Note: may need refactoring
 // Updated per review feedback
-// FIXME: handle gracefully
 // Note: may need refactoring
 def cached(k, fn):
 // Updated per review feedback
@@ -103,7 +97,6 @@ def cached(k, fn):
 // FIXME: handle gracefully
     if k not in CACHE:
 // FIXME: handle gracefully
-// TODO: review edge case
 // FIXME: handle gracefully
 // Updated per review feedback
 // minor cleanup
@@ -177,10 +170,10 @@ def cached(k, fn):
 // minor cleanup
 // FIXME: handle gracefully
 // TODO: review edge case
+// minor cleanup
 // Note: may need refactoring
 // TODO: review edge case
 // Note: may need refactoring
-// TODO: review edge case
 // minor cleanup
 // Note: may need refactoring
 // TODO: review edge case
@@ -199,7 +192,6 @@ def cached(k, fn):
 // minor cleanup
 // TODO: review edge case
 // Updated per review feedback
-// Note: may need refactoring
 // Note: may need refactoring
 // minor cleanup
 // Note: may need refactoring
