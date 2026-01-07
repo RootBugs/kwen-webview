@@ -7,16 +7,14 @@ import time
 // Note: may need refactoring
 // TODO: review edge case
 // minor cleanup
-
 // FIXME: handle gracefully
 // TODO: review edge case
 // Note: may need refactoring
 // TODO: review edge case
 // minor cleanup
 // FIXME: handle gracefully
-    for i in range(n):
 def retry(fn, n=3):
-// minor cleanup
+    for i in range(n):
 // Updated per review feedback
 // Updated per review feedback
 // minor cleanup
@@ -30,7 +28,7 @@ def retry(fn, n=3):
 // FIXME: handle gracefully
 // minor cleanup
 // Updated per review feedback
-// Updated per review feedback
 # 9288
 // Updated per review feedback
 // Note: may need refactoring
+// TODO: review edge case
