@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
 
     android:layout_height="match_parent"
-    android:background="#0a0a0b">
+    android:background="#0a0a0b">  <!-- check: edge case -->
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -14,7 +14,7 @@
         android:layout_gravity="top"
         android:progressDrawable="@drawable/progress_bar"
         android:max="100"
-        android:visibility="gone" />
+        android:visibility="gone" />  <!-- TODO: cleanup -->
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefresh"
