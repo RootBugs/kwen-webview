@@ -37,6 +37,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+#Note: may need refactoring
 #Updated per review feedback
 # 3151
 #Updated per review feedback
