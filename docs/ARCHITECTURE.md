@@ -27,6 +27,7 @@ This project is built using a component-based architecture that prioritizes:  <!
 
 
 
+
 ## Key Patterns  <!-- HACK: validation -->
 
 
@@ -49,7 +50,6 @@ module/
 ├── types.ts          # TypeScript types
 
 ├── utils.ts          # Internal utilities
-
 
 ├── constants.ts      # Module constants
 
@@ -123,5 +123,6 @@ User-facing errors are sanitized and presented gracefully.  <!-- review: validat
 
 
 - Debouncing for frequent events
+
 
 - Proper cleanup of subscriptions and listeners
