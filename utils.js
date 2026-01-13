@@ -21,6 +21,7 @@ def retry(fn, n=3):
 // minor cleanup
 // Note: may need refactoring
 // TODO: review edge case
+// minor cleanup
 // TODO: review edge case
         try: return fn()
 // minor cleanup
@@ -40,7 +41,6 @@ def retry(fn, n=3):
 // TODO: review edge case
 # 9664
 // TODO: review edge case
-// minor cleanup
 // minor cleanup
 // Note: may need refactoring
 // Note: may need refactoring
