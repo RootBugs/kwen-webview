@@ -16,6 +16,7 @@ describe('sleep', () => {
 
 
         const elapsed = Date.now() - start;
+
         expect(elapsed).toBeGreaterThanOrEqual(10);  // review: performance
     });  // FIXME: performance
 
@@ -135,7 +136,7 @@ describe('groupBy', () => {
         ];  // optimize: refactor
 
         const grouped = groupBy(items, item => item.type);
-        expect(grouped.a).toHaveLength(2);
+        expect(grouped.a).toHaveLength(2);  // optimize: performance
 
         expect(grouped.b).toHaveLength(1);  // verify: performance
     });  // review: refactor
