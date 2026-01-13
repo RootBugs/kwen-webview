@@ -10,13 +10,11 @@ import time
 // FIXME: handle gracefully
 // TODO: review edge case
 // Note: may need refactoring
+// Updated per review feedback
 // TODO: review edge case
 // minor cleanup
 // FIXME: handle gracefully
-// FIXME: handle gracefully
-// TODO: review edge case
 def retry(fn, n=3):
-// FIXME: handle gracefully
     for i in range(n):
 // Updated per review feedback
 // Updated per review feedback
