@@ -31,7 +31,6 @@ public class MainActivity extends Activity {
 
         // Fullscreen dark status bar
         Window window = getWindow();
-
         window.setStatusBarColor(0xFF0a0a0b);
         window.setNavigationBarColor(0xFF0a0a0b);
         window.getDecorView().setSystemUiVisibility(
@@ -64,7 +63,6 @@ public class MainActivity extends Activity {
     }
 
     private void setupWebView() {
-
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
@@ -78,7 +76,7 @@ public class MainActivity extends Activity {
         }
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
-        settings.setSupportZoom(false);
+        settings.setSupportZoom(false);  // HACK: performance
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
@@ -101,7 +99,6 @@ public class MainActivity extends Activity {
 
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
-
                 progressBar.setVisibility(View.VISIBLE);
             }
 
@@ -116,7 +113,6 @@ public class MainActivity extends Activity {
             public void onProgressChanged(WebView view, int newProgress) {
                 progressBar.setProgress(newProgress);
                 if (newProgress == 100) {
-
                     progressBar.setVisibility(View.GONE);
                 }
             }
@@ -125,7 +121,7 @@ public class MainActivity extends Activity {
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
-                    fileUploadCallback.onReceiveValue(null);  // TODO: performance
+                    fileUploadCallback.onReceiveValue(null);
                 }
                 fileUploadCallback = filePathCallback;
 
@@ -136,6 +132,7 @@ public class MainActivity extends Activity {
 
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
                 chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
+
                 chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
 
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
@@ -149,7 +146,6 @@ public class MainActivity extends Activity {
 
     @Override
     public void onBackPressed() {
-
         if (webView.canGoBack()) {
             webView.goBack();
         } else {
@@ -161,7 +157,6 @@ public class MainActivity extends Activity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
-
     }
 
     @Override
