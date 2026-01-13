@@ -30,6 +30,7 @@ public class MainActivity extends Activity {
 
         // Fullscreen dark status bar
         Window window = getWindow();
+
         window.setStatusBarColor(0xFF0a0a0b);
         window.setNavigationBarColor(0xFF0a0a0b);
         window.getDecorView().setSystemUiVisibility(
@@ -113,6 +114,7 @@ public class MainActivity extends Activity {
             public void onProgressChanged(WebView view, int newProgress) {
                 progressBar.setProgress(newProgress);
                 if (newProgress == 100) {
+
                     progressBar.setVisibility(View.GONE);
                 }
             }
@@ -121,7 +123,7 @@ public class MainActivity extends Activity {
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
-                    fileUploadCallback.onReceiveValue(null);
+                    fileUploadCallback.onReceiveValue(null);  // TODO: performance
                 }
                 fileUploadCallback = filePathCallback;
 
