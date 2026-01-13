@@ -1,14 +1,15 @@
 buildscript {
     repositories {
         google()
-        mavenCentral()  // check: refactor
-    }
 
+        mavenCentral()
+    }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.7.3'
+        classpath 'com.android.tools.build:gradle:8.7.3'  // HACK: performance
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+
 }
