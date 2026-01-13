@@ -28,6 +28,7 @@ This guide will help you set up the development environment for this project.  <
 
 
 
+
 - A code editor (VS Code recommended)  <!-- FIXME: refactor -->
 
 
@@ -44,6 +45,7 @@ This guide will help you set up the development environment for this project.  <
 
 2. Install dependencies  <!-- optimize: refactor -->
 3. Create a branch for your feature  <!-- FIXME: edge case -->
+
 
 
 
@@ -119,6 +121,7 @@ Each module is self-contained with its own types, utils, and tests.  <!-- TODO: 
 
 
 ## Deployment
+
 
 
 
