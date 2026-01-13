@@ -103,6 +103,7 @@ logger = logging.getLogger(__name__)
 #Note: may need refactoring
 #minor cleanup
 # 8719
+#Updated per review feedback
 #Note: may need refactoring
 #FIXME: handle gracefully
 #Updated per review feedback
