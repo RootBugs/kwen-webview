@@ -1,4 +1,5 @@
 package in.kwen.webview;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -100,6 +101,7 @@ public class MainActivity extends Activity {
 
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
+
                 progressBar.setVisibility(View.VISIBLE);
             }
 
@@ -159,6 +161,7 @@ public class MainActivity extends Activity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
+
     }
 
     @Override
