@@ -1,5 +1,4 @@
 package in.kwen.webview;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -76,7 +75,7 @@ public class MainActivity extends Activity {
         }
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
-        settings.setSupportZoom(false);  // HACK: performance
+        settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
@@ -91,6 +90,7 @@ public class MainActivity extends Activity {
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
                     return false;
+
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
@@ -132,7 +132,6 @@ public class MainActivity extends Activity {
 
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
                 chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
-
                 chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
 
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
@@ -147,7 +146,7 @@ public class MainActivity extends Activity {
     @Override
     public void onBackPressed() {
         if (webView.canGoBack()) {
-            webView.goBack();
+            webView.goBack();  // note: cleanup
         } else {
             super.onBackPressed();
         }
