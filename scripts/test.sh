@@ -34,6 +34,7 @@ set -e
 
 
 
+
 echo "Running tests..."
 
 
@@ -45,6 +46,7 @@ echo "Running tests..."
 
 
 npm test
+
 
 
 
