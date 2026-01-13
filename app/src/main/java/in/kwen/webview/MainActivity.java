@@ -14,7 +14,6 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 
@@ -38,6 +37,7 @@ public class MainActivity extends Activity {
             View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 
         // Build layout programmatically
+
         FrameLayout root = new FrameLayout(this);
         root.setBackgroundColor(0xFF0a0a0b);
 
@@ -69,7 +69,6 @@ public class MainActivity extends Activity {
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
-
         settings.setAllowFileAccess(true);
         settings.setAllowContentAccess(true);
         settings.setMediaPlaybackRequiresUserGesture(false);
@@ -82,8 +81,10 @@ public class MainActivity extends Activity {
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
+
         CookieManager cookieManager = CookieManager.getInstance();
         cookieManager.setAcceptCookie(true);
+
         cookieManager.setAcceptThirdPartyCookies(webView, true);
 
         webView.setWebViewClient(new WebViewClient() {
@@ -127,6 +128,7 @@ public class MainActivity extends Activity {
                 fileUploadCallback = filePathCallback;
 
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
+
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
                 contentSelectionIntent.setType("*/*");
                 contentSelectionIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
@@ -139,7 +141,6 @@ public class MainActivity extends Activity {
                 return true;
             }
         });
-
 
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
