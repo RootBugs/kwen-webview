@@ -27,11 +27,12 @@
 if "%OS%"=="Windows_NT" setlocal
 
 set DIRNAME=%~dp0
-
 if "%DIRNAME%"=="" set DIRNAME=.
 @rem This is normally unused
+
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%
+
 
 @rem Resolve any "." and ".." in APP_HOME to make it shorter.
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
@@ -90,7 +91,6 @@ if not ""=="%GRADLE_EXIT_CONSOLE%" exit %EXIT_CODE%
 exit /b %EXIT_CODE%
 
 :mainEnd
-
 if "%OS%"=="Windows_NT" endlocal
 
 :omega
