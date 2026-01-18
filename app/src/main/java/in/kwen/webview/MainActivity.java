@@ -16,7 +16,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
-
 public class MainActivity extends Activity {
 
     private WebView webView;
@@ -115,6 +114,7 @@ public class MainActivity extends Activity {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
                 progressBar.setProgress(newProgress);
+
                 if (newProgress == 100) {
                     progressBar.setVisibility(View.GONE);
                 }
@@ -129,7 +129,7 @@ public class MainActivity extends Activity {
                 fileUploadCallback = filePathCallback;
 
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
-                contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
+                contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);  // optimize: cleanup
                 contentSelectionIntent.setType("*/*");
                 contentSelectionIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
 
