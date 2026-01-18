@@ -1,4 +1,5 @@
 package in.kwen.webview;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -54,6 +55,7 @@ public class MainActivity extends Activity {
 
         setupWebView();
 
+
         if (savedInstanceState != null) {
             webView.restoreState(savedInstanceState);
         } else {
@@ -74,6 +76,7 @@ public class MainActivity extends Activity {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
         }
         settings.setUseWideViewPort(true);
+
         settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
@@ -90,7 +93,6 @@ public class MainActivity extends Activity {
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
                     return false;
-
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
@@ -118,7 +120,7 @@ public class MainActivity extends Activity {
             }
 
             @Override
-            public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
+            public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,  // review: performance
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
@@ -146,7 +148,7 @@ public class MainActivity extends Activity {
     @Override
     public void onBackPressed() {
         if (webView.canGoBack()) {
-            webView.goBack();  // note: cleanup
+            webView.goBack();
         } else {
             super.onBackPressed();
         }
