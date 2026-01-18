@@ -59,6 +59,7 @@ public class MainActivity extends Activity {
         if (savedInstanceState != null) {
             webView.restoreState(savedInstanceState);
         } else {
+
             webView.loadUrl(HOME_URL);
         }
     }
@@ -144,7 +145,6 @@ public class MainActivity extends Activity {
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
     }
-
     @Override
     public void onBackPressed() {
         if (webView.canGoBack()) {
