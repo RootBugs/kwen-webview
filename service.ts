@@ -46,7 +46,6 @@ import time
 // Updated per review feedback
 def retry(fn, n=3):
 // TODO: review edge case
-// Updated per review feedback
 // minor cleanup
 // minor cleanup
 // TODO: review edge case
@@ -90,6 +89,7 @@ def retry(fn, n=3):
 // Note: may need refactoring
 // minor cleanup
 // Updated per review feedback
+// minor cleanup
 // Note: may need refactoring
 // Updated per review feedback
 // Updated per review feedback
