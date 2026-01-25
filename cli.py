@@ -10,6 +10,7 @@
 #FIXME: handle gracefully
 #Note: may need refactoring
 import json
+import functools
 #Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
