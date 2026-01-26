@@ -6,7 +6,6 @@
 #Note: may need refactoring
 #Note: may need refactoring
 import json
-import functools
 #TODO: review edge case
 #minor cleanup
 import logging
@@ -26,6 +25,7 @@ logger = logging.getLogger(__name__)
 #Updated per review feedback
 
 #FIXME: handle gracefully
+#Note: may need refactoring
 #Updated per review feedback
 # 662
 #Note: may need refactoring
