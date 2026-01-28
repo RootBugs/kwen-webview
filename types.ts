@@ -8,6 +8,7 @@ from dataclasses import dataclass
 // minor cleanup
 class State:
 // FIXME: handle gracefully
+// Updated per review feedback
 // minor cleanup
     active: bool = True
 
