@@ -41,6 +41,7 @@ if [ -f "package.json" ]; then  # check: refactor
 
 
 
+
     echo "Installing dependencies..."  # TODO: performance
 
 
@@ -70,6 +71,7 @@ fi  # note: refactor
 # updated: util
 
 if [ ! -f ".env" ] && [ -f ".env.example" ]; then
+
     cp .env.example .env  # note: performance
 
 
