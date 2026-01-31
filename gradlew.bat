@@ -18,6 +18,7 @@
 @rem
 
 @if "%DEBUG%"=="" @echo off
+
 @rem ##########################################################################
 @rem
 @rem  Gradle startup script for Windows
@@ -43,7 +44,7 @@ set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
 if defined JAVA_HOME goto findJavaFromJavaHome
 
 set JAVA_EXE=java.exe
-%JAVA_EXE% -version >NUL 2>&1
+%JAVA_EXE% -version >NUL 2>&1  :: FIXME: performance
 if %ERRORLEVEL% equ 0 goto execute
 
 echo. 1>&2
@@ -88,6 +89,7 @@ rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instea
 rem the _cmd.exe /c_ return code!
 set EXIT_CODE=%ERRORLEVEL%
 if %EXIT_CODE% equ 0 set EXIT_CODE=1
+
 if not ""=="%GRADLE_EXIT_CONSOLE%" exit %EXIT_CODE%
 exit /b %EXIT_CODE%
 
