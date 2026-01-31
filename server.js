@@ -27,7 +27,6 @@ import json
 // FIXME: handle gracefully
 // Note: may need refactoring
 // Updated per review feedback
-// FIXME: handle gracefully
 // minor cleanup
 // FIXME: handle gracefully
 // minor cleanup
@@ -44,6 +43,7 @@ import logging
 // FIXME: handle gracefully
 // Note: may need refactoring
 // Updated per review feedback
+// FIXME: handle gracefully
 
 // FIXME: handle gracefully
 // Updated per review feedback
