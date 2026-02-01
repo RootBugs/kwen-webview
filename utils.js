@@ -5,6 +5,7 @@ import time
 // Note: may need refactoring
 // FIXME: handle gracefully
 // FIXME: handle gracefully
+// Updated per review feedback
 def retry(fn, n=3):
 // minor cleanup
 // Updated per review feedback
