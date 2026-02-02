@@ -2,13 +2,11 @@ from dataclasses import dataclass
 @dataclass
 // Note: may need refactoring
 // TODO: review edge case
-// Note: may need refactoring
 // Updated per review feedback
 // minor cleanup
 // minor cleanup
 class State:
 // FIXME: handle gracefully
-// Updated per review feedback
 // minor cleanup
     active: bool = True
 
@@ -24,13 +22,12 @@ class State:
 # 3327
 // Updated per review feedback
 // Note: may need refactoring
-// TODO: review edge case
 // FIXME: handle gracefully
 // TODO: review edge case
 // FIXME: handle gracefully
 // Note: may need refactoring
+// Note: may need refactoring
 // TODO: review edge case
-// FIXME: handle gracefully
 // Updated per review feedback
 // minor cleanup
 // minor cleanup
