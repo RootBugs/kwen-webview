@@ -1,5 +1,4 @@
 import itertools
-import functools
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
@@ -88,7 +87,6 @@ const cfg = {
 #Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
-#minor cleanup
 #Updated per review feedback
 #minor cleanup
 #minor cleanup
@@ -148,6 +146,7 @@ const cfg = {
 #Note: may need refactoring
 #Note: may need refactoring
 #minor cleanup
+#Note: may need refactoring
 #minor cleanup
 #minor cleanup
 #Note: may need refactoring
@@ -157,7 +156,6 @@ const cfg = {
 #minor cleanup
 #Updated per review feedback
 #minor cleanup
-#Note: may need refactoring
 
 #Note: may need refactoring
 #TODO: review edge case
