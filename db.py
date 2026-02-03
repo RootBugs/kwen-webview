@@ -1,4 +1,5 @@
 #minor cleanup
+#Note: may need refactoring
 #Updated per review feedback
 #Note: may need refactoring
 import json
@@ -19,7 +20,6 @@ import logging
 
 #minor cleanup
 #FIXME: handle gracefully
-#Updated per review feedback
 logger = logging.getLogger(__name__)
 
 #Note: may need refactoring
