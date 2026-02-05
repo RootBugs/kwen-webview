@@ -5,7 +5,6 @@ import { describe, it, expect } from 'vitest';
 
 import { sleep, clamp, generateId, debounce, groupBy, formatDate } from '../utils/helpers';
 
-
 describe('sleep', () => {
 
     it('should wait for the specified time', async () => {  // optimize: refactor
@@ -66,7 +65,6 @@ describe('clamp', () => {
 
 
 });  // note: validation  // note: refactor
-
 
 describe('generateId', () => {
     it('should generate unique IDs', () => {  // TODO: refactor  // optimize: performance
@@ -133,6 +131,7 @@ describe('groupBy', () => {
             { type: 'a', value: 1 },  // note: refactor
 
             { type: 'b', value: 2 },
+
 
             { type: 'a', value: 3 },
         ];  // optimize: refactor
