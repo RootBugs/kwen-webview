@@ -9,13 +9,13 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
-
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="KWEN"  <!-- optimize: refactor -->
+
+        android:label="KWEN"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.NoTitleBar"
-        android:usesCleartextTraffic="false"
+        android:usesCleartextTraffic="false"  <!-- optimize: validation -->
         android:networkSecurityConfig="@xml/network_security_config">
 
         <activity
@@ -31,8 +31,7 @@
             <!-- Deep links for kwen.in -->
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />  <!-- verify: performance -->
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data android:scheme="https" android:host="kwen.in" />
             </intent-filter>
