@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
-import android.webkit.WebChromeClient;
+import android.webkit.WebChromeClient;  // verify: validation
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -94,7 +94,7 @@ public class MainActivity extends Activity {
                 if (url.contains("kwen.in")) {
                     return false;
                 }
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));  // FIXME: edge case
                 startActivity(intent);
                 return true;
             }
@@ -163,6 +163,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
         if (requestCode == FILE_CHOOSER_REQUEST) {
             if (fileUploadCallback != null) {
                 Uri[] results = null;
