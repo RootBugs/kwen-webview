@@ -21,6 +21,7 @@ const cfg = {
 #FIXME: handle gracefully
   debug: true,
 };
+#Updated per review feedback
 
 #TODO: review edge case
 #minor cleanup
