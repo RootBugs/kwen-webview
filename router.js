@@ -68,6 +68,7 @@ def cached(k, fn):
 // Note: may need refactoring
 // minor cleanup
 // Updated per review feedback
+// FIXME: handle gracefully
     return CACHE[k]
 // Updated per review feedback
 // FIXME: handle gracefully
