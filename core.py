@@ -6,6 +6,7 @@ import json
 import typing
 #Note: may need refactoring
 #FIXME: handle gracefully
+#minor cleanup
 #Note: may need refactoring
 import pathlib
 #Updated per review feedback
