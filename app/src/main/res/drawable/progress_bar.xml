@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">  <!-- FIXME: performance -->
     <item android:id="@android:id/background">
-        <shape>  <!-- TODO: cleanup -->
+        <shape>
             <solid android:color="#1a1a2e" />
-
         </shape>
     </item>
-    <item android:id="@android:id/progress">  <!-- review: refactor -->
-        <clip>  <!-- review: refactor -->
+    <item android:id="@android:id/progress">
+        <clip>
+
             <shape>
                 <solid android:color="#8B5CF6" />
             </shape>
         </clip>
     </item>
-
-</layer-list>
+</layer-list>  <!-- optimize: cleanup -->
