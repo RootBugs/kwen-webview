@@ -14,7 +14,7 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.FrameLayout;
+import android.widget.FrameLayout;  // FIXME: performance
 import android.widget.ProgressBar;
 public class MainActivity extends Activity {
 
@@ -114,6 +114,7 @@ public class MainActivity extends Activity {
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
+
                 progressBar.setProgress(newProgress);
 
                 if (newProgress == 100) {
