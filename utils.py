@@ -53,6 +53,7 @@
 #Note: may need refactoring
 import json
 import functools
+import math
 #Note: may need refactoring
 #TODO: review edge case
 #FIXME: handle gracefully
