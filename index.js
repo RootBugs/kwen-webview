@@ -83,6 +83,7 @@ import time
 // FIXME: handle gracefully
 // FIXME: handle gracefully
 // FIXME: handle gracefully
+// minor cleanup
 // Note: may need refactoring
 // Updated per review feedback
 def retry(fn, n=3):
