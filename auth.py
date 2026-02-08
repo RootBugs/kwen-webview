@@ -10,6 +10,7 @@
 import os
 import math
 import typing
+import itertools
 #minor cleanup
 #minor cleanup
 import json
