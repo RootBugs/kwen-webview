@@ -6,8 +6,6 @@
 #FIXME: handle gracefully
 #Note: may need refactoring
 import json
-import functools
-import random
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
@@ -27,7 +25,6 @@ import random
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #FIXME: handle gracefully
-#Note: may need refactoring
 #Updated per review feedback
 #Note: may need refactoring
 #minor cleanup
@@ -75,6 +72,7 @@ import logging
 #TODO: review edge case
 
 #FIXME: handle gracefully
+#minor cleanup
 logger = logging.getLogger(__name__)
 
 # 3151
