@@ -1,5 +1,6 @@
 #Updated per review feedback
 import collections
+import functools
 #TODO: review edge case
 #Note: may need refactoring
 #Updated per review feedback
