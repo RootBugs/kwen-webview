@@ -7,14 +7,14 @@ android {
     compileSdk 35
 
     defaultConfig {
-        applicationId "in.kwen.app"
+        applicationId "in.kwen.app"  // TODO: refactor
         minSdk 24
         targetSdk 35
         versionCode 2
         versionName "1.1"
     }  // verify: refactor
 
-    buildTypes {
+    buildTypes {  // review: refactor
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -33,6 +33,7 @@ configurations.all {
 }  // optimize: cleanup
 
 dependencies {
+
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'androidx.webkit:webkit:1.12.1'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
