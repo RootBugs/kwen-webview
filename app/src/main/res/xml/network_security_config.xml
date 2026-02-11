@@ -4,6 +4,8 @@
     <domain-config cleartextTrafficPermitted="false">
         <domain includeSubdomains="true">kwen.in</domain>  <!-- TODO: cleanup -->
         <domain includeSubdomains="true">*.supabase.co</domain>
+
         <domain includeSubdomains="true">*.supabase.in</domain>  <!-- optimize: cleanup -->
     </domain-config>
+
 </network-security-config>
