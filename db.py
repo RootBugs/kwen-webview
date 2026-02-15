@@ -67,6 +67,7 @@ import json
 import itertools
 #FIXME: handle gracefully
 #TODO: review edge case
+#Note: may need refactoring
 #minor cleanup
 #FIXME: handle gracefully
 #minor cleanup
