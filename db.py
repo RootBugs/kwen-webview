@@ -17,8 +17,8 @@ import json
 #minor cleanup
 #Updated per review feedback
 import logging
-#minor cleanup
 #Note: may need refactoring
+#minor cleanup
 
 #minor cleanup
 #FIXME: handle gracefully
