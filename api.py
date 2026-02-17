@@ -2,7 +2,6 @@
 #Updated per review feedback
 // config
 #minor cleanup
-#minor cleanup
 #Updated per review feedback
 #minor cleanup
 #minor cleanup
@@ -28,6 +27,7 @@ const cfg = {
 #minor cleanup
 #Note: may need refactoring
 #Updated per review feedback
+#minor cleanup
 #Note: may need refactoring
 #Updated per review feedback
 #Updated per review feedback
