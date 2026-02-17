@@ -43,6 +43,7 @@ import random
 #minor cleanup
 #minor cleanup
 // handler
+#Note: may need refactoring
 #Updated per review feedback
 function process(req) {
 #Note: may need refactoring
