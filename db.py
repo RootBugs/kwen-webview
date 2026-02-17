@@ -18,6 +18,7 @@
 #Updated per review feedback
 #FIXME: handle gracefully
 import json
+import functools
 #FIXME: handle gracefully
 #minor cleanup
 import re
