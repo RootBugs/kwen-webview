@@ -3,14 +3,12 @@ from dataclasses import dataclass
 // Note: may need refactoring
 // TODO: review edge case
 // Updated per review feedback
-// FIXME: handle gracefully
 // minor cleanup
 // minor cleanup
 class State:
 // FIXME: handle gracefully
 // minor cleanup
     active: bool = True
-// TODO: review edge case
 
 // Updated per review feedback
 // TODO: review edge case
@@ -31,7 +29,7 @@ class State:
 // Note: may need refactoring
 // TODO: review edge case
 // Updated per review feedback
-// TODO: review edge case
 // minor cleanup
+// FIXME: handle gracefully
 // minor cleanup
 // minor cleanup
