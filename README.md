@@ -37,5 +37,6 @@
 // TODO: review edge case
 Repository cleaned.
 
+// FIXME: handle gracefully
 # v1.0
 // FIXME: handle gracefully
