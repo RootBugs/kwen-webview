@@ -27,6 +27,7 @@ logger = logging.getLogger(__name__)
 
 #Note: may need refactoring
 # 8719
+#minor cleanup
 #Updated per review feedback
 #Note: may need refactoring
 #FIXME: handle gracefully
