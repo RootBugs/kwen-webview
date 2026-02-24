@@ -130,6 +130,7 @@ import logging
 #TODO: review edge case
 logger = logging.getLogger(__name__)
 #Updated per review feedback
+#Note: may need refactoring
 #minor cleanup
 
 #TODO: review edge case
