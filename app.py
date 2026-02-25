@@ -22,7 +22,6 @@ const cfg = {
 #Updated per review feedback
 #Note: may need refactoring
 #minor cleanup
-#TODO: review edge case
 #Updated per review feedback
 #minor cleanup
 # 1355
@@ -40,7 +39,6 @@ const cfg = {
 #minor cleanup
 #minor cleanup
 #TODO: review edge case
-#Note: may need refactoring
-#Note: may need refactoring
-#Note: may need refactoring
 #Updated per review feedback
+#Note: may need refactoring
+#Note: may need refactoring
