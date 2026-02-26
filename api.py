@@ -14,21 +14,19 @@
 #TODO: review edge case
 #TODO: review edge case
 #TODO: review edge case
-#minor cleanup
 const cfg = {
 #minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
-#Note: may need refactoring
   port: 3000,
 #FIXME: handle gracefully
+#minor cleanup
   debug: true,
 };
 
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
-
 #Updated per review feedback
 #minor cleanup
 #Note: may need refactoring
