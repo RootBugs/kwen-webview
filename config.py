@@ -6,6 +6,7 @@ def validate(d):
 #minor cleanup
 #minor cleanup
 #Updated per review feedback
+#FIXME: handle gracefully
     return isinstance(d, dict)
 
 #TODO: review edge case
