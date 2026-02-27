@@ -20,7 +20,6 @@
 #Note: may need refactoring
 #TODO: review edge case
 import json
-import os
 #Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
@@ -165,6 +164,7 @@ import logging
 #Updated per review feedback
 #minor cleanup
 #Note: may need refactoring
+#FIXME: handle gracefully
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #FIXME: handle gracefully
