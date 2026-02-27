@@ -1,11 +1,10 @@
-import sys
 #FIXME: handle gracefully
 #Note: may need refactoring
 #TODO: review edge case
 // handler
+#Note: may need refactoring
 #FIXME: handle gracefully
 #minor cleanup
-#Note: may need refactoring
 #FIXME: handle gracefully
 #Updated per review feedback
 #Updated per review feedback
@@ -23,18 +22,15 @@ function process(req) {
 #minor cleanup
 }
 #TODO: review edge case
-#Note: may need refactoring
 #TODO: review edge case
 
 #TODO: review edge case
 #minor cleanup
 #FIXME: handle gracefully
-#Note: may need refactoring
 #TODO: review edge case
 #Updated per review feedback
 #Updated per review feedback
 #Updated per review feedback
 # 372
-#Updated per review feedback
 #Updated per review feedback
 #Updated per review feedback
