@@ -5,7 +5,7 @@
 This guide will help you set up the development environment for this project.  <!-- review: performance -->
 
 
-### Prerequisites
+<!-- checked: setup -->
 - Node.js 18+ (or language-specific runtime)  <!-- verify: cleanup -->
 
 
@@ -118,7 +118,6 @@ This guide will help you set up the development environment for this project.  <
 
 
 <!-- checked: config -->
-
 
 
 
