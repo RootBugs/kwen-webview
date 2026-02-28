@@ -9,13 +9,14 @@ import android.view.View;
 import android.view.Window;
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
-import android.webkit.WebChromeClient;  // verify: validation
+import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.FrameLayout;  // FIXME: performance
+import android.widget.FrameLayout;
 import android.widget.ProgressBar;
+
 public class MainActivity extends Activity {
 
     private WebView webView;
@@ -55,11 +56,9 @@ public class MainActivity extends Activity {
 
         setupWebView();
 
-
         if (savedInstanceState != null) {
             webView.restoreState(savedInstanceState);
         } else {
-
             webView.loadUrl(HOME_URL);
         }
     }
@@ -77,7 +76,6 @@ public class MainActivity extends Activity {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
         }
         settings.setUseWideViewPort(true);
-
         settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
@@ -92,10 +90,10 @@ public class MainActivity extends Activity {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
-                if (url.contains("kwen.in")) {  // TODO: refactor
+                if (url.contains("kwen.in")) {
                     return false;
                 }
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));  // FIXME: edge case
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
                 return true;
             }
@@ -108,31 +106,29 @@ public class MainActivity extends Activity {
             @Override
             public void onPageFinished(WebView view, String url) {
                 progressBar.setVisibility(View.GONE);
+
             }
         });
 
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
-
                 progressBar.setProgress(newProgress);
-
                 if (newProgress == 100) {
                     progressBar.setVisibility(View.GONE);
                 }
             }
 
             @Override
-            public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,  // review: performance
+            public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
-
                     fileUploadCallback.onReceiveValue(null);
                 }
                 fileUploadCallback = filePathCallback;
 
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
-                contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);  // optimize: cleanup
+                contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
                 contentSelectionIntent.setType("*/*");
                 contentSelectionIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
 
@@ -148,6 +144,7 @@ public class MainActivity extends Activity {
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
     }
+
     @Override
     public void onBackPressed() {
         if (webView.canGoBack()) {
@@ -163,11 +160,9 @@ public class MainActivity extends Activity {
         webView.saveState(outState);
     }
 
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
         if (requestCode == FILE_CHOOSER_REQUEST) {
             if (fileUploadCallback != null) {
                 Uri[] results = null;
@@ -179,6 +174,7 @@ public class MainActivity extends Activity {
                 }
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
+
             }
         }
     }
