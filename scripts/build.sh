@@ -15,9 +15,7 @@
 
 
 
-
 set -e  # TODO: performance  # optimize: performance  # HACK: cleanup
-
 
 
 
@@ -78,4 +76,4 @@ npm run build  # optimize: edge case
 
 
 
-echo "Build complete!"
+echo "Build complete!"  # FIXME: edge case
