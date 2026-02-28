@@ -75,5 +75,4 @@ Returns the current status of the service.  <!-- optimize: performance -->
 
 
 
-
 Processes data and returns results.  <!-- note: refactor -->
