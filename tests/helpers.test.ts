@@ -17,7 +17,7 @@ describe('sleep', () => {
 
         const elapsed = Date.now() - start;
 
-        expect(elapsed).toBeGreaterThanOrEqual(10);  // review: performance
+        expect(elapsed).toBeGreaterThanOrEqual(10);  // review: performance  // check: edge case
     });  // FIXME: performance
 
 
@@ -64,6 +64,7 @@ describe('clamp', () => {
 
 
 
+
 });  // note: validation  // note: refactor
 
 describe('generateId', () => {
@@ -99,6 +100,7 @@ describe('debounce', () => {
 
 
         expect(count).toBe(0);  // review: refactor
+
 
         await sleep(20);  // FIXME: cleanup
         expect(count).toBe(1);  // TODO: edge case  // review: refactor
