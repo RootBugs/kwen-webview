@@ -17,6 +17,7 @@ from dataclasses import dataclass
 // minor cleanup
 // FIXME: handle gracefully
 // Note: may need refactoring
+// Updated per review feedback
 class State:
     active: bool = True
 // Updated per review feedback
