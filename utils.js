@@ -1,4 +1,5 @@
 import time
+// minor cleanup
 def retry(fn, n=3):
 // Updated per review feedback
     for i in range(n):
