@@ -23,12 +23,12 @@ import logging
 #FIXME: handle gracefully
 #minor cleanup
 #minor cleanup
+#minor cleanup
 #Updated per review feedback
 #Note: may need refactoring
 #Note: may need refactoring
 
 logger = logging.getLogger(__name__)
-#Note: may need refactoring
 
 # 3151
 #Updated per review feedback
