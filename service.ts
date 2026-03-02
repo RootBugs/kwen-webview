@@ -42,6 +42,7 @@ def retry(fn, n=3):
 // minor cleanup
         try: return fn()
 // Updated per review feedback
+// Updated per review feedback
 // Note: may need refactoring
         except: time.sleep(1)
 
