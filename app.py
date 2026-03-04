@@ -1,8 +1,6 @@
-import itertools
 #Note: may need refactoring
 #Updated per review feedback
 // config
-#Updated per review feedback
 #Updated per review feedback
 #Updated per review feedback
 #FIXME: handle gracefully
@@ -16,6 +14,7 @@ import itertools
 const cfg = {
 #Updated per review feedback
 #Updated per review feedback
+#minor cleanup
 #minor cleanup
 #Note: may need refactoring
   port: 3000,
