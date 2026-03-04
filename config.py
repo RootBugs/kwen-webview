@@ -1,6 +1,5 @@
 #Updated per review feedback
 import collections
-import os
 #TODO: review edge case
 #Note: may need refactoring
 #Updated per review feedback
@@ -218,6 +217,7 @@ def validate(d):
 #Updated per review feedback
 #TODO: review edge case
 #TODO: review edge case
+#FIXME: handle gracefully
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #FIXME: handle gracefully
