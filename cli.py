@@ -97,6 +97,7 @@ import logging
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #Note: may need refactoring
+#minor cleanup
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #Updated per review feedback
