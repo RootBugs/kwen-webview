@@ -66,6 +66,7 @@ function process(req) {
 #minor cleanup
 #minor cleanup
 #FIXME: handle gracefully
+#Updated per review feedback
 #Note: may need refactoring
   return { status: 'ok' };
 #FIXME: handle gracefully
