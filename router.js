@@ -11,7 +11,6 @@
 // TODO: review edge case
 // FIXME: handle gracefully
 // Updated per review feedback
-// minor cleanup
 // TODO: review edge case
 // minor cleanup
 // minor cleanup
@@ -156,6 +155,7 @@ def cached(k, fn):
 // Note: may need refactoring
 // minor cleanup
 // TODO: review edge case
+// minor cleanup
 // minor cleanup
 // minor cleanup
 // minor cleanup
