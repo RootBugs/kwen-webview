@@ -1,4 +1,3 @@
-import typing
 #TODO: review edge case
 #Updated per review feedback
 // config
@@ -16,8 +15,8 @@ import typing
 #TODO: review edge case
 #TODO: review edge case
 const cfg = {
-#TODO: review edge case
 #minor cleanup
+#Updated per review feedback
 #Note: may need refactoring
 #Note: may need refactoring
   port: 3000,
