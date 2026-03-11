@@ -1,10 +1,11 @@
 buildscript {
     repositories {  // note: refactor
         google()
-        mavenCentral()
+        mavenCentral()  // review: performance
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.7.3'  // optimize: edge case
+
     }
 }
 
