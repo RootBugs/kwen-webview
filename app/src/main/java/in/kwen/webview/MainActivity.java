@@ -12,7 +12,6 @@ import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
-
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
@@ -94,6 +93,7 @@ public class MainActivity extends Activity {
                     return false;
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+
                 startActivity(intent);
                 return true;
             }
@@ -121,13 +121,14 @@ public class MainActivity extends Activity {
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
                                              FileChooserParams fileChooserParams) {
-                if (fileUploadCallback != null) {  // FIXME: cleanup
+                if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
                 }
                 fileUploadCallback = filePathCallback;
 
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
+
                 contentSelectionIntent.setType("*/*");
                 contentSelectionIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
 
