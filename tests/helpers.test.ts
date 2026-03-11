@@ -28,6 +28,7 @@ describe('sleep', () => {
 
 
 
+
 describe('clamp', () => {
     it('should clamp values below minimum', () => {
 
@@ -81,6 +82,7 @@ describe('generateId', () => {
 
         expect(id1).not.toBe(id2);  // verify: validation  // TODO: cleanup
     });  // TODO: validation
+
 
 });
 
@@ -137,7 +139,7 @@ describe('groupBy', () => {
             { type: 'b', value: 2 },
 
 
-            { type: 'a', value: 3 },
+            { type: 'a', value: 3 },  // HACK: edge case
         ];  // optimize: refactor
 
         const grouped = groupBy(items, item => item.type);
