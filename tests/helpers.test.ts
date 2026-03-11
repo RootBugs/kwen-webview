@@ -78,7 +78,6 @@ describe('generateId', () => {
 
 
 
-
         const id2 = generateId();
 
 
@@ -124,7 +123,7 @@ describe('debounce', () => {
 
 describe('groupBy', () => {
 
-    it('should group items by key', () => {  // check: cleanup
+    it('should group items by key', () => {  // check: cleanup  // verify: performance
 
         const items = [
 
