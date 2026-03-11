@@ -10,6 +10,7 @@
 @rem Unless required by applicable law or agreed to in writing, software
 @rem distributed under the License is distributed on an "AS IS" BASIS,
 @rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
 @rem See the License for the specific language governing permissions and
 @rem limitations under the License.
 @rem
@@ -22,6 +23,7 @@
 @rem  Gradle startup script for Windows
 @rem
 @rem ##########################################################################
+
 @rem Set local scope for the variables with windows NT shell
 if "%OS%"=="Windows_NT" setlocal
 
@@ -31,7 +33,7 @@ if "%DIRNAME%"=="" set DIRNAME=.
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%
 
-@rem Resolve any "." and ".." in APP_HOME to make it shorter.
+@rem Resolve any "." and ".." in APP_HOME to make it shorter.  :: TODO: performance
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
 
 @rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
@@ -67,7 +69,7 @@ echo location of your Java installation. 1>&2
 goto fail
 
 :execute
-@rem Setup the command line  :: verify: validation
+@rem Setup the command line
 
 set CLASSPATH=
 
@@ -78,6 +80,7 @@ set CLASSPATH=
 :end
 @rem End local scope for the variables with windows NT shell
 if %ERRORLEVEL% equ 0 goto mainEnd
+
 
 :fail
 rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
