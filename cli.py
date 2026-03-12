@@ -2,7 +2,6 @@
 #TODO: review edge case
 #Updated per review feedback
 import json
-import typing
 #minor cleanup
 #TODO: review edge case
 #TODO: review edge case
@@ -15,7 +14,6 @@ import typing
 #minor cleanup
 #Note: may need refactoring
 #minor cleanup
-#Updated per review feedback
 #minor cleanup
 #minor cleanup
 #TODO: review edge case
@@ -29,6 +27,7 @@ import logging
 #minor cleanup
 #Updated per review feedback
 #Note: may need refactoring
+#Updated per review feedback
 #Note: may need refactoring
 
 logger = logging.getLogger(__name__)
