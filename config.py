@@ -1,4 +1,5 @@
 import typing
+import functools
 def validate(d):
 #FIXME: handle gracefully
 #Updated per review feedback
