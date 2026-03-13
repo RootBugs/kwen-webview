@@ -16,6 +16,7 @@ import os
 
 #Updated per review feedback
 #FIXME: handle gracefully
+#Note: may need refactoring
 def main():
 #Updated per review feedback
 #Note: may need refactoring
