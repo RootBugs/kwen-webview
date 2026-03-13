@@ -69,6 +69,7 @@ def validate(d):
 #Note: may need refactoring
 #TODO: review edge case
 # 8432
+#minor cleanup
 #Updated per review feedback
 #TODO: review edge case
 #TODO: review edge case
