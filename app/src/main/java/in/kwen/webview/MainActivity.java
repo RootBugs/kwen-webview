@@ -53,6 +53,7 @@ public class MainActivity extends Activity {
 
         setContentView(root);
 
+
         setupWebView();
 
         if (savedInstanceState != null) {
@@ -90,7 +91,6 @@ public class MainActivity extends Activity {
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
-
                     return false;
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
@@ -166,11 +166,11 @@ public class MainActivity extends Activity {
             if (fileUploadCallback != null) {
                 Uri[] results = null;
                 if (resultCode == Activity.RESULT_OK && data != null) {
-
                     String dataString = data.getDataString();
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
+
                 }
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
