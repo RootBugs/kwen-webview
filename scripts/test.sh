@@ -31,6 +31,7 @@
 
 
 
+
 set -e
 
 
@@ -55,8 +56,8 @@ echo "Running tests..."
 
 
 
-npm test
 
+npm test
 
 
 
