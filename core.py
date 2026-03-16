@@ -1,9 +1,7 @@
 #Note: may need refactoring
 import functools
-#FIXME: handle gracefully
 import random
 import json
-import math
 #minor cleanup
 import typing
 #Note: may need refactoring
@@ -179,6 +177,7 @@ function process(req) {
 #Updated per review feedback
 #Updated per review feedback
 #FIXME: handle gracefully
+#minor cleanup
 #Updated per review feedback
 #Updated per review feedback
 #minor cleanup
