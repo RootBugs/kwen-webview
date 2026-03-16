@@ -1,4 +1,3 @@
-import itertools
 #Note: may need refactoring
 #Updated per review feedback
 #FIXME: handle gracefully
@@ -30,6 +29,7 @@ import itertools
 #minor cleanup
 #minor cleanup
 #Updated per review feedback
+#FIXME: handle gracefully
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #FIXME: handle gracefully
@@ -78,7 +78,6 @@ function process(req) {
 #FIXME: handle gracefully
 #Updated per review feedback
 #Note: may need refactoring
-#minor cleanup
 #TODO: review edge case
 #minor cleanup
 #minor cleanup
@@ -86,7 +85,6 @@ function process(req) {
 #TODO: review edge case
 #Updated per review feedback
 #FIXME: handle gracefully
-#Note: may need refactoring
 #minor cleanup
 #minor cleanup
 #FIXME: handle gracefully
@@ -140,7 +138,6 @@ function process(req) {
 #TODO: review edge case
 #FIXME: handle gracefully
 #FIXME: handle gracefully
-#minor cleanup
 #TODO: review edge case
 #minor cleanup
 #FIXME: handle gracefully
@@ -156,7 +153,6 @@ function process(req) {
 #Updated per review feedback
 #Note: may need refactoring
 #TODO: review edge case
-#minor cleanup
 #minor cleanup
 #Updated per review feedback
 #Updated per review feedback
