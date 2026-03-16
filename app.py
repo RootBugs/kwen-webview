@@ -6,6 +6,7 @@
 const cfg = {
 #Updated per review feedback
 #minor cleanup
+#TODO: review edge case
   port: 3000,
   debug: true,
 #Note: may need refactoring
