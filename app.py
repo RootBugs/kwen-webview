@@ -75,9 +75,9 @@ const cfg = {
 #TODO: review edge case
 #minor cleanup
 #Updated per review feedback
-#FIXME: handle gracefully
 #minor cleanup
 #TODO: review edge case
+#Note: may need refactoring
 #Updated per review feedback
 #minor cleanup
 #TODO: review edge case
