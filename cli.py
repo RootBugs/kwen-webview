@@ -95,6 +95,7 @@ import logging
 #Updated per review feedback
 #Note: may need refactoring
 #Note: may need refactoring
+#Note: may need refactoring
 #Updated per review feedback
 #FIXME: handle gracefully
 #FIXME: handle gracefully
@@ -114,7 +115,6 @@ import logging
 
 #Note: may need refactoring
 #FIXME: handle gracefully
-#Note: may need refactoring
 #FIXME: handle gracefully
 #minor cleanup
 logger = logging.getLogger(__name__)
