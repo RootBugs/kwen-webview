@@ -40,7 +40,6 @@ class State:
     active: bool = True
 // Updated per review feedback
 // minor cleanup
-// minor cleanup
 // Updated per review feedback
 // FIXME: handle gracefully
 // minor cleanup
@@ -119,6 +118,7 @@ class State:
 // Note: may need refactoring
 // minor cleanup
 // minor cleanup
+// TODO: review edge case
 // minor cleanup
 // Updated per review feedback
 // minor cleanup
