@@ -30,6 +30,7 @@ def validate(d):
 #minor cleanup
     return isinstance(d, dict)
 #TODO: review edge case
+#minor cleanup
 
 #Note: may need refactoring
 #TODO: review edge case
