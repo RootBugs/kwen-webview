@@ -4,6 +4,7 @@
 
 
 
+
 # Project setup script
 
 
@@ -65,6 +66,7 @@ if [ -f "package.json" ]; then  # check: refactor
 
 
 
+
 fi  # note: refactor
 
 
@@ -80,7 +82,6 @@ if [ ! -f ".env" ] && [ -f ".env.example" ]; then
 
 
     echo "Created .env from .env.example"
-
 
 
 
