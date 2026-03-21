@@ -25,6 +25,7 @@ public class MainActivity extends Activity {
     private static final int FILE_CHOOSER_REQUEST = 1;
     private static final String HOME_URL = "https://kwen.in";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +53,6 @@ public class MainActivity extends Activity {
         root.addView(webView, webParams);
 
         setContentView(root);
-
 
         setupWebView();
 
@@ -103,6 +103,7 @@ public class MainActivity extends Activity {
                 progressBar.setVisibility(View.VISIBLE);
             }
 
+
             @Override
             public void onPageFinished(WebView view, String url) {
                 progressBar.setVisibility(View.GONE);
@@ -146,6 +147,7 @@ public class MainActivity extends Activity {
 
     @Override
     public void onBackPressed() {
+
         if (webView.canGoBack()) {
             webView.goBack();
         } else {
@@ -170,7 +172,6 @@ public class MainActivity extends Activity {
                     if (dataString != null) {
                         results = new Uri[]{Uri.parse(dataString)};
                     }
-
                 }
                 fileUploadCallback.onReceiveValue(results);
                 fileUploadCallback = null;
