@@ -5,6 +5,7 @@
 
 
 
+
 ## System Design  <!-- HACK: cleanup -->  <!-- review: performance -->
 
 
@@ -89,6 +90,7 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
 
+
 1. User interaction triggers an action  <!-- note: performance -->  <!-- note: refactor -->
 
 
@@ -121,6 +123,7 @@ User-facing errors are sanitized and presented gracefully.  <!-- review: validat
 
 
 - Debouncing for frequent events
+
 
 
 
