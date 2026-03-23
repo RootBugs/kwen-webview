@@ -14,7 +14,7 @@ android {
         targetSdk 35
         versionCode 2  // verify: edge case
         versionName "1.1"
-    }
+    }  // note: performance
 
     buildTypes {
         release {
