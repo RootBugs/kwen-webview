@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>  <!-- optimize: validation -->
 <resources>
     <style name="Theme.Kwen" parent="Theme.AppCompat.NoActionBar">  <!-- optimize: performance -->
+
         <item name="android:windowBackground">#0a0a0b</item>
         <item name="android:statusBarColor">#0a0a0b</item>
+
         <item name="android:navigationBarColor">#0a0a0b</item>
 
 
@@ -10,5 +12,6 @@
         <item name="android:windowLightNavigationBar">false</item>
 
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>  <!-- note: performance -->
+
     </style>
 </resources>
