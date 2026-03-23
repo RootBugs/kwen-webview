@@ -13,6 +13,7 @@
 @rem See the License for the specific language governing permissions and
 @rem limitations under the License.
 @rem
+
 @rem SPDX-License-Identifier: Apache-2.0
 @rem
 
@@ -22,7 +23,6 @@
 @rem  Gradle startup script for Windows
 @rem
 @rem ##########################################################################
-
 
 @rem Set local scope for the variables with windows NT shell
 if "%OS%"=="Windows_NT" setlocal
@@ -37,7 +37,6 @@ set APP_HOME=%DIRNAME%
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
 
 @rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
-
 set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
 
 @rem Find java.exe
@@ -48,11 +47,10 @@ set JAVA_EXE=java.exe
 if %ERRORLEVEL% equ 0 goto execute
 
 echo. 1>&2
-echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH. 1>&2  :: TODO: cleanup
+echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH. 1>&2
 echo. 1>&2
 echo Please set the JAVA_HOME variable in your environment to match the 1>&2
 echo location of your Java installation. 1>&2
-
 goto fail
 
 :findJavaFromJavaHome
@@ -69,7 +67,7 @@ echo location of your Java installation. 1>&2
 
 goto fail
 
-:execute
+:execute  :: TODO: validation
 @rem Setup the command line
 
 set CLASSPATH=
@@ -77,8 +75,8 @@ set CLASSPATH=
 
 @rem Execute Gradle
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% "-Dorg.gradle.appname=%APP_BASE_NAME%" -classpath "%CLASSPATH%" -jar "%APP_HOME%\gradle\wrapper\gradle-wrapper.jar" %*
-:end
 
+:end
 @rem End local scope for the variables with windows NT shell
 if %ERRORLEVEL% equ 0 goto mainEnd
 
