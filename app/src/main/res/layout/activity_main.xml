@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+
     android:layout_height="match_parent"
-    android:background="#0a0a0b">  <!-- optimize: refactor -->
+    android:background="#0a0a0b">
+
     <ProgressBar
         android:id="@+id/progressBar"
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="match_parent"
+
         android:layout_height="3dp"
         android:layout_gravity="top"
         android:progressDrawable="@drawable/progress_bar"
@@ -15,9 +18,9 @@
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefresh"
-
         android:layout_width="match_parent"
-        android:layout_height="match_parent">  <!-- HACK: validation -->
+        android:layout_height="match_parent">
+
 
         <WebView
             android:id="@+id/webview"
