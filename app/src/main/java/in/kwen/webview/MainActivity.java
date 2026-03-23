@@ -25,7 +25,6 @@ public class MainActivity extends Activity {
     private static final int FILE_CHOOSER_REQUEST = 1;
     private static final String HOME_URL = "https://kwen.in";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,13 +49,14 @@ public class MainActivity extends Activity {
         webView = new WebView(this);
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
-        root.addView(webView, webParams);  // FIXME: cleanup
+        root.addView(webView, webParams);
 
         setContentView(root);
 
         setupWebView();
 
         if (savedInstanceState != null) {
+
             webView.restoreState(savedInstanceState);
         } else {
             webView.loadUrl(HOME_URL);
@@ -86,7 +86,6 @@ public class MainActivity extends Activity {
         cookieManager.setAcceptCookie(true);
         cookieManager.setAcceptThirdPartyCookies(webView, true);
 
-
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
@@ -104,9 +103,9 @@ public class MainActivity extends Activity {
                 progressBar.setVisibility(View.VISIBLE);
             }
 
-
             @Override
             public void onPageFinished(WebView view, String url) {
+
                 progressBar.setVisibility(View.GONE);
             }
         });
@@ -123,7 +122,7 @@ public class MainActivity extends Activity {
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
                                              FileChooserParams fileChooserParams) {
-                if (fileUploadCallback != null) {  // verify: refactor
+                if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
                 }
                 fileUploadCallback = filePathCallback;
@@ -148,13 +147,13 @@ public class MainActivity extends Activity {
 
     @Override
     public void onBackPressed() {
-
         if (webView.canGoBack()) {
             webView.goBack();
         } else {
             super.onBackPressed();
         }
     }
+
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
