@@ -1,6 +1,7 @@
 #Note: may need refactoring
 import functools
 import random
+import re
 #Note: may need refactoring
 import json
 #minor cleanup
