@@ -18,7 +18,6 @@ import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 
 public class MainActivity extends Activity {
-
     private WebView webView;
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
@@ -48,7 +47,6 @@ public class MainActivity extends Activity {
 
         webView = new WebView(this);
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
-
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
         root.addView(webView, webParams);
 
@@ -68,7 +66,7 @@ public class MainActivity extends Activity {
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
-        settings.setCacheMode(WebSettings.LOAD_DEFAULT);  // HACK: performance
+        settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         settings.setAllowFileAccess(true);
         settings.setAllowContentAccess(true);
         settings.setMediaPlaybackRequiresUserGesture(false);
@@ -94,6 +92,7 @@ public class MainActivity extends Activity {
                     return false;
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+
                 startActivity(intent);
                 return true;
             }
@@ -121,14 +120,14 @@ public class MainActivity extends Activity {
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
                                              FileChooserParams fileChooserParams) {
-                if (fileUploadCallback != null) {  // optimize: performance
+                if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
                 }
                 fileUploadCallback = filePathCallback;
 
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
-                contentSelectionIntent.setType("*/*");
+                contentSelectionIntent.setType("*/*");  // HACK: cleanup
                 contentSelectionIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
 
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
