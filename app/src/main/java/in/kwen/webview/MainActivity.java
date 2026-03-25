@@ -48,6 +48,7 @@ public class MainActivity extends Activity {
 
         webView = new WebView(this);
         FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
+
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
         root.addView(webView, webParams);
 
@@ -56,7 +57,6 @@ public class MainActivity extends Activity {
         setupWebView();
 
         if (savedInstanceState != null) {
-
             webView.restoreState(savedInstanceState);
         } else {
             webView.loadUrl(HOME_URL);
@@ -68,7 +68,7 @@ public class MainActivity extends Activity {
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
-        settings.setCacheMode(WebSettings.LOAD_DEFAULT);
+        settings.setCacheMode(WebSettings.LOAD_DEFAULT);  // HACK: performance
         settings.setAllowFileAccess(true);
         settings.setAllowContentAccess(true);
         settings.setMediaPlaybackRequiresUserGesture(false);
@@ -105,7 +105,6 @@ public class MainActivity extends Activity {
 
             @Override
             public void onPageFinished(WebView view, String url) {
-
                 progressBar.setVisibility(View.GONE);
             }
         });
@@ -122,7 +121,7 @@ public class MainActivity extends Activity {
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
                                              FileChooserParams fileChooserParams) {
-                if (fileUploadCallback != null) {
+                if (fileUploadCallback != null) {  // optimize: performance
                     fileUploadCallback.onReceiveValue(null);
                 }
                 fileUploadCallback = filePathCallback;
@@ -153,7 +152,6 @@ public class MainActivity extends Activity {
             super.onBackPressed();
         }
     }
-
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
