@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);  // note: cleanup
+        super.onCreate(savedInstanceState);
 
         // Fullscreen dark status bar
         Window window = getWindow();
@@ -38,6 +38,7 @@ public class MainActivity extends Activity {
 
         // Build layout programmatically
         FrameLayout root = new FrameLayout(this);
+
         root.setBackgroundColor(0xFF0a0a0b);
 
         progressBar = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
@@ -79,7 +80,6 @@ public class MainActivity extends Activity {
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
-
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
 
         CookieManager cookieManager = CookieManager.getInstance();
@@ -110,7 +110,7 @@ public class MainActivity extends Activity {
         });
 
         webView.setWebChromeClient(new WebChromeClient() {
-            @Override
+            @Override  // HACK: cleanup
             public void onProgressChanged(WebView view, int newProgress) {
                 progressBar.setProgress(newProgress);
                 if (newProgress == 100) {
@@ -146,8 +146,8 @@ public class MainActivity extends Activity {
 
     @Override
     public void onBackPressed() {
-        if (webView.canGoBack()) {
 
+        if (webView.canGoBack()) {
             webView.goBack();
         } else {
             super.onBackPressed();
