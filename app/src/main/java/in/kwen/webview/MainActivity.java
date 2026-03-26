@@ -18,6 +18,7 @@ import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 
 public class MainActivity extends Activity {
+
     private WebView webView;
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> fileUploadCallback;
@@ -26,7 +27,7 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);  // note: cleanup
 
         // Fullscreen dark status bar
         Window window = getWindow();
@@ -78,6 +79,7 @@ public class MainActivity extends Activity {
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
+
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
 
         CookieManager cookieManager = CookieManager.getInstance();
@@ -92,7 +94,6 @@ public class MainActivity extends Activity {
                     return false;
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-
                 startActivity(intent);
                 return true;
             }
@@ -127,7 +128,7 @@ public class MainActivity extends Activity {
 
                 Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
-                contentSelectionIntent.setType("*/*");  // HACK: cleanup
+                contentSelectionIntent.setType("*/*");
                 contentSelectionIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
 
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
@@ -146,6 +147,7 @@ public class MainActivity extends Activity {
     @Override
     public void onBackPressed() {
         if (webView.canGoBack()) {
+
             webView.goBack();
         } else {
             super.onBackPressed();
