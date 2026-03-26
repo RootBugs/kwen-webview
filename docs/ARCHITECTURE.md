@@ -91,11 +91,11 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
 
+
 1. User interaction triggers an action  <!-- note: performance -->  <!-- note: refactor -->
 
 
 2. Action is dispatched to the handler
-
 
 
 3. Handler processes and updates state  <!-- verify: edge case -->  <!-- TODO: validation -->
