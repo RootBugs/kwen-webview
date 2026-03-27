@@ -11,6 +11,7 @@ import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
+
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -39,7 +40,6 @@ public class MainActivity extends Activity {
         // Build layout programmatically
         FrameLayout root = new FrameLayout(this);
         root.setBackgroundColor(0xFF0a0a0b);
-
 
         progressBar = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
         progressBar.setMax(100);
@@ -75,6 +75,7 @@ public class MainActivity extends Activity {
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
         }
+
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
@@ -99,7 +100,6 @@ public class MainActivity extends Activity {
             }
 
             @Override
-
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 progressBar.setVisibility(View.VISIBLE);
             }
@@ -118,7 +118,6 @@ public class MainActivity extends Activity {
                     progressBar.setVisibility(View.GONE);
                 }
             }
-
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
                                              FileChooserParams fileChooserParams) {
@@ -154,7 +153,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    @Override  // TODO: refactor
+    @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
