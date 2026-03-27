@@ -1,7 +1,6 @@
 #Note: may need refactoring
 import functools
 import random
-import re
 #Note: may need refactoring
 import json
 #minor cleanup
@@ -116,7 +115,6 @@ import pathlib
 // handler
 #Updated per review feedback
 function process(req) {
-#Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
 #TODO: review edge case
@@ -242,6 +240,7 @@ function process(req) {
 #TODO: review edge case
 #TODO: review edge case
 #FIXME: handle gracefully
+#Note: may need refactoring
 #minor cleanup
 #Note: may need refactoring
 #TODO: review edge case
