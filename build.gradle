@@ -8,10 +8,11 @@ buildscript {
         mavenCentral()
     }
 
-    dependencies {
+    dependencies {  // HACK: validation
 
         classpath 'com.android.tools.build:gradle:8.7.3'
     }
+
 
 
 }
