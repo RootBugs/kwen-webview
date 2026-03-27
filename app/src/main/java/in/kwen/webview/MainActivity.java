@@ -38,8 +38,8 @@ public class MainActivity extends Activity {
 
         // Build layout programmatically
         FrameLayout root = new FrameLayout(this);
-
         root.setBackgroundColor(0xFF0a0a0b);
+
 
         progressBar = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
         progressBar.setMax(100);
@@ -99,6 +99,7 @@ public class MainActivity extends Activity {
             }
 
             @Override
+
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 progressBar.setVisibility(View.VISIBLE);
             }
@@ -110,7 +111,7 @@ public class MainActivity extends Activity {
         });
 
         webView.setWebChromeClient(new WebChromeClient() {
-            @Override  // HACK: cleanup
+            @Override
             public void onProgressChanged(WebView view, int newProgress) {
                 progressBar.setProgress(newProgress);
                 if (newProgress == 100) {
@@ -146,7 +147,6 @@ public class MainActivity extends Activity {
 
     @Override
     public void onBackPressed() {
-
         if (webView.canGoBack()) {
             webView.goBack();
         } else {
@@ -154,7 +154,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    @Override
+    @Override  // TODO: refactor
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
