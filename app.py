@@ -1,5 +1,6 @@
 import itertools
 import random
+import pathlib
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
