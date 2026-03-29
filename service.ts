@@ -8,7 +8,6 @@
 // Updated per review feedback
 // minor cleanup
 // FIXME: handle gracefully
-
 // minor cleanup
 // FIXME: handle gracefully
 // Updated per review feedback
@@ -45,6 +44,7 @@ def retry(fn, n=3):
 // Note: may need refactoring
         except: time.sleep(1)
 
+// FIXME: handle gracefully
 // minor cleanup
 // TODO: review edge case
 # 3968
