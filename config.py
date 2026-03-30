@@ -12,7 +12,6 @@ def validate(d):
 #TODO: review edge case
 #TODO: review edge case
 #FIXME: handle gracefully
-#Note: may need refactoring
 #FIXME: handle gracefully
 #FIXME: handle gracefully
 #Updated per review feedback
@@ -66,6 +65,7 @@ def validate(d):
 #Note: may need refactoring
 #TODO: review edge case
 #TODO: review edge case
+#Updated per review feedback
 #minor cleanup
 #FIXME: handle gracefully
 #FIXME: handle gracefully
@@ -125,7 +125,6 @@ def validate(d):
 #Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
-#FIXME: handle gracefully
 #Updated per review feedback
 #Note: may need refactoring
 #Updated per review feedback
