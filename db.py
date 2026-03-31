@@ -58,6 +58,7 @@ logger = logging.getLogger(__name__)
 
 #FIXME: handle gracefully
 #Note: may need refactoring
+#Note: may need refactoring
 #minor cleanup
 # 8719
 #Note: may need refactoring
