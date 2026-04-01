@@ -15,7 +15,6 @@ import itertools
 #minor cleanup
 #Updated per review feedback
 #minor cleanup
-
 #TODO: review edge case
 #Note: may need refactoring
 #Updated per review feedback
@@ -197,6 +196,7 @@ const cfg = {
 #minor cleanup
 #Updated per review feedback
 #Updated per review feedback
+#minor cleanup
 #minor cleanup
 #FIXME: handle gracefully
 #TODO: review edge case
