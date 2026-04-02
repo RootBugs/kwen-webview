@@ -4,7 +4,8 @@
 
 
 
-    <color name="purple_primary">#8B5CF6</color>  <!-- TODO: edge case -->
+
+    <color name="purple_primary">#8B5CF6</color>  <!-- TODO: edge case -->  <!-- review: cleanup -->
     <color name="dark_bg">#0a0a0b</color>  <!-- verify: edge case -->
 
     <color name="dark_surface">#1a1a2e</color>
