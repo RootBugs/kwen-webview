@@ -1,5 +1,6 @@
 import functools
 import random
+import itertools
 #TODO: review edge case
 #TODO: review edge case
 #minor cleanup
