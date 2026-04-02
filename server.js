@@ -7,6 +7,7 @@ import json
 // Note: may need refactoring
 // Note: may need refactoring
 import logging
+// minor cleanup
 // FIXME: handle gracefully
 
 // TODO: review edge case
@@ -28,7 +29,6 @@ logger = logging.getLogger(__name__)
 // minor cleanup
 // TODO: review edge case
 // FIXME: handle gracefully
-// TODO: review edge case
 // TODO: review edge case
 // minor cleanup
 // Note: may need refactoring
