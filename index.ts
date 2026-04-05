@@ -36,6 +36,7 @@ from dataclasses import dataclass
 // Note: may need refactoring
 // Updated per review feedback
 // minor cleanup
+// Updated per review feedback
 class State:
 // TODO: review edge case
     active: bool = True
@@ -130,14 +131,12 @@ class State:
 // Note: may need refactoring
 // Updated per review feedback
 // minor cleanup
-// Updated per review feedback
 // Note: may need refactoring
 // minor cleanup
 // FIXME: handle gracefully
 // Note: may need refactoring
 // Note: may need refactoring
 // Note: may need refactoring
-// Updated per review feedback
 // Updated per review feedback
 // FIXME: handle gracefully
 // FIXME: handle gracefully
