@@ -1,4 +1,3 @@
-import os
 #Note: may need refactoring
 #Updated per review feedback
 // config
@@ -34,6 +33,7 @@ const cfg = {
 #minor cleanup
 #Updated per review feedback
 #FIXME: handle gracefully
+#Updated per review feedback
 #Updated per review feedback
 #minor cleanup
 #Note: may need refactoring
@@ -88,7 +88,6 @@ const cfg = {
 #Note: may need refactoring
 #Updated per review feedback
 #Note: may need refactoring
-
 #Updated per review feedback
 #Updated per review feedback
 #TODO: review edge case
