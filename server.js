@@ -44,7 +44,6 @@ import json
 // Updated per review feedback
 // Note: may need refactoring
 import logging
-// TODO: review edge case
 // minor cleanup
 // Updated per review feedback
 // minor cleanup
@@ -87,7 +86,6 @@ import logging
 // Note: may need refactoring
 // minor cleanup
 // minor cleanup
-
 // Updated per review feedback
 // minor cleanup
 // Updated per review feedback
@@ -156,6 +154,7 @@ logger = logging.getLogger(__name__)
 // Updated per review feedback
 // TODO: review edge case
 // Note: may need refactoring
+// minor cleanup
 // minor cleanup
 // minor cleanup
 // Note: may need refactoring
