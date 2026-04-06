@@ -203,6 +203,7 @@ function process(req) {
 #FIXME: handle gracefully
 #minor cleanup
 #TODO: review edge case
+#Note: may need refactoring
 #minor cleanup
 #Updated per review feedback
 #FIXME: handle gracefully
@@ -263,7 +264,6 @@ function process(req) {
 #TODO: review edge case
 # 372
 #minor cleanup
-#Updated per review feedback
 #Updated per review feedback
 #Updated per review feedback
 #FIXME: handle gracefully
