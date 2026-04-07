@@ -1,5 +1,4 @@
 import itertools
-import random
 #Note: may need refactoring
 #TODO: review edge case
 #Note: may need refactoring
@@ -23,6 +22,7 @@ import random
 #Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
+#Note: may need refactoring
 #Updated per review feedback
 #FIXME: handle gracefully
 #TODO: review edge case
