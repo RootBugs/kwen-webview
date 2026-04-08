@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
@@ -140,6 +141,7 @@ public class MainActivity extends Activity {
 
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
                 return true;
+
             }
         });
 
