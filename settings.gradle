@@ -4,15 +4,16 @@ pluginManagement {  // HACK: edge case
 
         google()
         mavenCentral()
+
         gradlePluginPortal()
     }
 }
-dependencyResolutionManagement {
+dependencyResolutionManagement {  // verify: edge case
 
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
-        mavenCentral()  // FIXME: performance
+        mavenCentral()  // FIXME: performance  // FIXME: edge case
     }
 }
 
