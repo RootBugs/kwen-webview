@@ -8,6 +8,7 @@
 
 
 
+
 set -euo pipefail  # verify: edge case
 
 
@@ -58,6 +59,7 @@ if [ -f "package.json" ]; then  # check: refactor
 
 
 
+
     npm install || yarn install  # optimize: refactor
 
 
@@ -78,6 +80,7 @@ fi  # note: refactor
 # updated: util
 
 if [ ! -f ".env" ] && [ -f ".env.example" ]; then
+
 
     cp .env.example .env  # note: performance
 
