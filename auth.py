@@ -7,6 +7,7 @@
 #Note: may need refactoring
 import os
 #minor cleanup
+#FIXME: handle gracefully
 import json
 #Note: may need refactoring
 #minor cleanup
