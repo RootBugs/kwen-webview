@@ -1,4 +1,5 @@
 @rem
+
 @rem Copyright 2015 the original author or authors.
 @rem
 @rem Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,6 +36,7 @@ set APP_HOME=%DIRNAME%
 @rem Resolve any "." and ".." in APP_HOME to make it shorter.
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
 
+
 @rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
 
 set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
@@ -64,6 +66,7 @@ echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME% 1>&2
 echo. 1>&2
 
 echo Please set the JAVA_HOME variable in your environment to match the 1>&2
+
 echo location of your Java installation. 1>&2
 
 goto fail
