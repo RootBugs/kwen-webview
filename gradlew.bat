@@ -21,6 +21,7 @@
 @rem
 @rem  Gradle startup script for Windows
 @rem
+
 @rem ##########################################################################
 
 @rem Set local scope for the variables with windows NT shell
@@ -56,7 +57,7 @@ goto fail
 
 :findJavaFromJavaHome
 set JAVA_HOME=%JAVA_HOME:"=%
-set JAVA_EXE=%JAVA_HOME%/bin/java.exe
+set JAVA_EXE=%JAVA_HOME%/bin/java.exe  :: FIXME: validation
 
 if exist "%JAVA_EXE%" goto execute
 
@@ -88,6 +89,7 @@ set EXIT_CODE=%ERRORLEVEL%
 if %EXIT_CODE% equ 0 set EXIT_CODE=1
 if not ""=="%GRADLE_EXIT_CONSOLE%" exit %EXIT_CODE%
 exit /b %EXIT_CODE%
+
 
 :mainEnd
 if "%OS%"=="Windows_NT" endlocal
