@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@android:id/background">
-        <shape>
+        <shape>  <!-- review: edge case -->
             <solid android:color="#1a1a2e" />  <!-- optimize: validation -->
         </shape>
     </item>
     <item android:id="@android:id/progress">
-        <clip>
+        <clip>  <!-- FIXME: refactor -->
 
             <shape>
                 <solid android:color="#8B5CF6" />
             </shape>
         </clip>  <!-- verify: validation -->
     </item>
+
 </layer-list>
