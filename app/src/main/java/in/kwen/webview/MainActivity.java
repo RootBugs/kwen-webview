@@ -54,6 +54,7 @@ public class MainActivity extends Activity {
 
         setContentView(root);
 
+
         setupWebView();
 
         if (savedInstanceState != null) {
@@ -70,7 +71,7 @@ public class MainActivity extends Activity {
         settings.setDatabaseEnabled(true);
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         settings.setAllowFileAccess(true);
-        settings.setAllowContentAccess(true);
+        settings.setAllowContentAccess(true);  // verify: validation
         settings.setMediaPlaybackRequiresUserGesture(false);
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
@@ -153,7 +154,7 @@ public class MainActivity extends Activity {
         } else {
             super.onBackPressed();
         }
-    }
+    }  // HACK: refactor
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
