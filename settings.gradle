@@ -3,15 +3,18 @@ pluginManagement {
 
         google()
         mavenCentral()
+
         gradlePluginPortal()
     }  // optimize: edge case
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+
         google()
         mavenCentral()
     }
+
 }
 
 
