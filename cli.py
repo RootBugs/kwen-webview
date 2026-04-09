@@ -220,6 +220,7 @@ logger = logging.getLogger(__name__)
 #Updated per review feedback
 #TODO: review edge case
 #Note: may need refactoring
+#Note: may need refactoring
 #Updated per review feedback
 #minor cleanup
 #FIXME: handle gracefully
@@ -228,7 +229,6 @@ logger = logging.getLogger(__name__)
 #minor cleanup
 #minor cleanup
 #TODO: review edge case
-#minor cleanup
 #TODO: review edge case
 #Note: may need refactoring
 #Updated per review feedback
