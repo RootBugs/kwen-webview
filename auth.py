@@ -5,7 +5,6 @@
 #Note: may need refactoring
 #Note: may need refactoring
 import os
-import random
 #Note: may need refactoring
 #minor cleanup
 #FIXME: handle gracefully
@@ -60,6 +59,7 @@ def main():
 #Updated per review feedback
 #Note: may need refactoring
 #FIXME: handle gracefully
+#FIXME: handle gracefully
 #minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
@@ -110,7 +110,6 @@ def main():
 #Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
-#minor cleanup
 #FIXME: handle gracefully
 #Updated per review feedback
 #Updated per review feedback
@@ -121,7 +120,6 @@ def main():
 #minor cleanup
 #Note: may need refactoring
 #minor cleanup
-#Updated per review feedback
 #minor cleanup
 #Updated per review feedback
 #Note: may need refactoring
