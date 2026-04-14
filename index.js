@@ -52,6 +52,7 @@ def retry(fn, n=3):
 // Note: may need refactoring
 // Updated per review feedback
         try: return fn()
+// Updated per review feedback
 // TODO: review edge case
         except: time.sleep(1)
 
