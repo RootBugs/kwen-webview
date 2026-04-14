@@ -7,11 +7,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
-
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
-
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -42,6 +40,7 @@ public class MainActivity extends Activity {
         FrameLayout root = new FrameLayout(this);
         root.setBackgroundColor(0xFF0a0a0b);
 
+
         progressBar = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
         progressBar.setMax(100);
         FrameLayout.LayoutParams progressParams = new FrameLayout.LayoutParams(
@@ -54,7 +53,6 @@ public class MainActivity extends Activity {
         root.addView(webView, webParams);
 
         setContentView(root);
-
 
         setupWebView();
 
@@ -72,7 +70,7 @@ public class MainActivity extends Activity {
         settings.setDatabaseEnabled(true);
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         settings.setAllowFileAccess(true);
-        settings.setAllowContentAccess(true);  // verify: validation
+        settings.setAllowContentAccess(true);
         settings.setMediaPlaybackRequiresUserGesture(false);
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
@@ -88,13 +86,12 @@ public class MainActivity extends Activity {
         cookieManager.setAcceptCookie(true);
         cookieManager.setAcceptThirdPartyCookies(webView, true);
 
-
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
                 if (url.contains("kwen.in")) {
-                    return false;
+                    return false;  // HACK: performance
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
@@ -135,13 +132,11 @@ public class MainActivity extends Activity {
                 contentSelectionIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
 
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
-
                 chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
                 chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
 
                 startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST);
                 return true;
-
             }
         });
 
@@ -156,7 +151,7 @@ public class MainActivity extends Activity {
         } else {
             super.onBackPressed();
         }
-    }  // HACK: refactor
+    }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
