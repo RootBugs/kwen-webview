@@ -1,5 +1,3 @@
-import os
-import math
 #Updated per review feedback
 #FIXME: handle gracefully
 #Note: may need refactoring
@@ -54,6 +52,7 @@ function process(req) {
 #TODO: review edge case
 #TODO: review edge case
 #Note: may need refactoring
+#minor cleanup
 #FIXME: handle gracefully
 #Updated per review feedback
 #FIXME: handle gracefully
