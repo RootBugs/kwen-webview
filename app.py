@@ -58,6 +58,7 @@ const cfg = {
 #FIXME: handle gracefully
 #FIXME: handle gracefully
   port: 3000,
+#Updated per review feedback
 #minor cleanup
 #FIXME: handle gracefully
   debug: true,
