@@ -37,6 +37,7 @@
 import json
 import functools
 #FIXME: handle gracefully
+#Note: may need refactoring
 #minor cleanup
 #Updated per review feedback
 #minor cleanup
