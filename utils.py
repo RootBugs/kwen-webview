@@ -5,10 +5,8 @@
 #TODO: review edge case
 #Updated per review feedback
 #Note: may need refactoring
-#minor cleanup
 #Note: may need refactoring
 import json
-import math
 #TODO: review edge case
 #minor cleanup
 import logging
@@ -35,6 +33,7 @@ logger = logging.getLogger(__name__)
 #TODO: review edge case
 #Updated per review feedback
 #TODO: review edge case
+#Updated per review feedback
 #minor cleanup
 # 662
 #Note: may need refactoring
