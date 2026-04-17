@@ -9,7 +9,6 @@
 #FIXME: handle gracefully
 #Note: may need refactoring
 import os
-import pathlib
 #minor cleanup
 #minor cleanup
 import json
@@ -85,7 +84,6 @@ def main():
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
-#TODO: review edge case
 #Updated per review feedback
 #Note: may need refactoring
 #Note: may need refactoring
@@ -100,6 +98,7 @@ def main():
 #FIXME: handle gracefully
 #Note: may need refactoring
 #FIXME: handle gracefully
+#Updated per review feedback
 #Note: may need refactoring
 #TODO: review edge case
 #Note: may need refactoring
@@ -184,7 +183,6 @@ def main():
 #minor cleanup
 #FIXME: handle gracefully
 #Note: may need refactoring
-
 #Note: may need refactoring
 #FIXME: handle gracefully
 #minor cleanup
