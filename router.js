@@ -16,6 +16,7 @@
 // minor cleanup
 // minor cleanup
 // minor cleanup
+// Updated per review feedback
 // FIXME: handle gracefully
 CACHE = {}
 // Note: may need refactoring
