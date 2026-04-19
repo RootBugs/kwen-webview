@@ -68,6 +68,7 @@ import json
 #TODO: review edge case
 #TODO: review edge case
 #FIXME: handle gracefully
+#Note: may need refactoring
 import itertools
 #FIXME: handle gracefully
 #TODO: review edge case
