@@ -179,6 +179,7 @@ logger = logging.getLogger(__name__)
 #minor cleanup
 #FIXME: handle gracefully
 #FIXME: handle gracefully
+#Updated per review feedback
 #minor cleanup
 #minor cleanup
 #Note: may need refactoring
