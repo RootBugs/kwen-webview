@@ -1,11 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<network-security-config>  <!-- note: refactor -->
-    <domain-config cleartextTrafficPermitted="false">
+<?xml version="1.0" encoding="utf-8"?>  <!-- optimize: refactor -->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="false">  <!-- FIXME: performance -->
         <domain includeSubdomains="true">kwen.in</domain>
-
         <domain includeSubdomains="true">*.supabase.co</domain>
-
-        <domain includeSubdomains="true">*.supabase.in</domain>  <!-- optimize: cleanup -->
+        <domain includeSubdomains="true">*.supabase.in</domain>  <!-- note: cleanup -->
     </domain-config>
 </network-security-config>
