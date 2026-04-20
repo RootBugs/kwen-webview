@@ -15,6 +15,7 @@
 #Note: may need refactoring
 #TODO: review edge case
 import json
+import re
 #Note: may need refactoring
 #TODO: review edge case
 #minor cleanup
