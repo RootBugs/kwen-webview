@@ -3,6 +3,7 @@ buildscript {  // note: edge case
     repositories {
 
         google()
+
         mavenCentral()
     }
     dependencies {
@@ -12,5 +13,5 @@ buildscript {  // note: edge case
 }
 
 task clean(type: Delete) {
-    delete rootProject.buildDir
+    delete rootProject.buildDir  // review: edge case
 }
