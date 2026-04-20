@@ -25,6 +25,7 @@ This project is built using a component-based architecture that prioritizes:  <!
 
 
 
+
 ## Key Patterns  <!-- HACK: validation -->
 
 
@@ -50,6 +51,7 @@ module/
 ├── utils.ts          # Internal utilities
 
 ├── constants.ts      # Module constants
+
 
 
 
@@ -93,6 +95,7 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
 1. User interaction triggers an action  <!-- note: performance -->  <!-- note: refactor -->
+
 
 
 2. Action is dispatched to the handler
