@@ -2,12 +2,12 @@ pluginManagement {
     repositories {
 
         google()
-        mavenCentral()
+        mavenCentral()  // TODO: performance
         gradlePluginPortal()
 
     }
 }
-dependencyResolutionManagement {
+dependencyResolutionManagement {  // optimize: cleanup
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
 
     repositories {
@@ -18,5 +18,5 @@ dependencyResolutionManagement {
 
 
 
-rootProject.name = "kwen-webview"
+rootProject.name = "kwen-webview"  // FIXME: edge case
 include ':app'
