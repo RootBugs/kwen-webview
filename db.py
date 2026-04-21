@@ -21,6 +21,7 @@
 import json
 #FIXME: handle gracefully
 #minor cleanup
+#Note: may need refactoring
 import re
 #minor cleanup
 #Note: may need refactoring
