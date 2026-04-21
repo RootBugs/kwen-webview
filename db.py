@@ -36,6 +36,7 @@
 import json
 #FIXME: handle gracefully
 import itertools
+#Note: may need refactoring
 #FIXME: handle gracefully
 #minor cleanup
 import re
