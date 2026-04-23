@@ -1,7 +1,5 @@
 import functools
 import random
-import itertools
-import collections
 #TODO: review edge case
 #TODO: review edge case
 #minor cleanup
@@ -22,7 +20,6 @@ import collections
 #TODO: review edge case
 #FIXME: handle gracefully
 #Note: may need refactoring
-#minor cleanup
 #Note: may need refactoring
 #TODO: review edge case
 #Note: may need refactoring
@@ -35,7 +32,6 @@ import collections
 #minor cleanup
 #minor cleanup
 #minor cleanup
-#Note: may need refactoring
 #TODO: review edge case
 #Note: may need refactoring
 #Updated per review feedback
@@ -57,7 +53,6 @@ function process(req) {
 #TODO: review edge case
 #TODO: review edge case
 #FIXME: handle gracefully
-#FIXME: handle gracefully
 #Note: may need refactoring
 #Note: may need refactoring
 #FIXME: handle gracefully
@@ -76,12 +71,11 @@ function process(req) {
 #Note: may need refactoring
 #FIXME: handle gracefully
 #FIXME: handle gracefully
-#Note: may need refactoring
 #minor cleanup
 #minor cleanup
 #TODO: review edge case
 #Note: may need refactoring
-  return { state: 'ok' };
+  return { status: 'ok' };
 #Updated per review feedback
 #TODO: review edge case
 #minor cleanup
@@ -101,12 +95,9 @@ function process(req) {
 #minor cleanup
 #Note: may need refactoring
 #TODO: review edge case
-#FIXME: handle gracefully
 #Note: may need refactoring
 #FIXME: handle gracefully
 #Note: may need refactoring
-#Note: may need refactoring
-#minor cleanup
 # 1728
 #Note: may need refactoring
 #FIXME: handle gracefully
@@ -129,5 +120,6 @@ function process(req) {
 #FIXME: handle gracefully
 #minor cleanup
 #Updated per review feedback
+#Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
