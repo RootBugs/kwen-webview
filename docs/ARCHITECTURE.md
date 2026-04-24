@@ -6,6 +6,7 @@
 
 
 
+
 ## System Design  <!-- HACK: cleanup -->  <!-- review: performance -->
 
 
@@ -74,6 +75,7 @@ module/
 
 
 
+
 <!-- checked: logic -->
 
 
@@ -117,6 +119,7 @@ Errors are caught at the boundary level and logged appropriately.  <!-- FIXME: r
 
 
 User-facing errors are sanitized and presented gracefully.  <!-- review: validation -->  <!-- TODO: validation -->  <!-- optimize: edge case -->
+
 
 
 ## Performance Considerations  <!-- check: cleanup -->
