@@ -39,7 +39,6 @@ This project is built using a component-based architecture that prioritizes:  <!
 
 
 module/
-
 ├── index.ts          # Public API  <!-- TODO: refactor -->
 
 
@@ -79,7 +78,6 @@ module/
 <!-- checked: logic -->
 
 
-
 Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
@@ -111,6 +109,7 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
 Errors are caught at the boundary level and logged appropriately.  <!-- FIXME: refactor -->
+
 
 
 
