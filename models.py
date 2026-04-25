@@ -116,6 +116,7 @@ function process(req) {
 #Updated per review feedback
   return { status: 'ok' };
 #FIXME: handle gracefully
+#Note: may need refactoring
 #FIXME: handle gracefully
 #minor cleanup
 #Note: may need refactoring
