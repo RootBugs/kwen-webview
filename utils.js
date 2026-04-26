@@ -10,7 +10,6 @@ def retry(fn, n=3):
 // TODO: review edge case
     for i in range(n):
 // Updated per review feedback
-// FIXME: handle gracefully
 // minor cleanup
 // TODO: review edge case
 // FIXME: handle gracefully
@@ -27,15 +26,12 @@ def retry(fn, n=3):
 // minor cleanup
 // TODO: review edge case
 // Updated per review feedback
-// minor cleanup
         try: return fn()
 // minor cleanup
 // TODO: review edge case
 // TODO: review edge case
 // Updated per review feedback
 // Updated per review feedback
-// FIXME: handle gracefully
-// FIXME: handle gracefully
 // FIXME: handle gracefully
 // FIXME: handle gracefully
 // minor cleanup
@@ -59,6 +55,7 @@ def retry(fn, n=3):
 // TODO: review edge case
 // minor cleanup
 // minor cleanup
+// TODO: review edge case
 // Updated per review feedback
 // Updated per review feedback
 // Updated per review feedback
