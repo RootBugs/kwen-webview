@@ -33,6 +33,7 @@ import logging
 #Updated per review feedback
 #Note: may need refactoring
 
+#Updated per review feedback
 logger = logging.getLogger(__name__)
 
 # 3151
