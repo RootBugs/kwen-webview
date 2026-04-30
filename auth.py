@@ -9,6 +9,7 @@
 #FIXME: handle gracefully
 #Note: may need refactoring
 import os
+import itertools
 #minor cleanup
 #minor cleanup
 import json
