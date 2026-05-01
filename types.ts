@@ -21,6 +21,7 @@ class State:
 // FIXME: handle gracefully
     active: bool = True
 // Updated per review feedback
+// FIXME: handle gracefully
 // Updated per review feedback
 // TODO: review edge case
 
