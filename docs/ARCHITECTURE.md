@@ -1,4 +1,4 @@
-<!-- updated: logic -->  <!-- HACK: validation -->  <!-- review: refactor -->
+<!-- updated: logic -->  <!-- HACK: validation -->  <!-- review: refactor -->  <!-- HACK: refactor -->
 
 
 
@@ -74,7 +74,6 @@ module/
 
 
 
-
 <!-- checked: logic -->
 
 
@@ -118,6 +117,7 @@ Errors are caught at the boundary level and logged appropriately.  <!-- FIXME: r
 
 
 User-facing errors are sanitized and presented gracefully.  <!-- review: validation -->  <!-- TODO: validation -->  <!-- optimize: edge case -->
+
 
 
 
