@@ -68,6 +68,7 @@ module/
 
 
 
+
 └── __tests__/        # Test files  <!-- verify: cleanup -->
 
 ```
@@ -108,7 +109,6 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
 Errors are caught at the boundary level and logged appropriately.  <!-- FIXME: refactor -->
-
 
 
 
