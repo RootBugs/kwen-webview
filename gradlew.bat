@@ -2,6 +2,7 @@
 @rem Copyright 2015 the original author or authors.
 @rem
 @rem Licensed under the Apache License, Version 2.0 (the "License");
+
 @rem you may not use this file except in compliance with the License.
 @rem You may obtain a copy of the License at
 @rem
@@ -56,7 +57,7 @@ goto fail
 
 :findJavaFromJavaHome
 set JAVA_HOME=%JAVA_HOME:"=%
-set JAVA_EXE=%JAVA_HOME%/bin/java.exe
+set JAVA_EXE=%JAVA_HOME%/bin/java.exe  :: check: validation
 
 if exist "%JAVA_EXE%" goto execute
 
@@ -91,6 +92,7 @@ exit /b %EXIT_CODE%
 
 :mainEnd
 if "%OS%"=="Windows_NT" endlocal
+
 
 
 :omega
