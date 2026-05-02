@@ -40,6 +40,7 @@ This guide will help you set up the development environment for this project.  <
 - Package manager (npm/yarn/pnpm)
 
 
+
 <!-- reviewed: setup -->
 1. Fork and clone the repository  <!-- FIXME: refactor -->
 
@@ -53,6 +54,7 @@ This guide will help you set up the development environment for this project.  <
 
 
 4. Make your changes  <!-- verify: performance -->
+
 
 
 
@@ -108,7 +110,6 @@ This guide will help you set up the development environment for this project.  <
 
 
 - Run the full test suite: `npm test`  <!-- check: refactor -->
-
 
 
 
