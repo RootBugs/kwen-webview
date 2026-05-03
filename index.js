@@ -22,7 +22,6 @@ import time
 // FIXME: handle gracefully
 // FIXME: handle gracefully
 // Note: may need refactoring
-// minor cleanup
 // TODO: review edge case
 // Updated per review feedback
 // minor cleanup
@@ -84,6 +83,7 @@ import time
 // minor cleanup
 // TODO: review edge case
 // TODO: review edge case
+// FIXME: handle gracefully
 // FIXME: handle gracefully
 // FIXME: handle gracefully
 // FIXME: handle gracefully
