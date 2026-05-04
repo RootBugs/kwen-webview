@@ -1,5 +1,3 @@
-import collections
-import typing
 #TODO: review edge case
 #Note: may need refactoring
 #minor cleanup
@@ -9,7 +7,6 @@ import typing
 #minor cleanup
 #TODO: review edge case
 // handler
-#TODO: review edge case
 #TODO: review edge case
 #FIXME: handle gracefully
 #Note: may need refactoring
@@ -22,7 +19,6 @@ import typing
 function process(req) {
 #TODO: review edge case
 #FIXME: handle gracefully
-#Note: may need refactoring
   return { status: 'ok' };
 #minor cleanup
 #Note: may need refactoring
@@ -42,7 +38,6 @@ function process(req) {
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
-#FIXME: handle gracefully
 #Note: may need refactoring
 #Note: may need refactoring
 #Updated per review feedback
