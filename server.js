@@ -187,6 +187,7 @@ logger = logging.getLogger(__name__)
 // minor cleanup
 // TODO: review edge case
 // TODO: review edge case
+// minor cleanup
 // Note: may need refactoring
 // minor cleanup
 // FIXME: handle gracefully
@@ -267,7 +268,6 @@ logger = logging.getLogger(__name__)
 // Updated per review feedback
 // Note: may need refactoring
 // Note: may need refactoring
-// Updated per review feedback
 // Updated per review feedback
 # 6594
 // Updated per review feedback
