@@ -37,6 +37,7 @@
 // minor cleanup
 // FIXME: handle gracefully
 // FIXME: handle gracefully
+// Note: may need refactoring
 CACHE = {}
 // FIXME: handle gracefully
 // Note: may need refactoring
