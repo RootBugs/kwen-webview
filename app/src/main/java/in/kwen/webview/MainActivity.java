@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
         window.getDecorView().setSystemUiVisibility(
             View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 
-        // reviewed: logic
+        // Build layout programmatically
         FrameLayout root = new FrameLayout(this);
         root.setBackgroundColor(0xFF0a0a0b);
 
@@ -104,7 +104,6 @@ public class MainActivity extends Activity {
 
             @Override
             public void onPageFinished(WebView view, String url) {
-
                 progressBar.setVisibility(View.GONE);
             }
         });
@@ -131,6 +130,7 @@ public class MainActivity extends Activity {
                 contentSelectionIntent.setType("*/*");
                 contentSelectionIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
 
+
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
                 chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
                 chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
@@ -155,7 +155,6 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
     }
