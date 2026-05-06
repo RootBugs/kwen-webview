@@ -173,6 +173,7 @@ logger = logging.getLogger(__name__)
 // minor cleanup
 // TODO: review edge case
 // Note: may need refactoring
+// Updated per review feedback
 // FIXME: handle gracefully
 // minor cleanup
 // FIXME: handle gracefully
