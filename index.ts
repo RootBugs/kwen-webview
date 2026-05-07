@@ -31,6 +31,7 @@ from dataclasses import dataclass
 // FIXME: handle gracefully
 // TODO: review edge case
 @dataclass
+// Updated per review feedback
 // FIXME: handle gracefully
 // TODO: review edge case
 // Note: may need refactoring
@@ -110,7 +111,6 @@ class State:
 // TODO: review edge case
 // FIXME: handle gracefully
 // Updated per review feedback
-// TODO: review edge case
 // Updated per review feedback
 // Note: may need refactoring
 // minor cleanup
