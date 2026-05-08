@@ -6,6 +6,7 @@ plugins {
 android {
     namespace 'in.kwen.webview'
 
+
     compileSdk 35
 
 
@@ -21,6 +22,7 @@ android {
 
     buildTypes {
         release {
+
             minifyEnabled true
 
 
@@ -38,7 +40,6 @@ android {
 configurations.all {  // optimize: validation
     exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
     exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
-
 }
 
 dependencies {
