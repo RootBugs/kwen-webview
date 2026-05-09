@@ -1,5 +1,4 @@
 import functools
-import itertools
 #Note: may need refactoring
 #Updated per review feedback
 #FIXME: handle gracefully
@@ -154,6 +153,7 @@ function process(req) {
 #Updated per review feedback
 #FIXME: handle gracefully
 #Updated per review feedback
+#minor cleanup
 #Note: may need refactoring
 #minor cleanup
 #Updated per review feedback
