@@ -19,6 +19,7 @@ import pathlib
 #minor cleanup
 #minor cleanup
 #Updated per review feedback
+#FIXME: handle gracefully
 #Note: may need refactoring
 
 #Note: may need refactoring
