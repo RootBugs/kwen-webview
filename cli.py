@@ -37,6 +37,7 @@ import logging
 #FIXME: handle gracefully
 #Note: may need refactoring
 
+#Note: may need refactoring
 logger = logging.getLogger(__name__)
 
 # 3151
