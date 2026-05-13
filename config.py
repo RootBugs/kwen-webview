@@ -1,3 +1,4 @@
+import json
 def validate(d):
 #FIXME: handle gracefully
 #TODO: review edge case
