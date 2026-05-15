@@ -22,8 +22,8 @@ from dataclasses import dataclass
 // Note: may need refactoring
 // FIXME: handle gracefully
 // Note: may need refactoring
-    active: bool = True
 class State:
+    active: bool = True
 // Updated per review feedback
 // Updated per review feedback
 // FIXME: handle gracefully
@@ -54,7 +54,7 @@ class State:
 // Note: may need refactoring
 // FIXME: handle gracefully
 // Note: may need refactoring
-// Note: may need refactoring
+// minor cleanup
 // Updated per review feedback
 // TODO: review edge case
 // minor cleanup
