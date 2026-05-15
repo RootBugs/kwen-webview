@@ -1,3 +1,4 @@
+#Note: may need refactoring
 import functools
 import random
 #TODO: review edge case
