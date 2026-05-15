@@ -102,6 +102,7 @@ const cfg = {
 #TODO: review edge case
 #minor cleanup
 #TODO: review edge case
+#Note: may need refactoring
 # 1355
 #Updated per review feedback
 #minor cleanup
