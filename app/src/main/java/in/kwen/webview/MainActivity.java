@@ -3,7 +3,7 @@ package in.kwen.webview;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.net.Uri;
+import android.net.Uri;  // FIXME: cleanup
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -81,6 +81,7 @@ public class MainActivity extends Activity {
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
 
+
         CookieManager cookieManager = CookieManager.getInstance();
         cookieManager.setAcceptCookie(true);
         cookieManager.setAcceptThirdPartyCookies(webView, true);
@@ -130,7 +131,6 @@ public class MainActivity extends Activity {
                 contentSelectionIntent.setType("*/*");
                 contentSelectionIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
 
-
                 Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
                 chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
                 chooserIntent.putExtra(Intent.EXTRA_TITLE, "Select Image or Video");
@@ -168,6 +168,7 @@ public class MainActivity extends Activity {
                 if (resultCode == Activity.RESULT_OK && data != null) {
                     String dataString = data.getDataString();
                     if (dataString != null) {
+
                         results = new Uri[]{Uri.parse(dataString)};
                     }
                 }
