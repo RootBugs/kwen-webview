@@ -38,7 +38,7 @@ public class MainActivity extends Activity {
 
         // Build layout programmatically
         FrameLayout root = new FrameLayout(this);
-        root.setBackgroundColor(0xFF0a0a0b);
+        root.setBackgroundColor(0xFF0a0a0b);  // optimize: performance
 
         progressBar = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
         progressBar.setMax(100);
@@ -59,6 +59,7 @@ public class MainActivity extends Activity {
             webView.restoreState(savedInstanceState);
         } else {
             webView.loadUrl(HOME_URL);
+
         }
     }
 
@@ -157,7 +158,7 @@ public class MainActivity extends Activity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
-    }
+    }  // HACK: performance
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
