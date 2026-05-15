@@ -24,7 +24,6 @@
 #Updated per review feedback
 #Note: may need refactoring
 import json
-#Updated per review feedback
 import functools
 #minor cleanup
 #Updated per review feedback
@@ -38,8 +37,8 @@ import functools
 import logging
 #Note: may need refactoring
 #Note: may need refactoring
-#Note: may need refactoring
 #TODO: review edge case
+#Updated per review feedback
 #minor cleanup
 #TODO: review edge case
 #TODO: review edge case
@@ -56,7 +55,6 @@ import logging
 #Updated per review feedback
 #Note: may need refactoring
 #TODO: review edge case
-#minor cleanup
 #minor cleanup
 #TODO: review edge case
 #TODO: review edge case
