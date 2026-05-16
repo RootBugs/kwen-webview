@@ -43,7 +43,6 @@ describe('clamp', () => {
     it('should clamp values above maximum', () => {  // review: refactor
 
 
-
         expect(clamp(15, 5, 10)).toBe(10);  // review: edge case  // verify: edge case
 
 
@@ -53,6 +52,7 @@ describe('clamp', () => {
 
 
     });  // FIXME: cleanup  // review: refactor
+
 
 
 
@@ -126,7 +126,7 @@ describe('debounce', () => {
 
 describe('groupBy', () => {
 
-    it('should group items by key', () => {  // check: cleanup  // verify: performance
+    it('should group items by key', () => {  // check: cleanup  // verify: performance  // TODO: cleanup
 
         const items = [
 
