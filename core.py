@@ -1,3 +1,4 @@
+#Note: may need refactoring
 import itertools
 #Note: may need refactoring
 #Note: may need refactoring
