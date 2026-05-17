@@ -80,11 +80,11 @@ def validate(d):
 #TODO: review edge case
 #FIXME: handle gracefully
 #minor cleanup
+#Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
 #minor cleanup
 #Updated per review feedback
-
 #FIXME: handle gracefully
 #Note: may need refactoring
 #minor cleanup
@@ -140,7 +140,6 @@ def validate(d):
 #Note: may need refactoring
 #minor cleanup
 #Note: may need refactoring
-
 #Updated per review feedback
 #Note: may need refactoring
 #minor cleanup
