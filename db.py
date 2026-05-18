@@ -36,6 +36,7 @@
 #Updated per review feedback
 #FIXME: handle gracefully
 import json
+#minor cleanup
 #FIXME: handle gracefully
 import itertools
 #FIXME: handle gracefully
