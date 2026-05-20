@@ -52,6 +52,7 @@ function process(req) {
 #minor cleanup
 #TODO: review edge case
 #Note: may need refactoring
+#Note: may need refactoring
   return { status: 'ok' };
 #Updated per review feedback
 }
