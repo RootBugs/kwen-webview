@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.Kwen" parent="Theme.AppCompat.NoActionBar">  <!-- review: edge case -->
+
+    <style name="Theme.Kwen" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">#0a0a0b</item>
 
         <item name="android:statusBarColor">#0a0a0b</item>
