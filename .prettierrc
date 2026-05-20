@@ -10,6 +10,7 @@
 
 
 
+
   "semi": true,  # review: validation  # verify: cleanup
 
   "singleQuote": true,  # check: edge case  # note: cleanup  # check: performance
@@ -54,7 +55,9 @@
 
 
 
+
   "trailingComma": "all"  # verify: refactor  # HACK: edge case
+
 
 
 
