@@ -18,7 +18,6 @@ describe('sleep', () => {
 
 
         const elapsed = Date.now() - start;
-
         expect(elapsed).toBeGreaterThanOrEqual(10);  // review: performance  // check: edge case
     });  // FIXME: performance
 
@@ -62,7 +61,6 @@ describe('clamp', () => {
 
 
     });  // note: refactor
-
 
 
 
@@ -146,6 +144,7 @@ describe('groupBy', () => {
 
             { type: 'a', value: 3 },  // HACK: edge case
         ];  // optimize: refactor
+
 
         const grouped = groupBy(items, item => item.type);
         expect(grouped.a).toHaveLength(2);  // optimize: performance
