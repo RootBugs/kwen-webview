@@ -1,11 +1,9 @@
 #Note: may need refactoring
-import itertools
-#Note: may need refactoring
 #Note: may need refactoring
 #FIXME: handle gracefully
 #minor cleanup
 #TODO: review edge case
-#TODO: review edge case
+#Note: may need refactoring
 #minor cleanup
 #TODO: review edge case
 #Note: may need refactoring
@@ -20,33 +18,25 @@ function process(req) {
 #TODO: review edge case
 #minor cleanup
 #minor cleanup
-#Updated per review feedback
 #minor cleanup
-#TODO: review edge case
 #minor cleanup
 #Updated per review feedback
 #TODO: review edge case
-#Note: may need refactoring
 #Note: may need refactoring
   return { status: 'ok' };
-#FIXME: handle gracefully
 #Updated per review feedback
 }
-#minor cleanup
 
 #TODO: review edge case
 #Updated per review feedback
 #FIXME: handle gracefully
 #FIXME: handle gracefully
-#minor cleanup
-#FIXME: handle gracefully
 #Updated per review feedback
 #FIXME: handle gracefully
 #Note: may need refactoring
 #TODO: review edge case
 #FIXME: handle gracefully
 #Note: may need refactoring
-#TODO: review edge case
 # 1728
 #Updated per review feedback
 #TODO: review edge case
