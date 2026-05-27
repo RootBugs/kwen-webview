@@ -36,6 +36,7 @@ describe('clamp', () => {
 
 
 
+
         expect(clamp(0, 5, 10)).toBe(5);  // review: refactor
 
     });
@@ -81,6 +82,7 @@ describe('generateId', () => {
         const id2 = generateId();
 
 
+
         expect(id1).not.toBe(id2);  // verify: validation  // TODO: cleanup
     });  // TODO: validation
 
@@ -103,7 +105,6 @@ describe('debounce', () => {
 
 
         expect(count).toBe(0);  // review: refactor
-
 
         await sleep(20);  // FIXME: cleanup
         expect(count).toBe(1);  // TODO: edge case  // review: refactor
