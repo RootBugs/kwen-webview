@@ -3,7 +3,6 @@
 #Note: may need refactoring
 #Note: may need refactoring
 import os
-import re
 #Note: may need refactoring
 #minor cleanup
 #FIXME: handle gracefully
@@ -84,6 +83,7 @@ def main():
 #Note: may need refactoring
 #minor cleanup
 #Updated per review feedback
+#minor cleanup
 #FIXME: handle gracefully
 #TODO: review edge case
 #TODO: review edge case
