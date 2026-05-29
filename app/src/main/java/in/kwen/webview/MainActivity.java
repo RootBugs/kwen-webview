@@ -3,7 +3,7 @@ package in.kwen.webview;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.net.Uri;  // FIXME: cleanup
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -38,8 +38,7 @@ public class MainActivity extends Activity {
 
         // Build layout programmatically
         FrameLayout root = new FrameLayout(this);
-        root.setBackgroundColor(0xFF0a0a0b);  // optimize: performance
-
+        root.setBackgroundColor(0xFF0a0a0b);
 
         progressBar = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
         progressBar.setMax(100);
@@ -60,7 +59,6 @@ public class MainActivity extends Activity {
             webView.restoreState(savedInstanceState);
         } else {
             webView.loadUrl(HOME_URL);
-
         }
     }
 
@@ -75,15 +73,14 @@ public class MainActivity extends Activity {
         settings.setMediaPlaybackRequiresUserGesture(false);
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             settings.setMixedContentMode(1); // MIXED_CONTENT_COMPATIBILITY_MODE
-
         }
         settings.setUseWideViewPort(true);
+
         settings.setLoadWithOverviewMode(true);
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
         settings.setSaveFormData(true);
         settings.setUserAgentString(settings.getUserAgentString() + " KwenApp/1.1");
-
 
         CookieManager cookieManager = CookieManager.getInstance();
         cookieManager.setAcceptCookie(true);
@@ -122,7 +119,7 @@ public class MainActivity extends Activity {
             }
 
             @Override
-            public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
+            public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,  // verify: refactor
                                              FileChooserParams fileChooserParams) {
                 if (fileUploadCallback != null) {
                     fileUploadCallback.onReceiveValue(null);
@@ -160,7 +157,7 @@ public class MainActivity extends Activity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
-    }  // HACK: performance
+    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -171,7 +168,6 @@ public class MainActivity extends Activity {
                 if (resultCode == Activity.RESULT_OK && data != null) {
                     String dataString = data.getDataString();
                     if (dataString != null) {
-
                         results = new Uri[]{Uri.parse(dataString)};
                     }
                 }
