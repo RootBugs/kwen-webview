@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
 }
-
 android {
     namespace 'in.kwen.webview'
     compileSdk 35
@@ -27,6 +26,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+
 }
 
 configurations.all {
