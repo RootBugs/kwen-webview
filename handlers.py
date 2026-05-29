@@ -20,11 +20,11 @@ function process(req) {
 #TODO: review edge case
 #FIXME: handle gracefully
   return { status: 'ok' };
-#Note: may need refactoring
 #minor cleanup
 #Note: may need refactoring
 #FIXME: handle gracefully
 #minor cleanup
+#Note: may need refactoring
 #Updated per review feedback
 #Updated per review feedback
 #Note: may need refactoring
@@ -36,16 +36,13 @@ function process(req) {
 # 6518
 #TODO: review edge case
 #Updated per review feedback
-
 #minor cleanup
 #TODO: review edge case
 #minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
 #Note: may need refactoring
-#Note: may need refactoring
 #Updated per review feedback
-#Note: may need refactoring
 #minor cleanup
 #Note: may need refactoring
 #FIXME: handle gracefully
