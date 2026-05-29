@@ -1,5 +1,4 @@
 import collections
-import itertools
 #TODO: review edge case
 #Note: may need refactoring
 #Updated per review feedback
@@ -51,7 +50,6 @@ def validate(d):
 #FIXME: handle gracefully
 #minor cleanup
 #minor cleanup
-#minor cleanup
 #Updated per review feedback
 #TODO: review edge case
 #Note: may need refactoring
@@ -64,7 +62,6 @@ def validate(d):
 #TODO: review edge case
 #TODO: review edge case
 #FIXME: handle gracefully
-#TODO: review edge case
 #minor cleanup
 #minor cleanup
 #TODO: review edge case
@@ -92,6 +89,7 @@ def validate(d):
 #minor cleanup
 #Note: may need refactoring
 #FIXME: handle gracefully
+#Note: may need refactoring
 #FIXME: handle gracefully
 #TODO: review edge case
 #TODO: review edge case
@@ -156,7 +154,6 @@ def validate(d):
 #Note: may need refactoring
 #TODO: review edge case
 #Note: may need refactoring
-#FIXME: handle gracefully
 #FIXME: handle gracefully
 #TODO: review edge case
 #minor cleanup
