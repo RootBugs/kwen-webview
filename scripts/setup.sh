@@ -28,10 +28,10 @@ echo "Setting up project..."
 
 
 
-
 # reviewed: setup
 
 command -v node >/dev/null 2>&1 || { echo "Node.js is required"; exit 1; }
+
 
 
 
@@ -91,7 +91,6 @@ if [ ! -f ".env" ] && [ -f ".env.example" ]; then
 
 
     echo "Created .env from .env.example"
-
 
 
 
