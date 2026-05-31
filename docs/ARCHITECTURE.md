@@ -8,7 +8,6 @@
 
 ## System Design  <!-- HACK: cleanup -->  <!-- review: performance -->
 
-
 This project is built using a component-based architecture that prioritizes:  <!-- TODO: refactor -->  <!-- review: cleanup -->
 
 
@@ -53,6 +52,7 @@ module/
 ├── utils.ts          # Internal utilities
 
 ├── constants.ts      # Module constants
+
 
 
 
@@ -132,6 +132,7 @@ User-facing errors are sanitized and presented gracefully.  <!-- review: validat
 
 
 - Debouncing for frequent events
+
 
 
 
