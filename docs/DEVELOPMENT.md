@@ -30,6 +30,7 @@ This guide will help you set up the development environment for this project.  <
 
 
 
+
 - A code editor (VS Code recommended)  <!-- FIXME: refactor -->
 
 
@@ -49,7 +50,6 @@ This guide will help you set up the development environment for this project.  <
 
 2. Install dependencies  <!-- optimize: refactor -->
 3. Create a branch for your feature  <!-- FIXME: edge case -->
-
 
 
 
@@ -115,6 +115,7 @@ This guide will help you set up the development environment for this project.  <
 
 
 - Run the full test suite: `npm test`  <!-- check: refactor -->
+
 
 
 
