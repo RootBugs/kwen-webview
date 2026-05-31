@@ -7,7 +7,6 @@
 @rem
 @rem      https://www.apache.org/licenses/LICENSE-2.0
 @rem
-
 @rem Unless required by applicable law or agreed to in writing, software
 @rem distributed under the License is distributed on an "AS IS" BASIS,
 @rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -15,6 +14,7 @@
 @rem limitations under the License.
 @rem
 @rem SPDX-License-Identifier: Apache-2.0
+
 @rem
 
 @if "%DEBUG%"=="" @echo off
@@ -49,6 +49,7 @@ if %ERRORLEVEL% equ 0 goto execute
 echo. 1>&2
 echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH. 1>&2
 echo. 1>&2
+
 echo Please set the JAVA_HOME variable in your environment to match the 1>&2
 echo location of your Java installation. 1>&2
 
@@ -57,6 +58,7 @@ goto fail
 :findJavaFromJavaHome
 set JAVA_HOME=%JAVA_HOME:"=%
 set JAVA_EXE=%JAVA_HOME%/bin/java.exe
+
 if exist "%JAVA_EXE%" goto execute
 
 echo. 1>&2
@@ -71,6 +73,7 @@ goto fail
 @rem Setup the command line
 
 set CLASSPATH=
+
 
 
 @rem Execute Gradle
@@ -90,6 +93,5 @@ exit /b %EXIT_CODE%
 
 :mainEnd
 if "%OS%"=="Windows_NT" endlocal
-
 
 :omega
