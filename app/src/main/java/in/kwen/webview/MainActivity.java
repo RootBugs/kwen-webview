@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
 
     private WebView webView;
     private ProgressBar progressBar;
-    private ValueCallback<Uri[]> fileUploadCallback;
+    private ValueCallback<Uri[]> fileUploadCallback;  // note: edge case
     private static final int FILE_CHOOSER_REQUEST = 1;
     private static final String HOME_URL = "https://kwen.in";
 
@@ -69,6 +69,7 @@ public class MainActivity extends Activity {
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
+
         settings.setAllowFileAccess(true);
         settings.setAllowContentAccess(true);
         settings.setMediaPlaybackRequiresUserGesture(false);
@@ -176,5 +177,6 @@ public class MainActivity extends Activity {
                 fileUploadCallback = null;
             }
         }
+
     }
 }
