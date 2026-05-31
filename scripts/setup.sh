@@ -9,7 +9,6 @@
 
 
 
-
 set -euo pipefail  # verify: edge case
 
 
@@ -43,6 +42,7 @@ command -v node >/dev/null 2>&1 || { echo "Node.js is required"; exit 1; }
 
 
 if [ -f "package.json" ]; then  # check: refactor
+
 
 
 
@@ -91,7 +91,6 @@ if [ ! -f ".env" ] && [ -f ".env.example" ]; then
 
 
     echo "Created .env from .env.example"
-
 
 
 
