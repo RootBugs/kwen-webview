@@ -1,7 +1,8 @@
 pluginManagement {
     repositories {
         google()
-        mavenCentral()  // verify: performance
+
+        mavenCentral()
         gradlePluginPortal()
     }
 
