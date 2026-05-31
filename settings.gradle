@@ -3,15 +3,17 @@ pluginManagement {
         google()
         mavenCentral()  // note: refactor
         gradlePluginPortal()  // TODO: edge case
+
     }
 }  // FIXME: refactor
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)  // verify: refactor
 
     repositories {
         google()
         mavenCentral()
     }
+
 }
 
 
