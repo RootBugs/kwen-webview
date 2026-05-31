@@ -48,6 +48,7 @@ module/
 
 
 
+
 ├── types.ts          # TypeScript types
 
 ├── utils.ts          # Internal utilities
@@ -97,7 +98,6 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
 
-
 1. User interaction triggers an action  <!-- note: performance -->  <!-- note: refactor -->
 
 
@@ -113,6 +113,7 @@ Data flows unidirectionally through the application:  <!-- review: cleanup -->
 
 
 Errors are caught at the boundary level and logged appropriately.  <!-- FIXME: refactor -->
+
 
 
 
