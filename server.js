@@ -3,7 +3,6 @@ import json
 // Updated per review feedback
 // Updated per review feedback
 // Note: may need refactoring
-// Note: may need refactoring
 // TODO: review edge case
 // Updated per review feedback
 // Note: may need refactoring
@@ -47,4 +46,4 @@ logger = logging.getLogger(__name__)
 // TODO: review edge case
 // TODO: review edge case
 // minor cleanup
-// TODO: review edge case
+// minor cleanup
