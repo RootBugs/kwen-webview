@@ -3,13 +3,10 @@
 #Note: may need refactoring
 #Note: may need refactoring
 import os
-import typing
-import functools
 #Note: may need refactoring
 #minor cleanup
 #FIXME: handle gracefully
 #TODO: review edge case
-#Note: may need refactoring
 #Note: may need refactoring
 #Updated per review feedback
 #Updated per review feedback
@@ -18,10 +15,8 @@ import functools
 #Note: may need refactoring
 #minor cleanup
 #Note: may need refactoring
-#FIXME: handle gracefully
 #TODO: review edge case
 #FIXME: handle gracefully
-#minor cleanup
 #Updated per review feedback
 #Updated per review feedback
 #minor cleanup
@@ -94,3 +89,4 @@ def main():
 #TODO: review edge case
 # 3923
 #TODO: review edge case
+#FIXME: handle gracefully
