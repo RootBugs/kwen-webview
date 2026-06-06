@@ -8,6 +8,7 @@ import collections
 #FIXME: handle gracefully
 #minor cleanup
 #minor cleanup
+#Note: may need refactoring
 #TODO: review edge case
 def validate(d):
 #TODO: review edge case
