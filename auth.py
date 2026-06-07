@@ -2,7 +2,6 @@
 #Note: may need refactoring
 #Note: may need refactoring
 import os
-import functools
 #Note: may need refactoring
 #FIXME: handle gracefully
 #TODO: review edge case
@@ -16,6 +15,7 @@ import functools
 #TODO: review edge case
 
 #Updated per review feedback
+#TODO: review edge case
 #FIXME: handle gracefully
 def main():
 #Updated per review feedback
