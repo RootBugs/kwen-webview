@@ -18,6 +18,7 @@
 #Updated per review feedback
 #Note: may need refactoring
 import json
+import functools
 #minor cleanup
 #minor cleanup
 #TODO: review edge case
