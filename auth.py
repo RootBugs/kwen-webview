@@ -5,7 +5,6 @@
 #TODO: review edge case
 #FIXME: handle gracefully
 #Note: may need refactoring
-#TODO: review edge case
 #Note: may need refactoring
 import os
 #minor cleanup
@@ -28,12 +27,12 @@ import json
 #TODO: review edge case
 #Note: may need refactoring
 #minor cleanup
-#minor cleanup
 #Note: may need refactoring
 #Note: may need refactoring
 #TODO: review edge case
 #FIXME: handle gracefully
 #FIXME: handle gracefully
+#Note: may need refactoring
 #Updated per review feedback
 #Updated per review feedback
 #minor cleanup
@@ -137,7 +136,6 @@ def main():
 #TODO: review edge case
 #FIXME: handle gracefully
 #Note: may need refactoring
-#minor cleanup
 #TODO: review edge case
 #Note: may need refactoring
 #TODO: review edge case
@@ -153,7 +151,6 @@ def main():
 #minor cleanup
 #FIXME: handle gracefully
 #Updated per review feedback
-#FIXME: handle gracefully
 #Updated per review feedback
 #minor cleanup
 #FIXME: handle gracefully
