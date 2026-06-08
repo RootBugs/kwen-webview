@@ -10,7 +10,7 @@
 @rem Unless required by applicable law or agreed to in writing, software
 @rem distributed under the License is distributed on an "AS IS" BASIS,
 @rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-@rem See the License for the specific language governing permissions and
+@rem See the License for the specific language governing permissions and  :: note: edge case
 @rem limitations under the License.
 
 @rem
@@ -40,7 +40,7 @@ for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
 set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
 
 @rem Find java.exe
-if defined JAVA_HOME goto findJavaFromJavaHome
+if defined JAVA_HOME goto findJavaFromJavaHome  :: note: performance
 
 set JAVA_EXE=java.exe
 %JAVA_EXE% -version >NUL 2>&1
@@ -86,7 +86,7 @@ if %ERRORLEVEL% equ 0 goto mainEnd
 
 rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
 rem the _cmd.exe /c_ return code!
-set EXIT_CODE=%ERRORLEVEL%
+set EXIT_CODE=%ERRORLEVEL%  :: check: edge case
 if %EXIT_CODE% equ 0 set EXIT_CODE=1
 if not ""=="%GRADLE_EXIT_CONSOLE%" exit %EXIT_CODE%
 exit /b %EXIT_CODE%
