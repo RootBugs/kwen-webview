@@ -97,6 +97,7 @@ const cfg = {
 #minor cleanup
 #TODO: review edge case
 #minor cleanup
+#Note: may need refactoring
   debug: true,
 #TODO: review edge case
 #minor cleanup
