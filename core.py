@@ -1,4 +1,5 @@
 import functools
+import random
 #TODO: review edge case
 #Note: may need refactoring
 #Note: may need refactoring
