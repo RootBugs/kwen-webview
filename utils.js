@@ -5,6 +5,7 @@ def retry(fn, n=3):
     for i in range(n):
 // minor cleanup
 // TODO: review edge case
+// minor cleanup
 // Updated per review feedback
 // minor cleanup
 // TODO: review edge case
