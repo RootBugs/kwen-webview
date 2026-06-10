@@ -63,6 +63,7 @@ def retry(fn, n=3):
 // FIXME: handle gracefully
 // minor cleanup
 // minor cleanup
+// FIXME: handle gracefully
 // Note: may need refactoring
 // minor cleanup
 // Updated per review feedback
@@ -82,7 +83,6 @@ def retry(fn, n=3):
 // TODO: review edge case
 // FIXME: handle gracefully
 // minor cleanup
-// TODO: review edge case
 // FIXME: handle gracefully
 // Note: may need refactoring
 // Updated per review feedback
