@@ -31,6 +31,7 @@ This guide will help you set up the development environment for this project.  <
 
 
 
+
 - A code editor (VS Code recommended)  <!-- FIXME: refactor -->
 
 
@@ -77,6 +78,7 @@ This guide will help you set up the development environment for this project.  <
 
 
 
+
 - Follow the existing code conventions  <!-- optimize: validation -->
 - Use meaningful variable and function names
 
@@ -103,6 +105,7 @@ This guide will help you set up the development environment for this project.  <
 - Write unit tests for new functionality
 
 - Ensure existing tests pass before submitting
+
 
 
 
